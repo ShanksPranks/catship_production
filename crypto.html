@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<script src="src/angular.min.js"></script>
+<script src="src/jsrsasign-latest-all-min.js"></script>
+<script src="src/jquery-1.11.1.min.js"></script>
+<script src="src/crypto.js"></script>
+    
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Raleway');
+    p,
+    h2,
+    form,
+    input {
+        font-size: small;
+        font-family: 'Raleway', sans-serif;
+    }
+
+    table,
+    th,
+    td {
+        border: 1px solid grey;
+        border-collapse: collapse;
+        padding: 5px;
+        max-width: 900px;
+        table-layout: fixed;
+        word-wrap: break-word;
+        font-family: 'Raleway', sans-serif;
+        font-size: small;
+    }
+
+    input {
+        width: 500px;
+    }
+
+    table tr:nth-child(odd) {
+        background-color: #f1f1f1;
+        width: 30px;
+    }
+
+    table tr:nth-child(even) {
+        background-color: #ffffff;
+        width: 30px;
+    }
+
+    #wallet,
+    #mine,
+    #send {
+        width: 500px;
+        border: 1px solid grey;
+        padding: 40px;
+    }
+
+    #trans {
+        width: 3800px;
+        border: 1px solid grey;
+        padding: 40px;
+    }
+</style>
+
+<body>
+
+    <div ng-app="myApp" ng-controller="formCtrl">
+        <form novalidate>
+            <div id="wallet">
+                <h2>WALLET</h2> Private Key:<br><br>
+                <input type="text" width: 250px; ng-model="user.PrvKey"><br><br> Public Key:<br><br>
+                <input type="text" ng-model="user.PubKey"><br>
+                <p> Current Balance: {{master.Balance}}</p>
+                <button ng-click="updateWallet()">UPDATE WALLET</button>
+                <br>
+            </div>
+            <br>
+            <div id="send">
+                <h2>MAKE PAYMENT</h2> Pay to:<br><br>
+                <input type="text" ng-model="user.ReceieverPubKey"><br>
+                <br> Amount:<br><br>
+                <input type="text" ng-model="user.Amount"><br>
+                <br> Message:<br><br>
+                <input type="text" ng-model="user.Message"><br>
+                <br>
+                <button ng-click="sendPayment()">SEND PAYMENT</button>
+                <br>
+                <p> Status: {{master.TransactionStatus}}
+                    <p>
+            </div>
+            <br>
+            <div id="mine">
+                <h2>MINE COINS</h2>
+                <button ng-click="mineCoins()">MINE CATSHIP COINS!</button>
+                <br>
+            </div>
+            <br>
+            <div id="trans">
+                <h2>PREVIOUS TRANSACTIONS</h2>
+                <br>
+                <table>
+                    <thead fix-head>
+                        <tr>
+                            <th>BLOCK</th>
+                            <th>DATE</th>
+                            <th>TRANSACTION ID</th>
+                            <th>SENDER ADDRESS</th>
+                            <th>RECEIVER ADDRESS</th>
+                            <th>VALUE</th>
+                            <th>MESSAGE</th>
+                            <th>SIGNATURE</th>
+                        </tr>
+                    </thead>
+                    <tr ng-repeat="x in names track by $index">
+                        <td>{{ x.blockHeight }}</td>
+                        <td>{{ x.utcTimeStamp | date:'yyyy-MM-dd HH:mm:ss Z'}}</td>
+                        <td>{{ x.transactionID }}</td>
+                        <td>{{ x.senderAddress }}</td>
+                        <td>{{ x.receiverAddress }}</td>
+                        <td>{{ (x.senderAddress==user.PubKey) ? -1*x.value : x.value | number:9 }}</td>
+                        <td>{{ x.message }}</td>
+                        <td>{{ x.signature }}</td>
+                    </tr>
+                </table>
+                <br>
+                <br>
+            </div>
+            <!--p>form = {{user}}</p>
+            <p>master = {{master}}</p-->
+
+    </div>
+</body>
+
+
+</body>
+
+<!--
+CatShipCoin is the first coin that uses POI (Proof Of Intelligence) as the mining algorithm.
+In order to mint coins the miner must play a somehwat buggy, difficult and random video game, the bugginess and randomness are the vital qualities that make it difficult for traditional search based / machine learning AI's to score effectively in the video game.
+
+By making the mining algorithm very resistant to all brute force methodologies and requiring intelligence we ensure that the ability to generate the currency is equally easy for everyday people providing they have access to a web browser and the internet. 
+
+It is particularly hard to play the game on a smart phone although not impossible, I don't know if this is a desired feature or not.
+
+The coin has an additional property that every 1000th block is a "rebase block" where all existing balances in the system are generated as coinbase rewards to those addresses. This ensures that the blockchain stays to a small(ish) size and can fit in local storage on a smart phone. 
+
+Coinbase rewards are adjusted to maintain a cadence of 100 coins per 10 minutes depending on the number of users currently mining and are apportioned based on the scores that each miner is able to accumulate in the 10 minutes. Similarly to bitcoin the reward halves every 2048 blocks.
+
+Not sure what my DDOS startegy is yet, maybe some simple kind of proof of intelligence for each transaction like a CAPCHA or something.
+
+The catship chain is a cryptic and powerful ancient technology that is mystical and mythical in all its facilities.
+                                                
+a block is confirmed as soon as >50% of the netwrok starts mining on top of it and then they 
+periodically submit their best hash / score to the block to get stored in that block for when someone wins the game.
+
+Each persons score is carried over to the next block as a difficulty adjustment.
+-->
+
+</html>

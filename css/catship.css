@@ -1,0 +1,6 @@
+#container{width:50%;}
+#left{float:left;width:auto;}
+#right{float:right;width:auto;}
+#center{margin:0 auto;width:auto;}
+#game{float:none ; width:auto;}
+

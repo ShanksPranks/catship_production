@@ -1,0 +1,13 @@
+Array
+(
+    [Connection] => close
+    [Host] => catship.co.za
+    [X-Newrelic-Transaction] => PxQHU1NQCwoIBVJRUQkCA1EDFB8EBw8RVU4aUgoNBwEKXVhSAgcLVwEDBUNKQVpVBFIABwAGFTs=
+    [X-Newrelic-Id] => XAcDVEVUDwcE
+    [User-Agent] => Ruby
+    [X-Chargify-Webhook-Signature-Hmac-Sha-256] => 83401274c3c7dd66143451cf49073683f5bf351029d06b8b49616ab2891ea50a
+    [X-Chargify-Webhook-Signature] => b61001260770db0662d77e81a52d0ee3
+    [X-Chargify-Webhook-Id] => 48025652
+    [Accept-Encoding] => gzip, deflate
+    [Accept] => */*; q=0.5, application/xml
+)
