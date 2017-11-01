@@ -6,41 +6,65 @@
  -- do the vote on block code (defaults to yes can be set to no)
  -- implement ddos protection for transactions (must get token from server ? )
  ** -------------------------------------------------------------------------- */
+/* -----------------------------------------------------------------------------
+ ** global variables
+ ** -------------------------------------------------------------------------- */
+var debug = true;
 var catsShipGameSignature = '3046022100ea98608e0c4c3c22baa66de805fee1a85c10e169edcf45fbd256e72607adb29902210091f498a347796a18ff3a88f23ab2d7e83c4082ade0fb9c57f0ead221cbf6dcc3'; // tricky bit
 // global variables fed from the peers
 var currentCoinReward = '100.000000000';
 var currentDifficulty = '7';
+var transactionPool;
 
-var userWallet = initializeCatShipCoinWallet();
+/* -----------------------------------------------------------------------------
+ ** initialization code
+ ** -------------------------------------------------------------------------- */
 
-console.log('executig GET');
+/* block chain */
+if (debug == true) {
+    console.log('initializing blockchain...');
+}
+if (typeof catShipChain === 'undefined') {
+    console.log('did not find a catship block chain, creating an empty one...');
+    var catShipChain = []; // { blockHeight , block }
+}
+
+/* tx pool */
+
 var myData;
-                $.ajax({
-                    type: 'GET',
-                    url: 'json/catShipTransactionPool.json',
-                    data: myData,
-                    success: function (myData) {
-                        console.log('successfull get:' + myData);
-                    },
-                    error: function (xhr, status, error) {
-                        console.log('xhr thingy: ' + xhr + ', status: ' + status + ', error : ' + error);
-                    },
-                    dataType: 'json'
-                });
-     /*
-    $.getJSON('json/catShipTransactionPool.json', function (data) {
-      success: function (data) {
-                        console.log('successfull post:' + data);
-                    },
-                    error: function (xhr, status, error) {
-                        console.log('xhr thingy: ' + xhr + ', status: ' + status + ', error : ' + error);
-                    }
- 
-      var items = data.items.map(function (item) {
-        return item.key + ': ' + item.value;
-      
-      });
-  */
+$.ajax({
+    type: 'GET',
+    url: 'json/catShipTransactionPool.json',
+    data: myData,
+    success: function(myData) {
+        transactionPool = myData;
+        if (debug == true) {
+            console.log('transaction pool fetched from server...');
+            console.log(transactionPool);
+        }
+    },
+    error: function(xhr, status, error) {
+        if (debug == true) {
+            //console.log('xhr thingy: ' + xhr + ', status: ' + status + ', error : ' + error);
+            console.log('did not find a transaction pool, creating an empty one...');
+        }
+        if (typeof transactionPool === 'undefined') {
+            transactionPool = {}; // { TransactionID : {Transaction} } // dictionary
+        }
+    },
+    dataType: 'json'
+});
+
+/* wallet */
+if (debug == true) {
+    console.log('initializing wallet...');
+}
+var userWallet = initializeCatShipCoinWallet();
+if (debug == true) {
+    console.log('wallet fetched from local storage...');
+    console.log(userWallet);
+}
+
 /* -----------------------------------------------------------------------------
  ** wallet ui code
  ** -------------------------------------------------------------------------- */
@@ -69,80 +93,26 @@ app.controller('formCtrl', function($scope) {
         $scope.updateWallet();
     };
     $scope.mineCoins = function() {
-        console.log('********** mine the block **********');
-
+        console.log('mining for a new block...');
         // => launches the video game and returns with reward and signature
-        //window.open("http://www.catship.co.za");
         //window.location.href = 'index.html';
-        //window.location.href = '/catship_production/'; //relative to domain
         // now we can successfully mine a block
         var newBlock = new catShipBlock(userWallet.publicKey, currentCoinReward, catsShipGameSignature);
-
-        //$scope.user.Balance = userWallet.balance;
-        //$scope.names = userWallet.transactionArray;
         $scope.updateWallet();
-
-        //console.log('updated catshipchain:');
-        //console.log(catShipChain);
-        //var catShipChainString = JSON.stringify(catShipChain);
-        //console.log('stringy chain:' + catShipChainString);
     };
     $scope.reset = function() {
         $scope.user = angular.copy($scope.master);
     };
     $scope.reset();
-    $scope.updateWallet();
+    //$scope.updateWallet();
 
 });
-
-/* -----------------------------------------------------------------------------
- ** load data from feeds 
- ** -------------------------------------------------------------------------- */
-
-console.log('********** initializing catshipchain and tx pool **********');
-
-if (typeof catShipChain === 'undefined') {
-    console.log('did not find a catship block chain, creating an empty one...');
-    var catShipChain = []; // { blockHeight , block }
-}
-
-if (typeof transactionPool === 'undefined') {
-    console.log('did not find a transaction pool, creating an empty one...');
-    var transactionPool = {}; // { TransactionID : {Transaction} } // dictionary
-}
-
-
-var localWalletString = localStorage.getItem('catShipUserWallet');
-
-if (localWalletString == null) {
-    console.log('did not find a user Wallet, initializing a fresh one...');
-    var newWallet = new catShipCoinWallet();
-    localWalletString = JSON.stringify(newWallet);
-    localStorage.setItem('catShipUserWallet', localWalletString);
-} 
-
-var walletObject = JSON.parse(localWalletString);
-var userWallet = new catShipCoinWallet(walletObject.publicKey, walletObject.privateKey);
 
 
 /* -----------------------------------------------------------------------------
  ** test scripts
  ** -------------------------------------------------------------------------- */
-/*
-    console.log('********** creating a genesis block if needed **********');
-if (catShipChain.length == 0) {
-    console.log('did not find a cat ship block chain, initializing a fresh one...');
-    initializeCatChain();
-}
 
-    console.log('********** adding a few test transactions **********');
-
-    // create a transaction 
-    var testTransaction = new catShipTransaction(userWallet.publicKey, receiverPublicKey, userMessage, 12.00, userWallet.privateKey, null);
-
-    // create another transaction (will be in the mem pool) 
-    var testTransaction = new catShipTransaction(userWallet.publicKey, receiverPublicKey, 'Have a kitkat!', 10.00, userWallet.privateKey, null);
-*/
 /* -----------------------------------------------------------------------------
  ** temporary functions
  ** -------------------------------------------------------------------------- */
@@ -174,12 +144,13 @@ function getCurrentBlockHeight() {
 }
 
 function initializeCatShipCoinWallet() {
-    console.log('********** initializing the user wallet **********');
 
     var localWalletString = localStorage.getItem('catShipUserWallet');
 
     if (localWalletString == null) {
-        console.log('did not find a user Wallet, initializing a fresh one...');
+        if (debug == true) {
+            console.log('did not find a user wallet, initializing a fresh one...');
+        }
         var newWallet = new catShipCoinWallet();
         localWalletString = JSON.stringify(newWallet);
         localStorage.setItem('catShipUserWallet', localWalletString);
@@ -187,8 +158,6 @@ function initializeCatShipCoinWallet() {
 
     var walletObject = JSON.parse(localWalletString);
     var userWallet = new catShipCoinWallet(walletObject.publicKey, walletObject.privateKey);
-    console.log('userWallet: ');
-    console.log(userWallet);
 
     return userWallet;
 
@@ -257,18 +226,20 @@ function catShipTransaction(senderAddressIn, receiverAddressIn, messageIn, value
         transactionPool[this.transactionID] = this; // will replace a transaction if one already exists
     }
 
-                $.ajax({
-                    type: 'POST',
-                    url: 'json/catShipTransaction.php',
-                    data: { jsonObject: JSON.stringify(this) },
-                    success: function (data) {
-                        console.log('successfull post:' + data);
-                    },
-                    error: function (xhr, status, error) {
-                        console.log('xhr thingy: ' + xhr + ', status: ' + status + ', error : ' + error);
-                    },
-                    dataType: 'text'
-                });
+    $.ajax({
+        type: 'POST',
+        url: 'json/catShipTransaction.php',
+        data: {
+            jsonObject: JSON.stringify(this)
+        },
+        success: function(data) {
+            console.log('successfull post:' + data);
+        },
+        error: function(xhr, status, error) {
+            console.log('xhr thingy: ' + xhr + ', status: ' + status + ', error : ' + error);
+        },
+        dataType: 'text'
+    });
 
 }
 
@@ -404,7 +375,9 @@ function validateCatShipBlock(CatShipBlockIn) {
 }
 
 function getUserBalance(userAddressIn, transactionArrayIn) {
-    console.log('getting user balance..');
+    if (debug == true) {
+        console.log('getting user balance...');
+    }
 
     var userBalance = 0;
 
@@ -441,13 +414,12 @@ function getUserBalance(userAddressIn, transactionArrayIn) {
     }
 
     if (transactionArrayIn != null) { // only do this if we are in the update block array mode
-        console.log('tran pool');
-        console.log(transactionPool);
+
+        if (debug == true) {
+            console.log('traversing tx pool for users previous transactions...');
+        }
         // also add any pending transactions
         for (var x in transactionPool) {
-
-            console.log('looping mem pool');
-            console.log(transactionPool[x]);
 
             if (transactionPool.hasOwnProperty(x)) {
                 if (transactionPool[x].senderAddress == userWallet.publicKey) {
@@ -461,7 +433,7 @@ function getUserBalance(userAddressIn, transactionArrayIn) {
             }
         }
     }
-    //
+
     return userBalance;
 }
 
