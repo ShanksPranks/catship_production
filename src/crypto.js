@@ -14,8 +14,8 @@ var catsShipGameSignature = '3046022100ea98608e0c4c3c22baa66de805fee1a85c10e169e
 // global variables fed from the peers
 var currentCoinReward = '100.000000000';
 var currentDifficulty = '7';
-var transactionPool;
-
+var transactionPool = [];
+var catShipChain = [];
 /* -----------------------------------------------------------------------------
  ** initialization code
  ** -------------------------------------------------------------------------- */
@@ -24,13 +24,42 @@ var transactionPool;
 if (debug == true) {
     console.log('initializing blockchain...');
 }
-if (typeof catShipChain === 'undefined') {
-    console.log('did not find a catship block chain, creating an empty one...');
-    var catShipChain = []; // { blockHeight , block }
-}
+
+var myData;
+$.ajax({
+    type: 'GET',
+    url: 'json/catShipBlockChain.json',
+    data: myData,
+    success: function(myData) {
+        catShipChain = myData;
+        
+        if (debug == true) {
+            console.log('block chain fetched from server...');
+            console.log(catShipChain);
+        }
+        
+        userWallet.updateBalance();
+        var scope = angular.element(document.getElementById('wallet')).scope();
+        scope.master.Balance = userWallet.balance;
+        scope.$apply();
+
+    },
+    error: function(xhr, status, error) {
+        if (debug == true) {
+            //console.log('xhr thingy: ' + xhr + ', status: ' + status + ', error : ' + error);
+            console.log('did not find a block chain, creating an empty one...');
+        }
+        if (typeof catShipChain === 'undefined') {
+            catShipChain = []; // [{ Transaction },{}] // array
+        }
+    },
+    dataType: 'json'
+});
 
 /* tx pool */
-
+if (debug == true) {
+    console.log('initializing transaction pool...');
+}
 var myData;
 $.ajax({
     type: 'GET',
@@ -38,10 +67,15 @@ $.ajax({
     data: myData,
     success: function(myData) {
         transactionPool = myData;
+
         if (debug == true) {
-            console.log('transaction pool fetched from server...');
+            console.log('transaction pool fetched from server/peers...');
             console.log(transactionPool);
         }
+        userWallet.updateBalance();
+        var scope = angular.element(document.getElementById('wallet')).scope();
+        scope.master.Balance = userWallet.balance;
+        scope.$apply();
     },
     error: function(xhr, status, error) {
         if (debug == true) {
@@ -49,7 +83,7 @@ $.ajax({
             console.log('did not find a transaction pool, creating an empty one...');
         }
         if (typeof transactionPool === 'undefined') {
-            transactionPool = {}; // { TransactionID : {Transaction} } // dictionary
+            transactionPool = []; // [{ Transaction },{}] // array
         }
     },
     dataType: 'json'
@@ -221,11 +255,11 @@ function catShipTransaction(senderAddressIn, receiverAddressIn, messageIn, value
     this.transactionID = md.digest();
 
     validateTransaction(this);
-
+     
     if (this.isValid == true) {
-        transactionPool[this.transactionID] = this; // will replace a transaction if one already exists
+        transactionPool.push(this); // will not replace a transaction if one already exists
     }
-
+    
     $.ajax({
         type: 'POST',
         url: 'json/catShipTransaction.php',
@@ -233,7 +267,8 @@ function catShipTransaction(senderAddressIn, receiverAddressIn, messageIn, value
             jsonObject: JSON.stringify(this)
         },
         success: function(data) {
-            console.log('successfull post:' + data);
+            console.log('successfull post of tranaction:');
+            console.log(data);
         },
         error: function(xhr, status, error) {
             console.log('xhr thingy: ' + xhr + ', status: ' + status + ', error : ' + error);
@@ -323,7 +358,6 @@ function catShipBlock(minerAddressIn, coinRewardIn, signatureIn) {
         }
     }
 
-
     // the block game hash is an sha384 hash of block height and previous block id so should be the same for all miners, this allows miners to be on an even footing when solving the puzzle
     // miners will use a nonce + blockGameHash to mine. 
     this.calculateBlockGameHash = function() {
@@ -368,6 +402,22 @@ function catShipBlock(minerAddressIn, coinRewardIn, signatureIn) {
     // once mining is successfull close the block
     this.closeBlock();
 
+    $.ajax({
+        type: 'POST',
+        url: 'json/catShipBlock.php',
+        data: {
+            jsonObject: JSON.stringify(this)
+        },
+        success: function(data) {
+            console.log('successfull post of catship block:');
+            console.log(data);
+        },
+        error: function(xhr, status, error) {
+            console.log('xhr thingy: ' + xhr + ', status: ' + status + ', error : ' + error);
+        },
+        dataType: 'text'
+    });
+
 }
 
 function validateCatShipBlock(CatShipBlockIn) {
@@ -382,11 +432,11 @@ function getUserBalance(userAddressIn, transactionArrayIn) {
     var userBalance = 0;
 
     // loop through all the blocks filtering out users address transactions
-    for (var blockHeight in catShipChain) {
+    for (var x in catShipChain) {
         //console.log('getting user balance, exploring block height:' + blockHeight);
-        var credits = catShipChain[blockHeight].block.transactionArray.filter((trans) => trans.receiverAddress == userAddressIn);
+        var credits = catShipChain[x].transactionArray.filter((trans) => trans.receiverAddress == userAddressIn);
 
-        var debits = catShipChain[blockHeight].block.transactionArray.filter((trans) => trans.senderAddress == userAddressIn);
+        var debits = catShipChain[x].transactionArray.filter((trans) => trans.senderAddress == userAddressIn);
 
         if (transactionArrayIn != null) {
             for (var k = 0; k < credits.length; k++) {
