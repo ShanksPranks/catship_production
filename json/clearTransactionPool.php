@@ -39,9 +39,9 @@ if (empty($catShipTransactionPoolObject)) {
 
 // turn object back into string
 $catShipTransactionPoolString = json_encode($catShipTransactionPoolObject);
+
 // write and close the file
 fwrite($catShipTransactionPoolFile, $catShipTransactionPoolString);
 fclose($catShipTransactionPoolFile);
-
 
 ?>

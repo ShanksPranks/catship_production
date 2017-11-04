@@ -41,6 +41,7 @@ $.ajax({
         userWallet.updateBalance();
         var scope = angular.element(document.getElementById('wallet')).scope();
         scope.master.Balance = userWallet.balance;
+        scope.names = userWallet.transactionArray;
         scope.$apply();
 
     },
@@ -75,6 +76,7 @@ $.ajax({
         userWallet.updateBalance();
         var scope = angular.element(document.getElementById('wallet')).scope();
         scope.master.Balance = userWallet.balance;
+        scope.names = userWallet.transactionArray;
         scope.$apply();
     },
     error: function(xhr, status, error) {
@@ -256,10 +258,27 @@ function catShipTransaction(senderAddressIn, receiverAddressIn, messageIn, value
 
     validateTransaction(this);
      
-    if (this.isValid == true) {
+    // add the transaction to the local mem pool
+    if (this.isValid == true && this.senderAddress != 'catShipCoinBase') {
         transactionPool.push(this); // will not replace a transaction if one already exists
     }
     
+    if (debug == true)
+    {
+    console.log('broadcasting transaction isValid, senderAddress ...');
+    console.log(this.isValid);
+    console.log(this.senderAddress);
+    }
+
+    // broadcast the transaction to the network
+    if (this.isValid == true && this.senderAddress != 'catShipCoinBase') {
+    if (debug == true)
+    {
+    console.log('broadcasting transaction isValid, senderAddress ...');
+    console.log(this.isValid);
+    console.log(this.senderAddress);
+    }
+
     $.ajax({
         type: 'POST',
         url: 'json/catShipTransaction.php',
@@ -275,10 +294,16 @@ function catShipTransaction(senderAddressIn, receiverAddressIn, messageIn, value
         },
         dataType: 'text'
     });
+}
 
 }
 
 function validateTransaction(catShipTransactionIn) {
+    if (debug == true)
+        {
+            console.log('validating transaction...');
+            console.log(catShipTransactionIn);
+        }
     // check balance of sender is sufficient
     var validationCount = 0;
     var senderBal = getUserBalance(catShipTransactionIn.senderAddress, null);
@@ -344,7 +369,7 @@ function catShipBlock(minerAddressIn, coinRewardIn, signatureIn) {
 
     // previous block hash makes the merkle tree
     if (!(catShipChain[currentBlockHeight] == null)) {
-        this.previousBlockID = catShipChain[currentBlockHeight].block.blockID;
+        this.previousBlockID = catShipChain[currentBlockHeight].blockID;
     }
 
     // add all the transactions currently in the pool
@@ -391,12 +416,7 @@ function catShipBlock(minerAddressIn, coinRewardIn, signatureIn) {
     this.closeBlock = function() {
 
         this.calculateBlockID();
-
-        var tempBlock = {
-            "blockHeight": parseInt(this.blockHeight),
-            "block": this
-        };
-        catShipChain.push(tempBlock);
+        catShipChain.push(this);
     }
 
     // once mining is successfull close the block
@@ -425,11 +445,17 @@ function validateCatShipBlock(CatShipBlockIn) {
 }
 
 function getUserBalance(userAddressIn, transactionArrayIn) {
-    if (debug == true) {
-        console.log('getting user balance...');
-    }
 
+    if (debug == true) {
+        console.log('getting user balance with parameters userAddressIn, transactionArrayIn...');
+        console.log(userAddressIn);
+        console.log(transactionArrayIn);
+        console.log('current catshipchain:');
+        console.log(catShipChain);
+    }
+     
     var userBalance = 0;
+    //transactionArrayIn = [];
 
     // loop through all the blocks filtering out users address transactions
     for (var x in catShipChain) {
