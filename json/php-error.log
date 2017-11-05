@@ -1,5 +1,44 @@
-[05-Nov-2017 19:21:47 Australia/Canberra] PHP Fatal error:  Uncaught exception 'Exception' with message 'GMP extension seems not to be installed' in C:\inetpub\wwwroot\catship_production\json\BitcoinECDSA.php:11
-Stack trace:
-#0 C:\inetpub\wwwroot\catship_production\json\catShipCoinBase.php(7): include()
-#1 {main}
-  thrown in C:\inetpub\wwwroot\catship_production\json\BitcoinECDSA.php on line 11
+[06-Nov-2017 01:04:50 Australia/Canberra] looping through keys
+[06-Nov-2017 01:04:50 Australia/Canberra] minerAddressIn
+[06-Nov-2017 01:04:50 Australia/Canberra] 040f0da4f9bc680319671277d3bf311f855fffdfacf5d1fdc8bf750f5cf022c9445503f1e6675ec6abd0e892de702851869eec8144a22ae83e6e8497fc12c63e04
+[06-Nov-2017 01:04:50 Australia/Canberra] looping through keys
+[06-Nov-2017 01:04:50 Australia/Canberra] coinRewardIn
+[06-Nov-2017 01:04:50 Australia/Canberra] 100
+[06-Nov-2017 01:04:50 Australia/Canberra] looping through keys
+[06-Nov-2017 01:04:50 Australia/Canberra] utcTimeStamp
+[06-Nov-2017 01:04:50 Australia/Canberra] 1509890690132
+[06-Nov-2017 01:04:50 Australia/Canberra] transactionPlainText:
+[06-Nov-2017 01:04:50 Australia/Canberra] 040f0da4f9bc680319671277d3bf311f855fffdfacf5d1fdc8bf750f5cf022c9445503f1e6675ec6abd0e892de702851869eec8144a22ae83e6e8497fc12c63e04040f0da4f9bc680319671277d3bf311f855fffdfacf5d1fdc8bf750f5cf022c9445503f1e6675ec6abd0e892de702851869eec8144a22ae83e6e8497fc12c63e04freshly minted kitty goodness1001509890690132
+[06-Nov-2017 01:10:00 Australia/Canberra] looping through keys
+[06-Nov-2017 01:10:00 Australia/Canberra] minerAddressIn
+[06-Nov-2017 01:10:00 Australia/Canberra] 040f0da4f9bc680319671277d3bf311f855fffdfacf5d1fdc8bf750f5cf022c9445503f1e6675ec6abd0e892de702851869eec8144a22ae83e6e8497fc12c63e04
+[06-Nov-2017 01:10:00 Australia/Canberra] looping through keys
+[06-Nov-2017 01:10:00 Australia/Canberra] coinRewardIn
+[06-Nov-2017 01:10:00 Australia/Canberra] 100
+[06-Nov-2017 01:10:00 Australia/Canberra] looping through keys
+[06-Nov-2017 01:10:00 Australia/Canberra] utcTimeStamp
+[06-Nov-2017 01:10:00 Australia/Canberra] 1509891000474
+[06-Nov-2017 01:10:00 Australia/Canberra] transactionPlainText:
+[06-Nov-2017 01:10:00 Australia/Canberra] 040f0da4f9bc680319671277d3bf311f855fffdfacf5d1fdc8bf750f5cf022c9445503f1e6675ec6abd0e892de702851869eec8144a22ae83e6e8497fc12c63e04040f0da4f9bc680319671277d3bf311f855fffdfacf5d1fdc8bf750f5cf022c9445503f1e6675ec6abd0e892de702851869eec8144a22ae83e6e8497fc12c63e04freshly minted kitty goodness1001509891000474
+[06-Nov-2017 01:11:41 Australia/Canberra] looping through keys
+[06-Nov-2017 01:11:41 Australia/Canberra] minerAddressIn
+[06-Nov-2017 01:11:41 Australia/Canberra] 040f0da4f9bc680319671277d3bf311f855fffdfacf5d1fdc8bf750f5cf022c9445503f1e6675ec6abd0e892de702851869eec8144a22ae83e6e8497fc12c63e04
+[06-Nov-2017 01:11:41 Australia/Canberra] looping through keys
+[06-Nov-2017 01:11:41 Australia/Canberra] coinRewardIn
+[06-Nov-2017 01:11:41 Australia/Canberra] 100
+[06-Nov-2017 01:11:41 Australia/Canberra] looping through keys
+[06-Nov-2017 01:11:41 Australia/Canberra] utcTimeStamp
+[06-Nov-2017 01:11:41 Australia/Canberra] 1509891101826
+[06-Nov-2017 01:11:41 Australia/Canberra] transactionPlainText:
+[06-Nov-2017 01:11:41 Australia/Canberra] 040f0da4f9bc680319671277d3bf311f855fffdfacf5d1fdc8bf750f5cf022c9445503f1e6675ec6abd0e892de702851869eec8144a22ae83e6e8497fc12c63e04040f0da4f9bc680319671277d3bf311f855fffdfacf5d1fdc8bf750f5cf022c9445503f1e6675ec6abd0e892de702851869eec8144a22ae83e6e8497fc12c63e04freshly minted kitty goodness1001509891101826
+[06-Nov-2017 01:15:41 Australia/Canberra] looping through keys
+[06-Nov-2017 01:15:41 Australia/Canberra] minerAddressIn
+[06-Nov-2017 01:15:42 Australia/Canberra] 040f0da4f9bc680319671277d3bf311f855fffdfacf5d1fdc8bf750f5cf022c9445503f1e6675ec6abd0e892de702851869eec8144a22ae83e6e8497fc12c63e04
+[06-Nov-2017 01:15:42 Australia/Canberra] looping through keys
+[06-Nov-2017 01:15:42 Australia/Canberra] coinRewardIn
+[06-Nov-2017 01:15:42 Australia/Canberra] 100
+[06-Nov-2017 01:15:42 Australia/Canberra] looping through keys
+[06-Nov-2017 01:15:42 Australia/Canberra] utcTimeStamp
+[06-Nov-2017 01:15:42 Australia/Canberra] 1509891341984
+[06-Nov-2017 01:15:42 Australia/Canberra] transactionPlainText:
+[06-Nov-2017 01:15:42 Australia/Canberra] 040f0da4f9bc680319671277d3bf311f855fffdfacf5d1fdc8bf750f5cf022c9445503f1e6675ec6abd0e892de702851869eec8144a22ae83e6e8497fc12c63e04040f0da4f9bc680319671277d3bf311f855fffdfacf5d1fdc8bf750f5cf022c9445503f1e6675ec6abd0e892de702851869eec8144a22ae83e6e8497fc12c63e04freshly minted kitty goodness1001509891341984

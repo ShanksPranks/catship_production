@@ -10,12 +10,13 @@
  ** global variables
  ** -------------------------------------------------------------------------- */
 var debug = true;
-var catsShipGameSignature = '3046022100ea98608e0c4c3c22baa66de805fee1a85c10e169edcf45fbd256e72607adb29902210091f498a347796a18ff3a88f23ab2d7e83c4082ade0fb9c57f0ead221cbf6dcc3'; // tricky bit
+var catShipPublicKey = '040f0da4f9bc680319671277d3bf311f855fffdfacf5d1fdc8bf750f5cf022c9445503f1e6675ec6abd0e892de702851869eec8144a22ae83e6e8497fc12c63e04'; // tricky bit
 // global variables fed from the peers
 var currentCoinReward = '100.000000000';
 var currentDifficulty = '7';
 var transactionPool = [];
 var catShipChain = [];
+
 
 /* -----------------------------------------------------------------------------
  ** initialization code
@@ -123,14 +124,15 @@ app.controller('formCtrl', function($scope) {
         $scope.names = userWallet.transactionArray;
     };
     $scope.sendPayment = function() {
-        var newTrans = new catShipTransaction(userWallet.publicKey, $scope.user.ReceieverPubKey, $scope.user.Message, $scope.user.Amount, userWallet.privateKey, null);
+        //function catShipTransaction(senderAddressIn, receiverAddressIn, messageIn, valueIn, prvhexIn, signatureIn, utcTimeStampIn)
+        var newTrans = new catShipTransaction(userWallet.publicKey, $scope.user.ReceieverPubKey, $scope.user.Message, $scope.user.Amount, userWallet.privateKey, null, null);
         $scope.user.ReceieverPubKey = '';
         $scope.user.Amount = '';
         $scope.user.Message = '';
         $scope.updateWallet();
     };
     $scope.mineCoins = function() {
-        console.log('mining for a new block...');
+        //console.log('mining for a new block...');
         // => launches the video game and returns with reward and signature
         //window.location.href = 'index.html';
         
@@ -138,7 +140,7 @@ app.controller('formCtrl', function($scope) {
         this.minerAddressIn = userWallet.publicKey;
         this.coinRewardIn = 100;
         this.utcTimeStamp = new Date().getTime();
-        this.singature;
+        this.signature;
         } 
     
     var myCoinBase = new coinBaseInput();
@@ -150,18 +152,27 @@ app.controller('formCtrl', function($scope) {
             jsonObject: JSON.stringify(myCoinBase)
         },
         success: function(data) {
-            console.log('successfull post of catship block:');
-            console.log(data);
+            myCoinBase.signature = data;
+            if (debug == 1)
+            {
+            console.log('myCoinBase object');
+            console.log(myCoinBase);
+            }
+        // check signature against the known public key 
+
+        // If successful we can successfully mine a block
+        //function catShipBlock(minerAddressIn, coinRewardIn, utcTimeStampIn, signatureIn) {
+        var newBlock = new catShipBlock(myCoinBase.minerAddressIn, myCoinBase.coinRewardIn, myCoinBase.utcTimeStamp, myCoinBase.signature);
+
+        $scope.updateWallet();
         },
         error: function(xhr, status, error) {
             console.log('xhr thingy: ' + xhr + ', status: ' + status + ', error : ' + error);
         },
         dataType: 'text'
     });
-    
-        // now we can successfully mine a block
-        var newBlock = new catShipBlock(userWallet.publicKey, currentCoinReward, catsShipGameSignature);
-        $scope.updateWallet();
+
+
     };
     $scope.reset = function() {
         $scope.user = angular.copy($scope.master);
@@ -245,13 +256,21 @@ function catShipCoinWallet(publicKeyIn, privateKeyIn) {
 
 
 // this is a prototype of a catship transaction, users will send stuff to each other by playing games and interacting
-function catShipTransaction(senderAddressIn, receiverAddressIn, messageIn, valueIn, prvhexIn, signatureIn) {
+function catShipTransaction(senderAddressIn, receiverAddressIn, messageIn, valueIn, prvhexIn, signatureIn, utcTimeStampIn) {
     this.senderAddress = senderAddressIn; // sender public key
     this.receiverAddress = receiverAddressIn; // receiver public key
     this.message = messageIn; // any message they want to write to the blockchain up to 128 chars
     this.value = valueIn; // amount being transfered
     this.isValid = false;
+
+    if (utcTimeStampIn == null)
+    {
     this.utcTimeStamp = new Date().getTime();
+    }
+    else {
+        this.utcTimeStamp = utcTimeStampIn;
+    }
+
     this.isPending = true;
     this.blockHeight;
     /* when we create a transaction we sign the transaction before we get the message digest to ensure the transaction is immutable */
@@ -310,8 +329,11 @@ function catShipTransaction(senderAddressIn, receiverAddressIn, messageIn, value
             jsonObject: JSON.stringify(this)
         },
         success: function(data) {
+            if (debug == true)
+            {
             console.log('successfull post of tranaction:');
             console.log(data);
+            }
         },
         error: function(xhr, status, error) {
             console.log('xhr thingy: ' + xhr + ', status: ' + status + ', error : ' + error);
@@ -349,6 +371,14 @@ function validateTransaction(catShipTransactionIn) {
     var ec = new KJUR.crypto.ECDSA({
         'curve': 'secp256r1'
     });
+    if (debug == true)
+    {
+    console.log("var result = ec.verifyHex(catShipTransactionIn.transactionPlainText, catShipTransactionIn.signature, catShipTransactionIn.senderAddress);");
+    console.log(catShipTransactionIn.transactionPlainText);
+    console.log(catShipTransactionIn.signature);
+    console.log(catShipTransactionIn.senderAddress);
+    }
+
     var result = ec.verifyHex(catShipTransactionIn.transactionPlainText, catShipTransactionIn.signature, catShipTransactionIn.senderAddress);
     if (result == true) {
         validationCount += 16;
@@ -366,12 +396,13 @@ function validateTransaction(catShipTransactionIn) {
 }
 
 // the prototype for the transaction block
-function catShipBlock(minerAddressIn, coinRewardIn, signatureIn) {
+function catShipBlock(minerAddressIn, coinRewardIn, utcTimeStampIn, signatureIn) {
 
-    this.utcTimeStamp = new Date().getTime();
+    this.utcTimeStamp = utcTimeStampIn;
 
     // lets send the miner reward trans 
-    var coinbaseTransaction = new catShipTransaction('catShipCoinBase', minerAddressIn, 'freshly minted kitty goodness', coinRewardIn, '', signatureIn);
+                        //function catShipTransaction(senderAddressIn, receiverAddressIn, messageIn, valueIn, prvhexIn, signatureIn, utcTimeStampIn)
+    var coinbaseTransaction = new catShipTransaction(catShipPublicKey, minerAddressIn, 'freshly minted kitty goodness', coinRewardIn, null, signatureIn, utcTimeStampIn);
 
     this.transactionArray = [];
 
@@ -453,8 +484,11 @@ function catShipBlock(minerAddressIn, coinRewardIn, signatureIn) {
             jsonObject: JSON.stringify(this)
         },
         success: function(data) {
+            if (debug == true)
+            {
             console.log('successfull post of catship block:');
             console.log(data);
+            }
         },
         error: function(xhr, status, error) {
             console.log('xhr thingy: ' + xhr + ', status: ' + status + ', error : ' + error);
@@ -547,3 +581,15 @@ function getNum(val) {
     }
     return parseFloat(val);
 }
+/*
+function extractSignature(satohiSignedMessageIn)
+{
+//var satohiSignedMessage = "-----BEGIN SIGNATURE-----1Ckhd5AvregFBMv21Lh3zmdgEG7JGKh5kaIA8pyqACSIJ8n78YlYoQ8VyygNHy1Z7n712OXw3KGarJV5CDt4cov2Neq973VuDgibghI/CZGdj0l9zC4Izb2IE=-----END BITCOIN SIGNED MESSAGE-----";
+var s = satohiSignedMessageIn.indexOf("-----BEGIN SIGNATURE-----");
+var e = satohiSignedMessageIn.indexOf("-----END BITCOIN SIGNED MESSAGE-----");
+s = s + 25;
+var shittyString = satohiSignedMessageIn.substring(s, e);
+return shittyString.replace(/\n/ig, '');
+
+}
+*/
