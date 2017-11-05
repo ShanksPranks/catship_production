@@ -16,6 +16,7 @@ var currentCoinReward = '100.000000000';
 var currentDifficulty = '7';
 var transactionPool = [];
 var catShipChain = [];
+
 /* -----------------------------------------------------------------------------
  ** initialization code
  ** -------------------------------------------------------------------------- */
@@ -132,6 +133,32 @@ app.controller('formCtrl', function($scope) {
         console.log('mining for a new block...');
         // => launches the video game and returns with reward and signature
         //window.location.href = 'index.html';
+        
+    function coinBaseInput(){
+        this.minerAddressIn = userWallet.publicKey;
+        this.coinRewardIn = 100;
+        this.utcTimeStamp = new Date().getTime();
+        this.singature;
+        } 
+    
+    var myCoinBase = new coinBaseInput();
+
+    $.ajax({
+        type: 'POST',
+        url: 'json/catShipCoinBase.php',
+        data: {
+            jsonObject: JSON.stringify(myCoinBase)
+        },
+        success: function(data) {
+            console.log('successfull post of catship block:');
+            console.log(data);
+        },
+        error: function(xhr, status, error) {
+            console.log('xhr thingy: ' + xhr + ', status: ' + status + ', error : ' + error);
+        },
+        dataType: 'text'
+    });
+    
         // now we can successfully mine a block
         var newBlock = new catShipBlock(userWallet.publicKey, currentCoinReward, catsShipGameSignature);
         $scope.updateWallet();
@@ -153,16 +180,6 @@ app.controller('formCtrl', function($scope) {
  ** temporary functions
  ** -------------------------------------------------------------------------- */
 
-// create a genesis block for the cat ship chain 
-function initializeCatChain() {
-
-    // blocks can only be created by playing a game of catship where the coin reward or score along with the signature and miners address is included
-    var firstBlock = new catShipBlock('04a0ca271b2e123e97001ccf99770d25e23f7b07f736d5f2399ad2ec446d10db1e766d61e3816d84994b99da593a0416c3555bf64a7b676d192b3e78106adfb20c', 100, '3045022100ea072f857217b74ec83cfebc4533f78f3cc17afa2156c104f10eddd73806bdcf022047af181b17c99560355b91d1c7115ce80253517af1beae33e8f0dcbd7ef69e2b');
-    console.log(firstBlock);
-    firstBlock.calculateBlockGameHash();
-    firstBlock.closeBlock();
-}
-
 /* -----------------------------------------------------------------------------
  ** blockchain functions
  ** -------------------------------------------------------------------------- */
@@ -170,12 +187,13 @@ function initializeCatChain() {
 // block chain methods 
 function getCurrentBlockHeight() {
     var maxValue = -1;
-    for (var blockHeight in catShipChain) {
-        if (blockHeight > maxValue) {
-            maxValue = blockHeight;
+      for (var i = 0; i < catShipChain.length; i++) {
+        if (catShipChain[i]['blockHeight'] >= maxValue) {
+            maxValue = catShipChain[i]['blockHeight'];
         }
 
     }
+    
     return parseInt(maxValue);
 }
 
@@ -205,6 +223,7 @@ function catShipCoinWallet(publicKeyIn, privateKeyIn) {
     this.balance = getNum(0);
 
     this.updateBalance = function() {
+    this.transactionArray = [];
         this.balance = getUserBalance(this.publicKey, this.transactionArray);
     }
     // we neeed an overload here where only private key is required and pub key gets generated
@@ -223,6 +242,7 @@ function catShipCoinWallet(publicKeyIn, privateKeyIn) {
     }
 
 }
+
 
 // this is a prototype of a catship transaction, users will send stuff to each other by playing games and interacting
 function catShipTransaction(senderAddressIn, receiverAddressIn, messageIn, valueIn, prvhexIn, signatureIn) {
@@ -278,6 +298,10 @@ function catShipTransaction(senderAddressIn, receiverAddressIn, messageIn, value
     console.log(this.isValid);
     console.log(this.senderAddress);
     }
+    
+    console.log('transaction about to be posted:');
+    var myObj = JSON.stringify(this);
+    console.log(myObj);
 
     $.ajax({
         type: 'POST',

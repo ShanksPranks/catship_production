@@ -74,20 +74,21 @@ $catShipTransactionPoolObject = json_decode($catShipTransactionPoolString, true)
 fclose($catShipTransactionPoolFile);
 $removeTransactions = [];
 $transactionArray = $catShipBlockObject["transactionArray"];
-/*
+
+
 
 // error_log('this is the transaction array: $transactionArray');
 
 foreach($transactionArray as $g => $q)
 {
-error_log('looping through $g => $q');
-error_log($g);
-error_log($q);
+//error_log('looping through $g => $q');
+//error_log($g);
+//error_log($q);
 foreach($q as $x => $y)
 {
-error_log('looping through $x => $y');
-error_log($x);
-error_log($y);
+//error_log('looping through $x => $y');
+//error_log($x);
+//error_log($y);
 if ($x == "transactionID")
 {
 array_push($removeTransactions,$y);
@@ -95,7 +96,6 @@ array_push($removeTransactions,$y);
 }
 }
 
-*/
 
 // start loop through pool
 
@@ -113,14 +113,15 @@ foreach($catShipTransactionPoolObject as $K => $V)
         foreach($removeTransactions as $t)
             {
 
-            // error_log("iterating through removeTransactions as $t");
-            // error_log($t);
-
+             //error_log("iterating through removeTransactions as $t");
+             //error_log($t);
+             //error_log("testing t against value");
+             //error_log($value);
             if ($key == 'transactionID' && $value == $t)
                 {
 
                 // delete this particular object from the $array
-                // error_log("removing item from catShipTransactionPoolObject[elementKey]");
+                //error_log("removing item from catShipTransactionPoolObject[elementKey]");
 
                 unset($catShipTransactionPoolObject[$K]);
                 }
@@ -134,8 +135,10 @@ $catShipTransactionPoolFile = fopen($catShipTransactionPoolFileName, "w") or die
 
 
 // turn object back into string
+$catShipTransactionPoolObjectStripped = array_values($catShipTransactionPoolObject);
+$catShipTransactionPoolString = json_encode($catShipTransactionPoolObjectStripped);
 
-$catShipTransactionPoolString = json_encode($catShipTransactionPoolObject);
+//$catShipTransactionPoolString = json_encode($catShipTransactionPoolObject);
 
 // write the file
 

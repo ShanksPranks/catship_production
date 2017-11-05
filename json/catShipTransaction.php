@@ -22,7 +22,7 @@ $catShipTransactionPoolFile = fopen($catShipTransactionPoolFileName, "r+") or di
 
 $catShipTransactionPoolString = file_get_contents($catShipTransactionPoolFileName);
 $catShipTransactionPoolObject = json_decode($catShipTransactionPoolString, true); // make a json object
-
+fclose($catShipTransactionPoolFile);
 
 if (empty($catShipTransactionPoolObject)) {
     error_log("file object was null");
@@ -39,6 +39,8 @@ if (empty($catShipTransactionPoolObject)) {
 
 // turn object back into string
 $catShipTransactionPoolString = json_encode($catShipTransactionPoolObject);
+$catShipTransactionPoolFile = fopen($catShipTransactionPoolFileName, "w") or die("Unable to open file!");
+
 // write and close the file
 fwrite($catShipTransactionPoolFile, $catShipTransactionPoolString);
 fclose($catShipTransactionPoolFile);

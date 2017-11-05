@@ -1,2 +1,5 @@
-[04-Nov-2017 17:52:04 Australia/Canberra] file object was null
-[04-Nov-2017 17:52:04 Australia/Canberra] 
+[05-Nov-2017 19:21:47 Australia/Canberra] PHP Fatal error:  Uncaught exception 'Exception' with message 'GMP extension seems not to be installed' in C:\inetpub\wwwroot\catship_production\json\BitcoinECDSA.php:11
+Stack trace:
+#0 C:\inetpub\wwwroot\catship_production\json\catShipCoinBase.php(7): include()
+#1 {main}
+  thrown in C:\inetpub\wwwroot\catship_production\json\BitcoinECDSA.php on line 11
