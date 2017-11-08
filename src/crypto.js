@@ -11,12 +11,57 @@
  ** -------------------------------------------------------------------------- */
 var debug = true;
 var catShipPublicKey = '040f0da4f9bc680319671277d3bf311f855fffdfacf5d1fdc8bf750f5cf022c9445503f1e6675ec6abd0e892de702851869eec8144a22ae83e6e8497fc12c63e04'; // tricky bit
+var minerPrivatKey = 'e56d40bb4f1f5e702cb644ef69bda15aa374a8a7284b13a59ba1550e000b091f';
+
+var k1PublicKey = '041c4bc717563647d7980e5f46b79c3b68eb11667559f8b70ab07b737e985d33f078dd404e1abe0ffc752e9ebb1df1b38853f2d8a79ec54aaea91827779897c5a5';
+var k1PrivateKey = '723a7e594b3cf567682fba1509cd74ee990484f10b6cde03e80f49be49c68822';
+
+      var ec = new KJUR.crypto.ECDSA({
+            'curve': 'secp256k1'
+        });
+      /*
+      var keypair = ec.generateKeyPairHex();
+      var publicKey = keypair.ecpubhex; // hexadecimal string of EC public key
+      var privateKey = keypair.ecprvhex; // hexadecimal string of EC private key (=d)
+      console.log('new k1 public:');
+      console.log(publicKey);
+      console.log('new k1 private:');
+      console.log(privateKey);
+      */
+
+    var md = new KJUR.crypto.MessageDigest({
+        alg: "sha256",
+        "prov": "cryptojs"
+    });
+  
+    md.updateString('040560');
+    var SHA256Hash = md.digest();
+    console.log('test hashed text:');
+    console.log(SHA256Hash);
+    var signature = ec.signHex(SHA256Hash, k1PrivateKey);;
+    console.log('test signature:');
+    console.log(signature);
+
+//var minerPrivatKeyObject = KEYUTIL.getKey(minerPrivatKey, null, "pkcs8prv");
+//console.log(minerPrivatKeyObject);
+
+var ecdsa = new KJUR.crypto.Signature({"alg": "SHA256withECDSA"});
+//KJUR.crypto.ECDSA.initSign({'ecprvhex': minerPrivatKey, 'eccurvename': 'secp256r1'});
+//KJUR.crypto.ECDSA.initSign({'ecprvhex': parse_PKCS8PrvKey(minerPrivatKey), 'eccurvename': 'secp256r1'});
+
+
 // global variables fed from the peers
 var currentCoinReward = '100.000000000';
 var currentDifficulty = '7';
 var transactionPool = [];
 var catShipChain = [];
 
+//var ec = new KJUR.crypto.ECDSA({'curve': 'secp256r1'});
+var sig = KJUR.crypto.ECDSA.parseSigHex('3046022100fc2f4a46a403ece9fee2fb61f8f28d2e231ff7ccb402e3c32aed907bbfb03e28022100ece1cad3062a65bce9a7b6bd187e86e5e46b35b7c1cd8d4019e461cf44475946');
+
+console.log('test using sigparsnip:');
+//var derstring = KJUR.asn1.DERAbstractString({'str': stringy});
+console.log(sig);
 
 /* -----------------------------------------------------------------------------
  ** initialization code
@@ -282,6 +327,10 @@ function catShipTransaction(senderAddressIn, receiverAddressIn, messageIn, value
     // if this is a coin base transaction the signature will be pre-provided 
     if (signatureIn != null) {
         this.signature = signatureIn;
+        console.log('signature from php file:');
+        console.log(signatureIn);
+        console.log('signature using this jsrsasign:');
+        console.log(ec.signHex(this.transactionPlainText, minerPrivatKey));
     } else {
         // sign the plain text of the entire transaction 
         this.signature = ec.signHex(this.transactionPlainText, prvhexIn);
@@ -353,7 +402,7 @@ function validateTransaction(catShipTransactionIn) {
     // check balance of sender is sufficient
     var validationCount = 0;
     var senderBal = getUserBalance(catShipTransactionIn.senderAddress, null);
-    if (senderBal >= catShipTransactionIn.value) {
+    if ((senderBal >= catShipTransactionIn.value) || (catShipTransactionIn.senderAddress == catShipPublicKey)) {
         validationCount += 1;
     };
     // check that the transaction amount is > 0
@@ -375,7 +424,9 @@ function validateTransaction(catShipTransactionIn) {
     {
     console.log("var result = ec.verifyHex(catShipTransactionIn.transactionPlainText, catShipTransactionIn.signature, catShipTransactionIn.senderAddress);");
     console.log(catShipTransactionIn.transactionPlainText);
+    console.log("signature:");
     console.log(catShipTransactionIn.signature);
+    console.log("senderAddress");
     console.log(catShipTransactionIn.senderAddress);
     }
 
@@ -388,9 +439,14 @@ function validateTransaction(catShipTransactionIn) {
         catShipTransactionIn.isValid = true;
         var scope = angular.element(document.getElementById('send')).scope();
         scope.user.TransactionStatus = 'Success!';
+
     } else {
         var scope = angular.element(document.getElementById('send')).scope();
         scope.user.TransactionStatus = 'Failed! Error Code: ' + validationCount;
+        if (debug == true)
+        {
+            console.log('the error code receieved from the system was: ' + validationCount);
+        }
     };
 
 }
