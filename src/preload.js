@@ -83,18 +83,6 @@ preload.prototype = {
             this.game.load.json('myJson', 'json/myJson.json');
         }
 
-        var jsonExists = 1;
-        $.get('json/catShipChain.json')
-            .done(function() {
-                jsonExists = 1;
-            }).fail(function() {
-                jsonExists = 0;
-                console.log('was unable to retrieve the catshipChain, will create new one...');
-            })
-        if (jsonExists == 1) {
-            this.game.load.json('catShipChain', 'json/catShipChain.json');
-        }
-
     },
     create: function() {
         this.game.state.start("GameTitle");

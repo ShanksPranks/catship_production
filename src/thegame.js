@@ -161,8 +161,6 @@ this.game.time.advancedTiming = true;
         timer.start();
         timer.loop(levelSpeed, this.updateCounter, this);
 
-        catShipChain = this.game.cache.getJSON('catShipChain');
-        console.log(catShipChain);
         // this is where we access the online level data 
         catshipLevels = this.game.cache.getJSON('catshipLevels');
         //        console.log('Pyramids Array: ' + catshipLevels.Pyramids.length);

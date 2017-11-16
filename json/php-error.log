@@ -1,153 +1,120 @@
-[08-Nov-2017 19:08:05 Australia/Canberra] test using Phactor:
-[08-Nov-2017 19:08:05 Australia/Canberra] 30460221009f4df6d3e24fa3b5ef2c877ac1a7d23fbb5fc35d826b68de3413167aa24c73f6022100bea1153140d94bb7b2020b9079410dd600ed4d4511ec37dbc5315b0e93772af8
-[08-Nov-2017 19:08:05 Australia/Canberra] looping through keys
-[08-Nov-2017 19:08:05 Australia/Canberra] minerAddressIn
-[08-Nov-2017 19:08:05 Australia/Canberra] 04fe6e6a3ffb328f3998b02371a9cc6dbdabaa564872cf26c71f1249ada4293ecca91fdffef883d5275c0e6d0c670b2905d7451b83666b3570170c0b828c140d10
-[08-Nov-2017 19:08:05 Australia/Canberra] looping through keys
-[08-Nov-2017 19:08:05 Australia/Canberra] coinRewardIn
-[08-Nov-2017 19:08:05 Australia/Canberra] 100
-[08-Nov-2017 19:08:05 Australia/Canberra] looping through keys
-[08-Nov-2017 19:08:05 Australia/Canberra] utcTimeStamp
-[08-Nov-2017 19:08:05 Australia/Canberra] 1510128485173
-[08-Nov-2017 19:08:05 Australia/Canberra] transactionPlainText:
-[08-Nov-2017 19:08:05 Australia/Canberra] 040f0da4f9bc680319671277d3bf311f855fffdfacf5d1fdc8bf750f5cf022c9445503f1e6675ec6abd0e892de702851869eec8144a22ae83e6e8497fc12c63e0404fe6e6a3ffb328f3998b02371a9cc6dbdabaa564872cf26c71f1249ada4293ecca91fdffef883d5275c0e6d0c670b2905d7451b83666b3570170c0b828c140d10freshly minted kitty goodness1001510128485173
-[08-Nov-2017 23:21:15 Australia/Canberra] looping through keys
-[08-Nov-2017 23:21:15 Australia/Canberra] minerAddressIn
-[08-Nov-2017 23:21:15 Australia/Canberra] 04fe6e6a3ffb328f3998b02371a9cc6dbdabaa564872cf26c71f1249ada4293ecca91fdffef883d5275c0e6d0c670b2905d7451b83666b3570170c0b828c140d10
-[08-Nov-2017 23:21:15 Australia/Canberra] looping through keys
-[08-Nov-2017 23:21:15 Australia/Canberra] coinRewardIn
-[08-Nov-2017 23:21:15 Australia/Canberra] 100
-[08-Nov-2017 23:21:15 Australia/Canberra] looping through keys
-[08-Nov-2017 23:21:15 Australia/Canberra] utcTimeStamp
-[08-Nov-2017 23:21:15 Australia/Canberra] 1510143675201
-[08-Nov-2017 23:21:15 Australia/Canberra] transactionPlainText:
-[08-Nov-2017 23:21:15 Australia/Canberra] 041c4bc717563647d7980e5f46b79c3b68eb11667559f8b70ab07b737e985d33f078dd404e1abe0ffc752e9ebb1df1b38853f2d8a79ec54aaea91827779897c5a504fe6e6a3ffb328f3998b02371a9cc6dbdabaa564872cf26c71f1249ada4293ecca91fdffef883d5275c0e6d0c670b2905d7451b83666b3570170c0b828c140d10freshly minted kitty goodness1001510143675201
-[08-Nov-2017 23:39:56 Australia/Canberra] looping through keys
-[08-Nov-2017 23:39:56 Australia/Canberra] minerAddressIn
-[08-Nov-2017 23:39:56 Australia/Canberra] 04be9ade874afaeef377de87136264a0e2bc1d9ed1caebc4cac8823f9710c042dd95d5f03058cea82af33b31ffe41c4cd378b65753823b1683d9acf3f144fde575
-[08-Nov-2017 23:39:56 Australia/Canberra] looping through keys
-[08-Nov-2017 23:39:56 Australia/Canberra] coinRewardIn
-[08-Nov-2017 23:39:56 Australia/Canberra] 100
-[08-Nov-2017 23:39:56 Australia/Canberra] looping through keys
-[08-Nov-2017 23:39:56 Australia/Canberra] utcTimeStamp
-[08-Nov-2017 23:39:56 Australia/Canberra] 1510144796427
-[08-Nov-2017 23:39:56 Australia/Canberra] transactionPlainText:
-[08-Nov-2017 23:39:56 Australia/Canberra] 041c4bc717563647d7980e5f46b79c3b68eb11667559f8b70ab07b737e985d33f078dd404e1abe0ffc752e9ebb1df1b38853f2d8a79ec54aaea91827779897c5a504be9ade874afaeef377de87136264a0e2bc1d9ed1caebc4cac8823f9710c042dd95d5f03058cea82af33b31ffe41c4cd378b65753823b1683d9acf3f144fde575freshly minted kitty goodness1001510144796427
-[08-Nov-2017 23:39:56 Australia/Canberra] file object was null
-[08-Nov-2017 23:39:56 Australia/Canberra] PHP Notice:  Undefined offset: 0 in C:\inetpub\wwwroot\catship_production\json\catShipTransaction.php on line 29
-[08-Nov-2017 23:39:56 Australia/Canberra] 
-[08-Nov-2017 23:40:51 Australia/Canberra] file object was not null, pushing
-[08-Nov-2017 23:40:51 Australia/Canberra] 041c4bc717563647d7980e5f46b79c3b68eb11667559f8b70ab07b737e985d33f078dd404e1abe0ffc752e9ebb1df1b38853f2d8a79ec54aaea91827779897c5a5
-[08-Nov-2017 23:41:13 Australia/Canberra] looping through keys
-[08-Nov-2017 23:41:13 Australia/Canberra] minerAddressIn
-[08-Nov-2017 23:41:13 Australia/Canberra] 04be9ade874afaeef377de87136264a0e2bc1d9ed1caebc4cac8823f9710c042dd95d5f03058cea82af33b31ffe41c4cd378b65753823b1683d9acf3f144fde575
-[08-Nov-2017 23:41:13 Australia/Canberra] looping through keys
-[08-Nov-2017 23:41:13 Australia/Canberra] coinRewardIn
-[08-Nov-2017 23:41:13 Australia/Canberra] 100
-[08-Nov-2017 23:41:13 Australia/Canberra] looping through keys
-[08-Nov-2017 23:41:13 Australia/Canberra] utcTimeStamp
-[08-Nov-2017 23:41:13 Australia/Canberra] 1510144873475
-[08-Nov-2017 23:41:13 Australia/Canberra] transactionPlainText:
-[08-Nov-2017 23:41:13 Australia/Canberra] 041c4bc717563647d7980e5f46b79c3b68eb11667559f8b70ab07b737e985d33f078dd404e1abe0ffc752e9ebb1df1b38853f2d8a79ec54aaea91827779897c5a504be9ade874afaeef377de87136264a0e2bc1d9ed1caebc4cac8823f9710c042dd95d5f03058cea82af33b31ffe41c4cd378b65753823b1683d9acf3f144fde575freshly minted kitty goodness1001510144873475
-[08-Nov-2017 23:41:13 Australia/Canberra] file object was not null, pushing
-[08-Nov-2017 23:41:13 Australia/Canberra] 041c4bc717563647d7980e5f46b79c3b68eb11667559f8b70ab07b737e985d33f078dd404e1abe0ffc752e9ebb1df1b38853f2d8a79ec54aaea91827779897c5a5
-[08-Nov-2017 23:48:39 Australia/Canberra] looping through keys
-[08-Nov-2017 23:48:39 Australia/Canberra] minerAddressIn
-[08-Nov-2017 23:48:39 Australia/Canberra] 04eb998fc2b5bdc103a52e278fbcfde3baef0b12b66794f7694aed454b0f068f5bf89db11f436984c7cb98e4b1bbb2feb2d979e16fc612195c8a62a91b03d9a419
-[08-Nov-2017 23:48:39 Australia/Canberra] looping through keys
-[08-Nov-2017 23:48:39 Australia/Canberra] coinRewardIn
-[08-Nov-2017 23:48:39 Australia/Canberra] 100
-[08-Nov-2017 23:48:39 Australia/Canberra] looping through keys
-[08-Nov-2017 23:48:39 Australia/Canberra] utcTimeStamp
-[08-Nov-2017 23:48:39 Australia/Canberra] 1510145319241
-[08-Nov-2017 23:48:39 Australia/Canberra] transactionPlainText:
-[08-Nov-2017 23:48:39 Australia/Canberra] 041c4bc717563647d7980e5f46b79c3b68eb11667559f8b70ab07b737e985d33f078dd404e1abe0ffc752e9ebb1df1b38853f2d8a79ec54aaea91827779897c5a504eb998fc2b5bdc103a52e278fbcfde3baef0b12b66794f7694aed454b0f068f5bf89db11f436984c7cb98e4b1bbb2feb2d979e16fc612195c8a62a91b03d9a419freshly minted kitty goodness1001510145319241
-[08-Nov-2017 23:48:39 Australia/Canberra] file object was not null, pushing
-[08-Nov-2017 23:48:39 Australia/Canberra] 041c4bc717563647d7980e5f46b79c3b68eb11667559f8b70ab07b737e985d33f078dd404e1abe0ffc752e9ebb1df1b38853f2d8a79ec54aaea91827779897c5a5
-[08-Nov-2017 23:49:48 Australia/Canberra] file object was null
-[08-Nov-2017 23:49:48 Australia/Canberra] PHP Notice:  Undefined offset: 0 in C:\inetpub\wwwroot\catship_production\json\catShipTransaction.php on line 29
-[08-Nov-2017 23:49:48 Australia/Canberra] 
-[08-Nov-2017 23:50:00 Australia/Canberra] looping through keys
-[08-Nov-2017 23:50:00 Australia/Canberra] minerAddressIn
-[08-Nov-2017 23:50:00 Australia/Canberra] 04eb998fc2b5bdc103a52e278fbcfde3baef0b12b66794f7694aed454b0f068f5bf89db11f436984c7cb98e4b1bbb2feb2d979e16fc612195c8a62a91b03d9a419
-[08-Nov-2017 23:50:00 Australia/Canberra] looping through keys
-[08-Nov-2017 23:50:00 Australia/Canberra] coinRewardIn
-[08-Nov-2017 23:50:00 Australia/Canberra] 100
-[08-Nov-2017 23:50:00 Australia/Canberra] looping through keys
-[08-Nov-2017 23:50:00 Australia/Canberra] utcTimeStamp
-[08-Nov-2017 23:50:00 Australia/Canberra] 1510145400465
-[08-Nov-2017 23:50:00 Australia/Canberra] transactionPlainText:
-[08-Nov-2017 23:50:00 Australia/Canberra] 041c4bc717563647d7980e5f46b79c3b68eb11667559f8b70ab07b737e985d33f078dd404e1abe0ffc752e9ebb1df1b38853f2d8a79ec54aaea91827779897c5a504eb998fc2b5bdc103a52e278fbcfde3baef0b12b66794f7694aed454b0f068f5bf89db11f436984c7cb98e4b1bbb2feb2d979e16fc612195c8a62a91b03d9a419freshly minted kitty goodness1001510145400465
-[08-Nov-2017 23:50:00 Australia/Canberra] file object was not null, pushing
-[08-Nov-2017 23:50:00 Australia/Canberra] 04eb998fc2b5bdc103a52e278fbcfde3baef0b12b66794f7694aed454b0f068f5bf89db11f436984c7cb98e4b1bbb2feb2d979e16fc612195c8a62a91b03d9a419
-[08-Nov-2017 23:54:38 Australia/Canberra] looping through keys
-[08-Nov-2017 23:54:38 Australia/Canberra] minerAddressIn
-[08-Nov-2017 23:54:38 Australia/Canberra] 04eb998fc2b5bdc103a52e278fbcfde3baef0b12b66794f7694aed454b0f068f5bf89db11f436984c7cb98e4b1bbb2feb2d979e16fc612195c8a62a91b03d9a419
-[08-Nov-2017 23:54:38 Australia/Canberra] looping through keys
-[08-Nov-2017 23:54:38 Australia/Canberra] coinRewardIn
-[08-Nov-2017 23:54:38 Australia/Canberra] 100
-[08-Nov-2017 23:54:38 Australia/Canberra] looping through keys
-[08-Nov-2017 23:54:38 Australia/Canberra] utcTimeStamp
-[08-Nov-2017 23:54:38 Australia/Canberra] 1510145678519
-[08-Nov-2017 23:54:38 Australia/Canberra] transactionPlainText:
-[08-Nov-2017 23:54:38 Australia/Canberra] 041c4bc717563647d7980e5f46b79c3b68eb11667559f8b70ab07b737e985d33f078dd404e1abe0ffc752e9ebb1df1b38853f2d8a79ec54aaea91827779897c5a504eb998fc2b5bdc103a52e278fbcfde3baef0b12b66794f7694aed454b0f068f5bf89db11f436984c7cb98e4b1bbb2feb2d979e16fc612195c8a62a91b03d9a419freshly minted kitty goodness1001510145678519
-[08-Nov-2017 23:54:38 Australia/Canberra] file object was null
-[08-Nov-2017 23:54:38 Australia/Canberra] PHP Notice:  Undefined offset: 0 in C:\inetpub\wwwroot\catship_production\json\catShipTransaction.php on line 29
-[08-Nov-2017 23:54:38 Australia/Canberra] 
-[08-Nov-2017 23:55:32 Australia/Canberra] looping through keys
-[08-Nov-2017 23:55:32 Australia/Canberra] minerAddressIn
-[08-Nov-2017 23:55:32 Australia/Canberra] 04eb998fc2b5bdc103a52e278fbcfde3baef0b12b66794f7694aed454b0f068f5bf89db11f436984c7cb98e4b1bbb2feb2d979e16fc612195c8a62a91b03d9a419
-[08-Nov-2017 23:55:32 Australia/Canberra] looping through keys
-[08-Nov-2017 23:55:32 Australia/Canberra] coinRewardIn
-[08-Nov-2017 23:55:32 Australia/Canberra] 100
-[08-Nov-2017 23:55:32 Australia/Canberra] looping through keys
-[08-Nov-2017 23:55:32 Australia/Canberra] utcTimeStamp
-[08-Nov-2017 23:55:32 Australia/Canberra] 1510145732351
-[08-Nov-2017 23:55:32 Australia/Canberra] transactionPlainText:
-[08-Nov-2017 23:55:32 Australia/Canberra] 041c4bc717563647d7980e5f46b79c3b68eb11667559f8b70ab07b737e985d33f078dd404e1abe0ffc752e9ebb1df1b38853f2d8a79ec54aaea91827779897c5a504eb998fc2b5bdc103a52e278fbcfde3baef0b12b66794f7694aed454b0f068f5bf89db11f436984c7cb98e4b1bbb2feb2d979e16fc612195c8a62a91b03d9a419freshly minted kitty goodness1001510145732351
-[08-Nov-2017 23:55:32 Australia/Canberra] file object was null
-[08-Nov-2017 23:55:32 Australia/Canberra] PHP Notice:  Undefined offset: 0 in C:\inetpub\wwwroot\catship_production\json\catShipTransaction.php on line 29
-[08-Nov-2017 23:55:32 Australia/Canberra] 
-[08-Nov-2017 23:56:45 Australia/Canberra] looping through keys
-[08-Nov-2017 23:56:45 Australia/Canberra] minerAddressIn
-[08-Nov-2017 23:56:45 Australia/Canberra] 04eb998fc2b5bdc103a52e278fbcfde3baef0b12b66794f7694aed454b0f068f5bf89db11f436984c7cb98e4b1bbb2feb2d979e16fc612195c8a62a91b03d9a419
-[08-Nov-2017 23:56:45 Australia/Canberra] looping through keys
-[08-Nov-2017 23:56:45 Australia/Canberra] coinRewardIn
-[08-Nov-2017 23:56:45 Australia/Canberra] 100
-[08-Nov-2017 23:56:45 Australia/Canberra] looping through keys
-[08-Nov-2017 23:56:45 Australia/Canberra] utcTimeStamp
-[08-Nov-2017 23:56:45 Australia/Canberra] 1510145805206
-[08-Nov-2017 23:56:45 Australia/Canberra] transactionPlainText:
-[08-Nov-2017 23:56:45 Australia/Canberra] 041c4bc717563647d7980e5f46b79c3b68eb11667559f8b70ab07b737e985d33f078dd404e1abe0ffc752e9ebb1df1b38853f2d8a79ec54aaea91827779897c5a504eb998fc2b5bdc103a52e278fbcfde3baef0b12b66794f7694aed454b0f068f5bf89db11f436984c7cb98e4b1bbb2feb2d979e16fc612195c8a62a91b03d9a419freshly minted kitty goodness1001510145805206
-[08-Nov-2017 23:56:45 Australia/Canberra] file object was null
-[08-Nov-2017 23:56:45 Australia/Canberra] PHP Notice:  Undefined offset: 0 in C:\inetpub\wwwroot\catship_production\json\catShipTransaction.php on line 29
-[08-Nov-2017 23:56:45 Australia/Canberra] 
-[08-Nov-2017 23:56:53 Australia/Canberra] looping through keys
-[08-Nov-2017 23:56:53 Australia/Canberra] minerAddressIn
-[08-Nov-2017 23:56:53 Australia/Canberra] 04eb998fc2b5bdc103a52e278fbcfde3baef0b12b66794f7694aed454b0f068f5bf89db11f436984c7cb98e4b1bbb2feb2d979e16fc612195c8a62a91b03d9a419
-[08-Nov-2017 23:56:53 Australia/Canberra] looping through keys
-[08-Nov-2017 23:56:53 Australia/Canberra] coinRewardIn
-[08-Nov-2017 23:56:53 Australia/Canberra] 100
-[08-Nov-2017 23:56:53 Australia/Canberra] looping through keys
-[08-Nov-2017 23:56:53 Australia/Canberra] utcTimeStamp
-[08-Nov-2017 23:56:53 Australia/Canberra] 1510145813918
-[08-Nov-2017 23:56:53 Australia/Canberra] transactionPlainText:
-[08-Nov-2017 23:56:53 Australia/Canberra] 041c4bc717563647d7980e5f46b79c3b68eb11667559f8b70ab07b737e985d33f078dd404e1abe0ffc752e9ebb1df1b38853f2d8a79ec54aaea91827779897c5a504eb998fc2b5bdc103a52e278fbcfde3baef0b12b66794f7694aed454b0f068f5bf89db11f436984c7cb98e4b1bbb2feb2d979e16fc612195c8a62a91b03d9a419freshly minted kitty goodness1001510145813918
-[08-Nov-2017 23:56:54 Australia/Canberra] file object was null
-[08-Nov-2017 23:56:54 Australia/Canberra] PHP Notice:  Undefined offset: 0 in C:\inetpub\wwwroot\catship_production\json\catShipTransaction.php on line 29
-[08-Nov-2017 23:56:54 Australia/Canberra] 
-[08-Nov-2017 23:56:54 Australia/Canberra] PHP Warning:  Invalid argument supplied for foreach() in C:\inetpub\wwwroot\catship_production\json\catShipBlock.php on line 102
-[08-Nov-2017 23:56:54 Australia/Canberra] PHP Warning:  array_values() expects parameter 1 to be array, null given in C:\inetpub\wwwroot\catship_production\json\catShipBlock.php on line 138
-[09-Nov-2017 00:03:15 Australia/Canberra] looping through keys
-[09-Nov-2017 00:03:15 Australia/Canberra] minerAddressIn
-[09-Nov-2017 00:03:15 Australia/Canberra] 04eb998fc2b5bdc103a52e278fbcfde3baef0b12b66794f7694aed454b0f068f5bf89db11f436984c7cb98e4b1bbb2feb2d979e16fc612195c8a62a91b03d9a419
-[09-Nov-2017 00:03:15 Australia/Canberra] looping through keys
-[09-Nov-2017 00:03:15 Australia/Canberra] coinRewardIn
-[09-Nov-2017 00:03:15 Australia/Canberra] 100
-[09-Nov-2017 00:03:15 Australia/Canberra] looping through keys
-[09-Nov-2017 00:03:15 Australia/Canberra] utcTimeStamp
-[09-Nov-2017 00:03:15 Australia/Canberra] 1510146195692
-[09-Nov-2017 00:03:15 Australia/Canberra] transactionPlainText:
-[09-Nov-2017 00:03:15 Australia/Canberra] 041c4bc717563647d7980e5f46b79c3b68eb11667559f8b70ab07b737e985d33f078dd404e1abe0ffc752e9ebb1df1b38853f2d8a79ec54aaea91827779897c5a504eb998fc2b5bdc103a52e278fbcfde3baef0b12b66794f7694aed454b0f068f5bf89db11f436984c7cb98e4b1bbb2feb2d979e16fc612195c8a62a91b03d9a419freshly minted kitty goodness1001510146195692
-[09-Nov-2017 00:03:16 Australia/Canberra] file object was null
-[09-Nov-2017 00:03:16 Australia/Canberra] 
+[16-Nov-2017 18:51:21 Australia/Canberra] players ip address
+[16-Nov-2017 18:51:21 Australia/Canberra] ::1
+[16-Nov-2017 18:51:21 Australia/Canberra] looping through keys
+[16-Nov-2017 18:51:21 Australia/Canberra] checkpointTotal
+[16-Nov-2017 18:51:21 Australia/Canberra] 107
+[16-Nov-2017 18:51:21 Australia/Canberra] looping through keys
+[16-Nov-2017 18:51:21 Australia/Canberra] checkpointEnemyCount
+[16-Nov-2017 18:51:21 Australia/Canberra] 12
+[16-Nov-2017 18:51:21 Australia/Canberra] looping through keys
+[16-Nov-2017 18:51:21 Australia/Canberra] checkpointSb
+[16-Nov-2017 18:51:21 Australia/Canberra] 1
+[16-Nov-2017 18:51:21 Australia/Canberra] looping through keys
+[16-Nov-2017 18:51:21 Australia/Canberra] checkpointPyramidCount
+[16-Nov-2017 18:51:21 Australia/Canberra] 0
+[16-Nov-2017 18:51:21 Australia/Canberra] looping through keys
+[16-Nov-2017 18:51:21 Australia/Canberra] checkpointPyramidTimer
+[16-Nov-2017 18:51:21 Australia/Canberra] 0
+[16-Nov-2017 18:51:21 Australia/Canberra] looping through keys
+[16-Nov-2017 18:51:21 Australia/Canberra] checkpointPyramidsOffset
+[16-Nov-2017 18:51:21 Australia/Canberra] 1904
+[16-Nov-2017 18:51:21 Australia/Canberra] looping through keys
+[16-Nov-2017 18:51:21 Australia/Canberra] checkpointStage1Y
+[16-Nov-2017 18:51:21 Australia/Canberra] -3720
+[16-Nov-2017 18:51:21 Australia/Canberra] looping through keys
+[16-Nov-2017 18:51:21 Australia/Canberra] checkpointStage2Y
+[16-Nov-2017 18:51:21 Australia/Canberra] 0
+[16-Nov-2017 18:51:21 Australia/Canberra] looping through keys
+[16-Nov-2017 18:51:21 Australia/Canberra] checkpointPyramidsY
+[16-Nov-2017 18:51:21 Australia/Canberra] 1904
+[16-Nov-2017 18:51:21 Australia/Canberra] looping through keys
+[16-Nov-2017 18:51:21 Australia/Canberra] checkpointCheckpoint
+[16-Nov-2017 18:51:21 Australia/Canberra] 0
+[16-Nov-2017 18:51:21 Australia/Canberra] looping through keys
+[16-Nov-2017 18:51:21 Australia/Canberra] checkpointShipFP
+[16-Nov-2017 18:51:21 Australia/Canberra] 0
+[16-Nov-2017 18:51:21 Australia/Canberra] looping through keys
+[16-Nov-2017 18:51:21 Australia/Canberra] checkpointStagespeed
+[16-Nov-2017 18:51:21 Australia/Canberra] 1
+[16-Nov-2017 18:51:21 Australia/Canberra] looping through keys
+[16-Nov-2017 18:51:21 Australia/Canberra] health
+[16-Nov-2017 18:51:21 Australia/Canberra] -1
+[16-Nov-2017 18:51:21 Australia/Canberra] looping through keys
+[16-Nov-2017 18:51:21 Australia/Canberra] alienHealth
+[16-Nov-2017 18:51:21 Australia/Canberra] 12
+[16-Nov-2017 18:51:21 Australia/Canberra] looping through keys
+[16-Nov-2017 18:51:21 Australia/Canberra] total
+[16-Nov-2017 18:51:21 Australia/Canberra] 125
+[16-Nov-2017 18:51:21 Australia/Canberra] looping through keys
+[16-Nov-2017 18:51:21 Australia/Canberra] sb
+[16-Nov-2017 18:51:21 Australia/Canberra] 4
+[16-Nov-2017 18:51:21 Australia/Canberra] looping through keys
+[16-Nov-2017 18:51:21 Australia/Canberra] enemyCount
+[16-Nov-2017 18:51:21 Australia/Canberra] 12
+[16-Nov-2017 18:51:21 Australia/Canberra] looping through keys
+[16-Nov-2017 18:51:21 Australia/Canberra] score
+[16-Nov-2017 18:51:21 Australia/Canberra] 120
+[16-Nov-2017 18:51:21 Australia/Canberra] looping through keys
+[16-Nov-2017 18:51:21 Australia/Canberra] row
+[16-Nov-2017 18:51:21 Australia/Canberra] 3
+[16-Nov-2017 18:51:21 Australia/Canberra] looping through keys
+[16-Nov-2017 18:51:21 Australia/Canberra] pyramidCount
+[16-Nov-2017 18:51:21 Australia/Canberra] 19
+[16-Nov-2017 18:51:21 Australia/Canberra] looping through keys
+[16-Nov-2017 18:51:22 Australia/Canberra] pyramidTimer
+[16-Nov-2017 18:51:22 Australia/Canberra] 123
+[16-Nov-2017 18:51:22 Australia/Canberra] looping through keys
+[16-Nov-2017 18:51:22 Australia/Canberra] pyramidsOffset
+[16-Nov-2017 18:51:22 Australia/Canberra] 2651
+[16-Nov-2017 18:51:22 Australia/Canberra] looping through keys
+[16-Nov-2017 18:51:22 Australia/Canberra] checkpoint
+[16-Nov-2017 18:51:22 Australia/Canberra] 1
+[16-Nov-2017 18:51:22 Australia/Canberra] looping through keys
+[16-Nov-2017 18:51:22 Australia/Canberra] shipFP
+[16-Nov-2017 18:51:22 Australia/Canberra] 0
+[16-Nov-2017 18:51:22 Australia/Canberra] looping through keys
+[16-Nov-2017 18:51:22 Australia/Canberra] stagespeed
+[16-Nov-2017 18:51:22 Australia/Canberra] 4
+[16-Nov-2017 18:51:22 Australia/Canberra] looping through keys
+[16-Nov-2017 18:51:22 Australia/Canberra] shipy
+[16-Nov-2017 18:51:22 Australia/Canberra] 21
+[16-Nov-2017 18:51:22 Australia/Canberra] looping through keys
+[16-Nov-2017 18:51:22 Australia/Canberra] shipx
+[16-Nov-2017 18:51:22 Australia/Canberra] 262
+[16-Nov-2017 18:51:22 Australia/Canberra] looping through keys
+[16-Nov-2017 18:51:22 Australia/Canberra] enemy1Count
+[16-Nov-2017 18:51:22 Australia/Canberra] 4
+[16-Nov-2017 18:51:22 Australia/Canberra] looping through keys
+[16-Nov-2017 18:51:22 Australia/Canberra] enemy2Count
+[16-Nov-2017 18:51:22 Australia/Canberra] 0
+[16-Nov-2017 18:51:22 Australia/Canberra] looping through keys
+[16-Nov-2017 18:51:22 Australia/Canberra] enemy3Count
+[16-Nov-2017 18:51:22 Australia/Canberra] 0
+[16-Nov-2017 18:51:22 Australia/Canberra] looping through keys
+[16-Nov-2017 18:51:22 Australia/Canberra] enemy4Count
+[16-Nov-2017 18:51:22 Australia/Canberra] 0
+[16-Nov-2017 18:51:22 Australia/Canberra] looping through keys
+[16-Nov-2017 18:51:22 Australia/Canberra] pyramidsy
+[16-Nov-2017 18:51:22 Australia/Canberra] 2651
+[16-Nov-2017 18:51:22 Australia/Canberra] looping through keys
+[16-Nov-2017 18:51:22 Australia/Canberra] eventTime
+[16-Nov-2017 18:51:22 Australia/Canberra] 123
+[16-Nov-2017 18:51:22 Australia/Canberra] looping through keys
+[16-Nov-2017 18:51:22 Australia/Canberra] minerAddressIn
+[16-Nov-2017 18:51:22 Australia/Canberra] 04eb998fc2b5bdc103a52e278fbcfde3baef0b12b66794f7694aed454b0f068f5bf89db11f436984c7cb98e4b1bbb2feb2d979e16fc612195c8a62a91b03d9a419
+[16-Nov-2017 18:51:22 Australia/Canberra] looping through keys
+[16-Nov-2017 18:51:22 Australia/Canberra] utcTimeStamp
+[16-Nov-2017 18:51:22 Australia/Canberra] 1510818681740
+[16-Nov-2017 18:51:22 Australia/Canberra] looping through keys
+[16-Nov-2017 18:51:22 Australia/Canberra] enemyBulletsFired
+[16-Nov-2017 18:51:22 Australia/Canberra] 28
+[16-Nov-2017 18:51:22 Australia/Canberra] looping through keys
+[16-Nov-2017 18:51:22 Australia/Canberra] CPTrophy
+[16-Nov-2017 18:51:22 Australia/Canberra] 0
+[16-Nov-2017 18:51:22 Australia/Canberra] looping through keys
+[16-Nov-2017 18:51:22 Australia/Canberra] bonus
+[16-Nov-2017 18:51:22 Australia/Canberra] 0
+[16-Nov-2017 18:51:22 Australia/Canberra] transactionPlainText:
+[16-Nov-2017 18:51:22 Australia/Canberra] 041c4bc717563647d7980e5f46b79c3b68eb11667559f8b70ab07b737e985d33f078dd404e1abe0ffc752e9ebb1df1b38853f2d8a79ec54aaea91827779897c5a504eb998fc2b5bdc103a52e278fbcfde3baef0b12b66794f7694aed454b0f068f5bf89db11f436984c7cb98e4b1bbb2feb2d979e16fc612195c8a62a91b03d9a419cats in space1201510818681740
+[16-Nov-2017 18:51:22 Australia/Canberra] file object was not null, pushing
+[16-Nov-2017 18:51:22 Australia/Canberra] 041c4bc717563647d7980e5f46b79c3b68eb11667559f8b70ab07b737e985d33f078dd404e1abe0ffc752e9ebb1df1b38853f2d8a79ec54aaea91827779897c5a5

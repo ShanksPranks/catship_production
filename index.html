@@ -1,6 +1,58 @@
 <!doctype html>
 <html>
 
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Raleway');
+    p,
+    h2,
+    form,
+    input {
+        font-size: small;
+        font-family: 'Raleway', sans-serif;
+    }
+
+    table,
+    th,
+    td {
+        border: 1px solid grey;
+        border-collapse: collapse;
+        padding: 5px;
+        max-width: 900px;
+        table-layout: fixed;
+        word-wrap: break-word;
+        font-family: 'Raleway', sans-serif;
+        font-size: small;
+    }
+
+    input {
+        width: 500px;
+    }
+
+    table tr:nth-child(odd) {
+        background-color: #f1f1f1;
+        width: 30px;
+    }
+
+    table tr:nth-child(even) {
+        background-color: #ffffff;
+        width: 30px;
+    }
+
+    #wallet,
+    #mine,
+    #send {
+        width: 500px;
+        border: 1px solid grey;
+        padding: 40px;
+    }
+
+    #trans {
+        width: 3800px;
+        border: 1px solid grey;
+        padding: 40px;
+    }
+</style>
+
 <head>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" href="css/catship.css" />
@@ -12,8 +64,9 @@
     <script src="src/jquery-1.11.1.min.js"></script>
     <script src="src/jsrsasign-latest-all-min.js"></script>
     <script src="src/angular.min.js"></script>
-
     <script src="src/crypto.js"></script>
+    <script src="src/cycle.js"></script>
+
     <script src="src/boot.js"></script>
     <script src="src/preload.js"></script>
     <script src="src/gametitle.js"></script>
@@ -23,7 +76,6 @@
     <script>
         //Local Storage Stuff
         var catshipID; // The users unique catship ID! (used for high scores)
-        var userWallet;
 
         var text = '{ "players" : [{ "catshipID":"nada" , "name":"nada" , "highScore":0 , "level":0, "gamesPlayed":0, "lastPlayedDate":0 },{ "catshipID":"othernada" , "name":"othernada" , "highScore":0  , "level":0, "gamesPlayed":0, "lastPlayedDate":0  }]}';
         var jsonObject = JSON.parse(text);
@@ -267,7 +319,7 @@
 
         var scoreString = '';
 
-        var lives = 3;
+        var lives = 1;
 
         var enemy1Bullet;
         var enemy2Bullet;
@@ -296,6 +348,71 @@
 <body>
 
     <div id="game"><a href="crypto.html">Wallet</a></div>
+    <div ng-app="myApp" ng-controller="formCtrl">
+        <form novalidate>
+            <div id="wallet">
+                <h2>WALLET</h2> Private Key:<br><br>
+                <input type="text" width: 250px; ng-model="user.PrvKey"><br><br> Public Key:<br><br>
+                <input type="text" ng-model="user.PubKey"><br>
+                <p> Current Balance: {{master.Balance}}</p>
+                <button ng-click="updateWallet()">UPDATE WALLET</button>
+                <br>
+            </div>
+            <br>
+            <div id="send">
+                <h2>MAKE PAYMENT</h2> Pay to:<br><br>
+                <input type="text" ng-model="user.ReceieverPubKey"><br>
+                <br> Amount:<br><br>
+                <input type="text" ng-model="user.Amount"><br>
+                <br> Message:<br><br>
+                <input type="text" ng-model="user.Message"><br>
+                <br>
+                <button ng-click="sendPayment()">SEND PAYMENT</button>
+                <br>
+                <p> Status: {{master.TransactionStatus}}
+                    <p>
+            </div>
+            <br>
+            <div id="mine">
+                <h2>MINE COINS</h2>
+                <button ng-click="mineCoins()">MINE CATSHIP COINS!</button>
+                <br>
+            </div>
+            <br>
+            <div id="trans">
+                <h2>PREVIOUS TRANSACTIONS</h2>
+                <br>
+                <table>
+                    <thead fix-head>
+                        <tr>
+                            <th>BLOCK</th>
+                            <th>DATE</th>
+                            <th>TRANSACTION ID</th>
+                            <th>SENDER ADDRESS</th>
+                            <th>RECEIVER ADDRESS</th>
+                            <th>VALUE</th>
+                            <th>MESSAGE</th>
+                            <th>SIGNATURE</th>
+                        </tr>
+                    </thead>
+                    <tr ng-repeat="x in names track by $index">
+                        <td>{{ x.blockHeight }}</td>
+                        <td>{{ x.utcTimeStamp | date:'yyyy-MM-dd HH:mm:ss Z'}}</td>
+                        <td>{{ x.transactionID }}</td>
+                        <td>{{ x.senderAddress }}</td>
+                        <td>{{ x.receiverAddress }}</td>
+                        <td>{{ (x.senderAddress==user.PubKey) ? -1*x.value : x.value | number:9 }}</td>
+                        <td>{{ x.message }}</td>
+                        <td>{{ x.signature }}</td>
+                    </tr>
+                </table>
+                <br>
+                <br>
+            </div>
+            <!--p>form = {{user}}</p>
+            <p>master = {{master}}</p-->
+
+    </div>
     <!--<div id = "left">
     <div id="filelist"><a href="http://localhost/catship/?file=nsf/catship1.nsf&subtune=0"></a><br></div>
     <div id="metadata">Loaded: catship (<a href="http://localhost/catship/nsf/?file=nsf/catship1.nsf&subtune=2">next</a> / <a href="http://localhost/catship/nsf/?file=nsf/megaman2.nsf&subtune=0">prev</a>)</div>

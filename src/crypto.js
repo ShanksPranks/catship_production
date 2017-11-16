@@ -1,18 +1,20 @@
+
 /* -----------------------------------------------------------------------------
 -- use this link to test the ECDSA signing
 -- https://kjur.github.io/jsrsasign/sample/sample-ecdsa.html
 
--- temp globals remove later when data connectors exist
- -- bug : add 1 transaction, mine catshipcoins and it creates a duplicate
- -- neaten up code 
- -- do the validate block code
+ -- create seperate clean block and validate block functions
+ -- validate catshipchain function discarding invalid blocks and proposing new block height and catshipchain
+ -- do refresh tx pool and catshipchain on 5 second intervals
+ -- implement catship game score array and tx pool (hide in regular transactions ?) 
+ -- implement mining uses game score array 
  -- do the vote on block code (defaults to yes can be set to no)
  -- implement ddos protection for transactions (must get token from server ? )
  ** -------------------------------------------------------------------------- */
 /* -----------------------------------------------------------------------------
  ** global variables
  ** -------------------------------------------------------------------------- */
-var debug = false;
+var debug = true;
 var curveType = 'secp256k1'; // currently only secp256k1 supported by php library being used
 var curveDigestHash = 'sha256'; // currently only sha256 supported by php library being used
 var messageDigestHash = 'sha384'; //'sha384' or 'sha256';
@@ -23,7 +25,11 @@ var currentCoinReward = '100.000000000';
 var currentDifficulty = '7';
 var transactionPool = [];
 var catShipChain = [];
-
+var userWallet = initializeCatShipCoinWallet();
+if (debug == true) {
+ console.log('wallet fetched from local storage...');
+ console.log(userWallet);
+}
 /* -----------------------------------------------------------------------------
  ** initialization code
  ** -------------------------------------------------------------------------- */
@@ -45,6 +51,10 @@ $.ajax({
    console.log('block chain fetched from server...');
    console.log(catShipChain);
   }
+/* wallet */
+if (debug == true) {
+ console.log('initializing wallet...');
+}
 
   userWallet.updateBalance();
   var scope = angular.element(document.getElementById('wallet')).scope();
@@ -98,16 +108,6 @@ $.ajax({
  },
  dataType: 'json'
 });
-
-/* wallet */
-if (debug == true) {
- console.log('initializing wallet...');
-}
-var userWallet = initializeCatShipCoinWallet();
-if (debug == true) {
- console.log('wallet fetched from local storage...');
- console.log(userWallet);
-}
 
 /* -----------------------------------------------------------------------------
  ** wallet ui code
@@ -163,10 +163,8 @@ app.controller('formCtrl', function($scope) {
      console.log('myCoinBase object');
      console.log(myCoinBase);
     }
-
     // If successful we can successfully mine a block
     var newBlock = new catShipBlock(myCoinBase.minerAddressIn, myCoinBase.coinRewardIn, myCoinBase.utcTimeStamp, myCoinBase.signature);
-
     $scope.updateWallet();
    },
    error: function(xhr, status, error) {
@@ -370,6 +368,7 @@ function validateTransaction(catShipTransactionIn) {
 // the prototype for the transaction block
 function catShipBlock(minerAddressIn, coinRewardIn, utcTimeStampIn, signatureIn) {
 
+ this.isValid = false;
  this.utcTimeStamp = utcTimeStampIn;
 
  // lets send the miner reward trans 
@@ -393,7 +392,7 @@ function catShipBlock(minerAddressIn, coinRewardIn, utcTimeStampIn, signatureIn)
  coinbaseTransaction.isPending = false;
  // now add the coin base reward
  this.transactionArray.push(coinbaseTransaction);
-
+ console.log(coinbaseTransaction);
  // previous block hash makes the merkle tree
  if (!(catShipChain[currentBlockHeight] == null)) {
   this.previousBlockID = catShipChain[currentBlockHeight].blockID;
@@ -435,15 +434,15 @@ function catShipBlock(minerAddressIn, coinRewardIn, utcTimeStampIn, signatureIn)
   this.blockID = digestMessage(blockPlainText);
   
   }
-
- this.closeBlock = function() {
-
+  
   this.calculateBlockID();
-  catShipChain.push(this);
- }
+  // validate all the transactions in this block
+  validateCatShipBlock(this);
 
- // once mining is successfull close the block
- this.closeBlock();
+  console.log(this);
+
+  if (this.isValid == true)
+  {
 
  $.ajax({
   type: 'POST',
@@ -452,6 +451,7 @@ function catShipBlock(minerAddressIn, coinRewardIn, utcTimeStampIn, signatureIn)
    jsonObject: JSON.stringify(this)
   },
   success: function(data) {
+      catShipChain.push(this);
    if (debug == true) {
     console.log('successfull post of catship block:');
     console.log(data);
@@ -465,8 +465,42 @@ function catShipBlock(minerAddressIn, coinRewardIn, utcTimeStampIn, signatureIn)
 
 }
 
+}
+
 function validateCatShipBlock(CatShipBlockIn) {
- var tempTransactionArray = CatShipBlockIn.transactionArray;
+    var tempHash = CatShipBlockIn.blockID;
+
+    if (debug == true)
+    {
+    console.log('validating the block...');
+    console.log(CatShipBlockIn);
+    console.log('old block of hash...');
+    console.log(tempHash);
+    console.log('from the horses mouth...');
+    console.log(CatShipBlockIn.blockID);
+    } 
+  // step 1 audit all the transactions in the block to make sure all of them are valid
+  for (var i = 0; i < CatShipBlockIn.transactionArray.length; i++) {
+  validateTransaction(CatShipBlockIn.transactionArray[i]);
+  }
+  CatShipBlockIn.transactionArray = CatShipBlockIn.transactionArray.filter((trans) => trans.isValid == true);
+
+  // step 2 validate the block hash, will fail if anything is differs from original block
+  // what happens when your block you tried to mine fails, you have to click the mine button again
+  
+  CatShipBlockIn.calculateBlockID();
+
+  if (debug == true)
+    {
+    console.log('new block of hash...');
+    console.log(CatShipBlockIn.blockID);
+    console.log('block after validation...');
+    console.log(CatShipBlockIn);
+    } 
+  if (tempHash == CatShipBlockIn.blockID)
+  {
+    CatShipBlockIn.isValid == true;
+  }
 }
 
 function getUserBalance(userAddressIn, transactionArrayIn) {
@@ -518,16 +552,16 @@ function getUserBalance(userAddressIn, transactionArrayIn) {
 
   if (debug == true) {
    console.log('traversing tx pool for users previous transactions...');
+   console.log(transactionPool);
   }
   // also add any pending transactions
   for (var x in transactionPool) {
-
    if (transactionPool.hasOwnProperty(x)) {
     if (transactionPool[x].senderAddress == userWallet.publicKey) {
      transactionArrayIn.push(transactionPool[x]);
      userBalance -= getNum(transactionPool[x].value);
     }
-    if (transactionPool[x].receieverAddress == userWallet.publicKey) {
+    if (transactionPool[x].receiverAddress == userWallet.publicKey) {
      transactionArrayIn.push(transactionPool[x]);
      userBalance += getNum(transactionPool[x].value);
     }

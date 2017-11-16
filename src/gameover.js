@@ -7,6 +7,117 @@ gameOver.prototype = {
 
         if (lives == 0) {
 
+function stateSnapshot()
+{
+this.checkpointTotal = checkpointTotal;
+this.checkpointEnemyCount = checkpointEnemyCount;
+this.checkpointSb = checkpointSb;
+this.checkpointPyramidCount = checkpointPyramidCount;
+this.checkpointPyramidTimer = checkpointPyramidTimer;
+this.checkpointPyramidsOffset = checkpointPyramidsOffset;
+this.checkpointStage1Y = checkpointStage1Y;
+this.checkpointStage2Y = checkpointStage2Y;
+this.checkpointPyramidsY = checkpointPyramidsY;
+this.checkpointCheckpoint = checkpointCheckpoint;
+this.checkpointShipFP = checkpointShipFP;
+this.checkpointStagespeed = checkpointStagespeed;
+this.health = health;
+this.alienHealth = alienHealth;
+this.total = total;
+this.sb = sb;
+this.enemyCount = enemyCount;
+this.score = score;
+this.row = row;
+this.pyramidCount = pyramidCount;
+this.pyramidTimer = pyramidTimer;
+this.pyramidsOffset = pyramidsOffset;
+this.checkpoint = checkpoint;
+this.shipFP = shipFP;
+this.stagespeed = stagespeed;
+this.shipy = ship.y;
+this.shipx = ship.x;
+this.enemy1Count = enemy1Count;
+this.enemy2Count = enemy2Count;
+this.enemy3Count = enemy3Count;
+this.enemy4Count = enemy4Count;
+this.pyramidsy = pyramids.y;
+this.eventTime = eventTime;
+this.minerAddressIn = userWallet.publicKey;
+this.utcTimeStamp = new Date().getTime();
+this.signature;
+this.enemyBulletsFired = enemyBulletsFired;
+this.CPTrophy = CPTrophy;
+this.bonus = bonus;
+this.trophyType = trophyType;
+};
+
+var mySnap = new stateSnapshot();
+console.log(mySnap);
+
+  $.ajax({
+   type: 'POST',
+   url: 'json/receiveGame.php',
+   data: {
+    jsonObject: JSON.stringify(mySnap)
+   },
+   success: function(data) {
+    mySnap.signature = data;
+    if (debug == 1) {
+     console.log('mySnap object');
+     console.log(mySnap);
+    }
+    // If successful we can add the score to the transaction array
+    var scoreTransaction = new catShipTransaction(catShipPublicKey, mySnap.minerAddressIn, 'cats in space', mySnap.score, null, mySnap.signature, mySnap.utcTimeStamp);
+    console.log('current score transation');
+    console.log(scoreTransaction);
+    //var newBlock = new catShipBlock(myCoinBase.minerAddressIn, myCoinBase.coinRewardIn, myCoinBase.utcTimeStamp, myCoinBase.signature);
+    //$scope.updateWallet();
+   },
+   error: function(xhr, status, error) {
+    console.log('xhr thingy: ' + xhr + ', status: ' + status + ', error : ' + error);
+   },
+   dataType: 'text'
+  });
+
+/* 
+
+// post the score to the coinbase 
+ function coinBaseInput() {
+   this.minerAddressIn = userWallet.publicKey;
+   this.coinRewardIn = score;
+   this.utcTimeStamp = new Date().getTime();
+   this.signature;
+  }
+
+  var myCoinBase = new coinBaseInput();
+
+  $.ajax({
+   type: 'POST',
+   url: 'json/catShipCoinBase.php',
+   data: {
+    jsonObject: JSON.stringify(myCoinBase)
+   },
+   success: function(data) {
+    myCoinBase.signature = data;
+    if (debug == 1) {
+     console.log('myCoinBase object');
+     console.log(myCoinBase);
+    }
+    // If successful we can successfully mine a block
+    var scoreTransaction = new catShipTransaction(catShipPublicKey, myCoinBase.minerAddressIn, 'freshly minted kitty goodness', score, null, myCoinBase.signature, myCoinBase.utcTimeStamp);
+    console.log('current score transation');
+    console.log(scoreTransaction);
+    //var newBlock = new catShipBlock(myCoinBase.minerAddressIn, myCoinBase.coinRewardIn, myCoinBase.utcTimeStamp, myCoinBase.signature);
+    //$scope.updateWallet();
+   },
+   error: function(xhr, status, error) {
+    console.log('xhr thingy: ' + xhr + ', status: ' + status + ', error : ' + error);
+   },
+   dataType: 'text'
+  });
+*/
+// end post to coinbase 
+
             myJson = this.game.cache.getJSON('myJson');
 
             if (!myJson) {
