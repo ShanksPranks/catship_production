@@ -18,11 +18,11 @@ var curveType = 'secp256k1'; // currently only secp256k1 supported by php librar
 var curveDigestHash = 'sha256'; // currently only sha256 supported by php library being used
 var messageDigestHash = 'sha384'; //'sha384' or 'sha256';
 var catShipPublicKey = '041c4bc717563647d7980e5f46b79c3b68eb11667559f8b70ab07b737e985d33f078dd404e1abe0ffc752e9ebb1df1b38853f2d8a79ec54aaea91827779897c5a5'; // tricky bit
-var scoreBasePublicKey = '04ce828291cad2e744a27daf8548774ea17f8d789e76f854a338cecf50bb404959c327ffd0ac6fa8c26b8546c2d08f34940e70e9e7312742fe22aa1d6cc72f299f'; 
+var scoreBasePublicKey = '041c4bc717563647d7980e5f46b79c3b68eb11667559f8b70ab07b737e985d33f078dd404e1abe0ffc752e9ebb1df1b38853f2d8a79ec54aaea91827779897c5a5'; // tricky bit
 
 // global variables fed from the peers
 var currentCoinReward = '100.000000000';
-var currentDifficulty = '700';
+var currentDifficulty = '7';
 var blockChainName = 'catShipBlockChain';
 var transactionPoolName = 'catShipTransactionPool';
 var transactionPool = [];
@@ -48,9 +48,7 @@ app.controller('formCtrl', function($scope) {
  $scope.master = {
   PrvKey: userWallet.privateKey,
   PubKey: userWallet.publicKey,
-  Balance: userWallet.balance,
-  ScoreBalance: userWallet.scoreBalance,
-  ScoreRemaining: userWallet.scoreRemaining
+  Balance: userWallet.balance
  };
  $scope.updateWallet = function() {
   userWallet.publicKey = $scope.user.PubKey;
@@ -67,12 +65,6 @@ app.controller('formCtrl', function($scope) {
   $scope.updateWallet();
  };
  $scope.mineCoins = function() {
-  if (userWallet.scoreRemaining > getNum(0))
-  {
-  $scope.user.Message = 'Insufficient Score To Mine A Block!';
-  }
-  else
-  {
   //console.log('mining for a new block...');
   // => launches the video game and returns with reward and signature
   //window.location.href = 'index.html';
@@ -88,7 +80,7 @@ app.controller('formCtrl', function($scope) {
 
   $.ajax({
    type: 'POST',
-   url: 'php/catShipCoinBase.php',
+   url: 'json/catShipCoinBase.php',
    data: {
     jsonObject: JSON.stringify(myCoinBase)
    },
@@ -107,7 +99,7 @@ app.controller('formCtrl', function($scope) {
    },
    dataType: 'text'
   });
-  }
+
 
  };
  $scope.reset = function() {
@@ -146,9 +138,7 @@ function initializeCatShipCoinWallet() {
 function catShipCoinWallet(publicKeyIn, privateKeyIn) {
  this.transactionArray = [];
  this.balance = getNum(0);
- this.pendingBalance = getNum(0);
- this.scoreBalance = getNum(0);
- this.scoreRemaining = getNum(currentDifficulty);
+
  // we neeed an overload here where only private key is required and pub key gets generated
  // we also need a check here to ensure keys are valid catship keys
  if ((publicKeyIn == null) && (privateKeyIn == null)) {
@@ -166,12 +156,12 @@ function catShipCoinWallet(publicKeyIn, privateKeyIn) {
 
  // populates the wallet transaction array and also updates the balances
  // will refresh the wallet UI each time called as the last step
- this.fetchTransactions = function(refreshUIFlag) {
+ this.fetchTransactions = function() {
+   console.log('fetchTransactions');
    this.transactionArray = [];
    this.balance = getNum(0);
    this.pendingBalance = getNum(0);
    this.scoreBalance = getNum(0);
-   this.scoreRemaining = getNum(currentDifficulty);
 
    var credits = [];
    var debits = [];
@@ -207,7 +197,6 @@ function catShipCoinWallet(publicKeyIn, privateKeyIn) {
       if (transactionPool[x].senderAddress == scoreBasePublicKey)
       {
       this.scoreBalance += transactionPool[x].value;
-      this.scoreRemaining -= transactionPool[x].value;
       }
       else
       {
@@ -219,15 +208,10 @@ function catShipCoinWallet(publicKeyIn, privateKeyIn) {
     }
    }
    // end for (var x in transactionPool) 
-   if (refreshUIFlag == true)
-   {
    var scope = angular.element(document.getElementById('wallet')).scope();
    scope.master.Balance = this.balance;
-   scope.master.ScoreBalance = this.scoreBalance;
-   scope.master.ScoreRemaining = this.scoreRemaining;
    scope.names = this.transactionArray;
    scope.$apply();
-   }
 
   } // end this.fetchTransactions(){
 
@@ -284,7 +268,7 @@ function catShipTransaction(senderAddressIn, receiverAddressIn, messageIn, value
 
   $.ajax({
    type: 'POST',
-   url: 'php/catShipTransaction.php',
+   url: 'json/catShipTransaction.php',
    data: {
     jsonObject: JSON.stringify(this)
    },
@@ -311,7 +295,7 @@ function validateTransaction(catShipTransactionIn) {
  }
  // check balance of sender is sufficient
  var validationCount = 0;
- var senderBal = getUserBalance(catShipTransactionIn.senderAddress);
+ var senderBal = getNum(getUserBalance(catShipTransactionIn.senderAddress, null));
  console.log('sender bal: ' + senderBal);
  console.log('catShipTransactionIn.value: ' + catShipTransactionIn.value);
   console.log('catShipPublicKey ' + catShipPublicKey);
@@ -429,7 +413,7 @@ function catShipBlock(minerAddressIn, coinRewardIn, utcTimeStampIn, signatureIn)
 
   $.ajax({
    type: 'POST',
-   url: 'php/catShipBlock.php',
+   url: 'json/catShipBlock.php',
    data: {
     jsonObject: JSON.stringify(this)
    },
@@ -486,6 +470,7 @@ function validateCatShipBlock(CatShipBlockIn) {
  }
 }
 
+
 /* -----------------------------------------------------------------------------
  ** blockchain util
  ** -------------------------------------------------------------------------- */
@@ -507,7 +492,7 @@ function getBlockChain(blockchainNameIn) {
    console.log('blockChain fetched from server/peers...');
    console.log(catShipChain);
    /* update the wallet */
-   userWallet.fetchTransactions(true);
+   userWallet.fetchTransactions();
 
   },
   error: function(xhr, status, error) {
@@ -546,7 +531,7 @@ function getTransactionPool(transactionPoolNameIn) {
     console.log('transaction pool fetched from server/peers...');
     console.log(transactionPool);
 
-   userWallet.fetchTransactions(true);
+   userWallet.fetchTransactions();
 
   },
   error: function(xhr, status, error) {
@@ -641,12 +626,47 @@ function validateSignature(plainTextIn, signatureIn, publicKeyIn) {
 
 // will return a users balance used for other users, not the current user
 // for the current user just call catShipCoinWalet.fetchTransactions()
- function getUserBalance(userAddressIn) {
+function getUserBalance(userAddressIn) {
 
- var tempWallet = new catShipCoinWallet(userAddressIn, 'unknown');
- tempWallet.fetchTransactions();
+ var userBalance = 0;
 
- return tempWallet.balance;
+ var credits = [];
+ var debits = [];
+
+ // loop through all the blocks filtering out users address transactions
+ for (var x in catShipChain) {
+  credits = catShipChain[x].transactionArray.filter((trans) => trans.receiverAddress == userAddressIn);
+  debits = catShipChain[x].transactionArray.filter((trans) => trans.senderAddress == userAddressIn);
+
+  var sum = parseFloat(0);
+  for (var i = 0; i < credits.length; i++) {
+   sum += getNum(credits[i].value);
+  };
+
+  userBalance += getNum(sum);
+
+  var sum = parseFloat(0);
+  for (var i = 0; i < debits.length; i++) {
+   sum += getNum(debits[i].value);
+  };
+
+  userBalance -= getNum(sum);
+
+ } // for (var x in catShipChain) {
+
+ // also add any pending transactions
+ for (var x in transactionPool) {
+  if (transactionPool.hasOwnProperty(x)) {
+   if (transactionPool[x].senderAddress == userWallet.publicKey) {
+    userBalance -= getNum(transactionPool[x].value);
+   }
+   if (transactionPool[x].receiverAddress == userWallet.publicKey) {
+    userBalance += getNum(transactionPool[x].value);
+   }
+  }
+ }
+
+ return userBalance;
 }
 
 /* -----------------------------------------------------------------------------

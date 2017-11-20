@@ -355,7 +355,9 @@
                 <input type="text" width: 250px; ng-model="user.PrvKey"><br><br> Public Key:<br><br>
                 <input type="text" ng-model="user.PubKey"><br>
                 <p> Current Balance: {{master.Balance}}</p>
-                <button ng-click="updateWallet()">UPDATE WALLET</button>
+                <p> Current Score Total: {{master.ScoreBalance}}</p>
+                <p> Remaining Score Required To Mine A Block: {{master.ScoreRemaining}}</p>
+                <!--button ng-click="updateWallet()">UPDATE WALLET</button-->
                 <br>
             </div>
             <br>
@@ -409,8 +411,12 @@
                 <br>
                 <br>
             </div>
-            <!--p>form = {{user}}</p>
-            <p>master = {{master}}</p-->
+            <br>
+                <br>
+                <br>
+                <br>
+            <p>form = {{user}}</p>
+            <p>master = {{master}}</p>
 
     </div>
     <!--<div id = "left">

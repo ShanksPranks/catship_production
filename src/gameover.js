@@ -56,7 +56,7 @@ console.log(mySnap);
 
   $.ajax({
    type: 'POST',
-   url: 'json/receiveGame.php',
+   url: 'php/receiveGame.php',
    data: {
     jsonObject: JSON.stringify(mySnap)
    },
@@ -67,7 +67,7 @@ console.log(mySnap);
      console.log(mySnap);
     }
     // If successful we can add the score to the transaction array
-    var scoreTransaction = new catShipTransaction(catShipPublicKey, mySnap.minerAddressIn, 'cats in space', mySnap.score, null, mySnap.signature, mySnap.utcTimeStamp);
+    var scoreTransaction = new catShipTransaction(scoreBasePublicKey, mySnap.minerAddressIn, 'cats in space', mySnap.score, null, mySnap.signature, mySnap.utcTimeStamp);
     console.log('current score transation');
     console.log(scoreTransaction);
     //var newBlock = new catShipBlock(myCoinBase.minerAddressIn, myCoinBase.coinRewardIn, myCoinBase.utcTimeStamp, myCoinBase.signature);
@@ -79,43 +79,6 @@ console.log(mySnap);
    dataType: 'text'
   });
 
-/* 
-
-// post the score to the coinbase 
- function coinBaseInput() {
-   this.minerAddressIn = userWallet.publicKey;
-   this.coinRewardIn = score;
-   this.utcTimeStamp = new Date().getTime();
-   this.signature;
-  }
-
-  var myCoinBase = new coinBaseInput();
-
-  $.ajax({
-   type: 'POST',
-   url: 'json/catShipCoinBase.php',
-   data: {
-    jsonObject: JSON.stringify(myCoinBase)
-   },
-   success: function(data) {
-    myCoinBase.signature = data;
-    if (debug == 1) {
-     console.log('myCoinBase object');
-     console.log(myCoinBase);
-    }
-    // If successful we can successfully mine a block
-    var scoreTransaction = new catShipTransaction(catShipPublicKey, myCoinBase.minerAddressIn, 'freshly minted kitty goodness', score, null, myCoinBase.signature, myCoinBase.utcTimeStamp);
-    console.log('current score transation');
-    console.log(scoreTransaction);
-    //var newBlock = new catShipBlock(myCoinBase.minerAddressIn, myCoinBase.coinRewardIn, myCoinBase.utcTimeStamp, myCoinBase.signature);
-    //$scope.updateWallet();
-   },
-   error: function(xhr, status, error) {
-    console.log('xhr thingy: ' + xhr + ', status: ' + status + ', error : ' + error);
-   },
-   dataType: 'text'
-  });
-*/
 // end post to coinbase 
 
             myJson = this.game.cache.getJSON('myJson');
@@ -201,7 +164,7 @@ console.log(mySnap);
 
                 $.ajax({
                     type: 'POST',
-                    url: 'json/JsonWriterAJAX.php',
+                    url: 'php/JsonWriterAJAX.php',
                     data: { jsonObject: JSON.stringify(myJson) },
                     success: function (data) {
                         //console.log('successfull post:' + data);
