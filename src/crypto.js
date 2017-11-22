@@ -13,6 +13,7 @@
 /* -----------------------------------------------------------------------------
  ** global variables
  ** -------------------------------------------------------------------------- */
+// static
 var debug = false;
 var curveType = 'secp256k1'; // currently only secp256k1 supported by php library being used
 var curveDigestHash = 'sha256'; // currently only sha256 supported by php library being used
@@ -20,14 +21,27 @@ var messageDigestHash = 'sha384'; //'sha384' or 'sha256';
 var catShipPublicKey = '041c4bc717563647d7980e5f46b79c3b68eb11667559f8b70ab07b737e985d33f078dd404e1abe0ffc752e9ebb1df1b38853f2d8a79ec54aaea91827779897c5a5'; // tricky bit
 var scoreBasePublicKey = '04ce828291cad2e744a27daf8548774ea17f8d789e76f854a338cecf50bb404959c327ffd0ac6fa8c26b8546c2d08f34940e70e9e7312742fe22aa1d6cc72f299f'; 
 
-// global variables fed from the peers
-var currentCoinReward = '100.000000000';
-var currentDifficulty = '700';
+// parameterised
+var targetBlockTime = 60; // 60 seconds
+var sampleBlocks = 10;
+var totalSupply = 42000000; // double what bitcoin uses
+var rewardReductionBlocks = 420000; // double bitcoin 
+var initialCoinReward = 50.000000000;
+var initialDifficulty = 1; // at the start any positive score will mine a block
+
+// variables fed from the peers
 var blockChainName = 'catShipBlockChain';
 var transactionPoolName = 'catShipTransactionPool';
 var transactionPool = [];
 var catShipChain = [];
 var userWallet = initializeCatShipCoinWallet();
+var currentBlockHeight = 0;
+
+// difficulty algorithm so goodly freshness
+var currentDifficulty = 0;
+var currentAvgBlockTime = 0;
+var currentAvgBlockScore = 0;
+// currentDifficulty = (currentAvgBlockTime / targetBlockTime) / currentAvgBlockScore
 
 /* -----------------------------------------------------------------------------
  ** initialization code
@@ -49,6 +63,7 @@ app.controller('formCtrl', function($scope) {
   PrvKey: userWallet.privateKey,
   PubKey: userWallet.publicKey,
   Balance: userWallet.balance,
+  Difficulty: currentDifficulty,
   ScoreBalance: userWallet.scoreBalance,
   ScoreRemaining: userWallet.scoreRemaining
  };
@@ -148,7 +163,8 @@ function catShipCoinWallet(publicKeyIn, privateKeyIn) {
  this.balance = getNum(0);
  this.pendingBalance = getNum(0);
  this.scoreBalance = getNum(0);
- this.scoreRemaining = getNum(currentDifficulty);
+ this.adjustedScore = getNum(0);
+ this.scoreRemaining = this.adjustedScore - currentDifficulty;
  // we neeed an overload here where only private key is required and pub key gets generated
  // we also need a check here to ensure keys are valid catship keys
  if ((publicKeyIn == null) && (privateKeyIn == null)) {
@@ -171,7 +187,7 @@ function catShipCoinWallet(publicKeyIn, privateKeyIn) {
    this.balance = getNum(0);
    this.pendingBalance = getNum(0);
    this.scoreBalance = getNum(0);
-   this.scoreRemaining = getNum(currentDifficulty);
+   this.scoreRemaining = getNum(0);
 
    var credits = [];
    var debits = [];
@@ -183,14 +199,20 @@ function catShipCoinWallet(publicKeyIn, privateKeyIn) {
 
     // add credits one by one to get balance (change to map reduce)
     for (var k = 0; k < credits.length; k++) {
+     if (credits[k].senderAddress != scoreBasePublicKey)
+     {
      this.transactionArray.push(credits[k]);
      this.balance += credits[k].value;
+     }
     }
 
     // add debits one by one to get balance (change to map reduce)
     for (var k = 0; k < debits.length; k++) {
+     if (debits[k].senderAddress != scoreBasePublicKey)
+     {
      this.transactionArray.push(debits[k]);
      this.balance -= debits[k].value;
+     }
     }
 
    } // for (var x in catShipChain) {
@@ -221,10 +243,16 @@ function catShipCoinWallet(publicKeyIn, privateKeyIn) {
    // end for (var x in transactionPool) 
    if (refreshUIFlag == true)
    {
+   // will get the current difficulty 
+   getCurrentAvgBlockStats ();
+   this.scoreRemaining = parseInt(currentDifficulty - this.scoreBalance);
+
+   //refresh the ui.
    var scope = angular.element(document.getElementById('wallet')).scope();
    scope.master.Balance = this.balance;
    scope.master.ScoreBalance = this.scoreBalance;
    scope.master.ScoreRemaining = this.scoreRemaining;
+   scope.master.Difficulty = parseInt(currentDifficulty);
    scope.names = this.transactionArray;
    scope.$apply();
    }
@@ -364,7 +392,8 @@ function catShipBlock(minerAddressIn, coinRewardIn, utcTimeStampIn, signatureIn)
 
  this.isValid = false;
  this.utcTimeStamp = utcTimeStampIn;
-
+ this.elapsedTimeSincePreviousBlock = 0;
+ this.scoreToMineBlock = 0;
  // lets send the miner reward trans 
  //function catShipTransaction(senderAddressIn, receiverAddressIn, messageIn, valueIn, prvhexIn, signatureIn, utcTimeStampIn)
  var coinbaseTransaction = new catShipTransaction(catShipPublicKey, minerAddressIn, 'freshly minted kitty goodness', coinRewardIn, null, signatureIn, utcTimeStampIn);
@@ -373,13 +402,16 @@ function catShipBlock(minerAddressIn, coinRewardIn, utcTimeStampIn, signatureIn)
 
  // the gameScoreArray contains the best scores each miner achieved for this block
  // here we really test the honesty of miners and can block miners who arent accepting scores
- this.gameScoreArray = []; // {publicKey - nonce} 
+
  var currentBlockHeight = getCurrentBlockHeight();
+
+
  if (currentBlockHeight == null) {
   this.blockHeight = parseInt(0);
  } else {
   this.blockHeight = parseInt(currentBlockHeight) + 1;
  }
+ 
 
  // add coinbase height and committed
  coinbaseTransaction.blockHeight = this.blockHeight;
@@ -390,6 +422,8 @@ function catShipBlock(minerAddressIn, coinRewardIn, utcTimeStampIn, signatureIn)
  // previous block hash makes the merkle tree
  if (!(catShipChain[currentBlockHeight] == null)) {
   this.previousBlockID = catShipChain[currentBlockHeight].blockID;
+  // get time elapsed since last block
+  this.elapsedTimeSincePreviousBlock = this.utcTimeStamp/1000 - catShipChain[currentBlockHeight].utcTimeStamp/1000; 
  }
 
  // add all the transactions currently in the pool
@@ -398,10 +432,20 @@ function catShipBlock(minerAddressIn, coinRewardIn, utcTimeStampIn, signatureIn)
    // needs to be atomic!!! get lock,  add, delete from mempool, release lock
    transactionPool[x].blockHeight = this.blockHeight;
    transactionPool[x].isPending = false;
-   if (transactionPool[x].isValid == true) {
+
+   if (transactionPool[x].isValid == true)  {
+    // don't include other peoples scores in the block, leave them in the mem pool
+    if ((transactionPool[x].senderAddress != scoreBasePublicKey) || (transactionPool[x].receiverAddress == minerAddressIn))
+    {
     this.transactionArray.push(transactionPool[x]);
+    // the miners scores must all be added to the block
+    if (transactionPool[x].senderAddress == scoreBasePublicKey)
+    {
+    this.scoreToMineBlock += transactionPool[x].value;
+    }
+    delete transactionPool[x];
+    }
    }
-   delete transactionPool[x];
   }
  }
 
@@ -653,7 +697,7 @@ function validateSignature(plainTextIn, signatureIn, publicKeyIn) {
  ** blockchain util
  ** -------------------------------------------------------------------------- */
 
-// block chain methods 
+// get current block height
 function getCurrentBlockHeight() {
  var maxValue = -1;
  for (var i = 0; i < catShipChain.length; i++) {
@@ -661,6 +705,59 @@ function getCurrentBlockHeight() {
    maxValue = catShipChain[i]['blockHeight'];
   }
  }
-
+ 
+ currentBlockHeight = parseInt(maxValue);
  return parseInt(maxValue);
 }
+
+// get current block height
+function getCurrentAvgBlockStats () {
+
+getCurrentBlockHeight();
+
+var totalTime = getNum(0);
+var totalScore = getNum(0);
+var totalBlocks = getNum(0);
+
+var tempSampleBlocks = getNum(currentBlockHeight-sampleBlocks);
+if (tempSampleBlocks < 0){
+  tempSampleBlocks = getNum(0);
+}
+
+ for (var i = tempSampleBlocks; i <= currentBlockHeight; i++) {
+ totalTime += getNum(catShipChain[i]['elapsedTimeSincePreviousBlock']);
+ totalScore += getNum(catShipChain[i]['scoreToMineBlock']);
+ totalBlocks += getNum(1);
+ }
+ 
+  // avg score for the last x blocks
+  currentAvgBlockScore = totalScore / totalBlocks;
+
+ // here we add on one more sample which is the last block to the current time
+ // helps when system has been idle
+ if(catShipChain[currentBlockHeight] != null)
+ {
+ var tempTime = new Date().getTime();
+ var currentElapsedTime = tempTime/1000 - catShipChain[currentBlockHeight].utcTimeStamp/1000; 
+ totalTime += currentElapsedTime;
+ totalBlocks += 1;
+ }
+
+ currentAvgBlockTime = totalTime / totalBlocks;
+
+ currentDifficulty = (currentAvgBlockTime / targetBlockTime) / currentAvgBlockScore;
+ if (debug = true)
+{
+console.log(currentAvgBlockTime);
+console.log(targetBlockTime);
+console.log(currentAvgBlockScore);
+console.log(currentDifficulty);
+}
+}
+
+// every 3 seconds these guys will fire 
+window.setInterval(function(){
+userWallet.fetchTransactions(true);
+console.log('firing refresh');
+}, 3000); 
+
