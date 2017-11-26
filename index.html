@@ -319,7 +319,7 @@
 
         var scoreString = '';
 
-        var lives = 1;
+        var lives = 3;
 
         var enemy1Bullet;
         var enemy2Bullet;
@@ -347,18 +347,18 @@
 
 <body>
 
-    <div id="game"><a href="crypto.html">Wallet</a></div>
+    <div id="game">
+    <!--a href="crypto.html">Wallet</a-->
+    <!--scroll down for wallet-->
+    </div>
+
     <div ng-app="myApp" ng-controller="formCtrl">
         <form novalidate>
             <div id="wallet">
                 <h2>WALLET</h2> Private Key:<br><br>
                 <input type="text" width: 250px; ng-model="user.PrvKey"><br><br> Public Key:<br><br>
                 <input type="text" ng-model="user.PubKey"><br>
-                <p> Current Balance: {{master.Balance}}</p>
-                <p> Current Score Total: {{master.ScoreBalance}}</p>
-                <p> Current Difficulty: {{master.Difficulty}}</p>
-                <p> Remaining Score Required To Mine A Block: {{master.ScoreRemaining}}</p>
-                <!--button ng-click="updateWallet()">UPDATE WALLET</button-->
+                <p> Current Balance: {{master.Balance | number : 9}}</p>
                 <br>
             </div>
             <br>
@@ -380,6 +380,11 @@
                 <h2>MINE COINS</h2>
                 <button ng-click="mineCoins()">MINE CATSHIP COINS!</button>
                 <br>
+                <p> Current Score Total: {{master.ScoreBalance}}</p>
+                <p> Current Difficulty: {{master.Difficulty}}</p>
+                <p> Remaining Score Required To Mine A Block: {{master.ScoreRemaining}}</p>
+                <p> Status: {{master.MiningStatus}}
+                    <p>
             </div>
             <br>
             <div id="trans">
@@ -416,9 +421,6 @@
                 <br>
                 <br>
                 <br>
-            <p>form = {{user}}</p>
-            <p>master = {{master}}</p>
-
     </div>
     <!--<div id = "left">
     <div id="filelist"><a href="http://localhost/catship/?file=nsf/catship1.nsf&subtune=0"></a><br></div>

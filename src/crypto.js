@@ -5,8 +5,6 @@
  -- create seperate clean block and validate block functions
  -- validate catshipchain function discarding invalid blocks and proposing new block height and catshipchain
  -- do refresh tx pool and catshipchain on 5 second intervals
- -- implement catship game score array and tx pool (hide in regular transactions ?) 
- -- implement mining uses game score array 
  -- do the vote on block code (defaults to yes can be set to no)
  -- implement ddos protection for transactions (must get token from server ? )
  ** -------------------------------------------------------------------------- */
@@ -22,12 +20,12 @@ var catShipPublicKey = '041c4bc717563647d7980e5f46b79c3b68eb11667559f8b70ab07b73
 var scoreBasePublicKey = '04ce828291cad2e744a27daf8548774ea17f8d789e76f854a338cecf50bb404959c327ffd0ac6fa8c26b8546c2d08f34940e70e9e7312742fe22aa1d6cc72f299f'; 
 
 // parameterised
-var targetBlockTime = 60; // 60 seconds
+var targetBlockTime = 120; // 120 seconds
 var sampleBlocks = 10;
 var totalSupply = 42000000; // double what bitcoin uses
 var rewardReductionBlocks = 420000; // double bitcoin 
 var initialCoinReward = 50.000000000;
-var initialDifficulty = 1; // at the start any positive score will mine a block
+var minimumDifficulty = 80; // at the start any positive score will mine a block
 
 // variables fed from the peers
 var blockChainName = 'catShipBlockChain';
@@ -38,7 +36,7 @@ var userWallet = initializeCatShipCoinWallet();
 var currentBlockHeight = 0;
 
 // difficulty algorithm so goodly freshness
-var currentDifficulty = 0;
+var currentDifficulty = minimumDifficulty;
 var currentAvgBlockTime = 0;
 var currentAvgBlockScore = 0;
 // currentDifficulty = (currentAvgBlockTime / targetBlockTime) / currentAvgBlockScore
@@ -71,6 +69,9 @@ app.controller('formCtrl', function($scope) {
   userWallet.publicKey = $scope.user.PubKey;
   userWallet.privateKey = $scope.user.PrvKey;
   $scope.user.Balance = userWallet.balance;
+  $scope.user.Difficulty = currentDifficulty;
+  $scope.user.ScoreBalance = userWallet.scoreBalance;
+  $scope.user.ScoreRemaining = userWallet.scoreRemaining;
   $scope.names = userWallet.transactionArray;
   $scope.master = angular.copy($scope.user);
  };
@@ -84,7 +85,7 @@ app.controller('formCtrl', function($scope) {
  $scope.mineCoins = function() {
   if (userWallet.scoreRemaining > getNum(0))
   {
-  $scope.user.Message = 'Insufficient Score To Mine A Block!';
+  $scope.user.MiningStatus = 'Insufficient Score To Mine A Block!';
   }
   else
   {
@@ -249,12 +250,15 @@ function catShipCoinWallet(publicKeyIn, privateKeyIn) {
 
    //refresh the ui.
    var scope = angular.element(document.getElementById('wallet')).scope();
-   scope.master.Balance = this.balance;
-   scope.master.ScoreBalance = this.scoreBalance;
-   scope.master.ScoreRemaining = this.scoreRemaining;
-   scope.master.Difficulty = parseInt(currentDifficulty);
+   scope.user.Balance = this.balance;
+   scope.user.ScoreBalance = this.scoreBalance;
+   scope.user.ScoreRemaining = this.scoreRemaining;
+   scope.user.Difficulty = parseInt(currentDifficulty);
    scope.names = this.transactionArray;
+   scope.updateWallet();
+   //scope.reset();
    scope.$apply();
+
    }
 
   } // end this.fetchTransactions(){
@@ -403,7 +407,7 @@ function catShipBlock(minerAddressIn, coinRewardIn, utcTimeStampIn, signatureIn)
  // the gameScoreArray contains the best scores each miner achieved for this block
  // here we really test the honesty of miners and can block miners who arent accepting scores
 
- var currentBlockHeight = getCurrentBlockHeight();
+ currentBlockHeight = getCurrentBlockHeight();
 
 
  if (currentBlockHeight == null) {
@@ -480,6 +484,8 @@ function catShipBlock(minerAddressIn, coinRewardIn, utcTimeStampIn, signatureIn)
    success: function(data) {
     getBlockChain(blockChainName);
     getTransactionPool(transactionPoolName);
+    var scope = angular.element(document.getElementById('mine')).scope();
+    scope.user.MiningStatus = 'Congrats! You successfully mined block: ' + currentBlockHeight;
     if (debug == true) {
      console.log('successfull post of catship block:');
      console.log(data);
@@ -548,8 +554,8 @@ function getBlockChain(blockchainNameIn) {
   success: function(myData) {
 
    catShipChain = myData;
-   console.log('blockChain fetched from server/peers...');
-   console.log(catShipChain);
+   //console.log('blockChain fetched from server/peers...');
+   //console.log(catShipChain);
    /* update the wallet */
    userWallet.fetchTransactions(true);
 
@@ -587,8 +593,8 @@ function getTransactionPool(transactionPoolNameIn) {
   success: function(myData) {
    transactionPool = myData;
 
-    console.log('transaction pool fetched from server/peers...');
-    console.log(transactionPool);
+    //console.log('transaction pool fetched from server/peers...');
+    //console.log(transactionPool);
 
    userWallet.fetchTransactions(true);
 
@@ -746,7 +752,12 @@ if (tempSampleBlocks < 0){
  currentAvgBlockTime = totalTime / totalBlocks;
 
  currentDifficulty = (currentAvgBlockTime / targetBlockTime) / currentAvgBlockScore;
- if (debug = true)
+ if (currentDifficulty < minimumDifficulty)
+ {
+currentDifficulty = minimumDifficulty;
+ }
+
+ if (debug == true)
 {
 console.log(currentAvgBlockTime);
 console.log(targetBlockTime);
@@ -757,7 +768,12 @@ console.log(currentDifficulty);
 
 // every 3 seconds these guys will fire 
 window.setInterval(function(){
-userWallet.fetchTransactions(true);
-console.log('firing refresh');
+//userWallet.fetchTransactions(true);
+/* block chain fetch async*/
+getBlockChain(blockChainName);
+/* tx pool fetch async*/
+getTransactionPool(transactionPoolName);
+
+//console.log('firing refresh');
 }, 3000); 
 
