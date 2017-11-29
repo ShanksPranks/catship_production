@@ -4,35 +4,20 @@ ini_set("error_log", "php-error.log");
 use BitcoinPHP\BitcoinECDSA\BitcoinECDSA;
 require_once ("BitcoinECDSA.php");
 
-//
-
-require_once ("src\Object.php");
-
-require_once ("src\Number.php");
-
-require_once ("src\Math.php");
-
-require_once ("src\Secp192k1.php");
-
-require_once ("src\Secp256k1.php");
-
-require_once ("src\Point.php");
-
-require_once ("src\ASN1.php");
-
-require_once ("src\Key.php");
-
-require_once ("src\BC.php");
-
-require_once ("src\Binary.php");
-
-require_once ("src\GMP.php");
-
-require_once ("src\Signature.php");
-
-require_once ("src\Sin.php");
-
-require_once ("src\Wallet.php");
+include "../php/src/Object.php";
+include "../php/src/Number.php";
+include "../php/src/Math.php";
+include "../php/src/Secp192k1.php";
+include "../php/src/Secp256k1.php";
+include "../php/src/Point.php";
+include "../php/src/ASN1.php";
+include "../php/src/Key.php";
+include "../php/src/BC.php";
+include "../php/src/Binary.php";
+include "../php/src/GMP.php";
+include "../php/src/Signature.php";
+include "../php/src/Sin.php";
+include "../php/src/Wallet.php";
 
 use Phactor\Key;
 

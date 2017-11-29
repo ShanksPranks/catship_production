@@ -1866,7 +1866,7 @@ this.game.time.advancedTiming = true;
             enemy4canFire = 1;
             enemy5canFire = 1;
         }
-
+        // the user has completed the first level
         if (sb == 14) {
             aliens1.callAll('kill');
             aliens2.callAll('kill');
@@ -1881,7 +1881,7 @@ this.game.time.advancedTiming = true;
             sb += 1;
             eventTime = total;
         }
-
+        // we don't have a level 2 so lets go to the game over sequence
         if (sb == 15 && eventTime + 8 < total) {
             health = -1;
             lives = 1;

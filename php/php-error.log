@@ -1,2000 +1,386 @@
-[21-Nov-2017 04:36:48 Australia/Canberra] file object was not null, pushing
-[21-Nov-2017 04:36:48 Australia/Canberra] 04bbcb8aabd16b91b18583ee9ef600a962b00c3ac29b37a5ee44a850ac2c12fc0e40dfe0bfe5dd9476be9aed763e9e2ab88a0a446c332e1908c173ac8252041ac1
-[21-Nov-2017 04:46:03 Australia/Canberra] players ip address
-[21-Nov-2017 04:46:03 Australia/Canberra] ::1
-[21-Nov-2017 04:46:03 Australia/Canberra] looping through keys
-[21-Nov-2017 04:46:03 Australia/Canberra] checkpointTotal
-[21-Nov-2017 04:46:03 Australia/Canberra] 0
-[21-Nov-2017 04:46:03 Australia/Canberra] looping through keys
-[21-Nov-2017 04:46:03 Australia/Canberra] checkpointEnemyCount
-[21-Nov-2017 04:46:03 Australia/Canberra] 0
-[21-Nov-2017 04:46:03 Australia/Canberra] looping through keys
-[21-Nov-2017 04:46:03 Australia/Canberra] checkpointSb
-[21-Nov-2017 04:46:03 Australia/Canberra] 0
-[21-Nov-2017 04:46:03 Australia/Canberra] looping through keys
-[21-Nov-2017 04:46:03 Australia/Canberra] checkpointPyramidCount
-[21-Nov-2017 04:46:03 Australia/Canberra] 0
-[21-Nov-2017 04:46:03 Australia/Canberra] looping through keys
-[21-Nov-2017 04:46:03 Australia/Canberra] checkpointPyramidTimer
-[21-Nov-2017 04:46:03 Australia/Canberra] 0
-[21-Nov-2017 04:46:03 Australia/Canberra] looping through keys
-[21-Nov-2017 04:46:03 Australia/Canberra] checkpointPyramidsOffset
-[21-Nov-2017 04:46:03 Australia/Canberra] 0
-[21-Nov-2017 04:46:03 Australia/Canberra] looping through keys
-[21-Nov-2017 04:46:03 Australia/Canberra] checkpointStage1Y
-[21-Nov-2017 04:46:03 Australia/Canberra] 0
-[21-Nov-2017 04:46:03 Australia/Canberra] looping through keys
-[21-Nov-2017 04:46:03 Australia/Canberra] checkpointStage2Y
-[21-Nov-2017 04:46:03 Australia/Canberra] 0
-[21-Nov-2017 04:46:03 Australia/Canberra] looping through keys
-[21-Nov-2017 04:46:03 Australia/Canberra] checkpointPyramidsY
-[21-Nov-2017 04:46:03 Australia/Canberra] 0
-[21-Nov-2017 04:46:03 Australia/Canberra] looping through keys
-[21-Nov-2017 04:46:03 Australia/Canberra] checkpointCheckpoint
-[21-Nov-2017 04:46:03 Australia/Canberra] 0
-[21-Nov-2017 04:46:03 Australia/Canberra] looping through keys
-[21-Nov-2017 04:46:03 Australia/Canberra] checkpointShipFP
-[21-Nov-2017 04:46:03 Australia/Canberra] 0
-[21-Nov-2017 04:46:03 Australia/Canberra] looping through keys
-[21-Nov-2017 04:46:03 Australia/Canberra] checkpointStagespeed
-[21-Nov-2017 04:46:03 Australia/Canberra] 1
-[21-Nov-2017 04:46:03 Australia/Canberra] looping through keys
-[21-Nov-2017 04:46:04 Australia/Canberra] health
-[21-Nov-2017 04:46:04 Australia/Canberra] -1
-[21-Nov-2017 04:46:04 Australia/Canberra] looping through keys
-[21-Nov-2017 04:46:04 Australia/Canberra] alienHealth
-[21-Nov-2017 04:46:04 Australia/Canberra] 12
-[21-Nov-2017 04:46:04 Australia/Canberra] looping through keys
-[21-Nov-2017 04:46:04 Australia/Canberra] total
-[21-Nov-2017 04:46:04 Australia/Canberra] 76
-[21-Nov-2017 04:46:04 Australia/Canberra] looping through keys
-[21-Nov-2017 04:46:04 Australia/Canberra] sb
-[21-Nov-2017 04:46:04 Australia/Canberra] 1
-[21-Nov-2017 04:46:04 Australia/Canberra] looping through keys
-[21-Nov-2017 04:46:04 Australia/Canberra] enemyCount
-[21-Nov-2017 04:46:04 Australia/Canberra] 8
-[21-Nov-2017 04:46:04 Australia/Canberra] looping through keys
-[21-Nov-2017 04:46:04 Australia/Canberra] score
-[21-Nov-2017 04:46:04 Australia/Canberra] 80
-[21-Nov-2017 04:46:04 Australia/Canberra] looping through keys
-[21-Nov-2017 04:46:04 Australia/Canberra] row
-[21-Nov-2017 04:46:04 Australia/Canberra] 0
-[21-Nov-2017 04:46:04 Australia/Canberra] looping through keys
-[21-Nov-2017 04:46:04 Australia/Canberra] pyramidCount
-[21-Nov-2017 04:46:04 Australia/Canberra] 0
-[21-Nov-2017 04:46:04 Australia/Canberra] looping through keys
-[21-Nov-2017 04:46:04 Australia/Canberra] pyramidTimer
-[21-Nov-2017 04:46:04 Australia/Canberra] 0
-[21-Nov-2017 04:46:04 Australia/Canberra] looping through keys
-[21-Nov-2017 04:46:04 Australia/Canberra] pyramidsOffset
-[21-Nov-2017 04:46:04 Australia/Canberra] 1374
-[21-Nov-2017 04:46:04 Australia/Canberra] looping through keys
-[21-Nov-2017 04:46:04 Australia/Canberra] checkpoint
-[21-Nov-2017 04:46:04 Australia/Canberra] 0
-[21-Nov-2017 04:46:04 Australia/Canberra] looping through keys
-[21-Nov-2017 04:46:04 Australia/Canberra] shipFP
-[21-Nov-2017 04:46:04 Australia/Canberra] 0
-[21-Nov-2017 04:46:04 Australia/Canberra] looping through keys
-[21-Nov-2017 04:46:04 Australia/Canberra] stagespeed
-[21-Nov-2017 04:46:04 Australia/Canberra] 1
-[21-Nov-2017 04:46:04 Australia/Canberra] looping through keys
-[21-Nov-2017 04:46:04 Australia/Canberra] shipy
-[21-Nov-2017 04:46:04 Australia/Canberra] 469
-[21-Nov-2017 04:46:04 Australia/Canberra] looping through keys
-[21-Nov-2017 04:46:04 Australia/Canberra] shipx
-[21-Nov-2017 04:46:04 Australia/Canberra] 122.16666666667
-[21-Nov-2017 04:46:04 Australia/Canberra] looping through keys
-[21-Nov-2017 04:46:04 Australia/Canberra] enemy1Count
-[21-Nov-2017 04:46:04 Australia/Canberra] 4
-[21-Nov-2017 04:46:04 Australia/Canberra] looping through keys
-[21-Nov-2017 04:46:04 Australia/Canberra] enemy2Count
-[21-Nov-2017 04:46:04 Australia/Canberra] 0
-[21-Nov-2017 04:46:04 Australia/Canberra] looping through keys
-[21-Nov-2017 04:46:04 Australia/Canberra] enemy3Count
-[21-Nov-2017 04:46:04 Australia/Canberra] 0
-[21-Nov-2017 04:46:04 Australia/Canberra] looping through keys
-[21-Nov-2017 04:46:04 Australia/Canberra] enemy4Count
-[21-Nov-2017 04:46:04 Australia/Canberra] 0
-[21-Nov-2017 04:46:04 Australia/Canberra] looping through keys
-[21-Nov-2017 04:46:04 Australia/Canberra] pyramidsy
-[21-Nov-2017 04:46:04 Australia/Canberra] 1374
-[21-Nov-2017 04:46:04 Australia/Canberra] looping through keys
-[21-Nov-2017 04:46:04 Australia/Canberra] eventTime
-[21-Nov-2017 04:46:04 Australia/Canberra] 0
-[21-Nov-2017 04:46:04 Australia/Canberra] looping through keys
-[21-Nov-2017 04:46:04 Australia/Canberra] minerAddressIn
-[21-Nov-2017 04:46:04 Australia/Canberra] 04bbcb8aabd16b91b18583ee9ef600a962b00c3ac29b37a5ee44a850ac2c12fc0e40dfe0bfe5dd9476be9aed763e9e2ab88a0a446c332e1908c173ac8252041ac1
-[21-Nov-2017 04:46:04 Australia/Canberra] looping through keys
-[21-Nov-2017 04:46:04 Australia/Canberra] utcTimeStamp
-[21-Nov-2017 04:46:04 Australia/Canberra] 1511199963687
-[21-Nov-2017 04:46:04 Australia/Canberra] looping through keys
-[21-Nov-2017 04:46:04 Australia/Canberra] enemyBulletsFired
-[21-Nov-2017 04:46:04 Australia/Canberra] 21
-[21-Nov-2017 04:46:04 Australia/Canberra] looping through keys
-[21-Nov-2017 04:46:04 Australia/Canberra] CPTrophy
-[21-Nov-2017 04:46:04 Australia/Canberra] 0
-[21-Nov-2017 04:46:04 Australia/Canberra] looping through keys
-[21-Nov-2017 04:46:04 Australia/Canberra] bonus
-[21-Nov-2017 04:46:04 Australia/Canberra] 0
-[21-Nov-2017 04:46:04 Australia/Canberra] transactionPlainText:
-[21-Nov-2017 04:46:04 Australia/Canberra] 04ce828291cad2e744a27daf8548774ea17f8d789e76f854a338cecf50bb404959c327ffd0ac6fa8c26b8546c2d08f34940e70e9e7312742fe22aa1d6cc72f299f04bbcb8aabd16b91b18583ee9ef600a962b00c3ac29b37a5ee44a850ac2c12fc0e40dfe0bfe5dd9476be9aed763e9e2ab88a0a446c332e1908c173ac8252041ac1cats in space801511199963687
-[21-Nov-2017 04:51:04 Australia/Canberra] players ip address
-[21-Nov-2017 04:51:04 Australia/Canberra] ::1
-[21-Nov-2017 04:51:04 Australia/Canberra] looping through keys
-[21-Nov-2017 04:51:04 Australia/Canberra] checkpointTotal
-[21-Nov-2017 04:51:04 Australia/Canberra] 0
-[21-Nov-2017 04:51:04 Australia/Canberra] looping through keys
-[21-Nov-2017 04:51:04 Australia/Canberra] checkpointEnemyCount
-[21-Nov-2017 04:51:04 Australia/Canberra] 0
-[21-Nov-2017 04:51:04 Australia/Canberra] looping through keys
-[21-Nov-2017 04:51:04 Australia/Canberra] checkpointSb
-[21-Nov-2017 04:51:04 Australia/Canberra] 0
-[21-Nov-2017 04:51:04 Australia/Canberra] looping through keys
-[21-Nov-2017 04:51:04 Australia/Canberra] checkpointPyramidCount
-[21-Nov-2017 04:51:04 Australia/Canberra] 0
-[21-Nov-2017 04:51:04 Australia/Canberra] looping through keys
-[21-Nov-2017 04:51:04 Australia/Canberra] checkpointPyramidTimer
-[21-Nov-2017 04:51:04 Australia/Canberra] 0
-[21-Nov-2017 04:51:04 Australia/Canberra] looping through keys
-[21-Nov-2017 04:51:04 Australia/Canberra] checkpointPyramidsOffset
-[21-Nov-2017 04:51:04 Australia/Canberra] 0
-[21-Nov-2017 04:51:04 Australia/Canberra] looping through keys
-[21-Nov-2017 04:51:04 Australia/Canberra] checkpointStage1Y
-[21-Nov-2017 04:51:04 Australia/Canberra] 0
-[21-Nov-2017 04:51:04 Australia/Canberra] looping through keys
-[21-Nov-2017 04:51:04 Australia/Canberra] checkpointStage2Y
-[21-Nov-2017 04:51:04 Australia/Canberra] 0
-[21-Nov-2017 04:51:04 Australia/Canberra] looping through keys
-[21-Nov-2017 04:51:04 Australia/Canberra] checkpointPyramidsY
-[21-Nov-2017 04:51:04 Australia/Canberra] 0
-[21-Nov-2017 04:51:04 Australia/Canberra] looping through keys
-[21-Nov-2017 04:51:04 Australia/Canberra] checkpointCheckpoint
-[21-Nov-2017 04:51:04 Australia/Canberra] 0
-[21-Nov-2017 04:51:04 Australia/Canberra] looping through keys
-[21-Nov-2017 04:51:04 Australia/Canberra] checkpointShipFP
-[21-Nov-2017 04:51:04 Australia/Canberra] 0
-[21-Nov-2017 04:51:04 Australia/Canberra] looping through keys
-[21-Nov-2017 04:51:04 Australia/Canberra] checkpointStagespeed
-[21-Nov-2017 04:51:04 Australia/Canberra] 1
-[21-Nov-2017 04:51:04 Australia/Canberra] looping through keys
-[21-Nov-2017 04:51:04 Australia/Canberra] health
-[21-Nov-2017 04:51:04 Australia/Canberra] -1
-[21-Nov-2017 04:51:04 Australia/Canberra] looping through keys
-[21-Nov-2017 04:51:04 Australia/Canberra] alienHealth
-[21-Nov-2017 04:51:04 Australia/Canberra] 12
-[21-Nov-2017 04:51:04 Australia/Canberra] looping through keys
-[21-Nov-2017 04:51:04 Australia/Canberra] total
-[21-Nov-2017 04:51:04 Australia/Canberra] 125
-[21-Nov-2017 04:51:04 Australia/Canberra] looping through keys
-[21-Nov-2017 04:51:04 Australia/Canberra] sb
-[21-Nov-2017 04:51:04 Australia/Canberra] 1
-[21-Nov-2017 04:51:04 Australia/Canberra] looping through keys
-[21-Nov-2017 04:51:04 Australia/Canberra] enemyCount
-[21-Nov-2017 04:51:04 Australia/Canberra] 12
-[21-Nov-2017 04:51:04 Australia/Canberra] looping through keys
-[21-Nov-2017 04:51:04 Australia/Canberra] score
-[21-Nov-2017 04:51:04 Australia/Canberra] 120
-[21-Nov-2017 04:51:04 Australia/Canberra] looping through keys
-[21-Nov-2017 04:51:05 Australia/Canberra] row
-[21-Nov-2017 04:51:05 Australia/Canberra] 0
-[21-Nov-2017 04:51:05 Australia/Canberra] looping through keys
-[21-Nov-2017 04:51:05 Australia/Canberra] pyramidCount
-[21-Nov-2017 04:51:05 Australia/Canberra] 0
-[21-Nov-2017 04:51:05 Australia/Canberra] looping through keys
-[21-Nov-2017 04:51:05 Australia/Canberra] pyramidTimer
-[21-Nov-2017 04:51:05 Australia/Canberra] 0
-[21-Nov-2017 04:51:05 Australia/Canberra] looping through keys
-[21-Nov-2017 04:51:05 Australia/Canberra] pyramidsOffset
-[21-Nov-2017 04:51:05 Australia/Canberra] 2258
-[21-Nov-2017 04:51:05 Australia/Canberra] looping through keys
-[21-Nov-2017 04:51:05 Australia/Canberra] checkpoint
-[21-Nov-2017 04:51:05 Australia/Canberra] 0
-[21-Nov-2017 04:51:05 Australia/Canberra] looping through keys
-[21-Nov-2017 04:51:05 Australia/Canberra] shipFP
-[21-Nov-2017 04:51:05 Australia/Canberra] 0
-[21-Nov-2017 04:51:05 Australia/Canberra] looping through keys
-[21-Nov-2017 04:51:05 Australia/Canberra] stagespeed
-[21-Nov-2017 04:51:05 Australia/Canberra] 1
-[21-Nov-2017 04:51:05 Australia/Canberra] looping through keys
-[21-Nov-2017 04:51:05 Australia/Canberra] shipy
-[21-Nov-2017 04:51:05 Australia/Canberra] 531.25
-[21-Nov-2017 04:51:05 Australia/Canberra] looping through keys
-[21-Nov-2017 04:51:05 Australia/Canberra] shipx
-[21-Nov-2017 04:51:05 Australia/Canberra] 27.5
-[21-Nov-2017 04:51:05 Australia/Canberra] looping through keys
-[21-Nov-2017 04:51:05 Australia/Canberra] enemy1Count
-[21-Nov-2017 04:51:05 Australia/Canberra] 4
-[21-Nov-2017 04:51:05 Australia/Canberra] looping through keys
-[21-Nov-2017 04:51:05 Australia/Canberra] enemy2Count
-[21-Nov-2017 04:51:05 Australia/Canberra] 0
-[21-Nov-2017 04:51:05 Australia/Canberra] looping through keys
-[21-Nov-2017 04:51:05 Australia/Canberra] enemy3Count
-[21-Nov-2017 04:51:05 Australia/Canberra] 2
-[21-Nov-2017 04:51:05 Australia/Canberra] looping through keys
-[21-Nov-2017 04:51:05 Australia/Canberra] enemy4Count
-[21-Nov-2017 04:51:05 Australia/Canberra] 0
-[21-Nov-2017 04:51:05 Australia/Canberra] looping through keys
-[21-Nov-2017 04:51:05 Australia/Canberra] pyramidsy
-[21-Nov-2017 04:51:05 Australia/Canberra] 2258
-[21-Nov-2017 04:51:05 Australia/Canberra] looping through keys
-[21-Nov-2017 04:51:05 Australia/Canberra] eventTime
-[21-Nov-2017 04:51:05 Australia/Canberra] 0
-[21-Nov-2017 04:51:05 Australia/Canberra] looping through keys
-[21-Nov-2017 04:51:05 Australia/Canberra] minerAddressIn
-[21-Nov-2017 04:51:05 Australia/Canberra] 04bbcb8aabd16b91b18583ee9ef600a962b00c3ac29b37a5ee44a850ac2c12fc0e40dfe0bfe5dd9476be9aed763e9e2ab88a0a446c332e1908c173ac8252041ac1
-[21-Nov-2017 04:51:05 Australia/Canberra] looping through keys
-[21-Nov-2017 04:51:05 Australia/Canberra] utcTimeStamp
-[21-Nov-2017 04:51:05 Australia/Canberra] 1511200264810
-[21-Nov-2017 04:51:05 Australia/Canberra] looping through keys
-[21-Nov-2017 04:51:05 Australia/Canberra] enemyBulletsFired
-[21-Nov-2017 04:51:05 Australia/Canberra] 55
-[21-Nov-2017 04:51:05 Australia/Canberra] looping through keys
-[21-Nov-2017 04:51:05 Australia/Canberra] CPTrophy
-[21-Nov-2017 04:51:05 Australia/Canberra] 0
-[21-Nov-2017 04:51:05 Australia/Canberra] looping through keys
-[21-Nov-2017 04:51:05 Australia/Canberra] bonus
-[21-Nov-2017 04:51:05 Australia/Canberra] 0
-[21-Nov-2017 04:51:05 Australia/Canberra] transactionPlainText:
-[21-Nov-2017 04:51:05 Australia/Canberra] 04ce828291cad2e744a27daf8548774ea17f8d789e76f854a338cecf50bb404959c327ffd0ac6fa8c26b8546c2d08f34940e70e9e7312742fe22aa1d6cc72f299f04bbcb8aabd16b91b18583ee9ef600a962b00c3ac29b37a5ee44a850ac2c12fc0e40dfe0bfe5dd9476be9aed763e9e2ab88a0a446c332e1908c173ac8252041ac1cats in space1201511200264810
-[21-Nov-2017 04:51:05 Australia/Canberra] file object was not null, pushing
-[21-Nov-2017 04:51:05 Australia/Canberra] 04bbcb8aabd16b91b18583ee9ef600a962b00c3ac29b37a5ee44a850ac2c12fc0e40dfe0bfe5dd9476be9aed763e9e2ab88a0a446c332e1908c173ac8252041ac1
-[22-Nov-2017 16:13:28 Australia/Canberra] looping through keys
-[22-Nov-2017 16:13:28 Australia/Canberra] minerAddressIn
-[22-Nov-2017 16:13:28 Australia/Canberra] 04bbcb8aabd16b91b18583ee9ef600a962b00c3ac29b37a5ee44a850ac2c12fc0e40dfe0bfe5dd9476be9aed763e9e2ab88a0a446c332e1908c173ac8252041ac1
-[22-Nov-2017 16:13:28 Australia/Canberra] looping through keys
-[22-Nov-2017 16:13:28 Australia/Canberra] coinRewardIn
-[22-Nov-2017 16:13:28 Australia/Canberra] 100
-[22-Nov-2017 16:13:28 Australia/Canberra] looping through keys
-[22-Nov-2017 16:13:28 Australia/Canberra] utcTimeStamp
-[22-Nov-2017 16:13:28 Australia/Canberra] 1511327607843
-[22-Nov-2017 16:13:28 Australia/Canberra] transactionPlainText:
-[22-Nov-2017 16:13:28 Australia/Canberra] 041c4bc717563647d7980e5f46b79c3b68eb11667559f8b70ab07b737e985d33f078dd404e1abe0ffc752e9ebb1df1b38853f2d8a79ec54aaea91827779897c5a504bbcb8aabd16b91b18583ee9ef600a962b00c3ac29b37a5ee44a850ac2c12fc0e40dfe0bfe5dd9476be9aed763e9e2ab88a0a446c332e1908c173ac8252041ac1freshly minted kitty goodness1001511327607843
-[22-Nov-2017 16:13:28 Australia/Canberra] file object was not null, pushing
-[22-Nov-2017 16:13:28 Australia/Canberra] 04bbcb8aabd16b91b18583ee9ef600a962b00c3ac29b37a5ee44a850ac2c12fc0e40dfe0bfe5dd9476be9aed763e9e2ab88a0a446c332e1908c173ac8252041ac1
-[22-Nov-2017 16:14:32 Australia/Canberra] looping through keys
-[22-Nov-2017 16:14:32 Australia/Canberra] minerAddressIn
-[22-Nov-2017 16:14:33 Australia/Canberra] 04bbcb8aabd16b91b18583ee9ef600a962b00c3ac29b37a5ee44a850ac2c12fc0e40dfe0bfe5dd9476be9aed763e9e2ab88a0a446c332e1908c173ac8252041ac1
-[22-Nov-2017 16:14:33 Australia/Canberra] looping through keys
-[22-Nov-2017 16:14:33 Australia/Canberra] coinRewardIn
-[22-Nov-2017 16:14:33 Australia/Canberra] 100
-[22-Nov-2017 16:14:33 Australia/Canberra] looping through keys
-[22-Nov-2017 16:14:33 Australia/Canberra] utcTimeStamp
-[22-Nov-2017 16:14:33 Australia/Canberra] 1511327672988
-[22-Nov-2017 16:14:33 Australia/Canberra] transactionPlainText:
-[22-Nov-2017 16:14:33 Australia/Canberra] 041c4bc717563647d7980e5f46b79c3b68eb11667559f8b70ab07b737e985d33f078dd404e1abe0ffc752e9ebb1df1b38853f2d8a79ec54aaea91827779897c5a504bbcb8aabd16b91b18583ee9ef600a962b00c3ac29b37a5ee44a850ac2c12fc0e40dfe0bfe5dd9476be9aed763e9e2ab88a0a446c332e1908c173ac8252041ac1freshly minted kitty goodness1001511327672988
-[22-Nov-2017 16:14:33 Australia/Canberra] file object was null
-[22-Nov-2017 16:14:33 Australia/Canberra] PHP Notice:  Undefined offset: 0 in C:\inetpub\wwwroot\catship_production\php\catShipTransaction.php on line 29
-[22-Nov-2017 16:14:33 Australia/Canberra] 
-[22-Nov-2017 16:15:46 Australia/Canberra] looping through keys
-[22-Nov-2017 16:15:46 Australia/Canberra] minerAddressIn
-[22-Nov-2017 16:15:46 Australia/Canberra] 04bbcb8aabd16b91b18583ee9ef600a962b00c3ac29b37a5ee44a850ac2c12fc0e40dfe0bfe5dd9476be9aed763e9e2ab88a0a446c332e1908c173ac8252041ac1
-[22-Nov-2017 16:15:46 Australia/Canberra] looping through keys
-[22-Nov-2017 16:15:46 Australia/Canberra] coinRewardIn
-[22-Nov-2017 16:15:46 Australia/Canberra] 100
-[22-Nov-2017 16:15:46 Australia/Canberra] looping through keys
-[22-Nov-2017 16:15:46 Australia/Canberra] utcTimeStamp
-[22-Nov-2017 16:15:46 Australia/Canberra] 1511327746674
-[22-Nov-2017 16:15:46 Australia/Canberra] transactionPlainText:
-[22-Nov-2017 16:15:46 Australia/Canberra] 041c4bc717563647d7980e5f46b79c3b68eb11667559f8b70ab07b737e985d33f078dd404e1abe0ffc752e9ebb1df1b38853f2d8a79ec54aaea91827779897c5a504bbcb8aabd16b91b18583ee9ef600a962b00c3ac29b37a5ee44a850ac2c12fc0e40dfe0bfe5dd9476be9aed763e9e2ab88a0a446c332e1908c173ac8252041ac1freshly minted kitty goodness1001511327746674
-[22-Nov-2017 16:15:47 Australia/Canberra] file object was null
-[22-Nov-2017 16:15:47 Australia/Canberra] PHP Notice:  Undefined offset: 0 in C:\inetpub\wwwroot\catship_production\php\catShipTransaction.php on line 29
-[22-Nov-2017 16:15:47 Australia/Canberra] 
-[22-Nov-2017 16:18:01 Australia/Canberra] looping through keys
-[22-Nov-2017 16:18:01 Australia/Canberra] minerAddressIn
-[22-Nov-2017 16:18:01 Australia/Canberra] 04bbcb8aabd16b91b18583ee9ef600a962b00c3ac29b37a5ee44a850ac2c12fc0e40dfe0bfe5dd9476be9aed763e9e2ab88a0a446c332e1908c173ac8252041ac1
-[22-Nov-2017 16:18:01 Australia/Canberra] looping through keys
-[22-Nov-2017 16:18:01 Australia/Canberra] coinRewardIn
-[22-Nov-2017 16:18:01 Australia/Canberra] 100
-[22-Nov-2017 16:18:01 Australia/Canberra] looping through keys
-[22-Nov-2017 16:18:01 Australia/Canberra] utcTimeStamp
-[22-Nov-2017 16:18:01 Australia/Canberra] 1511327881137
-[22-Nov-2017 16:18:01 Australia/Canberra] transactionPlainText:
-[22-Nov-2017 16:18:01 Australia/Canberra] 041c4bc717563647d7980e5f46b79c3b68eb11667559f8b70ab07b737e985d33f078dd404e1abe0ffc752e9ebb1df1b38853f2d8a79ec54aaea91827779897c5a504bbcb8aabd16b91b18583ee9ef600a962b00c3ac29b37a5ee44a850ac2c12fc0e40dfe0bfe5dd9476be9aed763e9e2ab88a0a446c332e1908c173ac8252041ac1freshly minted kitty goodness1001511327881137
-[22-Nov-2017 16:18:01 Australia/Canberra] file object was null
-[22-Nov-2017 16:18:01 Australia/Canberra] PHP Notice:  Undefined offset: 0 in C:\inetpub\wwwroot\catship_production\php\catShipTransaction.php on line 29
-[22-Nov-2017 16:18:01 Australia/Canberra] 
-[22-Nov-2017 16:18:12 Australia/Canberra] looping through keys
-[22-Nov-2017 16:18:12 Australia/Canberra] minerAddressIn
-[22-Nov-2017 16:18:12 Australia/Canberra] 04bbcb8aabd16b91b18583ee9ef600a962b00c3ac29b37a5ee44a850ac2c12fc0e40dfe0bfe5dd9476be9aed763e9e2ab88a0a446c332e1908c173ac8252041ac1
-[22-Nov-2017 16:18:12 Australia/Canberra] looping through keys
-[22-Nov-2017 16:18:12 Australia/Canberra] coinRewardIn
-[22-Nov-2017 16:18:12 Australia/Canberra] 100
-[22-Nov-2017 16:18:12 Australia/Canberra] looping through keys
-[22-Nov-2017 16:18:12 Australia/Canberra] utcTimeStamp
-[22-Nov-2017 16:18:12 Australia/Canberra] 1511327892055
-[22-Nov-2017 16:18:12 Australia/Canberra] transactionPlainText:
-[22-Nov-2017 16:18:12 Australia/Canberra] 041c4bc717563647d7980e5f46b79c3b68eb11667559f8b70ab07b737e985d33f078dd404e1abe0ffc752e9ebb1df1b38853f2d8a79ec54aaea91827779897c5a504bbcb8aabd16b91b18583ee9ef600a962b00c3ac29b37a5ee44a850ac2c12fc0e40dfe0bfe5dd9476be9aed763e9e2ab88a0a446c332e1908c173ac8252041ac1freshly minted kitty goodness1001511327892055
-[22-Nov-2017 16:18:12 Australia/Canberra] file object was null
-[22-Nov-2017 16:18:12 Australia/Canberra] PHP Notice:  Undefined offset: 0 in C:\inetpub\wwwroot\catship_production\php\catShipTransaction.php on line 29
-[22-Nov-2017 16:18:12 Australia/Canberra] 
-[22-Nov-2017 16:18:47 Australia/Canberra] looping through keys
-[22-Nov-2017 16:18:47 Australia/Canberra] minerAddressIn
-[22-Nov-2017 16:18:47 Australia/Canberra] 04bbcb8aabd16b91b18583ee9ef600a962b00c3ac29b37a5ee44a850ac2c12fc0e40dfe0bfe5dd9476be9aed763e9e2ab88a0a446c332e1908c173ac8252041ac1
-[22-Nov-2017 16:18:47 Australia/Canberra] looping through keys
-[22-Nov-2017 16:18:47 Australia/Canberra] coinRewardIn
-[22-Nov-2017 16:18:47 Australia/Canberra] 100
-[22-Nov-2017 16:18:47 Australia/Canberra] looping through keys
-[22-Nov-2017 16:18:47 Australia/Canberra] utcTimeStamp
-[22-Nov-2017 16:18:47 Australia/Canberra] 1511327927641
-[22-Nov-2017 16:18:47 Australia/Canberra] transactionPlainText:
-[22-Nov-2017 16:18:47 Australia/Canberra] 041c4bc717563647d7980e5f46b79c3b68eb11667559f8b70ab07b737e985d33f078dd404e1abe0ffc752e9ebb1df1b38853f2d8a79ec54aaea91827779897c5a504bbcb8aabd16b91b18583ee9ef600a962b00c3ac29b37a5ee44a850ac2c12fc0e40dfe0bfe5dd9476be9aed763e9e2ab88a0a446c332e1908c173ac8252041ac1freshly minted kitty goodness1001511327927641
-[22-Nov-2017 16:18:47 Australia/Canberra] file object was null
-[22-Nov-2017 16:18:47 Australia/Canberra] PHP Notice:  Undefined offset: 0 in C:\inetpub\wwwroot\catship_production\php\catShipTransaction.php on line 29
-[22-Nov-2017 16:18:47 Australia/Canberra] 
-[22-Nov-2017 16:56:28 Australia/Canberra] players ip address
-[22-Nov-2017 16:56:28 Australia/Canberra] ::1
-[22-Nov-2017 16:56:28 Australia/Canberra] looping through keys
-[22-Nov-2017 16:56:28 Australia/Canberra] checkpointTotal
-[22-Nov-2017 16:56:28 Australia/Canberra] 108
-[22-Nov-2017 16:56:28 Australia/Canberra] looping through keys
-[22-Nov-2017 16:56:28 Australia/Canberra] checkpointEnemyCount
-[22-Nov-2017 16:56:28 Australia/Canberra] 12
-[22-Nov-2017 16:56:28 Australia/Canberra] looping through keys
-[22-Nov-2017 16:56:28 Australia/Canberra] checkpointSb
-[22-Nov-2017 16:56:28 Australia/Canberra] 1
-[22-Nov-2017 16:56:28 Australia/Canberra] looping through keys
-[22-Nov-2017 16:56:28 Australia/Canberra] checkpointPyramidCount
-[22-Nov-2017 16:56:28 Australia/Canberra] 0
-[22-Nov-2017 16:56:28 Australia/Canberra] looping through keys
-[22-Nov-2017 16:56:28 Australia/Canberra] checkpointPyramidTimer
-[22-Nov-2017 16:56:28 Australia/Canberra] 0
-[22-Nov-2017 16:56:28 Australia/Canberra] looping through keys
-[22-Nov-2017 16:56:28 Australia/Canberra] checkpointPyramidsOffset
-[22-Nov-2017 16:56:28 Australia/Canberra] 1938
-[22-Nov-2017 16:56:28 Australia/Canberra] looping through keys
-[22-Nov-2017 16:56:28 Australia/Canberra] checkpointStage1Y
-[22-Nov-2017 16:56:28 Australia/Canberra] -3720
-[22-Nov-2017 16:56:28 Australia/Canberra] looping through keys
-[22-Nov-2017 16:56:28 Australia/Canberra] checkpointStage2Y
-[22-Nov-2017 16:56:28 Australia/Canberra] 0
-[22-Nov-2017 16:56:28 Australia/Canberra] looping through keys
-[22-Nov-2017 16:56:28 Australia/Canberra] checkpointPyramidsY
-[22-Nov-2017 16:56:28 Australia/Canberra] 1938
-[22-Nov-2017 16:56:28 Australia/Canberra] looping through keys
-[22-Nov-2017 16:56:28 Australia/Canberra] checkpointCheckpoint
-[22-Nov-2017 16:56:28 Australia/Canberra] 0
-[22-Nov-2017 16:56:28 Australia/Canberra] looping through keys
-[22-Nov-2017 16:56:28 Australia/Canberra] checkpointShipFP
-[22-Nov-2017 16:56:28 Australia/Canberra] 0
-[22-Nov-2017 16:56:28 Australia/Canberra] looping through keys
-[22-Nov-2017 16:56:28 Australia/Canberra] checkpointStagespeed
-[22-Nov-2017 16:56:28 Australia/Canberra] 1
-[22-Nov-2017 16:56:28 Australia/Canberra] looping through keys
-[22-Nov-2017 16:56:28 Australia/Canberra] health
-[22-Nov-2017 16:56:28 Australia/Canberra] -1
-[22-Nov-2017 16:56:28 Australia/Canberra] looping through keys
-[22-Nov-2017 16:56:28 Australia/Canberra] alienHealth
-[22-Nov-2017 16:56:28 Australia/Canberra] 12
-[22-Nov-2017 16:56:28 Australia/Canberra] looping through keys
-[22-Nov-2017 16:56:28 Australia/Canberra] total
-[22-Nov-2017 16:56:28 Australia/Canberra] 128
-[22-Nov-2017 16:56:28 Australia/Canberra] looping through keys
-[22-Nov-2017 16:56:28 Australia/Canberra] sb
-[22-Nov-2017 16:56:28 Australia/Canberra] 4
-[22-Nov-2017 16:56:28 Australia/Canberra] looping through keys
-[22-Nov-2017 16:56:28 Australia/Canberra] enemyCount
-[22-Nov-2017 16:56:28 Australia/Canberra] 12
-[22-Nov-2017 16:56:28 Australia/Canberra] looping through keys
-[22-Nov-2017 16:56:28 Australia/Canberra] score
-[22-Nov-2017 16:56:28 Australia/Canberra] 120
-[22-Nov-2017 16:56:28 Australia/Canberra] looping through keys
-[22-Nov-2017 16:56:28 Australia/Canberra] row
-[22-Nov-2017 16:56:28 Australia/Canberra] 4
-[22-Nov-2017 16:56:28 Australia/Canberra] looping through keys
-[22-Nov-2017 16:56:28 Australia/Canberra] pyramidCount
-[22-Nov-2017 16:56:28 Australia/Canberra] 25
-[22-Nov-2017 16:56:28 Australia/Canberra] looping through keys
-[22-Nov-2017 16:56:28 Australia/Canberra] pyramidTimer
-[22-Nov-2017 16:56:28 Australia/Canberra] 127
-[22-Nov-2017 16:56:28 Australia/Canberra] looping through keys
-[22-Nov-2017 16:56:28 Australia/Canberra] pyramidsOffset
-[22-Nov-2017 16:56:28 Australia/Canberra] 2866
-[22-Nov-2017 16:56:28 Australia/Canberra] looping through keys
-[22-Nov-2017 16:56:28 Australia/Canberra] checkpoint
-[22-Nov-2017 16:56:28 Australia/Canberra] 1
-[22-Nov-2017 16:56:28 Australia/Canberra] looping through keys
-[22-Nov-2017 16:56:28 Australia/Canberra] shipFP
-[22-Nov-2017 16:56:28 Australia/Canberra] 0
-[22-Nov-2017 16:56:28 Australia/Canberra] looping through keys
-[22-Nov-2017 16:56:28 Australia/Canberra] stagespeed
-[22-Nov-2017 16:56:28 Australia/Canberra] 4
-[22-Nov-2017 16:56:28 Australia/Canberra] looping through keys
-[22-Nov-2017 16:56:28 Australia/Canberra] shipy
-[22-Nov-2017 16:56:28 Australia/Canberra] 355.16666666667
-[22-Nov-2017 16:56:28 Australia/Canberra] looping through keys
-[22-Nov-2017 16:56:28 Australia/Canberra] shipx
-[22-Nov-2017 16:56:28 Australia/Canberra] 206
-[22-Nov-2017 16:56:28 Australia/Canberra] looping through keys
-[22-Nov-2017 16:56:28 Australia/Canberra] enemy1Count
-[22-Nov-2017 16:56:28 Australia/Canberra] 4
-[22-Nov-2017 16:56:28 Australia/Canberra] looping through keys
-[22-Nov-2017 16:56:28 Australia/Canberra] enemy2Count
-[22-Nov-2017 16:56:28 Australia/Canberra] 0
-[22-Nov-2017 16:56:28 Australia/Canberra] looping through keys
-[22-Nov-2017 16:56:28 Australia/Canberra] enemy3Count
-[22-Nov-2017 16:56:29 Australia/Canberra] 0
-[22-Nov-2017 16:56:29 Australia/Canberra] looping through keys
-[22-Nov-2017 16:56:29 Australia/Canberra] enemy4Count
-[22-Nov-2017 16:56:29 Australia/Canberra] 0
-[22-Nov-2017 16:56:29 Australia/Canberra] looping through keys
-[22-Nov-2017 16:56:29 Australia/Canberra] pyramidsy
-[22-Nov-2017 16:56:29 Australia/Canberra] 2866
-[22-Nov-2017 16:56:29 Australia/Canberra] looping through keys
-[22-Nov-2017 16:56:29 Australia/Canberra] eventTime
-[22-Nov-2017 16:56:29 Australia/Canberra] 127
-[22-Nov-2017 16:56:29 Australia/Canberra] looping through keys
-[22-Nov-2017 16:56:29 Australia/Canberra] minerAddressIn
-[22-Nov-2017 16:56:29 Australia/Canberra] 04bbcb8aabd16b91b18583ee9ef600a962b00c3ac29b37a5ee44a850ac2c12fc0e40dfe0bfe5dd9476be9aed763e9e2ab88a0a446c332e1908c173ac8252041ac1
-[22-Nov-2017 16:56:29 Australia/Canberra] looping through keys
-[22-Nov-2017 16:56:29 Australia/Canberra] utcTimeStamp
-[22-Nov-2017 16:56:29 Australia/Canberra] 1511330188680
-[22-Nov-2017 16:56:29 Australia/Canberra] looping through keys
-[22-Nov-2017 16:56:29 Australia/Canberra] enemyBulletsFired
-[22-Nov-2017 16:56:29 Australia/Canberra] 50
-[22-Nov-2017 16:56:29 Australia/Canberra] looping through keys
-[22-Nov-2017 16:56:29 Australia/Canberra] CPTrophy
-[22-Nov-2017 16:56:29 Australia/Canberra] 0
-[22-Nov-2017 16:56:29 Australia/Canberra] looping through keys
-[22-Nov-2017 16:56:29 Australia/Canberra] bonus
-[22-Nov-2017 16:56:29 Australia/Canberra] 0
-[22-Nov-2017 16:56:29 Australia/Canberra] transactionPlainText:
-[22-Nov-2017 16:56:29 Australia/Canberra] 04ce828291cad2e744a27daf8548774ea17f8d789e76f854a338cecf50bb404959c327ffd0ac6fa8c26b8546c2d08f34940e70e9e7312742fe22aa1d6cc72f299f04bbcb8aabd16b91b18583ee9ef600a962b00c3ac29b37a5ee44a850ac2c12fc0e40dfe0bfe5dd9476be9aed763e9e2ab88a0a446c332e1908c173ac8252041ac1cats in space1201511330188680
-[22-Nov-2017 16:56:29 Australia/Canberra] file object was null
-[22-Nov-2017 16:56:29 Australia/Canberra] PHP Notice:  Undefined offset: 0 in C:\inetpub\wwwroot\catship_production\php\catShipTransaction.php on line 29
-[22-Nov-2017 16:56:29 Australia/Canberra] 
-[22-Nov-2017 16:56:45 Australia/Canberra] looping through keys
-[22-Nov-2017 16:56:45 Australia/Canberra] minerAddressIn
-[22-Nov-2017 16:56:45 Australia/Canberra] 04bbcb8aabd16b91b18583ee9ef600a962b00c3ac29b37a5ee44a850ac2c12fc0e40dfe0bfe5dd9476be9aed763e9e2ab88a0a446c332e1908c173ac8252041ac1
-[22-Nov-2017 16:56:45 Australia/Canberra] looping through keys
-[22-Nov-2017 16:56:45 Australia/Canberra] coinRewardIn
-[22-Nov-2017 16:56:45 Australia/Canberra] 100
-[22-Nov-2017 16:56:45 Australia/Canberra] looping through keys
-[22-Nov-2017 16:56:45 Australia/Canberra] utcTimeStamp
-[22-Nov-2017 16:56:45 Australia/Canberra] 1511330205543
-[22-Nov-2017 16:56:45 Australia/Canberra] transactionPlainText:
-[22-Nov-2017 16:56:45 Australia/Canberra] 041c4bc717563647d7980e5f46b79c3b68eb11667559f8b70ab07b737e985d33f078dd404e1abe0ffc752e9ebb1df1b38853f2d8a79ec54aaea91827779897c5a504bbcb8aabd16b91b18583ee9ef600a962b00c3ac29b37a5ee44a850ac2c12fc0e40dfe0bfe5dd9476be9aed763e9e2ab88a0a446c332e1908c173ac8252041ac1freshly minted kitty goodness1001511330205543
-[22-Nov-2017 16:56:45 Australia/Canberra] file object was not null, pushing
-[22-Nov-2017 16:56:45 Australia/Canberra] 04ce828291cad2e744a27daf8548774ea17f8d789e76f854a338cecf50bb404959c327ffd0ac6fa8c26b8546c2d08f34940e70e9e7312742fe22aa1d6cc72f299f
-[22-Nov-2017 17:09:42 Australia/Canberra] players ip address
-[22-Nov-2017 17:09:42 Australia/Canberra] ::1
-[22-Nov-2017 17:09:42 Australia/Canberra] looping through keys
-[22-Nov-2017 17:09:42 Australia/Canberra] checkpointTotal
-[22-Nov-2017 17:09:42 Australia/Canberra] 126
-[22-Nov-2017 17:09:42 Australia/Canberra] looping through keys
-[22-Nov-2017 17:09:42 Australia/Canberra] checkpointEnemyCount
-[22-Nov-2017 17:09:42 Australia/Canberra] 12
-[22-Nov-2017 17:09:42 Australia/Canberra] looping through keys
-[22-Nov-2017 17:09:42 Australia/Canberra] checkpointSb
-[22-Nov-2017 17:09:42 Australia/Canberra] 1
-[22-Nov-2017 17:09:42 Australia/Canberra] looping through keys
-[22-Nov-2017 17:09:42 Australia/Canberra] checkpointPyramidCount
-[22-Nov-2017 17:09:42 Australia/Canberra] 0
-[22-Nov-2017 17:09:42 Australia/Canberra] looping through keys
-[22-Nov-2017 17:09:42 Australia/Canberra] checkpointPyramidTimer
-[22-Nov-2017 17:09:42 Australia/Canberra] 0
-[22-Nov-2017 17:09:42 Australia/Canberra] looping through keys
-[22-Nov-2017 17:09:42 Australia/Canberra] checkpointPyramidsOffset
-[22-Nov-2017 17:09:42 Australia/Canberra] 2262
-[22-Nov-2017 17:09:42 Australia/Canberra] looping through keys
-[22-Nov-2017 17:09:42 Australia/Canberra] checkpointStage1Y
-[22-Nov-2017 17:09:42 Australia/Canberra] -3720
-[22-Nov-2017 17:09:42 Australia/Canberra] looping through keys
-[22-Nov-2017 17:09:42 Australia/Canberra] checkpointStage2Y
-[22-Nov-2017 17:09:42 Australia/Canberra] 0
-[22-Nov-2017 17:09:42 Australia/Canberra] looping through keys
-[22-Nov-2017 17:09:42 Australia/Canberra] checkpointPyramidsY
-[22-Nov-2017 17:09:42 Australia/Canberra] 2262
-[22-Nov-2017 17:09:42 Australia/Canberra] looping through keys
-[22-Nov-2017 17:09:42 Australia/Canberra] checkpointCheckpoint
-[22-Nov-2017 17:09:42 Australia/Canberra] 0
-[22-Nov-2017 17:09:42 Australia/Canberra] looping through keys
-[22-Nov-2017 17:09:42 Australia/Canberra] checkpointShipFP
-[22-Nov-2017 17:09:42 Australia/Canberra] 0
-[22-Nov-2017 17:09:42 Australia/Canberra] looping through keys
-[22-Nov-2017 17:09:42 Australia/Canberra] checkpointStagespeed
-[22-Nov-2017 17:09:42 Australia/Canberra] 1
-[22-Nov-2017 17:09:42 Australia/Canberra] looping through keys
-[22-Nov-2017 17:09:42 Australia/Canberra] health
-[22-Nov-2017 17:09:42 Australia/Canberra] -1
-[22-Nov-2017 17:09:42 Australia/Canberra] looping through keys
-[22-Nov-2017 17:09:42 Australia/Canberra] alienHealth
-[22-Nov-2017 17:09:42 Australia/Canberra] 12
-[22-Nov-2017 17:09:42 Australia/Canberra] looping through keys
-[22-Nov-2017 17:09:42 Australia/Canberra] total
-[22-Nov-2017 17:09:42 Australia/Canberra] 147
-[22-Nov-2017 17:09:42 Australia/Canberra] looping through keys
-[22-Nov-2017 17:09:42 Australia/Canberra] sb
-[22-Nov-2017 17:09:42 Australia/Canberra] 4
-[22-Nov-2017 17:09:42 Australia/Canberra] looping through keys
-[22-Nov-2017 17:09:42 Australia/Canberra] enemyCount
-[22-Nov-2017 17:09:42 Australia/Canberra] 12
-[22-Nov-2017 17:09:42 Australia/Canberra] looping through keys
-[22-Nov-2017 17:09:42 Australia/Canberra] score
-[22-Nov-2017 17:09:42 Australia/Canberra] 120
-[22-Nov-2017 17:09:42 Australia/Canberra] looping through keys
-[22-Nov-2017 17:09:42 Australia/Canberra] row
-[22-Nov-2017 17:09:42 Australia/Canberra] 4
-[22-Nov-2017 17:09:42 Australia/Canberra] looping through keys
-[22-Nov-2017 17:09:42 Australia/Canberra] pyramidCount
-[22-Nov-2017 17:09:42 Australia/Canberra] 25
-[22-Nov-2017 17:09:42 Australia/Canberra] looping through keys
-[22-Nov-2017 17:09:42 Australia/Canberra] pyramidTimer
-[22-Nov-2017 17:09:42 Australia/Canberra] 145
-[22-Nov-2017 17:09:42 Australia/Canberra] looping through keys
-[22-Nov-2017 17:09:42 Australia/Canberra] pyramidsOffset
-[22-Nov-2017 17:09:42 Australia/Canberra] 3234
-[22-Nov-2017 17:09:42 Australia/Canberra] looping through keys
-[22-Nov-2017 17:09:42 Australia/Canberra] checkpoint
-[22-Nov-2017 17:09:42 Australia/Canberra] 1
-[22-Nov-2017 17:09:42 Australia/Canberra] looping through keys
-[22-Nov-2017 17:09:42 Australia/Canberra] shipFP
-[22-Nov-2017 17:09:42 Australia/Canberra] 0
-[22-Nov-2017 17:09:42 Australia/Canberra] looping through keys
-[22-Nov-2017 17:09:42 Australia/Canberra] stagespeed
-[22-Nov-2017 17:09:42 Australia/Canberra] 4
-[22-Nov-2017 17:09:42 Australia/Canberra] looping through keys
-[22-Nov-2017 17:09:42 Australia/Canberra] shipy
-[22-Nov-2017 17:09:42 Australia/Canberra] 429.41666666667
-[22-Nov-2017 17:09:42 Australia/Canberra] looping through keys
-[22-Nov-2017 17:09:42 Australia/Canberra] shipx
-[22-Nov-2017 17:09:42 Australia/Canberra] 241
-[22-Nov-2017 17:09:42 Australia/Canberra] looping through keys
-[22-Nov-2017 17:09:42 Australia/Canberra] enemy1Count
-[22-Nov-2017 17:09:42 Australia/Canberra] 4
-[22-Nov-2017 17:09:42 Australia/Canberra] looping through keys
-[22-Nov-2017 17:09:42 Australia/Canberra] enemy2Count
-[22-Nov-2017 17:09:42 Australia/Canberra] 0
-[22-Nov-2017 17:09:42 Australia/Canberra] looping through keys
-[22-Nov-2017 17:09:42 Australia/Canberra] enemy3Count
-[22-Nov-2017 17:09:42 Australia/Canberra] 0
-[22-Nov-2017 17:09:42 Australia/Canberra] looping through keys
-[22-Nov-2017 17:09:42 Australia/Canberra] enemy4Count
-[22-Nov-2017 17:09:42 Australia/Canberra] 0
-[22-Nov-2017 17:09:42 Australia/Canberra] looping through keys
-[22-Nov-2017 17:09:42 Australia/Canberra] pyramidsy
-[22-Nov-2017 17:09:42 Australia/Canberra] 3234
-[22-Nov-2017 17:09:42 Australia/Canberra] looping through keys
-[22-Nov-2017 17:09:42 Australia/Canberra] eventTime
-[22-Nov-2017 17:09:42 Australia/Canberra] 145
-[22-Nov-2017 17:09:42 Australia/Canberra] looping through keys
-[22-Nov-2017 17:09:42 Australia/Canberra] minerAddressIn
-[22-Nov-2017 17:09:42 Australia/Canberra] 04bbcb8aabd16b91b18583ee9ef600a962b00c3ac29b37a5ee44a850ac2c12fc0e40dfe0bfe5dd9476be9aed763e9e2ab88a0a446c332e1908c173ac8252041ac1
-[22-Nov-2017 17:09:42 Australia/Canberra] looping through keys
-[22-Nov-2017 17:09:42 Australia/Canberra] utcTimeStamp
-[22-Nov-2017 17:09:42 Australia/Canberra] 1511330982633
-[22-Nov-2017 17:09:42 Australia/Canberra] looping through keys
-[22-Nov-2017 17:09:42 Australia/Canberra] enemyBulletsFired
-[22-Nov-2017 17:09:42 Australia/Canberra] 35
-[22-Nov-2017 17:09:42 Australia/Canberra] looping through keys
-[22-Nov-2017 17:09:42 Australia/Canberra] CPTrophy
-[22-Nov-2017 17:09:42 Australia/Canberra] 0
-[22-Nov-2017 17:09:42 Australia/Canberra] looping through keys
-[22-Nov-2017 17:09:42 Australia/Canberra] bonus
-[22-Nov-2017 17:09:42 Australia/Canberra] 0
-[22-Nov-2017 17:09:42 Australia/Canberra] transactionPlainText:
-[22-Nov-2017 17:09:42 Australia/Canberra] 04ce828291cad2e744a27daf8548774ea17f8d789e76f854a338cecf50bb404959c327ffd0ac6fa8c26b8546c2d08f34940e70e9e7312742fe22aa1d6cc72f299f04bbcb8aabd16b91b18583ee9ef600a962b00c3ac29b37a5ee44a850ac2c12fc0e40dfe0bfe5dd9476be9aed763e9e2ab88a0a446c332e1908c173ac8252041ac1cats in space1201511330982633
-[22-Nov-2017 17:09:43 Australia/Canberra] file object was null
-[22-Nov-2017 17:09:43 Australia/Canberra] PHP Notice:  Undefined offset: 0 in C:\inetpub\wwwroot\catship_production\php\catShipTransaction.php on line 29
-[22-Nov-2017 17:09:43 Australia/Canberra] 
-[22-Nov-2017 17:28:36 Australia/Canberra] looping through keys
-[22-Nov-2017 17:28:36 Australia/Canberra] minerAddressIn
-[22-Nov-2017 17:28:36 Australia/Canberra] 04bbcb8aabd16b91b18583ee9ef600a962b00c3ac29b37a5ee44a850ac2c12fc0e40dfe0bfe5dd9476be9aed763e9e2ab88a0a446c332e1908c173ac8252041ac1
-[22-Nov-2017 17:28:36 Australia/Canberra] looping through keys
-[22-Nov-2017 17:28:36 Australia/Canberra] coinRewardIn
-[22-Nov-2017 17:28:36 Australia/Canberra] 100
-[22-Nov-2017 17:28:36 Australia/Canberra] looping through keys
-[22-Nov-2017 17:28:36 Australia/Canberra] utcTimeStamp
-[22-Nov-2017 17:28:36 Australia/Canberra] 1511332116425
-[22-Nov-2017 17:28:36 Australia/Canberra] transactionPlainText:
-[22-Nov-2017 17:28:36 Australia/Canberra] 041c4bc717563647d7980e5f46b79c3b68eb11667559f8b70ab07b737e985d33f078dd404e1abe0ffc752e9ebb1df1b38853f2d8a79ec54aaea91827779897c5a504bbcb8aabd16b91b18583ee9ef600a962b00c3ac29b37a5ee44a850ac2c12fc0e40dfe0bfe5dd9476be9aed763e9e2ab88a0a446c332e1908c173ac8252041ac1freshly minted kitty goodness1001511332116425
-[22-Nov-2017 17:28:36 Australia/Canberra] file object was not null, pushing
-[22-Nov-2017 17:28:36 Australia/Canberra] 04ce828291cad2e744a27daf8548774ea17f8d789e76f854a338cecf50bb404959c327ffd0ac6fa8c26b8546c2d08f34940e70e9e7312742fe22aa1d6cc72f299f
-[22-Nov-2017 17:28:50 Australia/Canberra] looping through keys
-[22-Nov-2017 17:28:50 Australia/Canberra] minerAddressIn
-[22-Nov-2017 17:28:50 Australia/Canberra] 04bbcb8aabd16b91b18583ee9ef600a962b00c3ac29b37a5ee44a850ac2c12fc0e40dfe0bfe5dd9476be9aed763e9e2ab88a0a446c332e1908c173ac8252041ac1
-[22-Nov-2017 17:28:50 Australia/Canberra] looping through keys
-[22-Nov-2017 17:28:50 Australia/Canberra] coinRewardIn
-[22-Nov-2017 17:28:50 Australia/Canberra] 100
-[22-Nov-2017 17:28:50 Australia/Canberra] looping through keys
-[22-Nov-2017 17:28:50 Australia/Canberra] utcTimeStamp
-[22-Nov-2017 17:28:50 Australia/Canberra] 1511332130712
-[22-Nov-2017 17:28:50 Australia/Canberra] transactionPlainText:
-[22-Nov-2017 17:28:50 Australia/Canberra] 041c4bc717563647d7980e5f46b79c3b68eb11667559f8b70ab07b737e985d33f078dd404e1abe0ffc752e9ebb1df1b38853f2d8a79ec54aaea91827779897c5a504bbcb8aabd16b91b18583ee9ef600a962b00c3ac29b37a5ee44a850ac2c12fc0e40dfe0bfe5dd9476be9aed763e9e2ab88a0a446c332e1908c173ac8252041ac1freshly minted kitty goodness1001511332130712
-[22-Nov-2017 17:28:51 Australia/Canberra] file object was null
-[22-Nov-2017 17:28:51 Australia/Canberra] PHP Notice:  Undefined offset: 0 in C:\inetpub\wwwroot\catship_production\php\catShipTransaction.php on line 29
-[22-Nov-2017 17:28:51 Australia/Canberra] 
-[22-Nov-2017 17:28:54 Australia/Canberra] looping through keys
-[22-Nov-2017 17:28:54 Australia/Canberra] minerAddressIn
-[22-Nov-2017 17:28:54 Australia/Canberra] 04bbcb8aabd16b91b18583ee9ef600a962b00c3ac29b37a5ee44a850ac2c12fc0e40dfe0bfe5dd9476be9aed763e9e2ab88a0a446c332e1908c173ac8252041ac1
-[22-Nov-2017 17:28:54 Australia/Canberra] looping through keys
-[22-Nov-2017 17:28:54 Australia/Canberra] coinRewardIn
-[22-Nov-2017 17:28:54 Australia/Canberra] 100
-[22-Nov-2017 17:28:54 Australia/Canberra] looping through keys
-[22-Nov-2017 17:28:54 Australia/Canberra] utcTimeStamp
-[22-Nov-2017 17:28:54 Australia/Canberra] 1511332134287
-[22-Nov-2017 17:28:54 Australia/Canberra] transactionPlainText:
-[22-Nov-2017 17:28:54 Australia/Canberra] 041c4bc717563647d7980e5f46b79c3b68eb11667559f8b70ab07b737e985d33f078dd404e1abe0ffc752e9ebb1df1b38853f2d8a79ec54aaea91827779897c5a504bbcb8aabd16b91b18583ee9ef600a962b00c3ac29b37a5ee44a850ac2c12fc0e40dfe0bfe5dd9476be9aed763e9e2ab88a0a446c332e1908c173ac8252041ac1freshly minted kitty goodness1001511332134287
-[22-Nov-2017 17:28:54 Australia/Canberra] file object was null
-[22-Nov-2017 17:28:54 Australia/Canberra] PHP Notice:  Undefined offset: 0 in C:\inetpub\wwwroot\catship_production\php\catShipTransaction.php on line 29
-[22-Nov-2017 17:28:54 Australia/Canberra] 
-[22-Nov-2017 17:29:47 Australia/Canberra] looping through keys
-[22-Nov-2017 17:29:47 Australia/Canberra] minerAddressIn
-[22-Nov-2017 17:29:47 Australia/Canberra] 04bbcb8aabd16b91b18583ee9ef600a962b00c3ac29b37a5ee44a850ac2c12fc0e40dfe0bfe5dd9476be9aed763e9e2ab88a0a446c332e1908c173ac8252041ac1
-[22-Nov-2017 17:29:47 Australia/Canberra] looping through keys
-[22-Nov-2017 17:29:47 Australia/Canberra] coinRewardIn
-[22-Nov-2017 17:29:47 Australia/Canberra] 100
-[22-Nov-2017 17:29:47 Australia/Canberra] looping through keys
-[22-Nov-2017 17:29:47 Australia/Canberra] utcTimeStamp
-[22-Nov-2017 17:29:47 Australia/Canberra] 1511332187762
-[22-Nov-2017 17:29:47 Australia/Canberra] transactionPlainText:
-[22-Nov-2017 17:29:47 Australia/Canberra] 041c4bc717563647d7980e5f46b79c3b68eb11667559f8b70ab07b737e985d33f078dd404e1abe0ffc752e9ebb1df1b38853f2d8a79ec54aaea91827779897c5a504bbcb8aabd16b91b18583ee9ef600a962b00c3ac29b37a5ee44a850ac2c12fc0e40dfe0bfe5dd9476be9aed763e9e2ab88a0a446c332e1908c173ac8252041ac1freshly minted kitty goodness1001511332187762
-[22-Nov-2017 17:29:48 Australia/Canberra] file object was null
-[22-Nov-2017 17:29:48 Australia/Canberra] PHP Notice:  Undefined offset: 0 in C:\inetpub\wwwroot\catship_production\php\catShipTransaction.php on line 29
-[22-Nov-2017 17:29:48 Australia/Canberra] 
-[22-Nov-2017 17:29:52 Australia/Canberra] looping through keys
-[22-Nov-2017 17:29:52 Australia/Canberra] minerAddressIn
-[22-Nov-2017 17:29:52 Australia/Canberra] 04bbcb8aabd16b91b18583ee9ef600a962b00c3ac29b37a5ee44a850ac2c12fc0e40dfe0bfe5dd9476be9aed763e9e2ab88a0a446c332e1908c173ac8252041ac1
-[22-Nov-2017 17:29:52 Australia/Canberra] looping through keys
-[22-Nov-2017 17:29:52 Australia/Canberra] coinRewardIn
-[22-Nov-2017 17:29:52 Australia/Canberra] 100
-[22-Nov-2017 17:29:52 Australia/Canberra] looping through keys
-[22-Nov-2017 17:29:52 Australia/Canberra] utcTimeStamp
-[22-Nov-2017 17:29:52 Australia/Canberra] 1511332192446
-[22-Nov-2017 17:29:52 Australia/Canberra] transactionPlainText:
-[22-Nov-2017 17:29:52 Australia/Canberra] 041c4bc717563647d7980e5f46b79c3b68eb11667559f8b70ab07b737e985d33f078dd404e1abe0ffc752e9ebb1df1b38853f2d8a79ec54aaea91827779897c5a504bbcb8aabd16b91b18583ee9ef600a962b00c3ac29b37a5ee44a850ac2c12fc0e40dfe0bfe5dd9476be9aed763e9e2ab88a0a446c332e1908c173ac8252041ac1freshly minted kitty goodness1001511332192446
-[22-Nov-2017 17:29:52 Australia/Canberra] file object was null
-[22-Nov-2017 17:29:52 Australia/Canberra] PHP Notice:  Undefined offset: 0 in C:\inetpub\wwwroot\catship_production\php\catShipTransaction.php on line 29
-[22-Nov-2017 17:29:52 Australia/Canberra] 
-[22-Nov-2017 17:29:57 Australia/Canberra] looping through keys
-[22-Nov-2017 17:29:57 Australia/Canberra] minerAddressIn
-[22-Nov-2017 17:29:57 Australia/Canberra] 04bbcb8aabd16b91b18583ee9ef600a962b00c3ac29b37a5ee44a850ac2c12fc0e40dfe0bfe5dd9476be9aed763e9e2ab88a0a446c332e1908c173ac8252041ac1
-[22-Nov-2017 17:29:57 Australia/Canberra] looping through keys
-[22-Nov-2017 17:29:57 Australia/Canberra] coinRewardIn
-[22-Nov-2017 17:29:57 Australia/Canberra] 100
-[22-Nov-2017 17:29:57 Australia/Canberra] looping through keys
-[22-Nov-2017 17:29:57 Australia/Canberra] utcTimeStamp
-[22-Nov-2017 17:29:57 Australia/Canberra] 1511332197582
-[22-Nov-2017 17:29:57 Australia/Canberra] transactionPlainText:
-[22-Nov-2017 17:29:57 Australia/Canberra] 041c4bc717563647d7980e5f46b79c3b68eb11667559f8b70ab07b737e985d33f078dd404e1abe0ffc752e9ebb1df1b38853f2d8a79ec54aaea91827779897c5a504bbcb8aabd16b91b18583ee9ef600a962b00c3ac29b37a5ee44a850ac2c12fc0e40dfe0bfe5dd9476be9aed763e9e2ab88a0a446c332e1908c173ac8252041ac1freshly minted kitty goodness1001511332197582
-[22-Nov-2017 17:29:57 Australia/Canberra] file object was null
-[22-Nov-2017 17:29:57 Australia/Canberra] PHP Notice:  Undefined offset: 0 in C:\inetpub\wwwroot\catship_production\php\catShipTransaction.php on line 29
-[22-Nov-2017 17:29:57 Australia/Canberra] 
-[22-Nov-2017 17:30:09 Australia/Canberra] looping through keys
-[22-Nov-2017 17:30:09 Australia/Canberra] minerAddressIn
-[22-Nov-2017 17:30:09 Australia/Canberra] 04bbcb8aabd16b91b18583ee9ef600a962b00c3ac29b37a5ee44a850ac2c12fc0e40dfe0bfe5dd9476be9aed763e9e2ab88a0a446c332e1908c173ac8252041ac1
-[22-Nov-2017 17:30:09 Australia/Canberra] looping through keys
-[22-Nov-2017 17:30:09 Australia/Canberra] coinRewardIn
-[22-Nov-2017 17:30:09 Australia/Canberra] 100
-[22-Nov-2017 17:30:09 Australia/Canberra] looping through keys
-[22-Nov-2017 17:30:09 Australia/Canberra] utcTimeStamp
-[22-Nov-2017 17:30:09 Australia/Canberra] 1511332209254
-[22-Nov-2017 17:30:09 Australia/Canberra] transactionPlainText:
-[22-Nov-2017 17:30:09 Australia/Canberra] 041c4bc717563647d7980e5f46b79c3b68eb11667559f8b70ab07b737e985d33f078dd404e1abe0ffc752e9ebb1df1b38853f2d8a79ec54aaea91827779897c5a504bbcb8aabd16b91b18583ee9ef600a962b00c3ac29b37a5ee44a850ac2c12fc0e40dfe0bfe5dd9476be9aed763e9e2ab88a0a446c332e1908c173ac8252041ac1freshly minted kitty goodness1001511332209254
-[22-Nov-2017 17:30:09 Australia/Canberra] file object was null
-[22-Nov-2017 17:30:09 Australia/Canberra] PHP Notice:  Undefined offset: 0 in C:\inetpub\wwwroot\catship_production\php\catShipTransaction.php on line 29
-[22-Nov-2017 17:30:09 Australia/Canberra] 
-[22-Nov-2017 17:30:10 Australia/Canberra] looping through keys
-[22-Nov-2017 17:30:10 Australia/Canberra] minerAddressIn
-[22-Nov-2017 17:30:10 Australia/Canberra] 04bbcb8aabd16b91b18583ee9ef600a962b00c3ac29b37a5ee44a850ac2c12fc0e40dfe0bfe5dd9476be9aed763e9e2ab88a0a446c332e1908c173ac8252041ac1
-[22-Nov-2017 17:30:10 Australia/Canberra] looping through keys
-[22-Nov-2017 17:30:10 Australia/Canberra] coinRewardIn
-[22-Nov-2017 17:30:10 Australia/Canberra] 100
-[22-Nov-2017 17:30:10 Australia/Canberra] looping through keys
-[22-Nov-2017 17:30:10 Australia/Canberra] utcTimeStamp
-[22-Nov-2017 17:30:10 Australia/Canberra] 1511332210110
-[22-Nov-2017 17:30:10 Australia/Canberra] transactionPlainText:
-[22-Nov-2017 17:30:10 Australia/Canberra] 041c4bc717563647d7980e5f46b79c3b68eb11667559f8b70ab07b737e985d33f078dd404e1abe0ffc752e9ebb1df1b38853f2d8a79ec54aaea91827779897c5a504bbcb8aabd16b91b18583ee9ef600a962b00c3ac29b37a5ee44a850ac2c12fc0e40dfe0bfe5dd9476be9aed763e9e2ab88a0a446c332e1908c173ac8252041ac1freshly minted kitty goodness1001511332210110
-[22-Nov-2017 17:30:10 Australia/Canberra] file object was null
-[22-Nov-2017 17:30:10 Australia/Canberra] PHP Notice:  Undefined offset: 0 in C:\inetpub\wwwroot\catship_production\php\catShipTransaction.php on line 29
-[22-Nov-2017 17:30:10 Australia/Canberra] 
-[23-Nov-2017 19:16:52 Australia/Canberra] players ip address
-[23-Nov-2017 19:16:52 Australia/Canberra] ::1
-[23-Nov-2017 19:16:52 Australia/Canberra] looping through keys
-[23-Nov-2017 19:16:52 Australia/Canberra] checkpointTotal
-[23-Nov-2017 19:16:52 Australia/Canberra] 156
-[23-Nov-2017 19:16:52 Australia/Canberra] looping through keys
-[23-Nov-2017 19:16:52 Australia/Canberra] checkpointEnemyCount
-[23-Nov-2017 19:16:52 Australia/Canberra] 12
-[23-Nov-2017 19:16:52 Australia/Canberra] looping through keys
-[23-Nov-2017 19:16:52 Australia/Canberra] checkpointSb
-[23-Nov-2017 19:16:52 Australia/Canberra] 1
-[23-Nov-2017 19:16:52 Australia/Canberra] looping through keys
-[23-Nov-2017 19:16:52 Australia/Canberra] checkpointPyramidCount
-[23-Nov-2017 19:16:52 Australia/Canberra] 0
-[23-Nov-2017 19:16:52 Australia/Canberra] looping through keys
-[23-Nov-2017 19:16:52 Australia/Canberra] checkpointPyramidTimer
-[23-Nov-2017 19:16:52 Australia/Canberra] 0
-[23-Nov-2017 19:16:52 Australia/Canberra] looping through keys
-[23-Nov-2017 19:16:52 Australia/Canberra] checkpointPyramidsOffset
-[23-Nov-2017 19:16:52 Australia/Canberra] 2802
-[23-Nov-2017 19:16:52 Australia/Canberra] looping through keys
-[23-Nov-2017 19:16:52 Australia/Canberra] checkpointStage1Y
-[23-Nov-2017 19:16:52 Australia/Canberra] -3720
-[23-Nov-2017 19:16:52 Australia/Canberra] looping through keys
-[23-Nov-2017 19:16:52 Australia/Canberra] checkpointStage2Y
-[23-Nov-2017 19:16:52 Australia/Canberra] 0
-[23-Nov-2017 19:16:52 Australia/Canberra] looping through keys
-[23-Nov-2017 19:16:52 Australia/Canberra] checkpointPyramidsY
-[23-Nov-2017 19:16:52 Australia/Canberra] 2802
-[23-Nov-2017 19:16:52 Australia/Canberra] looping through keys
-[23-Nov-2017 19:16:52 Australia/Canberra] checkpointCheckpoint
-[23-Nov-2017 19:16:52 Australia/Canberra] 0
-[23-Nov-2017 19:16:52 Australia/Canberra] looping through keys
-[23-Nov-2017 19:16:52 Australia/Canberra] checkpointShipFP
-[23-Nov-2017 19:16:52 Australia/Canberra] 0
-[23-Nov-2017 19:16:52 Australia/Canberra] looping through keys
-[23-Nov-2017 19:16:52 Australia/Canberra] checkpointStagespeed
-[23-Nov-2017 19:16:52 Australia/Canberra] 1
-[23-Nov-2017 19:16:52 Australia/Canberra] looping through keys
-[23-Nov-2017 19:16:52 Australia/Canberra] health
-[23-Nov-2017 19:16:52 Australia/Canberra] -1
-[23-Nov-2017 19:16:52 Australia/Canberra] looping through keys
-[23-Nov-2017 19:16:52 Australia/Canberra] alienHealth
-[23-Nov-2017 19:16:52 Australia/Canberra] 12
-[23-Nov-2017 19:16:52 Australia/Canberra] looping through keys
-[23-Nov-2017 19:16:52 Australia/Canberra] total
-[23-Nov-2017 19:16:52 Australia/Canberra] 174
-[23-Nov-2017 19:16:52 Australia/Canberra] looping through keys
-[23-Nov-2017 19:16:52 Australia/Canberra] sb
-[23-Nov-2017 19:16:52 Australia/Canberra] 4
-[23-Nov-2017 19:16:52 Australia/Canberra] looping through keys
-[23-Nov-2017 19:16:52 Australia/Canberra] enemyCount
-[23-Nov-2017 19:16:52 Australia/Canberra] 12
-[23-Nov-2017 19:16:52 Australia/Canberra] looping through keys
-[23-Nov-2017 19:16:52 Australia/Canberra] score
-[23-Nov-2017 19:16:52 Australia/Canberra] 120
-[23-Nov-2017 19:16:52 Australia/Canberra] looping through keys
-[23-Nov-2017 19:16:52 Australia/Canberra] row
-[23-Nov-2017 19:16:52 Australia/Canberra] 3
-[23-Nov-2017 19:16:52 Australia/Canberra] looping through keys
-[23-Nov-2017 19:16:52 Australia/Canberra] pyramidCount
-[23-Nov-2017 19:16:52 Australia/Canberra] 19
-[23-Nov-2017 19:16:52 Australia/Canberra] looping through keys
-[23-Nov-2017 19:16:52 Australia/Canberra] pyramidTimer
-[23-Nov-2017 19:16:52 Australia/Canberra] 172
-[23-Nov-2017 19:16:52 Australia/Canberra] looping through keys
-[23-Nov-2017 19:16:52 Australia/Canberra] pyramidsOffset
-[23-Nov-2017 19:16:52 Australia/Canberra] 3558
-[23-Nov-2017 19:16:52 Australia/Canberra] looping through keys
-[23-Nov-2017 19:16:52 Australia/Canberra] checkpoint
-[23-Nov-2017 19:16:52 Australia/Canberra] 1
-[23-Nov-2017 19:16:52 Australia/Canberra] looping through keys
-[23-Nov-2017 19:16:52 Australia/Canberra] shipFP
-[23-Nov-2017 19:16:52 Australia/Canberra] 0
-[23-Nov-2017 19:16:52 Australia/Canberra] looping through keys
-[23-Nov-2017 19:16:52 Australia/Canberra] stagespeed
-[23-Nov-2017 19:16:52 Australia/Canberra] 4
-[23-Nov-2017 19:16:52 Australia/Canberra] looping through keys
-[23-Nov-2017 19:16:52 Australia/Canberra] shipy
-[23-Nov-2017 19:16:52 Australia/Canberra] 247.75
-[23-Nov-2017 19:16:52 Australia/Canberra] looping through keys
-[23-Nov-2017 19:16:52 Australia/Canberra] shipx
-[23-Nov-2017 19:16:52 Australia/Canberra] 193.16666666667
-[23-Nov-2017 19:16:52 Australia/Canberra] looping through keys
-[23-Nov-2017 19:16:52 Australia/Canberra] enemy1Count
-[23-Nov-2017 19:16:52 Australia/Canberra] 4
-[23-Nov-2017 19:16:52 Australia/Canberra] looping through keys
-[23-Nov-2017 19:16:52 Australia/Canberra] enemy2Count
-[23-Nov-2017 19:16:52 Australia/Canberra] 0
-[23-Nov-2017 19:16:52 Australia/Canberra] looping through keys
-[23-Nov-2017 19:16:52 Australia/Canberra] enemy3Count
-[23-Nov-2017 19:16:52 Australia/Canberra] 0
-[23-Nov-2017 19:16:52 Australia/Canberra] looping through keys
-[23-Nov-2017 19:16:52 Australia/Canberra] enemy4Count
-[23-Nov-2017 19:16:52 Australia/Canberra] 0
-[23-Nov-2017 19:16:52 Australia/Canberra] looping through keys
-[23-Nov-2017 19:16:52 Australia/Canberra] pyramidsy
-[23-Nov-2017 19:16:52 Australia/Canberra] 3558
-[23-Nov-2017 19:16:52 Australia/Canberra] looping through keys
-[23-Nov-2017 19:16:52 Australia/Canberra] eventTime
-[23-Nov-2017 19:16:52 Australia/Canberra] 172
-[23-Nov-2017 19:16:52 Australia/Canberra] looping through keys
-[23-Nov-2017 19:16:52 Australia/Canberra] minerAddressIn
-[23-Nov-2017 19:16:52 Australia/Canberra] 04bbcb8aabd16b91b18583ee9ef600a962b00c3ac29b37a5ee44a850ac2c12fc0e40dfe0bfe5dd9476be9aed763e9e2ab88a0a446c332e1908c173ac8252041ac1
-[23-Nov-2017 19:16:52 Australia/Canberra] looping through keys
-[23-Nov-2017 19:16:52 Australia/Canberra] utcTimeStamp
-[23-Nov-2017 19:16:52 Australia/Canberra] 1511425010939
-[23-Nov-2017 19:16:52 Australia/Canberra] looping through keys
-[23-Nov-2017 19:16:52 Australia/Canberra] enemyBulletsFired
-[23-Nov-2017 19:16:52 Australia/Canberra] 59
-[23-Nov-2017 19:16:52 Australia/Canberra] looping through keys
-[23-Nov-2017 19:16:52 Australia/Canberra] CPTrophy
-[23-Nov-2017 19:16:52 Australia/Canberra] 0
-[23-Nov-2017 19:16:52 Australia/Canberra] looping through keys
-[23-Nov-2017 19:16:52 Australia/Canberra] bonus
-[23-Nov-2017 19:16:52 Australia/Canberra] 0
-[23-Nov-2017 19:16:52 Australia/Canberra] transactionPlainText:
-[23-Nov-2017 19:16:52 Australia/Canberra] 04ce828291cad2e744a27daf8548774ea17f8d789e76f854a338cecf50bb404959c327ffd0ac6fa8c26b8546c2d08f34940e70e9e7312742fe22aa1d6cc72f299f04bbcb8aabd16b91b18583ee9ef600a962b00c3ac29b37a5ee44a850ac2c12fc0e40dfe0bfe5dd9476be9aed763e9e2ab88a0a446c332e1908c173ac8252041ac1cats in space1201511425010939
-[23-Nov-2017 19:16:52 Australia/Canberra] file object was null
-[23-Nov-2017 19:16:52 Australia/Canberra] PHP Notice:  Undefined offset: 0 in C:\inetpub\wwwroot\catship_production\php\catShipTransaction.php on line 29
-[23-Nov-2017 19:16:52 Australia/Canberra] 
-[23-Nov-2017 19:22:14 Australia/Canberra] looping through keys
-[23-Nov-2017 19:22:14 Australia/Canberra] minerAddressIn
-[23-Nov-2017 19:22:14 Australia/Canberra] 04bbcb8aabd16b91b18583ee9ef600a962b00c3ac29b37a5ee44a850ac2c12fc0e40dfe0bfe5dd9476be9aed763e9e2ab88a0a446c332e1908c173ac8252041ac1
-[23-Nov-2017 19:22:14 Australia/Canberra] looping through keys
-[23-Nov-2017 19:22:14 Australia/Canberra] coinRewardIn
-[23-Nov-2017 19:22:14 Australia/Canberra] 100
-[23-Nov-2017 19:22:14 Australia/Canberra] looping through keys
-[23-Nov-2017 19:22:14 Australia/Canberra] utcTimeStamp
-[23-Nov-2017 19:22:14 Australia/Canberra] 1511425334619
-[23-Nov-2017 19:22:14 Australia/Canberra] transactionPlainText:
-[23-Nov-2017 19:22:14 Australia/Canberra] 041c4bc717563647d7980e5f46b79c3b68eb11667559f8b70ab07b737e985d33f078dd404e1abe0ffc752e9ebb1df1b38853f2d8a79ec54aaea91827779897c5a504bbcb8aabd16b91b18583ee9ef600a962b00c3ac29b37a5ee44a850ac2c12fc0e40dfe0bfe5dd9476be9aed763e9e2ab88a0a446c332e1908c173ac8252041ac1freshly minted kitty goodness1001511425334619
-[23-Nov-2017 19:22:14 Australia/Canberra] file object was not null, pushing
-[23-Nov-2017 19:22:14 Australia/Canberra] 04ce828291cad2e744a27daf8548774ea17f8d789e76f854a338cecf50bb404959c327ffd0ac6fa8c26b8546c2d08f34940e70e9e7312742fe22aa1d6cc72f299f
-[23-Nov-2017 19:24:18 Australia/Canberra] players ip address
-[23-Nov-2017 19:24:18 Australia/Canberra] ::1
-[23-Nov-2017 19:24:18 Australia/Canberra] looping through keys
-[23-Nov-2017 19:24:18 Australia/Canberra] checkpointTotal
-[23-Nov-2017 19:24:18 Australia/Canberra] 0
-[23-Nov-2017 19:24:18 Australia/Canberra] looping through keys
-[23-Nov-2017 19:24:18 Australia/Canberra] checkpointEnemyCount
-[23-Nov-2017 19:24:18 Australia/Canberra] 0
-[23-Nov-2017 19:24:18 Australia/Canberra] looping through keys
-[23-Nov-2017 19:24:18 Australia/Canberra] checkpointSb
-[23-Nov-2017 19:24:18 Australia/Canberra] 0
-[23-Nov-2017 19:24:18 Australia/Canberra] looping through keys
-[23-Nov-2017 19:24:18 Australia/Canberra] checkpointPyramidCount
-[23-Nov-2017 19:24:18 Australia/Canberra] 0
-[23-Nov-2017 19:24:18 Australia/Canberra] looping through keys
-[23-Nov-2017 19:24:18 Australia/Canberra] checkpointPyramidTimer
-[23-Nov-2017 19:24:18 Australia/Canberra] 0
-[23-Nov-2017 19:24:18 Australia/Canberra] looping through keys
-[23-Nov-2017 19:24:18 Australia/Canberra] checkpointPyramidsOffset
-[23-Nov-2017 19:24:18 Australia/Canberra] 0
-[23-Nov-2017 19:24:18 Australia/Canberra] looping through keys
-[23-Nov-2017 19:24:18 Australia/Canberra] checkpointStage1Y
-[23-Nov-2017 19:24:18 Australia/Canberra] 0
-[23-Nov-2017 19:24:18 Australia/Canberra] looping through keys
-[23-Nov-2017 19:24:18 Australia/Canberra] checkpointStage2Y
-[23-Nov-2017 19:24:18 Australia/Canberra] 0
-[23-Nov-2017 19:24:18 Australia/Canberra] looping through keys
-[23-Nov-2017 19:24:18 Australia/Canberra] checkpointPyramidsY
-[23-Nov-2017 19:24:18 Australia/Canberra] 0
-[23-Nov-2017 19:24:18 Australia/Canberra] looping through keys
-[23-Nov-2017 19:24:18 Australia/Canberra] checkpointCheckpoint
-[23-Nov-2017 19:24:18 Australia/Canberra] 0
-[23-Nov-2017 19:24:18 Australia/Canberra] looping through keys
-[23-Nov-2017 19:24:18 Australia/Canberra] checkpointShipFP
-[23-Nov-2017 19:24:18 Australia/Canberra] 0
-[23-Nov-2017 19:24:18 Australia/Canberra] looping through keys
-[23-Nov-2017 19:24:18 Australia/Canberra] checkpointStagespeed
-[23-Nov-2017 19:24:18 Australia/Canberra] 1
-[23-Nov-2017 19:24:18 Australia/Canberra] looping through keys
-[23-Nov-2017 19:24:18 Australia/Canberra] health
-[23-Nov-2017 19:24:18 Australia/Canberra] -1
-[23-Nov-2017 19:24:18 Australia/Canberra] looping through keys
-[23-Nov-2017 19:24:18 Australia/Canberra] alienHealth
-[23-Nov-2017 19:24:18 Australia/Canberra] 12
-[23-Nov-2017 19:24:18 Australia/Canberra] looping through keys
-[23-Nov-2017 19:24:18 Australia/Canberra] total
-[23-Nov-2017 19:24:18 Australia/Canberra] 86
-[23-Nov-2017 19:24:18 Australia/Canberra] looping through keys
-[23-Nov-2017 19:24:18 Australia/Canberra] sb
-[23-Nov-2017 19:24:18 Australia/Canberra] 1
-[23-Nov-2017 19:24:18 Australia/Canberra] looping through keys
-[23-Nov-2017 19:24:18 Australia/Canberra] enemyCount
-[23-Nov-2017 19:24:18 Australia/Canberra] 10
-[23-Nov-2017 19:24:18 Australia/Canberra] looping through keys
-[23-Nov-2017 19:24:18 Australia/Canberra] score
-[23-Nov-2017 19:24:18 Australia/Canberra] 80
-[23-Nov-2017 19:24:18 Australia/Canberra] looping through keys
-[23-Nov-2017 19:24:18 Australia/Canberra] row
-[23-Nov-2017 19:24:18 Australia/Canberra] 0
-[23-Nov-2017 19:24:18 Australia/Canberra] looping through keys
-[23-Nov-2017 19:24:18 Australia/Canberra] pyramidCount
-[23-Nov-2017 19:24:18 Australia/Canberra] 0
-[23-Nov-2017 19:24:18 Australia/Canberra] looping through keys
-[23-Nov-2017 19:24:18 Australia/Canberra] pyramidTimer
-[23-Nov-2017 19:24:18 Australia/Canberra] 0
-[23-Nov-2017 19:24:18 Australia/Canberra] looping through keys
-[23-Nov-2017 19:24:18 Australia/Canberra] pyramidsOffset
-[23-Nov-2017 19:24:18 Australia/Canberra] 1548
-[23-Nov-2017 19:24:18 Australia/Canberra] looping through keys
-[23-Nov-2017 19:24:18 Australia/Canberra] checkpoint
-[23-Nov-2017 19:24:18 Australia/Canberra] 0
-[23-Nov-2017 19:24:18 Australia/Canberra] looping through keys
-[23-Nov-2017 19:24:18 Australia/Canberra] shipFP
-[23-Nov-2017 19:24:18 Australia/Canberra] 0
-[23-Nov-2017 19:24:18 Australia/Canberra] looping through keys
-[23-Nov-2017 19:24:18 Australia/Canberra] stagespeed
-[23-Nov-2017 19:24:18 Australia/Canberra] 1
-[23-Nov-2017 19:24:18 Australia/Canberra] looping through keys
-[23-Nov-2017 19:24:18 Australia/Canberra] shipy
-[23-Nov-2017 19:24:18 Australia/Canberra] 272.41666666667
-[23-Nov-2017 19:24:18 Australia/Canberra] looping through keys
-[23-Nov-2017 19:24:18 Australia/Canberra] shipx
-[23-Nov-2017 19:24:18 Australia/Canberra] 708.66666666667
-[23-Nov-2017 19:24:18 Australia/Canberra] looping through keys
-[23-Nov-2017 19:24:18 Australia/Canberra] enemy1Count
-[23-Nov-2017 19:24:18 Australia/Canberra] 4
-[23-Nov-2017 19:24:18 Australia/Canberra] looping through keys
-[23-Nov-2017 19:24:18 Australia/Canberra] enemy2Count
-[23-Nov-2017 19:24:18 Australia/Canberra] 0
-[23-Nov-2017 19:24:18 Australia/Canberra] looping through keys
-[23-Nov-2017 19:24:18 Australia/Canberra] enemy3Count
-[23-Nov-2017 19:24:18 Australia/Canberra] 2
-[23-Nov-2017 19:24:18 Australia/Canberra] looping through keys
-[23-Nov-2017 19:24:18 Australia/Canberra] enemy4Count
-[23-Nov-2017 19:24:18 Australia/Canberra] 0
-[23-Nov-2017 19:24:18 Australia/Canberra] looping through keys
-[23-Nov-2017 19:24:18 Australia/Canberra] pyramidsy
-[23-Nov-2017 19:24:18 Australia/Canberra] 1548
-[23-Nov-2017 19:24:18 Australia/Canberra] looping through keys
-[23-Nov-2017 19:24:18 Australia/Canberra] eventTime
-[23-Nov-2017 19:24:18 Australia/Canberra] 0
-[23-Nov-2017 19:24:18 Australia/Canberra] looping through keys
-[23-Nov-2017 19:24:18 Australia/Canberra] minerAddressIn
-[23-Nov-2017 19:24:18 Australia/Canberra] 04bbcb8aabd16b91b18583ee9ef600a962b00c3ac29b37a5ee44a850ac2c12fc0e40dfe0bfe5dd9476be9aed763e9e2ab88a0a446c332e1908c173ac8252041ac1
-[23-Nov-2017 19:24:18 Australia/Canberra] looping through keys
-[23-Nov-2017 19:24:18 Australia/Canberra] utcTimeStamp
-[23-Nov-2017 19:24:18 Australia/Canberra] 1511425458416
-[23-Nov-2017 19:24:18 Australia/Canberra] looping through keys
-[23-Nov-2017 19:24:18 Australia/Canberra] enemyBulletsFired
-[23-Nov-2017 19:24:18 Australia/Canberra] 17
-[23-Nov-2017 19:24:18 Australia/Canberra] looping through keys
-[23-Nov-2017 19:24:18 Australia/Canberra] CPTrophy
-[23-Nov-2017 19:24:18 Australia/Canberra] 0
-[23-Nov-2017 19:24:18 Australia/Canberra] looping through keys
-[23-Nov-2017 19:24:18 Australia/Canberra] bonus
-[23-Nov-2017 19:24:18 Australia/Canberra] 0
-[23-Nov-2017 19:24:18 Australia/Canberra] transactionPlainText:
-[23-Nov-2017 19:24:18 Australia/Canberra] 04ce828291cad2e744a27daf8548774ea17f8d789e76f854a338cecf50bb404959c327ffd0ac6fa8c26b8546c2d08f34940e70e9e7312742fe22aa1d6cc72f299f04bbcb8aabd16b91b18583ee9ef600a962b00c3ac29b37a5ee44a850ac2c12fc0e40dfe0bfe5dd9476be9aed763e9e2ab88a0a446c332e1908c173ac8252041ac1cats in space801511425458416
-[23-Nov-2017 19:24:19 Australia/Canberra] file object was null
-[23-Nov-2017 19:24:19 Australia/Canberra] PHP Notice:  Undefined offset: 0 in C:\inetpub\wwwroot\catship_production\php\catShipTransaction.php on line 29
-[23-Nov-2017 19:24:19 Australia/Canberra] 
-[23-Nov-2017 19:27:04 Australia/Canberra] looping through keys
-[23-Nov-2017 19:27:04 Australia/Canberra] minerAddressIn
-[23-Nov-2017 19:27:04 Australia/Canberra] 04bbcb8aabd16b91b18583ee9ef600a962b00c3ac29b37a5ee44a850ac2c12fc0e40dfe0bfe5dd9476be9aed763e9e2ab88a0a446c332e1908c173ac8252041ac1
-[23-Nov-2017 19:27:04 Australia/Canberra] looping through keys
-[23-Nov-2017 19:27:04 Australia/Canberra] coinRewardIn
-[23-Nov-2017 19:27:04 Australia/Canberra] 100
-[23-Nov-2017 19:27:04 Australia/Canberra] looping through keys
-[23-Nov-2017 19:27:04 Australia/Canberra] utcTimeStamp
-[23-Nov-2017 19:27:04 Australia/Canberra] 1511425624468
-[23-Nov-2017 19:27:04 Australia/Canberra] transactionPlainText:
-[23-Nov-2017 19:27:04 Australia/Canberra] 041c4bc717563647d7980e5f46b79c3b68eb11667559f8b70ab07b737e985d33f078dd404e1abe0ffc752e9ebb1df1b38853f2d8a79ec54aaea91827779897c5a504bbcb8aabd16b91b18583ee9ef600a962b00c3ac29b37a5ee44a850ac2c12fc0e40dfe0bfe5dd9476be9aed763e9e2ab88a0a446c332e1908c173ac8252041ac1freshly minted kitty goodness1001511425624468
-[23-Nov-2017 19:27:04 Australia/Canberra] file object was not null, pushing
-[23-Nov-2017 19:27:04 Australia/Canberra] 04ce828291cad2e744a27daf8548774ea17f8d789e76f854a338cecf50bb404959c327ffd0ac6fa8c26b8546c2d08f34940e70e9e7312742fe22aa1d6cc72f299f
-[23-Nov-2017 19:28:09 Australia/Canberra] players ip address
-[23-Nov-2017 19:28:09 Australia/Canberra] ::1
-[23-Nov-2017 19:28:09 Australia/Canberra] looping through keys
-[23-Nov-2017 19:28:09 Australia/Canberra] checkpointTotal
-[23-Nov-2017 19:28:09 Australia/Canberra] 0
-[23-Nov-2017 19:28:09 Australia/Canberra] looping through keys
-[23-Nov-2017 19:28:09 Australia/Canberra] checkpointEnemyCount
-[23-Nov-2017 19:28:09 Australia/Canberra] 0
-[23-Nov-2017 19:28:09 Australia/Canberra] looping through keys
-[23-Nov-2017 19:28:09 Australia/Canberra] checkpointSb
-[23-Nov-2017 19:28:09 Australia/Canberra] 0
-[23-Nov-2017 19:28:09 Australia/Canberra] looping through keys
-[23-Nov-2017 19:28:09 Australia/Canberra] checkpointPyramidCount
-[23-Nov-2017 19:28:09 Australia/Canberra] 0
-[23-Nov-2017 19:28:09 Australia/Canberra] looping through keys
-[23-Nov-2017 19:28:09 Australia/Canberra] checkpointPyramidTimer
-[23-Nov-2017 19:28:09 Australia/Canberra] 0
-[23-Nov-2017 19:28:09 Australia/Canberra] looping through keys
-[23-Nov-2017 19:28:09 Australia/Canberra] checkpointPyramidsOffset
-[23-Nov-2017 19:28:09 Australia/Canberra] 0
-[23-Nov-2017 19:28:09 Australia/Canberra] looping through keys
-[23-Nov-2017 19:28:09 Australia/Canberra] checkpointStage1Y
-[23-Nov-2017 19:28:09 Australia/Canberra] 0
-[23-Nov-2017 19:28:09 Australia/Canberra] looping through keys
-[23-Nov-2017 19:28:09 Australia/Canberra] checkpointStage2Y
-[23-Nov-2017 19:28:09 Australia/Canberra] 0
-[23-Nov-2017 19:28:09 Australia/Canberra] looping through keys
-[23-Nov-2017 19:28:09 Australia/Canberra] checkpointPyramidsY
-[23-Nov-2017 19:28:09 Australia/Canberra] 0
-[23-Nov-2017 19:28:09 Australia/Canberra] looping through keys
-[23-Nov-2017 19:28:10 Australia/Canberra] checkpointCheckpoint
-[23-Nov-2017 19:28:10 Australia/Canberra] 0
-[23-Nov-2017 19:28:10 Australia/Canberra] looping through keys
-[23-Nov-2017 19:28:10 Australia/Canberra] checkpointShipFP
-[23-Nov-2017 19:28:10 Australia/Canberra] 0
-[23-Nov-2017 19:28:10 Australia/Canberra] looping through keys
-[23-Nov-2017 19:28:10 Australia/Canberra] checkpointStagespeed
-[23-Nov-2017 19:28:10 Australia/Canberra] 1
-[23-Nov-2017 19:28:10 Australia/Canberra] looping through keys
-[23-Nov-2017 19:28:10 Australia/Canberra] health
-[23-Nov-2017 19:28:10 Australia/Canberra] -1
-[23-Nov-2017 19:28:10 Australia/Canberra] looping through keys
-[23-Nov-2017 19:28:10 Australia/Canberra] alienHealth
-[23-Nov-2017 19:28:10 Australia/Canberra] 12
-[23-Nov-2017 19:28:10 Australia/Canberra] looping through keys
-[23-Nov-2017 19:28:10 Australia/Canberra] total
-[23-Nov-2017 19:28:10 Australia/Canberra] 118
-[23-Nov-2017 19:28:10 Australia/Canberra] looping through keys
-[23-Nov-2017 19:28:10 Australia/Canberra] sb
-[23-Nov-2017 19:28:10 Australia/Canberra] 1
-[23-Nov-2017 19:28:10 Australia/Canberra] looping through keys
-[23-Nov-2017 19:28:10 Australia/Canberra] enemyCount
-[23-Nov-2017 19:28:10 Australia/Canberra] 12
-[23-Nov-2017 19:28:10 Australia/Canberra] looping through keys
-[23-Nov-2017 19:28:10 Australia/Canberra] score
-[23-Nov-2017 19:28:10 Australia/Canberra] 100
-[23-Nov-2017 19:28:10 Australia/Canberra] looping through keys
-[23-Nov-2017 19:28:10 Australia/Canberra] row
-[23-Nov-2017 19:28:10 Australia/Canberra] 0
-[23-Nov-2017 19:28:10 Australia/Canberra] looping through keys
-[23-Nov-2017 19:28:10 Australia/Canberra] pyramidCount
-[23-Nov-2017 19:28:10 Australia/Canberra] 0
-[23-Nov-2017 19:28:10 Australia/Canberra] looping through keys
-[23-Nov-2017 19:28:10 Australia/Canberra] pyramidTimer
-[23-Nov-2017 19:28:10 Australia/Canberra] 0
-[23-Nov-2017 19:28:10 Australia/Canberra] looping through keys
-[23-Nov-2017 19:28:10 Australia/Canberra] pyramidsOffset
-[23-Nov-2017 19:28:10 Australia/Canberra] 2118
-[23-Nov-2017 19:28:10 Australia/Canberra] looping through keys
-[23-Nov-2017 19:28:10 Australia/Canberra] checkpoint
-[23-Nov-2017 19:28:10 Australia/Canberra] 0
-[23-Nov-2017 19:28:10 Australia/Canberra] looping through keys
-[23-Nov-2017 19:28:10 Australia/Canberra] shipFP
-[23-Nov-2017 19:28:10 Australia/Canberra] 0
-[23-Nov-2017 19:28:10 Australia/Canberra] looping through keys
-[23-Nov-2017 19:28:10 Australia/Canberra] stagespeed
-[23-Nov-2017 19:28:10 Australia/Canberra] 1
-[23-Nov-2017 19:28:10 Australia/Canberra] looping through keys
-[23-Nov-2017 19:28:10 Australia/Canberra] shipy
-[23-Nov-2017 19:28:10 Australia/Canberra] 297.66666666667
-[23-Nov-2017 19:28:10 Australia/Canberra] looping through keys
-[23-Nov-2017 19:28:10 Australia/Canberra] shipx
-[23-Nov-2017 19:28:10 Australia/Canberra] 96.5
-[23-Nov-2017 19:28:10 Australia/Canberra] looping through keys
-[23-Nov-2017 19:28:10 Australia/Canberra] enemy1Count
-[23-Nov-2017 19:28:10 Australia/Canberra] 4
-[23-Nov-2017 19:28:10 Australia/Canberra] looping through keys
-[23-Nov-2017 19:28:10 Australia/Canberra] enemy2Count
-[23-Nov-2017 19:28:10 Australia/Canberra] 0
-[23-Nov-2017 19:28:10 Australia/Canberra] looping through keys
-[23-Nov-2017 19:28:10 Australia/Canberra] enemy3Count
-[23-Nov-2017 19:28:10 Australia/Canberra] 3
-[23-Nov-2017 19:28:10 Australia/Canberra] looping through keys
-[23-Nov-2017 19:28:10 Australia/Canberra] enemy4Count
-[23-Nov-2017 19:28:10 Australia/Canberra] 0
-[23-Nov-2017 19:28:10 Australia/Canberra] looping through keys
-[23-Nov-2017 19:28:10 Australia/Canberra] pyramidsy
-[23-Nov-2017 19:28:10 Australia/Canberra] 2118
-[23-Nov-2017 19:28:10 Australia/Canberra] looping through keys
-[23-Nov-2017 19:28:10 Australia/Canberra] eventTime
-[23-Nov-2017 19:28:10 Australia/Canberra] 0
-[23-Nov-2017 19:28:10 Australia/Canberra] looping through keys
-[23-Nov-2017 19:28:10 Australia/Canberra] minerAddressIn
-[23-Nov-2017 19:28:10 Australia/Canberra] 04bbcb8aabd16b91b18583ee9ef600a962b00c3ac29b37a5ee44a850ac2c12fc0e40dfe0bfe5dd9476be9aed763e9e2ab88a0a446c332e1908c173ac8252041ac1
-[23-Nov-2017 19:28:10 Australia/Canberra] looping through keys
-[23-Nov-2017 19:28:10 Australia/Canberra] utcTimeStamp
-[23-Nov-2017 19:28:10 Australia/Canberra] 1511425689894
-[23-Nov-2017 19:28:10 Australia/Canberra] looping through keys
-[23-Nov-2017 19:28:10 Australia/Canberra] enemyBulletsFired
-[23-Nov-2017 19:28:10 Australia/Canberra] 38
-[23-Nov-2017 19:28:10 Australia/Canberra] looping through keys
-[23-Nov-2017 19:28:10 Australia/Canberra] CPTrophy
-[23-Nov-2017 19:28:10 Australia/Canberra] 0
-[23-Nov-2017 19:28:10 Australia/Canberra] looping through keys
-[23-Nov-2017 19:28:10 Australia/Canberra] bonus
-[23-Nov-2017 19:28:10 Australia/Canberra] 0
-[23-Nov-2017 19:28:10 Australia/Canberra] transactionPlainText:
-[23-Nov-2017 19:28:10 Australia/Canberra] 04ce828291cad2e744a27daf8548774ea17f8d789e76f854a338cecf50bb404959c327ffd0ac6fa8c26b8546c2d08f34940e70e9e7312742fe22aa1d6cc72f299f04bbcb8aabd16b91b18583ee9ef600a962b00c3ac29b37a5ee44a850ac2c12fc0e40dfe0bfe5dd9476be9aed763e9e2ab88a0a446c332e1908c173ac8252041ac1cats in space1001511425689894
-[23-Nov-2017 19:28:10 Australia/Canberra] file object was null
-[23-Nov-2017 19:28:10 Australia/Canberra] PHP Notice:  Undefined offset: 0 in C:\inetpub\wwwroot\catship_production\php\catShipTransaction.php on line 29
-[23-Nov-2017 19:28:10 Australia/Canberra] 
-[23-Nov-2017 19:30:40 Australia/Canberra] looping through keys
-[23-Nov-2017 19:30:40 Australia/Canberra] minerAddressIn
-[23-Nov-2017 19:30:40 Australia/Canberra] 04bbcb8aabd16b91b18583ee9ef600a962b00c3ac29b37a5ee44a850ac2c12fc0e40dfe0bfe5dd9476be9aed763e9e2ab88a0a446c332e1908c173ac8252041ac1
-[23-Nov-2017 19:30:40 Australia/Canberra] looping through keys
-[23-Nov-2017 19:30:40 Australia/Canberra] coinRewardIn
-[23-Nov-2017 19:30:40 Australia/Canberra] 100
-[23-Nov-2017 19:30:40 Australia/Canberra] looping through keys
-[23-Nov-2017 19:30:40 Australia/Canberra] utcTimeStamp
-[23-Nov-2017 19:30:40 Australia/Canberra] 1511425840010
-[23-Nov-2017 19:30:40 Australia/Canberra] transactionPlainText:
-[23-Nov-2017 19:30:40 Australia/Canberra] 041c4bc717563647d7980e5f46b79c3b68eb11667559f8b70ab07b737e985d33f078dd404e1abe0ffc752e9ebb1df1b38853f2d8a79ec54aaea91827779897c5a504bbcb8aabd16b91b18583ee9ef600a962b00c3ac29b37a5ee44a850ac2c12fc0e40dfe0bfe5dd9476be9aed763e9e2ab88a0a446c332e1908c173ac8252041ac1freshly minted kitty goodness1001511425840010
-[23-Nov-2017 19:30:40 Australia/Canberra] file object was not null, pushing
-[23-Nov-2017 19:30:40 Australia/Canberra] 04ce828291cad2e744a27daf8548774ea17f8d789e76f854a338cecf50bb404959c327ffd0ac6fa8c26b8546c2d08f34940e70e9e7312742fe22aa1d6cc72f299f
-[23-Nov-2017 19:32:18 Australia/Canberra] players ip address
-[23-Nov-2017 19:32:18 Australia/Canberra] ::1
-[23-Nov-2017 19:32:18 Australia/Canberra] looping through keys
-[23-Nov-2017 19:32:18 Australia/Canberra] checkpointTotal
-[23-Nov-2017 19:32:18 Australia/Canberra] 0
-[23-Nov-2017 19:32:18 Australia/Canberra] looping through keys
-[23-Nov-2017 19:32:18 Australia/Canberra] checkpointEnemyCount
-[23-Nov-2017 19:32:18 Australia/Canberra] 0
-[23-Nov-2017 19:32:18 Australia/Canberra] looping through keys
-[23-Nov-2017 19:32:18 Australia/Canberra] checkpointSb
-[23-Nov-2017 19:32:18 Australia/Canberra] 0
-[23-Nov-2017 19:32:18 Australia/Canberra] looping through keys
-[23-Nov-2017 19:32:18 Australia/Canberra] checkpointPyramidCount
-[23-Nov-2017 19:32:18 Australia/Canberra] 0
-[23-Nov-2017 19:32:18 Australia/Canberra] looping through keys
-[23-Nov-2017 19:32:18 Australia/Canberra] checkpointPyramidTimer
-[23-Nov-2017 19:32:18 Australia/Canberra] 0
-[23-Nov-2017 19:32:18 Australia/Canberra] looping through keys
-[23-Nov-2017 19:32:18 Australia/Canberra] checkpointPyramidsOffset
-[23-Nov-2017 19:32:18 Australia/Canberra] 0
-[23-Nov-2017 19:32:18 Australia/Canberra] looping through keys
-[23-Nov-2017 19:32:18 Australia/Canberra] checkpointStage1Y
-[23-Nov-2017 19:32:18 Australia/Canberra] 0
-[23-Nov-2017 19:32:18 Australia/Canberra] looping through keys
-[23-Nov-2017 19:32:18 Australia/Canberra] checkpointStage2Y
-[23-Nov-2017 19:32:18 Australia/Canberra] 0
-[23-Nov-2017 19:32:18 Australia/Canberra] looping through keys
-[23-Nov-2017 19:32:18 Australia/Canberra] checkpointPyramidsY
-[23-Nov-2017 19:32:18 Australia/Canberra] 0
-[23-Nov-2017 19:32:18 Australia/Canberra] looping through keys
-[23-Nov-2017 19:32:18 Australia/Canberra] checkpointCheckpoint
-[23-Nov-2017 19:32:18 Australia/Canberra] 0
-[23-Nov-2017 19:32:18 Australia/Canberra] looping through keys
-[23-Nov-2017 19:32:18 Australia/Canberra] checkpointShipFP
-[23-Nov-2017 19:32:18 Australia/Canberra] 0
-[23-Nov-2017 19:32:18 Australia/Canberra] looping through keys
-[23-Nov-2017 19:32:18 Australia/Canberra] checkpointStagespeed
-[23-Nov-2017 19:32:18 Australia/Canberra] 1
-[23-Nov-2017 19:32:18 Australia/Canberra] looping through keys
-[23-Nov-2017 19:32:18 Australia/Canberra] health
-[23-Nov-2017 19:32:18 Australia/Canberra] -1
-[23-Nov-2017 19:32:18 Australia/Canberra] looping through keys
-[23-Nov-2017 19:32:18 Australia/Canberra] alienHealth
-[23-Nov-2017 19:32:18 Australia/Canberra] 12
-[23-Nov-2017 19:32:18 Australia/Canberra] looping through keys
-[23-Nov-2017 19:32:18 Australia/Canberra] total
-[23-Nov-2017 19:32:18 Australia/Canberra] 119
-[23-Nov-2017 19:32:18 Australia/Canberra] looping through keys
-[23-Nov-2017 19:32:18 Australia/Canberra] sb
-[23-Nov-2017 19:32:18 Australia/Canberra] 1
-[23-Nov-2017 19:32:18 Australia/Canberra] looping through keys
-[23-Nov-2017 19:32:18 Australia/Canberra] enemyCount
-[23-Nov-2017 19:32:18 Australia/Canberra] 12
-[23-Nov-2017 19:32:18 Australia/Canberra] looping through keys
-[23-Nov-2017 19:32:18 Australia/Canberra] score
-[23-Nov-2017 19:32:18 Australia/Canberra] 80
-[23-Nov-2017 19:32:18 Australia/Canberra] looping through keys
-[23-Nov-2017 19:32:18 Australia/Canberra] row
-[23-Nov-2017 19:32:18 Australia/Canberra] 0
-[23-Nov-2017 19:32:18 Australia/Canberra] looping through keys
-[23-Nov-2017 19:32:18 Australia/Canberra] pyramidCount
-[23-Nov-2017 19:32:18 Australia/Canberra] 0
-[23-Nov-2017 19:32:18 Australia/Canberra] looping through keys
-[23-Nov-2017 19:32:18 Australia/Canberra] pyramidTimer
-[23-Nov-2017 19:32:18 Australia/Canberra] 0
-[23-Nov-2017 19:32:18 Australia/Canberra] looping through keys
-[23-Nov-2017 19:32:18 Australia/Canberra] pyramidsOffset
-[23-Nov-2017 19:32:18 Australia/Canberra] 2137
-[23-Nov-2017 19:32:18 Australia/Canberra] looping through keys
-[23-Nov-2017 19:32:18 Australia/Canberra] checkpoint
-[23-Nov-2017 19:32:18 Australia/Canberra] 0
-[23-Nov-2017 19:32:18 Australia/Canberra] looping through keys
-[23-Nov-2017 19:32:18 Australia/Canberra] shipFP
-[23-Nov-2017 19:32:18 Australia/Canberra] 0
-[23-Nov-2017 19:32:18 Australia/Canberra] looping through keys
-[23-Nov-2017 19:32:18 Australia/Canberra] stagespeed
-[23-Nov-2017 19:32:18 Australia/Canberra] 1
-[23-Nov-2017 19:32:18 Australia/Canberra] looping through keys
-[23-Nov-2017 19:32:18 Australia/Canberra] shipy
-[23-Nov-2017 19:32:18 Australia/Canberra] 470
-[23-Nov-2017 19:32:18 Australia/Canberra] looping through keys
-[23-Nov-2017 19:32:18 Australia/Canberra] shipx
-[23-Nov-2017 19:32:18 Australia/Canberra] 310.33333333333
-[23-Nov-2017 19:32:18 Australia/Canberra] looping through keys
-[23-Nov-2017 19:32:18 Australia/Canberra] enemy1Count
-[23-Nov-2017 19:32:18 Australia/Canberra] 4
-[23-Nov-2017 19:32:18 Australia/Canberra] looping through keys
-[23-Nov-2017 19:32:18 Australia/Canberra] enemy2Count
-[23-Nov-2017 19:32:18 Australia/Canberra] 0
-[23-Nov-2017 19:32:18 Australia/Canberra] looping through keys
-[23-Nov-2017 19:32:18 Australia/Canberra] enemy3Count
-[23-Nov-2017 19:32:18 Australia/Canberra] 4
-[23-Nov-2017 19:32:18 Australia/Canberra] looping through keys
-[23-Nov-2017 19:32:18 Australia/Canberra] enemy4Count
-[23-Nov-2017 19:32:18 Australia/Canberra] 0
-[23-Nov-2017 19:32:18 Australia/Canberra] looping through keys
-[23-Nov-2017 19:32:18 Australia/Canberra] pyramidsy
-[23-Nov-2017 19:32:18 Australia/Canberra] 2137
-[23-Nov-2017 19:32:18 Australia/Canberra] looping through keys
-[23-Nov-2017 19:32:18 Australia/Canberra] eventTime
-[23-Nov-2017 19:32:18 Australia/Canberra] 0
-[23-Nov-2017 19:32:18 Australia/Canberra] looping through keys
-[23-Nov-2017 19:32:18 Australia/Canberra] minerAddressIn
-[23-Nov-2017 19:32:18 Australia/Canberra] 04bbcb8aabd16b91b18583ee9ef600a962b00c3ac29b37a5ee44a850ac2c12fc0e40dfe0bfe5dd9476be9aed763e9e2ab88a0a446c332e1908c173ac8252041ac1
-[23-Nov-2017 19:32:18 Australia/Canberra] looping through keys
-[23-Nov-2017 19:32:18 Australia/Canberra] utcTimeStamp
-[23-Nov-2017 19:32:18 Australia/Canberra] 1511425938596
-[23-Nov-2017 19:32:18 Australia/Canberra] looping through keys
-[23-Nov-2017 19:32:18 Australia/Canberra] enemyBulletsFired
-[23-Nov-2017 19:32:18 Australia/Canberra] 48
-[23-Nov-2017 19:32:18 Australia/Canberra] looping through keys
-[23-Nov-2017 19:32:18 Australia/Canberra] CPTrophy
-[23-Nov-2017 19:32:18 Australia/Canberra] 0
-[23-Nov-2017 19:32:18 Australia/Canberra] looping through keys
-[23-Nov-2017 19:32:18 Australia/Canberra] bonus
-[23-Nov-2017 19:32:18 Australia/Canberra] 0
-[23-Nov-2017 19:32:18 Australia/Canberra] transactionPlainText:
-[23-Nov-2017 19:32:18 Australia/Canberra] 04ce828291cad2e744a27daf8548774ea17f8d789e76f854a338cecf50bb404959c327ffd0ac6fa8c26b8546c2d08f34940e70e9e7312742fe22aa1d6cc72f299f04bbcb8aabd16b91b18583ee9ef600a962b00c3ac29b37a5ee44a850ac2c12fc0e40dfe0bfe5dd9476be9aed763e9e2ab88a0a446c332e1908c173ac8252041ac1cats in space801511425938596
-[23-Nov-2017 19:32:19 Australia/Canberra] file object was null
-[23-Nov-2017 19:32:19 Australia/Canberra] PHP Notice:  Undefined offset: 0 in C:\inetpub\wwwroot\catship_production\php\catShipTransaction.php on line 29
-[23-Nov-2017 19:32:19 Australia/Canberra] 
-[23-Nov-2017 19:32:52 Australia/Canberra] looping through keys
-[23-Nov-2017 19:32:52 Australia/Canberra] minerAddressIn
-[23-Nov-2017 19:32:52 Australia/Canberra] 04bbcb8aabd16b91b18583ee9ef600a962b00c3ac29b37a5ee44a850ac2c12fc0e40dfe0bfe5dd9476be9aed763e9e2ab88a0a446c332e1908c173ac8252041ac1
-[23-Nov-2017 19:32:52 Australia/Canberra] looping through keys
-[23-Nov-2017 19:32:52 Australia/Canberra] coinRewardIn
-[23-Nov-2017 19:32:52 Australia/Canberra] 100
-[23-Nov-2017 19:32:52 Australia/Canberra] looping through keys
-[23-Nov-2017 19:32:52 Australia/Canberra] utcTimeStamp
-[23-Nov-2017 19:32:52 Australia/Canberra] 1511425972299
-[23-Nov-2017 19:32:52 Australia/Canberra] transactionPlainText:
-[23-Nov-2017 19:32:52 Australia/Canberra] 041c4bc717563647d7980e5f46b79c3b68eb11667559f8b70ab07b737e985d33f078dd404e1abe0ffc752e9ebb1df1b38853f2d8a79ec54aaea91827779897c5a504bbcb8aabd16b91b18583ee9ef600a962b00c3ac29b37a5ee44a850ac2c12fc0e40dfe0bfe5dd9476be9aed763e9e2ab88a0a446c332e1908c173ac8252041ac1freshly minted kitty goodness1001511425972299
-[23-Nov-2017 19:32:52 Australia/Canberra] file object was not null, pushing
-[23-Nov-2017 19:32:52 Australia/Canberra] 04ce828291cad2e744a27daf8548774ea17f8d789e76f854a338cecf50bb404959c327ffd0ac6fa8c26b8546c2d08f34940e70e9e7312742fe22aa1d6cc72f299f
-[24-Nov-2017 16:47:52 Australia/Canberra] players ip address
-[24-Nov-2017 16:47:52 Australia/Canberra] ::1
-[24-Nov-2017 16:47:52 Australia/Canberra] looping through keys
-[24-Nov-2017 16:47:52 Australia/Canberra] checkpointTotal
-[24-Nov-2017 16:47:52 Australia/Canberra] 114
-[24-Nov-2017 16:47:52 Australia/Canberra] looping through keys
-[24-Nov-2017 16:47:52 Australia/Canberra] checkpointEnemyCount
-[24-Nov-2017 16:47:52 Australia/Canberra] 12
-[24-Nov-2017 16:47:52 Australia/Canberra] looping through keys
-[24-Nov-2017 16:47:52 Australia/Canberra] checkpointSb
-[24-Nov-2017 16:47:52 Australia/Canberra] 1
-[24-Nov-2017 16:47:52 Australia/Canberra] looping through keys
-[24-Nov-2017 16:47:52 Australia/Canberra] checkpointPyramidCount
-[24-Nov-2017 16:47:52 Australia/Canberra] 0
-[24-Nov-2017 16:47:52 Australia/Canberra] looping through keys
-[24-Nov-2017 16:47:52 Australia/Canberra] checkpointPyramidTimer
-[24-Nov-2017 16:47:52 Australia/Canberra] 0
-[24-Nov-2017 16:47:52 Australia/Canberra] looping through keys
-[24-Nov-2017 16:47:52 Australia/Canberra] checkpointPyramidsOffset
-[24-Nov-2017 16:47:52 Australia/Canberra] 2047
-[24-Nov-2017 16:47:52 Australia/Canberra] looping through keys
-[24-Nov-2017 16:47:52 Australia/Canberra] checkpointStage1Y
-[24-Nov-2017 16:47:52 Australia/Canberra] -3720
-[24-Nov-2017 16:47:52 Australia/Canberra] looping through keys
-[24-Nov-2017 16:47:52 Australia/Canberra] checkpointStage2Y
-[24-Nov-2017 16:47:52 Australia/Canberra] 0
-[24-Nov-2017 16:47:52 Australia/Canberra] looping through keys
-[24-Nov-2017 16:47:52 Australia/Canberra] checkpointPyramidsY
-[24-Nov-2017 16:47:52 Australia/Canberra] 2047
-[24-Nov-2017 16:47:52 Australia/Canberra] looping through keys
-[24-Nov-2017 16:47:52 Australia/Canberra] checkpointCheckpoint
-[24-Nov-2017 16:47:52 Australia/Canberra] 0
-[24-Nov-2017 16:47:52 Australia/Canberra] looping through keys
-[24-Nov-2017 16:47:52 Australia/Canberra] checkpointShipFP
-[24-Nov-2017 16:47:52 Australia/Canberra] 0
-[24-Nov-2017 16:47:52 Australia/Canberra] looping through keys
-[24-Nov-2017 16:47:52 Australia/Canberra] checkpointStagespeed
-[24-Nov-2017 16:47:52 Australia/Canberra] 1
-[24-Nov-2017 16:47:52 Australia/Canberra] looping through keys
-[24-Nov-2017 16:47:52 Australia/Canberra] health
-[24-Nov-2017 16:47:52 Australia/Canberra] -1
-[24-Nov-2017 16:47:52 Australia/Canberra] looping through keys
-[24-Nov-2017 16:47:52 Australia/Canberra] alienHealth
-[24-Nov-2017 16:47:52 Australia/Canberra] 12
-[24-Nov-2017 16:47:52 Australia/Canberra] looping through keys
-[24-Nov-2017 16:47:52 Australia/Canberra] total
-[24-Nov-2017 16:47:52 Australia/Canberra] 145
-[24-Nov-2017 16:47:52 Australia/Canberra] looping through keys
-[24-Nov-2017 16:47:52 Australia/Canberra] sb
-[24-Nov-2017 16:47:52 Australia/Canberra] 4
-[24-Nov-2017 16:47:52 Australia/Canberra] looping through keys
-[24-Nov-2017 16:47:52 Australia/Canberra] enemyCount
-[24-Nov-2017 16:47:52 Australia/Canberra] 12
-[24-Nov-2017 16:47:52 Australia/Canberra] looping through keys
-[24-Nov-2017 16:47:52 Australia/Canberra] score
-[24-Nov-2017 16:47:52 Australia/Canberra] 120
-[24-Nov-2017 16:47:52 Australia/Canberra] looping through keys
-[24-Nov-2017 16:47:52 Australia/Canberra] row
-[24-Nov-2017 16:47:52 Australia/Canberra] 8
-[24-Nov-2017 16:47:52 Australia/Canberra] looping through keys
-[24-Nov-2017 16:47:52 Australia/Canberra] pyramidCount
-[24-Nov-2017 16:47:52 Australia/Canberra] 44
-[24-Nov-2017 16:47:52 Australia/Canberra] looping through keys
-[24-Nov-2017 16:47:52 Australia/Canberra] pyramidTimer
-[24-Nov-2017 16:47:52 Australia/Canberra] 145
-[24-Nov-2017 16:47:52 Australia/Canberra] looping through keys
-[24-Nov-2017 16:47:52 Australia/Canberra] pyramidsOffset
-[24-Nov-2017 16:47:52 Australia/Canberra] 3783
-[24-Nov-2017 16:47:52 Australia/Canberra] looping through keys
-[24-Nov-2017 16:47:52 Australia/Canberra] checkpoint
-[24-Nov-2017 16:47:52 Australia/Canberra] 1
-[24-Nov-2017 16:47:52 Australia/Canberra] looping through keys
-[24-Nov-2017 16:47:52 Australia/Canberra] shipFP
-[24-Nov-2017 16:47:52 Australia/Canberra] 0
-[24-Nov-2017 16:47:52 Australia/Canberra] looping through keys
-[24-Nov-2017 16:47:52 Australia/Canberra] stagespeed
-[24-Nov-2017 16:47:52 Australia/Canberra] 4
-[24-Nov-2017 16:47:52 Australia/Canberra] looping through keys
-[24-Nov-2017 16:47:52 Australia/Canberra] shipy
-[24-Nov-2017 16:47:52 Australia/Canberra] 260.33333333333
-[24-Nov-2017 16:47:52 Australia/Canberra] looping through keys
-[24-Nov-2017 16:47:52 Australia/Canberra] shipx
-[24-Nov-2017 16:47:52 Australia/Canberra] 340.16666666667
-[24-Nov-2017 16:47:52 Australia/Canberra] looping through keys
-[24-Nov-2017 16:47:52 Australia/Canberra] enemy1Count
-[24-Nov-2017 16:47:52 Australia/Canberra] 4
-[24-Nov-2017 16:47:52 Australia/Canberra] looping through keys
-[24-Nov-2017 16:47:53 Australia/Canberra] enemy2Count
-[24-Nov-2017 16:47:53 Australia/Canberra] 0
-[24-Nov-2017 16:47:53 Australia/Canberra] looping through keys
-[24-Nov-2017 16:47:53 Australia/Canberra] enemy3Count
-[24-Nov-2017 16:47:53 Australia/Canberra] 0
-[24-Nov-2017 16:47:53 Australia/Canberra] looping through keys
-[24-Nov-2017 16:47:53 Australia/Canberra] enemy4Count
-[24-Nov-2017 16:47:53 Australia/Canberra] 0
-[24-Nov-2017 16:47:53 Australia/Canberra] looping through keys
-[24-Nov-2017 16:47:53 Australia/Canberra] pyramidsy
-[24-Nov-2017 16:47:53 Australia/Canberra] 3783
-[24-Nov-2017 16:47:53 Australia/Canberra] looping through keys
-[24-Nov-2017 16:47:53 Australia/Canberra] eventTime
-[24-Nov-2017 16:47:53 Australia/Canberra] 145
-[24-Nov-2017 16:47:53 Australia/Canberra] looping through keys
-[24-Nov-2017 16:47:53 Australia/Canberra] minerAddressIn
-[24-Nov-2017 16:47:53 Australia/Canberra] 04bbcb8aabd16b91b18583ee9ef600a962b00c3ac29b37a5ee44a850ac2c12fc0e40dfe0bfe5dd9476be9aed763e9e2ab88a0a446c332e1908c173ac8252041ac1
-[24-Nov-2017 16:47:53 Australia/Canberra] looping through keys
-[24-Nov-2017 16:47:53 Australia/Canberra] utcTimeStamp
-[24-Nov-2017 16:47:53 Australia/Canberra] 1511502472095
-[24-Nov-2017 16:47:53 Australia/Canberra] looping through keys
-[24-Nov-2017 16:47:53 Australia/Canberra] enemyBulletsFired
-[24-Nov-2017 16:47:53 Australia/Canberra] 25
-[24-Nov-2017 16:47:53 Australia/Canberra] looping through keys
-[24-Nov-2017 16:47:53 Australia/Canberra] CPTrophy
-[24-Nov-2017 16:47:53 Australia/Canberra] 0
-[24-Nov-2017 16:47:53 Australia/Canberra] looping through keys
-[24-Nov-2017 16:47:53 Australia/Canberra] bonus
-[24-Nov-2017 16:47:53 Australia/Canberra] 0
-[24-Nov-2017 16:47:53 Australia/Canberra] transactionPlainText:
-[24-Nov-2017 16:47:53 Australia/Canberra] 04ce828291cad2e744a27daf8548774ea17f8d789e76f854a338cecf50bb404959c327ffd0ac6fa8c26b8546c2d08f34940e70e9e7312742fe22aa1d6cc72f299f04bbcb8aabd16b91b18583ee9ef600a962b00c3ac29b37a5ee44a850ac2c12fc0e40dfe0bfe5dd9476be9aed763e9e2ab88a0a446c332e1908c173ac8252041ac1cats in space1201511502472095
-[24-Nov-2017 16:47:53 Australia/Canberra] file object was null
-[24-Nov-2017 16:47:53 Australia/Canberra] PHP Notice:  Undefined offset: 0 in C:\inetpub\wwwroot\catship_production\php\catShipTransaction.php on line 29
-[24-Nov-2017 16:47:53 Australia/Canberra] 
-[24-Nov-2017 16:52:37 Australia/Canberra] file object was not null, pushing
-[24-Nov-2017 16:52:37 Australia/Canberra] 04ce828291cad2e744a27daf8548774ea17f8d789e76f854a338cecf50bb404959c327ffd0ac6fa8c26b8546c2d08f34940e70e9e7312742fe22aa1d6cc72f299f
-[24-Nov-2017 16:55:22 Australia/Canberra] file object was not null, pushing
-[24-Nov-2017 16:55:22 Australia/Canberra] 04ce828291cad2e744a27daf8548774ea17f8d789e76f854a338cecf50bb404959c327ffd0ac6fa8c26b8546c2d08f34940e70e9e7312742fe22aa1d6cc72f299f
-[24-Nov-2017 16:55:56 Australia/Canberra] file object was not null, pushing
-[24-Nov-2017 16:55:56 Australia/Canberra] 04ce828291cad2e744a27daf8548774ea17f8d789e76f854a338cecf50bb404959c327ffd0ac6fa8c26b8546c2d08f34940e70e9e7312742fe22aa1d6cc72f299f
-[24-Nov-2017 16:57:02 Australia/Canberra] looping through keys
-[24-Nov-2017 16:57:02 Australia/Canberra] minerAddressIn
-[24-Nov-2017 16:57:02 Australia/Canberra] 04bbcb8aabd16b91b18583ee9ef600a962b00c3ac29b37a5ee44a850ac2c12fc0e40dfe0bfe5dd9476be9aed763e9e2ab88a0a446c332e1908c173ac8252041ac1
-[24-Nov-2017 16:57:02 Australia/Canberra] looping through keys
-[24-Nov-2017 16:57:02 Australia/Canberra] coinRewardIn
-[24-Nov-2017 16:57:02 Australia/Canberra] 100
-[24-Nov-2017 16:57:02 Australia/Canberra] looping through keys
-[24-Nov-2017 16:57:02 Australia/Canberra] utcTimeStamp
-[24-Nov-2017 16:57:02 Australia/Canberra] 1511503022037
-[24-Nov-2017 16:57:02 Australia/Canberra] transactionPlainText:
-[24-Nov-2017 16:57:02 Australia/Canberra] 041c4bc717563647d7980e5f46b79c3b68eb11667559f8b70ab07b737e985d33f078dd404e1abe0ffc752e9ebb1df1b38853f2d8a79ec54aaea91827779897c5a504bbcb8aabd16b91b18583ee9ef600a962b00c3ac29b37a5ee44a850ac2c12fc0e40dfe0bfe5dd9476be9aed763e9e2ab88a0a446c332e1908c173ac8252041ac1freshly minted kitty goodness1001511503022037
-[24-Nov-2017 16:57:02 Australia/Canberra] file object was not null, pushing
-[24-Nov-2017 16:57:02 Australia/Canberra] 04ce828291cad2e744a27daf8548774ea17f8d789e76f854a338cecf50bb404959c327ffd0ac6fa8c26b8546c2d08f34940e70e9e7312742fe22aa1d6cc72f299f
-[24-Nov-2017 17:05:40 Australia/Canberra] players ip address
-[24-Nov-2017 17:05:40 Australia/Canberra] ::1
-[24-Nov-2017 17:05:40 Australia/Canberra] looping through keys
-[24-Nov-2017 17:05:40 Australia/Canberra] checkpointTotal
-[24-Nov-2017 17:05:40 Australia/Canberra] 0
-[24-Nov-2017 17:05:40 Australia/Canberra] looping through keys
-[24-Nov-2017 17:05:40 Australia/Canberra] checkpointEnemyCount
-[24-Nov-2017 17:05:40 Australia/Canberra] 0
-[24-Nov-2017 17:05:40 Australia/Canberra] looping through keys
-[24-Nov-2017 17:05:40 Australia/Canberra] checkpointSb
-[24-Nov-2017 17:05:40 Australia/Canberra] 0
-[24-Nov-2017 17:05:40 Australia/Canberra] looping through keys
-[24-Nov-2017 17:05:40 Australia/Canberra] checkpointPyramidCount
-[24-Nov-2017 17:05:40 Australia/Canberra] 0
-[24-Nov-2017 17:05:40 Australia/Canberra] looping through keys
-[24-Nov-2017 17:05:40 Australia/Canberra] checkpointPyramidTimer
-[24-Nov-2017 17:05:40 Australia/Canberra] 0
-[24-Nov-2017 17:05:40 Australia/Canberra] looping through keys
-[24-Nov-2017 17:05:40 Australia/Canberra] checkpointPyramidsOffset
-[24-Nov-2017 17:05:40 Australia/Canberra] 0
-[24-Nov-2017 17:05:40 Australia/Canberra] looping through keys
-[24-Nov-2017 17:05:40 Australia/Canberra] checkpointStage1Y
-[24-Nov-2017 17:05:40 Australia/Canberra] 0
-[24-Nov-2017 17:05:40 Australia/Canberra] looping through keys
-[24-Nov-2017 17:05:40 Australia/Canberra] checkpointStage2Y
-[24-Nov-2017 17:05:40 Australia/Canberra] 0
-[24-Nov-2017 17:05:40 Australia/Canberra] looping through keys
-[24-Nov-2017 17:05:40 Australia/Canberra] checkpointPyramidsY
-[24-Nov-2017 17:05:40 Australia/Canberra] 0
-[24-Nov-2017 17:05:40 Australia/Canberra] looping through keys
-[24-Nov-2017 17:05:40 Australia/Canberra] checkpointCheckpoint
-[24-Nov-2017 17:05:40 Australia/Canberra] 0
-[24-Nov-2017 17:05:40 Australia/Canberra] looping through keys
-[24-Nov-2017 17:05:40 Australia/Canberra] checkpointShipFP
-[24-Nov-2017 17:05:40 Australia/Canberra] 0
-[24-Nov-2017 17:05:40 Australia/Canberra] looping through keys
-[24-Nov-2017 17:05:40 Australia/Canberra] checkpointStagespeed
-[24-Nov-2017 17:05:40 Australia/Canberra] 1
-[24-Nov-2017 17:05:40 Australia/Canberra] looping through keys
-[24-Nov-2017 17:05:40 Australia/Canberra] health
-[24-Nov-2017 17:05:40 Australia/Canberra] -1
-[24-Nov-2017 17:05:40 Australia/Canberra] looping through keys
-[24-Nov-2017 17:05:40 Australia/Canberra] alienHealth
-[24-Nov-2017 17:05:40 Australia/Canberra] 12
-[24-Nov-2017 17:05:40 Australia/Canberra] looping through keys
-[24-Nov-2017 17:05:40 Australia/Canberra] total
-[24-Nov-2017 17:05:40 Australia/Canberra] 82
-[24-Nov-2017 17:05:40 Australia/Canberra] looping through keys
-[24-Nov-2017 17:05:40 Australia/Canberra] sb
-[24-Nov-2017 17:05:40 Australia/Canberra] 1
-[24-Nov-2017 17:05:40 Australia/Canberra] looping through keys
-[24-Nov-2017 17:05:40 Australia/Canberra] enemyCount
-[24-Nov-2017 17:05:40 Australia/Canberra] 10
-[24-Nov-2017 17:05:40 Australia/Canberra] looping through keys
-[24-Nov-2017 17:05:40 Australia/Canberra] score
-[24-Nov-2017 17:05:40 Australia/Canberra] 80
-[24-Nov-2017 17:05:40 Australia/Canberra] looping through keys
-[24-Nov-2017 17:05:40 Australia/Canberra] row
-[24-Nov-2017 17:05:40 Australia/Canberra] 0
-[24-Nov-2017 17:05:40 Australia/Canberra] looping through keys
-[24-Nov-2017 17:05:40 Australia/Canberra] pyramidCount
-[24-Nov-2017 17:05:40 Australia/Canberra] 0
-[24-Nov-2017 17:05:40 Australia/Canberra] looping through keys
-[24-Nov-2017 17:05:40 Australia/Canberra] pyramidTimer
-[24-Nov-2017 17:05:40 Australia/Canberra] 0
-[24-Nov-2017 17:05:40 Australia/Canberra] looping through keys
-[24-Nov-2017 17:05:40 Australia/Canberra] pyramidsOffset
-[24-Nov-2017 17:05:40 Australia/Canberra] 1481
-[24-Nov-2017 17:05:40 Australia/Canberra] looping through keys
-[24-Nov-2017 17:05:40 Australia/Canberra] checkpoint
-[24-Nov-2017 17:05:40 Australia/Canberra] 0
-[24-Nov-2017 17:05:40 Australia/Canberra] looping through keys
-[24-Nov-2017 17:05:40 Australia/Canberra] shipFP
-[24-Nov-2017 17:05:40 Australia/Canberra] 0
-[24-Nov-2017 17:05:40 Australia/Canberra] looping through keys
-[24-Nov-2017 17:05:40 Australia/Canberra] stagespeed
-[24-Nov-2017 17:05:40 Australia/Canberra] 1
-[24-Nov-2017 17:05:40 Australia/Canberra] looping through keys
-[24-Nov-2017 17:05:40 Australia/Canberra] shipy
-[24-Nov-2017 17:05:40 Australia/Canberra] 560.33333333333
-[24-Nov-2017 17:05:40 Australia/Canberra] looping through keys
-[24-Nov-2017 17:05:40 Australia/Canberra] shipx
-[24-Nov-2017 17:05:40 Australia/Canberra] 396.66666666667
-[24-Nov-2017 17:05:40 Australia/Canberra] looping through keys
-[24-Nov-2017 17:05:40 Australia/Canberra] enemy1Count
-[24-Nov-2017 17:05:40 Australia/Canberra] 4
-[24-Nov-2017 17:05:40 Australia/Canberra] looping through keys
-[24-Nov-2017 17:05:40 Australia/Canberra] enemy2Count
-[24-Nov-2017 17:05:40 Australia/Canberra] 0
-[24-Nov-2017 17:05:40 Australia/Canberra] looping through keys
-[24-Nov-2017 17:05:40 Australia/Canberra] enemy3Count
-[24-Nov-2017 17:05:40 Australia/Canberra] 2
-[24-Nov-2017 17:05:40 Australia/Canberra] looping through keys
-[24-Nov-2017 17:05:40 Australia/Canberra] enemy4Count
-[24-Nov-2017 17:05:40 Australia/Canberra] 0
-[24-Nov-2017 17:05:40 Australia/Canberra] looping through keys
-[24-Nov-2017 17:05:40 Australia/Canberra] pyramidsy
-[24-Nov-2017 17:05:40 Australia/Canberra] 1481
-[24-Nov-2017 17:05:40 Australia/Canberra] looping through keys
-[24-Nov-2017 17:05:40 Australia/Canberra] eventTime
-[24-Nov-2017 17:05:40 Australia/Canberra] 0
-[24-Nov-2017 17:05:40 Australia/Canberra] looping through keys
-[24-Nov-2017 17:05:40 Australia/Canberra] minerAddressIn
-[24-Nov-2017 17:05:40 Australia/Canberra] 04bbcb8aabd16b91b18583ee9ef600a962b00c3ac29b37a5ee44a850ac2c12fc0e40dfe0bfe5dd9476be9aed763e9e2ab88a0a446c332e1908c173ac8252041ac1
-[24-Nov-2017 17:05:40 Australia/Canberra] looping through keys
-[24-Nov-2017 17:05:40 Australia/Canberra] utcTimeStamp
-[24-Nov-2017 17:05:40 Australia/Canberra] 1511503540532
-[24-Nov-2017 17:05:40 Australia/Canberra] looping through keys
-[24-Nov-2017 17:05:40 Australia/Canberra] enemyBulletsFired
-[24-Nov-2017 17:05:40 Australia/Canberra] 16
-[24-Nov-2017 17:05:40 Australia/Canberra] looping through keys
-[24-Nov-2017 17:05:40 Australia/Canberra] CPTrophy
-[24-Nov-2017 17:05:40 Australia/Canberra] 0
-[24-Nov-2017 17:05:40 Australia/Canberra] looping through keys
-[24-Nov-2017 17:05:40 Australia/Canberra] bonus
-[24-Nov-2017 17:05:40 Australia/Canberra] 0
-[24-Nov-2017 17:05:40 Australia/Canberra] transactionPlainText:
-[24-Nov-2017 17:05:40 Australia/Canberra] 04ce828291cad2e744a27daf8548774ea17f8d789e76f854a338cecf50bb404959c327ffd0ac6fa8c26b8546c2d08f34940e70e9e7312742fe22aa1d6cc72f299f04bbcb8aabd16b91b18583ee9ef600a962b00c3ac29b37a5ee44a850ac2c12fc0e40dfe0bfe5dd9476be9aed763e9e2ab88a0a446c332e1908c173ac8252041ac1cats in space801511503540532
-[24-Nov-2017 17:05:41 Australia/Canberra] file object was null
-[24-Nov-2017 17:05:41 Australia/Canberra] PHP Notice:  Undefined offset: 0 in C:\inetpub\wwwroot\catship_production\php\catShipTransaction.php on line 29
-[24-Nov-2017 17:05:41 Australia/Canberra] 
-[24-Nov-2017 17:06:57 Australia/Canberra] players ip address
-[24-Nov-2017 17:06:57 Australia/Canberra] ::1
-[24-Nov-2017 17:06:57 Australia/Canberra] looping through keys
-[24-Nov-2017 17:06:57 Australia/Canberra] checkpointTotal
-[24-Nov-2017 17:06:57 Australia/Canberra] 0
-[24-Nov-2017 17:06:57 Australia/Canberra] looping through keys
-[24-Nov-2017 17:06:57 Australia/Canberra] checkpointEnemyCount
-[24-Nov-2017 17:06:57 Australia/Canberra] 0
-[24-Nov-2017 17:06:57 Australia/Canberra] looping through keys
-[24-Nov-2017 17:06:57 Australia/Canberra] checkpointSb
-[24-Nov-2017 17:06:57 Australia/Canberra] 0
-[24-Nov-2017 17:06:57 Australia/Canberra] looping through keys
-[24-Nov-2017 17:06:57 Australia/Canberra] checkpointPyramidCount
-[24-Nov-2017 17:06:57 Australia/Canberra] 0
-[24-Nov-2017 17:06:57 Australia/Canberra] looping through keys
-[24-Nov-2017 17:06:57 Australia/Canberra] checkpointPyramidTimer
-[24-Nov-2017 17:06:57 Australia/Canberra] 0
-[24-Nov-2017 17:06:57 Australia/Canberra] looping through keys
-[24-Nov-2017 17:06:57 Australia/Canberra] checkpointPyramidsOffset
-[24-Nov-2017 17:06:57 Australia/Canberra] 0
-[24-Nov-2017 17:06:57 Australia/Canberra] looping through keys
-[24-Nov-2017 17:06:57 Australia/Canberra] checkpointStage1Y
-[24-Nov-2017 17:06:57 Australia/Canberra] 0
-[24-Nov-2017 17:06:57 Australia/Canberra] looping through keys
-[24-Nov-2017 17:06:57 Australia/Canberra] checkpointStage2Y
-[24-Nov-2017 17:06:57 Australia/Canberra] 0
-[24-Nov-2017 17:06:57 Australia/Canberra] looping through keys
-[24-Nov-2017 17:06:57 Australia/Canberra] checkpointPyramidsY
-[24-Nov-2017 17:06:57 Australia/Canberra] 0
-[24-Nov-2017 17:06:57 Australia/Canberra] looping through keys
-[24-Nov-2017 17:06:57 Australia/Canberra] checkpointCheckpoint
-[24-Nov-2017 17:06:57 Australia/Canberra] 0
-[24-Nov-2017 17:06:57 Australia/Canberra] looping through keys
-[24-Nov-2017 17:06:57 Australia/Canberra] checkpointShipFP
-[24-Nov-2017 17:06:57 Australia/Canberra] 0
-[24-Nov-2017 17:06:57 Australia/Canberra] looping through keys
-[24-Nov-2017 17:06:57 Australia/Canberra] checkpointStagespeed
-[24-Nov-2017 17:06:57 Australia/Canberra] 1
-[24-Nov-2017 17:06:58 Australia/Canberra] looping through keys
-[24-Nov-2017 17:06:58 Australia/Canberra] health
-[24-Nov-2017 17:06:58 Australia/Canberra] -1
-[24-Nov-2017 17:06:58 Australia/Canberra] looping through keys
-[24-Nov-2017 17:06:58 Australia/Canberra] alienHealth
-[24-Nov-2017 17:06:58 Australia/Canberra] 12
-[24-Nov-2017 17:06:58 Australia/Canberra] looping through keys
-[24-Nov-2017 17:06:58 Australia/Canberra] total
-[24-Nov-2017 17:06:58 Australia/Canberra] 50
-[24-Nov-2017 17:06:58 Australia/Canberra] looping through keys
-[24-Nov-2017 17:06:58 Australia/Canberra] sb
-[24-Nov-2017 17:06:58 Australia/Canberra] 1
-[24-Nov-2017 17:06:58 Australia/Canberra] looping through keys
-[24-Nov-2017 17:06:58 Australia/Canberra] enemyCount
-[24-Nov-2017 17:06:58 Australia/Canberra] 8
-[24-Nov-2017 17:06:58 Australia/Canberra] looping through keys
-[24-Nov-2017 17:06:58 Australia/Canberra] score
-[24-Nov-2017 17:06:58 Australia/Canberra] 0
-[24-Nov-2017 17:06:58 Australia/Canberra] looping through keys
-[24-Nov-2017 17:06:58 Australia/Canberra] row
-[24-Nov-2017 17:06:58 Australia/Canberra] 0
-[24-Nov-2017 17:06:58 Australia/Canberra] looping through keys
-[24-Nov-2017 17:06:58 Australia/Canberra] pyramidCount
-[24-Nov-2017 17:06:58 Australia/Canberra] 0
-[24-Nov-2017 17:06:58 Australia/Canberra] looping through keys
-[24-Nov-2017 17:06:58 Australia/Canberra] pyramidTimer
-[24-Nov-2017 17:06:58 Australia/Canberra] 0
-[24-Nov-2017 17:06:58 Australia/Canberra] looping through keys
-[24-Nov-2017 17:06:58 Australia/Canberra] pyramidsOffset
-[24-Nov-2017 17:06:58 Australia/Canberra] 895
-[24-Nov-2017 17:06:58 Australia/Canberra] looping through keys
-[24-Nov-2017 17:06:58 Australia/Canberra] checkpoint
-[24-Nov-2017 17:06:58 Australia/Canberra] 0
-[24-Nov-2017 17:06:58 Australia/Canberra] looping through keys
-[24-Nov-2017 17:06:58 Australia/Canberra] shipFP
-[24-Nov-2017 17:06:58 Australia/Canberra] 0
-[24-Nov-2017 17:06:58 Australia/Canberra] looping through keys
-[24-Nov-2017 17:06:58 Australia/Canberra] stagespeed
-[24-Nov-2017 17:06:58 Australia/Canberra] 1
-[24-Nov-2017 17:06:58 Australia/Canberra] looping through keys
-[24-Nov-2017 17:06:58 Australia/Canberra] shipy
-[24-Nov-2017 17:06:58 Australia/Canberra] 491.25
-[24-Nov-2017 17:06:58 Australia/Canberra] looping through keys
-[24-Nov-2017 17:06:58 Australia/Canberra] shipx
-[24-Nov-2017 17:06:58 Australia/Canberra] 296.16666666667
-[24-Nov-2017 17:06:58 Australia/Canberra] looping through keys
-[24-Nov-2017 17:06:58 Australia/Canberra] enemy1Count
-[24-Nov-2017 17:06:58 Australia/Canberra] 4
-[24-Nov-2017 17:06:58 Australia/Canberra] looping through keys
-[24-Nov-2017 17:06:58 Australia/Canberra] enemy2Count
-[24-Nov-2017 17:06:58 Australia/Canberra] 3
-[24-Nov-2017 17:06:58 Australia/Canberra] looping through keys
-[24-Nov-2017 17:06:58 Australia/Canberra] enemy3Count
-[24-Nov-2017 17:06:58 Australia/Canberra] 0
-[24-Nov-2017 17:06:58 Australia/Canberra] looping through keys
-[24-Nov-2017 17:06:58 Australia/Canberra] enemy4Count
-[24-Nov-2017 17:06:58 Australia/Canberra] 0
-[24-Nov-2017 17:06:58 Australia/Canberra] looping through keys
-[24-Nov-2017 17:06:58 Australia/Canberra] pyramidsy
-[24-Nov-2017 17:06:58 Australia/Canberra] 895
-[24-Nov-2017 17:06:58 Australia/Canberra] looping through keys
-[24-Nov-2017 17:06:58 Australia/Canberra] eventTime
-[24-Nov-2017 17:06:58 Australia/Canberra] 0
-[24-Nov-2017 17:06:58 Australia/Canberra] looping through keys
-[24-Nov-2017 17:06:58 Australia/Canberra] minerAddressIn
-[24-Nov-2017 17:06:58 Australia/Canberra] 04bbcb8aabd16b91b18583ee9ef600a962b00c3ac29b37a5ee44a850ac2c12fc0e40dfe0bfe5dd9476be9aed763e9e2ab88a0a446c332e1908c173ac8252041ac1
-[24-Nov-2017 17:06:58 Australia/Canberra] looping through keys
-[24-Nov-2017 17:06:58 Australia/Canberra] utcTimeStamp
-[24-Nov-2017 17:06:58 Australia/Canberra] 1511503617876
-[24-Nov-2017 17:06:58 Australia/Canberra] looping through keys
-[24-Nov-2017 17:06:58 Australia/Canberra] enemyBulletsFired
-[24-Nov-2017 17:06:58 Australia/Canberra] 4
-[24-Nov-2017 17:06:58 Australia/Canberra] looping through keys
-[24-Nov-2017 17:06:58 Australia/Canberra] CPTrophy
-[24-Nov-2017 17:06:58 Australia/Canberra] 0
-[24-Nov-2017 17:06:58 Australia/Canberra] looping through keys
-[24-Nov-2017 17:06:58 Australia/Canberra] bonus
-[24-Nov-2017 17:06:58 Australia/Canberra] 0
-[24-Nov-2017 17:06:58 Australia/Canberra] transactionPlainText:
-[24-Nov-2017 17:06:58 Australia/Canberra] 04ce828291cad2e744a27daf8548774ea17f8d789e76f854a338cecf50bb404959c327ffd0ac6fa8c26b8546c2d08f34940e70e9e7312742fe22aa1d6cc72f299f04bbcb8aabd16b91b18583ee9ef600a962b00c3ac29b37a5ee44a850ac2c12fc0e40dfe0bfe5dd9476be9aed763e9e2ab88a0a446c332e1908c173ac8252041ac1cats in space01511503617876
-[24-Nov-2017 17:07:51 Australia/Canberra] players ip address
-[24-Nov-2017 17:07:51 Australia/Canberra] ::1
-[24-Nov-2017 17:07:51 Australia/Canberra] looping through keys
-[24-Nov-2017 17:07:51 Australia/Canberra] checkpointTotal
-[24-Nov-2017 17:07:51 Australia/Canberra] 0
-[24-Nov-2017 17:07:51 Australia/Canberra] looping through keys
-[24-Nov-2017 17:07:51 Australia/Canberra] checkpointEnemyCount
-[24-Nov-2017 17:07:51 Australia/Canberra] 0
-[24-Nov-2017 17:07:51 Australia/Canberra] looping through keys
-[24-Nov-2017 17:07:51 Australia/Canberra] checkpointSb
-[24-Nov-2017 17:07:51 Australia/Canberra] 0
-[24-Nov-2017 17:07:51 Australia/Canberra] looping through keys
-[24-Nov-2017 17:07:51 Australia/Canberra] checkpointPyramidCount
-[24-Nov-2017 17:07:51 Australia/Canberra] 0
-[24-Nov-2017 17:07:51 Australia/Canberra] looping through keys
-[24-Nov-2017 17:07:51 Australia/Canberra] checkpointPyramidTimer
-[24-Nov-2017 17:07:51 Australia/Canberra] 0
-[24-Nov-2017 17:07:51 Australia/Canberra] looping through keys
-[24-Nov-2017 17:07:51 Australia/Canberra] checkpointPyramidsOffset
-[24-Nov-2017 17:07:51 Australia/Canberra] 0
-[24-Nov-2017 17:07:51 Australia/Canberra] looping through keys
-[24-Nov-2017 17:07:51 Australia/Canberra] checkpointStage1Y
-[24-Nov-2017 17:07:51 Australia/Canberra] 0
-[24-Nov-2017 17:07:51 Australia/Canberra] looping through keys
-[24-Nov-2017 17:07:51 Australia/Canberra] checkpointStage2Y
-[24-Nov-2017 17:07:51 Australia/Canberra] 0
-[24-Nov-2017 17:07:51 Australia/Canberra] looping through keys
-[24-Nov-2017 17:07:51 Australia/Canberra] checkpointPyramidsY
-[24-Nov-2017 17:07:51 Australia/Canberra] 0
-[24-Nov-2017 17:07:51 Australia/Canberra] looping through keys
-[24-Nov-2017 17:07:51 Australia/Canberra] checkpointCheckpoint
-[24-Nov-2017 17:07:51 Australia/Canberra] 0
-[24-Nov-2017 17:07:51 Australia/Canberra] looping through keys
-[24-Nov-2017 17:07:51 Australia/Canberra] checkpointShipFP
-[24-Nov-2017 17:07:51 Australia/Canberra] 0
-[24-Nov-2017 17:07:51 Australia/Canberra] looping through keys
-[24-Nov-2017 17:07:51 Australia/Canberra] checkpointStagespeed
-[24-Nov-2017 17:07:51 Australia/Canberra] 1
-[24-Nov-2017 17:07:51 Australia/Canberra] looping through keys
-[24-Nov-2017 17:07:51 Australia/Canberra] health
-[24-Nov-2017 17:07:51 Australia/Canberra] -1
-[24-Nov-2017 17:07:51 Australia/Canberra] looping through keys
-[24-Nov-2017 17:07:51 Australia/Canberra] alienHealth
-[24-Nov-2017 17:07:51 Australia/Canberra] 12
-[24-Nov-2017 17:07:51 Australia/Canberra] looping through keys
-[24-Nov-2017 17:07:51 Australia/Canberra] total
-[24-Nov-2017 17:07:51 Australia/Canberra] 12
-[24-Nov-2017 17:07:51 Australia/Canberra] looping through keys
-[24-Nov-2017 17:07:51 Australia/Canberra] sb
-[24-Nov-2017 17:07:51 Australia/Canberra] 1
-[24-Nov-2017 17:07:51 Australia/Canberra] looping through keys
-[24-Nov-2017 17:07:51 Australia/Canberra] enemyCount
-[24-Nov-2017 17:07:51 Australia/Canberra] 0
-[24-Nov-2017 17:07:51 Australia/Canberra] looping through keys
-[24-Nov-2017 17:07:51 Australia/Canberra] score
-[24-Nov-2017 17:07:51 Australia/Canberra] 0
-[24-Nov-2017 17:07:51 Australia/Canberra] looping through keys
-[24-Nov-2017 17:07:51 Australia/Canberra] row
-[24-Nov-2017 17:07:51 Australia/Canberra] 0
-[24-Nov-2017 17:07:51 Australia/Canberra] looping through keys
-[24-Nov-2017 17:07:51 Australia/Canberra] pyramidCount
-[24-Nov-2017 17:07:51 Australia/Canberra] 0
-[24-Nov-2017 17:07:51 Australia/Canberra] looping through keys
-[24-Nov-2017 17:07:51 Australia/Canberra] pyramidTimer
-[24-Nov-2017 17:07:51 Australia/Canberra] 0
-[24-Nov-2017 17:07:51 Australia/Canberra] looping through keys
-[24-Nov-2017 17:07:51 Australia/Canberra] pyramidsOffset
-[24-Nov-2017 17:07:51 Australia/Canberra] 226
-[24-Nov-2017 17:07:51 Australia/Canberra] looping through keys
-[24-Nov-2017 17:07:51 Australia/Canberra] checkpoint
-[24-Nov-2017 17:07:51 Australia/Canberra] 0
-[24-Nov-2017 17:07:51 Australia/Canberra] looping through keys
-[24-Nov-2017 17:07:51 Australia/Canberra] shipFP
-[24-Nov-2017 17:07:51 Australia/Canberra] 0
-[24-Nov-2017 17:07:51 Australia/Canberra] looping through keys
-[24-Nov-2017 17:07:51 Australia/Canberra] stagespeed
-[24-Nov-2017 17:07:51 Australia/Canberra] 1
-[24-Nov-2017 17:07:51 Australia/Canberra] looping through keys
-[24-Nov-2017 17:07:51 Australia/Canberra] shipy
-[24-Nov-2017 17:07:51 Australia/Canberra] 477.83333333333
-[24-Nov-2017 17:07:51 Australia/Canberra] looping through keys
-[24-Nov-2017 17:07:51 Australia/Canberra] shipx
-[24-Nov-2017 17:07:51 Australia/Canberra] 222.16666666667
-[24-Nov-2017 17:07:51 Australia/Canberra] looping through keys
-[24-Nov-2017 17:07:51 Australia/Canberra] enemy1Count
-[24-Nov-2017 17:07:51 Australia/Canberra] 0
-[24-Nov-2017 17:07:51 Australia/Canberra] looping through keys
-[24-Nov-2017 17:07:51 Australia/Canberra] enemy2Count
-[24-Nov-2017 17:07:51 Australia/Canberra] 0
-[24-Nov-2017 17:07:51 Australia/Canberra] looping through keys
-[24-Nov-2017 17:07:51 Australia/Canberra] enemy3Count
-[24-Nov-2017 17:07:51 Australia/Canberra] 0
-[24-Nov-2017 17:07:51 Australia/Canberra] looping through keys
-[24-Nov-2017 17:07:51 Australia/Canberra] enemy4Count
-[24-Nov-2017 17:07:51 Australia/Canberra] 0
-[24-Nov-2017 17:07:51 Australia/Canberra] looping through keys
-[24-Nov-2017 17:07:51 Australia/Canberra] pyramidsy
-[24-Nov-2017 17:07:51 Australia/Canberra] 226
-[24-Nov-2017 17:07:51 Australia/Canberra] looping through keys
-[24-Nov-2017 17:07:51 Australia/Canberra] eventTime
-[24-Nov-2017 17:07:51 Australia/Canberra] 0
-[24-Nov-2017 17:07:51 Australia/Canberra] looping through keys
-[24-Nov-2017 17:07:51 Australia/Canberra] minerAddressIn
-[24-Nov-2017 17:07:51 Australia/Canberra] 04bbcb8aabd16b91b18583ee9ef600a962b00c3ac29b37a5ee44a850ac2c12fc0e40dfe0bfe5dd9476be9aed763e9e2ab88a0a446c332e1908c173ac8252041ac1
-[24-Nov-2017 17:07:51 Australia/Canberra] looping through keys
-[24-Nov-2017 17:07:51 Australia/Canberra] utcTimeStamp
-[24-Nov-2017 17:07:51 Australia/Canberra] 1511503671424
-[24-Nov-2017 17:07:51 Australia/Canberra] looping through keys
-[24-Nov-2017 17:07:51 Australia/Canberra] enemyBulletsFired
-[24-Nov-2017 17:07:51 Australia/Canberra] 27
-[24-Nov-2017 17:07:51 Australia/Canberra] looping through keys
-[24-Nov-2017 17:07:51 Australia/Canberra] CPTrophy
-[24-Nov-2017 17:07:51 Australia/Canberra] 0
-[24-Nov-2017 17:07:51 Australia/Canberra] looping through keys
-[24-Nov-2017 17:07:51 Australia/Canberra] bonus
-[24-Nov-2017 17:07:51 Australia/Canberra] 0
-[24-Nov-2017 17:07:51 Australia/Canberra] transactionPlainText:
-[24-Nov-2017 17:07:51 Australia/Canberra] 04ce828291cad2e744a27daf8548774ea17f8d789e76f854a338cecf50bb404959c327ffd0ac6fa8c26b8546c2d08f34940e70e9e7312742fe22aa1d6cc72f299f04bbcb8aabd16b91b18583ee9ef600a962b00c3ac29b37a5ee44a850ac2c12fc0e40dfe0bfe5dd9476be9aed763e9e2ab88a0a446c332e1908c173ac8252041ac1cats in space01511503671424
-[24-Nov-2017 17:09:42 Australia/Canberra] players ip address
-[24-Nov-2017 17:09:42 Australia/Canberra] ::1
-[24-Nov-2017 17:09:42 Australia/Canberra] looping through keys
-[24-Nov-2017 17:09:42 Australia/Canberra] checkpointTotal
-[24-Nov-2017 17:09:42 Australia/Canberra] 0
-[24-Nov-2017 17:09:42 Australia/Canberra] looping through keys
-[24-Nov-2017 17:09:42 Australia/Canberra] checkpointEnemyCount
-[24-Nov-2017 17:09:42 Australia/Canberra] 0
-[24-Nov-2017 17:09:42 Australia/Canberra] looping through keys
-[24-Nov-2017 17:09:42 Australia/Canberra] checkpointSb
-[24-Nov-2017 17:09:42 Australia/Canberra] 0
-[24-Nov-2017 17:09:42 Australia/Canberra] looping through keys
-[24-Nov-2017 17:09:42 Australia/Canberra] checkpointPyramidCount
-[24-Nov-2017 17:09:42 Australia/Canberra] 0
-[24-Nov-2017 17:09:42 Australia/Canberra] looping through keys
-[24-Nov-2017 17:09:42 Australia/Canberra] checkpointPyramidTimer
-[24-Nov-2017 17:09:42 Australia/Canberra] 0
-[24-Nov-2017 17:09:42 Australia/Canberra] looping through keys
-[24-Nov-2017 17:09:42 Australia/Canberra] checkpointPyramidsOffset
-[24-Nov-2017 17:09:42 Australia/Canberra] 0
-[24-Nov-2017 17:09:42 Australia/Canberra] looping through keys
-[24-Nov-2017 17:09:42 Australia/Canberra] checkpointStage1Y
-[24-Nov-2017 17:09:42 Australia/Canberra] 0
-[24-Nov-2017 17:09:42 Australia/Canberra] looping through keys
-[24-Nov-2017 17:09:42 Australia/Canberra] checkpointStage2Y
-[24-Nov-2017 17:09:42 Australia/Canberra] 0
-[24-Nov-2017 17:09:42 Australia/Canberra] looping through keys
-[24-Nov-2017 17:09:42 Australia/Canberra] checkpointPyramidsY
-[24-Nov-2017 17:09:42 Australia/Canberra] 0
-[24-Nov-2017 17:09:42 Australia/Canberra] looping through keys
-[24-Nov-2017 17:09:42 Australia/Canberra] checkpointCheckpoint
-[24-Nov-2017 17:09:42 Australia/Canberra] 0
-[24-Nov-2017 17:09:42 Australia/Canberra] looping through keys
-[24-Nov-2017 17:09:42 Australia/Canberra] checkpointShipFP
-[24-Nov-2017 17:09:42 Australia/Canberra] 0
-[24-Nov-2017 17:09:42 Australia/Canberra] looping through keys
-[24-Nov-2017 17:09:42 Australia/Canberra] checkpointStagespeed
-[24-Nov-2017 17:09:42 Australia/Canberra] 1
-[24-Nov-2017 17:09:42 Australia/Canberra] looping through keys
-[24-Nov-2017 17:09:42 Australia/Canberra] health
-[24-Nov-2017 17:09:42 Australia/Canberra] -1
-[24-Nov-2017 17:09:42 Australia/Canberra] looping through keys
-[24-Nov-2017 17:09:42 Australia/Canberra] alienHealth
-[24-Nov-2017 17:09:42 Australia/Canberra] 12
-[24-Nov-2017 17:09:42 Australia/Canberra] looping through keys
-[24-Nov-2017 17:09:42 Australia/Canberra] total
-[24-Nov-2017 17:09:42 Australia/Canberra] 111
-[24-Nov-2017 17:09:42 Australia/Canberra] looping through keys
-[24-Nov-2017 17:09:42 Australia/Canberra] sb
-[24-Nov-2017 17:09:42 Australia/Canberra] 1
-[24-Nov-2017 17:09:42 Australia/Canberra] looping through keys
-[24-Nov-2017 17:09:42 Australia/Canberra] enemyCount
-[24-Nov-2017 17:09:42 Australia/Canberra] 12
-[24-Nov-2017 17:09:42 Australia/Canberra] looping through keys
-[24-Nov-2017 17:09:42 Australia/Canberra] score
-[24-Nov-2017 17:09:42 Australia/Canberra] 80
-[24-Nov-2017 17:09:42 Australia/Canberra] looping through keys
-[24-Nov-2017 17:09:42 Australia/Canberra] row
-[24-Nov-2017 17:09:42 Australia/Canberra] 0
-[24-Nov-2017 17:09:42 Australia/Canberra] looping through keys
-[24-Nov-2017 17:09:42 Australia/Canberra] pyramidCount
-[24-Nov-2017 17:09:42 Australia/Canberra] 0
-[24-Nov-2017 17:09:42 Australia/Canberra] looping through keys
-[24-Nov-2017 17:09:42 Australia/Canberra] pyramidTimer
-[24-Nov-2017 17:09:42 Australia/Canberra] 0
-[24-Nov-2017 17:09:42 Australia/Canberra] looping through keys
-[24-Nov-2017 17:09:42 Australia/Canberra] pyramidsOffset
-[24-Nov-2017 17:09:42 Australia/Canberra] 2002
-[24-Nov-2017 17:09:42 Australia/Canberra] looping through keys
-[24-Nov-2017 17:09:42 Australia/Canberra] checkpoint
-[24-Nov-2017 17:09:42 Australia/Canberra] 0
-[24-Nov-2017 17:09:42 Australia/Canberra] looping through keys
-[24-Nov-2017 17:09:42 Australia/Canberra] shipFP
-[24-Nov-2017 17:09:42 Australia/Canberra] 0
-[24-Nov-2017 17:09:42 Australia/Canberra] looping through keys
-[24-Nov-2017 17:09:42 Australia/Canberra] stagespeed
-[24-Nov-2017 17:09:42 Australia/Canberra] 1
-[24-Nov-2017 17:09:42 Australia/Canberra] looping through keys
-[24-Nov-2017 17:09:42 Australia/Canberra] shipy
-[24-Nov-2017 17:09:42 Australia/Canberra] 478.5
-[24-Nov-2017 17:09:42 Australia/Canberra] looping through keys
-[24-Nov-2017 17:09:42 Australia/Canberra] shipx
-[24-Nov-2017 17:09:42 Australia/Canberra] 209.33333333333
-[24-Nov-2017 17:09:42 Australia/Canberra] looping through keys
-[24-Nov-2017 17:09:42 Australia/Canberra] enemy1Count
-[24-Nov-2017 17:09:42 Australia/Canberra] 4
-[24-Nov-2017 17:09:42 Australia/Canberra] looping through keys
-[24-Nov-2017 17:09:42 Australia/Canberra] enemy2Count
-[24-Nov-2017 17:09:42 Australia/Canberra] 0
-[24-Nov-2017 17:09:42 Australia/Canberra] looping through keys
-[24-Nov-2017 17:09:42 Australia/Canberra] enemy3Count
-[24-Nov-2017 17:09:42 Australia/Canberra] 4
-[24-Nov-2017 17:09:42 Australia/Canberra] looping through keys
-[24-Nov-2017 17:09:42 Australia/Canberra] enemy4Count
-[24-Nov-2017 17:09:42 Australia/Canberra] 0
-[24-Nov-2017 17:09:42 Australia/Canberra] looping through keys
-[24-Nov-2017 17:09:42 Australia/Canberra] pyramidsy
-[24-Nov-2017 17:09:42 Australia/Canberra] 2002
-[24-Nov-2017 17:09:42 Australia/Canberra] looping through keys
-[24-Nov-2017 17:09:42 Australia/Canberra] eventTime
-[24-Nov-2017 17:09:42 Australia/Canberra] 0
-[24-Nov-2017 17:09:42 Australia/Canberra] looping through keys
-[24-Nov-2017 17:09:42 Australia/Canberra] minerAddressIn
-[24-Nov-2017 17:09:42 Australia/Canberra] 04bbcb8aabd16b91b18583ee9ef600a962b00c3ac29b37a5ee44a850ac2c12fc0e40dfe0bfe5dd9476be9aed763e9e2ab88a0a446c332e1908c173ac8252041ac1
-[24-Nov-2017 17:09:42 Australia/Canberra] looping through keys
-[24-Nov-2017 17:09:42 Australia/Canberra] utcTimeStamp
-[24-Nov-2017 17:09:42 Australia/Canberra] 1511503782363
-[24-Nov-2017 17:09:42 Australia/Canberra] looping through keys
-[24-Nov-2017 17:09:42 Australia/Canberra] enemyBulletsFired
-[24-Nov-2017 17:09:42 Australia/Canberra] 20
-[24-Nov-2017 17:09:42 Australia/Canberra] looping through keys
-[24-Nov-2017 17:09:42 Australia/Canberra] CPTrophy
-[24-Nov-2017 17:09:42 Australia/Canberra] 0
-[24-Nov-2017 17:09:42 Australia/Canberra] looping through keys
-[24-Nov-2017 17:09:42 Australia/Canberra] bonus
-[24-Nov-2017 17:09:42 Australia/Canberra] 0
-[24-Nov-2017 17:09:42 Australia/Canberra] transactionPlainText:
-[24-Nov-2017 17:09:42 Australia/Canberra] 04ce828291cad2e744a27daf8548774ea17f8d789e76f854a338cecf50bb404959c327ffd0ac6fa8c26b8546c2d08f34940e70e9e7312742fe22aa1d6cc72f299f04bbcb8aabd16b91b18583ee9ef600a962b00c3ac29b37a5ee44a850ac2c12fc0e40dfe0bfe5dd9476be9aed763e9e2ab88a0a446c332e1908c173ac8252041ac1cats in space801511503782363
-[24-Nov-2017 17:09:43 Australia/Canberra] file object was not null, pushing
-[24-Nov-2017 17:09:43 Australia/Canberra] 04ce828291cad2e744a27daf8548774ea17f8d789e76f854a338cecf50bb404959c327ffd0ac6fa8c26b8546c2d08f34940e70e9e7312742fe22aa1d6cc72f299f
-[24-Nov-2017 17:11:16 Australia/Canberra] looping through keys
-[24-Nov-2017 17:11:16 Australia/Canberra] minerAddressIn
-[24-Nov-2017 17:11:16 Australia/Canberra] 04bbcb8aabd16b91b18583ee9ef600a962b00c3ac29b37a5ee44a850ac2c12fc0e40dfe0bfe5dd9476be9aed763e9e2ab88a0a446c332e1908c173ac8252041ac1
-[24-Nov-2017 17:11:16 Australia/Canberra] looping through keys
-[24-Nov-2017 17:11:16 Australia/Canberra] coinRewardIn
-[24-Nov-2017 17:11:16 Australia/Canberra] 100
-[24-Nov-2017 17:11:16 Australia/Canberra] looping through keys
-[24-Nov-2017 17:11:16 Australia/Canberra] utcTimeStamp
-[24-Nov-2017 17:11:16 Australia/Canberra] 1511503876867
-[24-Nov-2017 17:11:16 Australia/Canberra] transactionPlainText:
-[24-Nov-2017 17:11:16 Australia/Canberra] 041c4bc717563647d7980e5f46b79c3b68eb11667559f8b70ab07b737e985d33f078dd404e1abe0ffc752e9ebb1df1b38853f2d8a79ec54aaea91827779897c5a504bbcb8aabd16b91b18583ee9ef600a962b00c3ac29b37a5ee44a850ac2c12fc0e40dfe0bfe5dd9476be9aed763e9e2ab88a0a446c332e1908c173ac8252041ac1freshly minted kitty goodness1001511503876867
-[24-Nov-2017 17:11:17 Australia/Canberra] file object was not null, pushing
-[24-Nov-2017 17:11:17 Australia/Canberra] 04ce828291cad2e744a27daf8548774ea17f8d789e76f854a338cecf50bb404959c327ffd0ac6fa8c26b8546c2d08f34940e70e9e7312742fe22aa1d6cc72f299f
-[26-Nov-2017 18:11:08 Australia/Canberra] file object was null
-[26-Nov-2017 18:11:08 Australia/Canberra] PHP Notice:  Undefined offset: 0 in C:\inetpub\wwwroot\catship_production\php\catShipTransaction.php on line 29
-[26-Nov-2017 18:11:08 Australia/Canberra] 
-[26-Nov-2017 18:15:02 Australia/Canberra] file object was not null, pushing
-[26-Nov-2017 18:15:02 Australia/Canberra] 04bbcb8aabd16b91b18583ee9ef600a962b00c3ac29b37a5ee44a850ac2c12fc0e40dfe0bfe5dd9476be9aed763e9e2ab88a0a446c332e1908c173ac8252041ac1
-[26-Nov-2017 18:15:38 Australia/Canberra] file object was not null, pushing
-[26-Nov-2017 18:15:38 Australia/Canberra] 04bbcb8aabd16b91b18583ee9ef600a962b00c3ac29b37a5ee44a850ac2c12fc0e40dfe0bfe5dd9476be9aed763e9e2ab88a0a446c332e1908c173ac8252041ac1
-[26-Nov-2017 18:17:00 Australia/Canberra] players ip address
-[26-Nov-2017 18:17:00 Australia/Canberra] ::1
-[26-Nov-2017 18:17:00 Australia/Canberra] looping through keys
-[26-Nov-2017 18:17:00 Australia/Canberra] checkpointTotal
-[26-Nov-2017 18:17:00 Australia/Canberra] 187
-[26-Nov-2017 18:17:00 Australia/Canberra] looping through keys
-[26-Nov-2017 18:17:00 Australia/Canberra] checkpointEnemyCount
-[26-Nov-2017 18:17:00 Australia/Canberra] 12
-[26-Nov-2017 18:17:00 Australia/Canberra] looping through keys
-[26-Nov-2017 18:17:00 Australia/Canberra] checkpointSb
-[26-Nov-2017 18:17:00 Australia/Canberra] 1
-[26-Nov-2017 18:17:00 Australia/Canberra] looping through keys
-[26-Nov-2017 18:17:00 Australia/Canberra] checkpointPyramidCount
-[26-Nov-2017 18:17:00 Australia/Canberra] 0
-[26-Nov-2017 18:17:00 Australia/Canberra] looping through keys
-[26-Nov-2017 18:17:00 Australia/Canberra] checkpointPyramidTimer
-[26-Nov-2017 18:17:00 Australia/Canberra] 0
-[26-Nov-2017 18:17:00 Australia/Canberra] looping through keys
-[26-Nov-2017 18:17:00 Australia/Canberra] checkpointPyramidsOffset
-[26-Nov-2017 18:17:00 Australia/Canberra] 3357
-[26-Nov-2017 18:17:00 Australia/Canberra] looping through keys
-[26-Nov-2017 18:17:00 Australia/Canberra] checkpointStage1Y
-[26-Nov-2017 18:17:00 Australia/Canberra] -3720
-[26-Nov-2017 18:17:00 Australia/Canberra] looping through keys
-[26-Nov-2017 18:17:00 Australia/Canberra] checkpointStage2Y
-[26-Nov-2017 18:17:00 Australia/Canberra] 0
-[26-Nov-2017 18:17:00 Australia/Canberra] looping through keys
-[26-Nov-2017 18:17:00 Australia/Canberra] checkpointPyramidsY
-[26-Nov-2017 18:17:00 Australia/Canberra] 3357
-[26-Nov-2017 18:17:00 Australia/Canberra] looping through keys
-[26-Nov-2017 18:17:00 Australia/Canberra] checkpointCheckpoint
-[26-Nov-2017 18:17:00 Australia/Canberra] 0
-[26-Nov-2017 18:17:00 Australia/Canberra] looping through keys
-[26-Nov-2017 18:17:00 Australia/Canberra] checkpointShipFP
-[26-Nov-2017 18:17:00 Australia/Canberra] 0
-[26-Nov-2017 18:17:00 Australia/Canberra] looping through keys
-[26-Nov-2017 18:17:00 Australia/Canberra] checkpointStagespeed
-[26-Nov-2017 18:17:00 Australia/Canberra] 1
-[26-Nov-2017 18:17:00 Australia/Canberra] looping through keys
-[26-Nov-2017 18:17:00 Australia/Canberra] health
-[26-Nov-2017 18:17:00 Australia/Canberra] -1
-[26-Nov-2017 18:17:00 Australia/Canberra] looping through keys
-[26-Nov-2017 18:17:00 Australia/Canberra] alienHealth
-[26-Nov-2017 18:17:00 Australia/Canberra] 12
-[26-Nov-2017 18:17:00 Australia/Canberra] looping through keys
-[26-Nov-2017 18:17:00 Australia/Canberra] total
-[26-Nov-2017 18:17:00 Australia/Canberra] 215
-[26-Nov-2017 18:17:00 Australia/Canberra] looping through keys
-[26-Nov-2017 18:17:00 Australia/Canberra] sb
-[26-Nov-2017 18:17:00 Australia/Canberra] 4
-[26-Nov-2017 18:17:00 Australia/Canberra] looping through keys
-[26-Nov-2017 18:17:00 Australia/Canberra] enemyCount
-[26-Nov-2017 18:17:00 Australia/Canberra] 12
-[26-Nov-2017 18:17:00 Australia/Canberra] looping through keys
-[26-Nov-2017 18:17:00 Australia/Canberra] score
-[26-Nov-2017 18:17:00 Australia/Canberra] 100
-[26-Nov-2017 18:17:00 Australia/Canberra] looping through keys
-[26-Nov-2017 18:17:00 Australia/Canberra] row
-[26-Nov-2017 18:17:00 Australia/Canberra] 7
-[26-Nov-2017 18:17:00 Australia/Canberra] looping through keys
-[26-Nov-2017 18:17:00 Australia/Canberra] pyramidCount
-[26-Nov-2017 18:17:00 Australia/Canberra] 40
-[26-Nov-2017 18:17:00 Australia/Canberra] looping through keys
-[26-Nov-2017 18:17:00 Australia/Canberra] pyramidTimer
-[26-Nov-2017 18:17:00 Australia/Canberra] 215
-[26-Nov-2017 18:17:00 Australia/Canberra] looping through keys
-[26-Nov-2017 18:17:00 Australia/Canberra] pyramidsOffset
-[26-Nov-2017 18:17:00 Australia/Canberra] 4853
-[26-Nov-2017 18:17:00 Australia/Canberra] looping through keys
-[26-Nov-2017 18:17:00 Australia/Canberra] checkpoint
-[26-Nov-2017 18:17:00 Australia/Canberra] 1
-[26-Nov-2017 18:17:00 Australia/Canberra] looping through keys
-[26-Nov-2017 18:17:00 Australia/Canberra] shipFP
-[26-Nov-2017 18:17:00 Australia/Canberra] 0
-[26-Nov-2017 18:17:00 Australia/Canberra] looping through keys
-[26-Nov-2017 18:17:00 Australia/Canberra] stagespeed
-[26-Nov-2017 18:17:00 Australia/Canberra] 4
-[26-Nov-2017 18:17:00 Australia/Canberra] looping through keys
-[26-Nov-2017 18:17:00 Australia/Canberra] shipy
-[26-Nov-2017 18:17:00 Australia/Canberra] 423.16666666667
-[26-Nov-2017 18:17:00 Australia/Canberra] looping through keys
-[26-Nov-2017 18:17:00 Australia/Canberra] shipx
-[26-Nov-2017 18:17:00 Australia/Canberra] 76.166666666667
-[26-Nov-2017 18:17:00 Australia/Canberra] looping through keys
-[26-Nov-2017 18:17:00 Australia/Canberra] enemy1Count
-[26-Nov-2017 18:17:00 Australia/Canberra] 4
-[26-Nov-2017 18:17:00 Australia/Canberra] looping through keys
-[26-Nov-2017 18:17:00 Australia/Canberra] enemy2Count
-[26-Nov-2017 18:17:00 Australia/Canberra] 0
-[26-Nov-2017 18:17:00 Australia/Canberra] looping through keys
-[26-Nov-2017 18:17:00 Australia/Canberra] enemy3Count
-[26-Nov-2017 18:17:00 Australia/Canberra] 0
-[26-Nov-2017 18:17:00 Australia/Canberra] looping through keys
-[26-Nov-2017 18:17:00 Australia/Canberra] enemy4Count
-[26-Nov-2017 18:17:00 Australia/Canberra] 0
-[26-Nov-2017 18:17:00 Australia/Canberra] looping through keys
-[26-Nov-2017 18:17:00 Australia/Canberra] pyramidsy
-[26-Nov-2017 18:17:00 Australia/Canberra] 4853
-[26-Nov-2017 18:17:00 Australia/Canberra] looping through keys
-[26-Nov-2017 18:17:00 Australia/Canberra] eventTime
-[26-Nov-2017 18:17:00 Australia/Canberra] 215
-[26-Nov-2017 18:17:00 Australia/Canberra] looping through keys
-[26-Nov-2017 18:17:00 Australia/Canberra] minerAddressIn
-[26-Nov-2017 18:17:00 Australia/Canberra] 04bbcb8aabd16b91b18583ee9ef600a962b00c3ac29b37a5ee44a850ac2c12fc0e40dfe0bfe5dd9476be9aed763e9e2ab88a0a446c332e1908c173ac8252041ac1
-[26-Nov-2017 18:17:00 Australia/Canberra] looping through keys
-[26-Nov-2017 18:17:00 Australia/Canberra] utcTimeStamp
-[26-Nov-2017 18:17:00 Australia/Canberra] 1511680620356
-[26-Nov-2017 18:17:00 Australia/Canberra] looping through keys
-[26-Nov-2017 18:17:00 Australia/Canberra] enemyBulletsFired
-[26-Nov-2017 18:17:00 Australia/Canberra] 68
-[26-Nov-2017 18:17:00 Australia/Canberra] looping through keys
-[26-Nov-2017 18:17:00 Australia/Canberra] CPTrophy
-[26-Nov-2017 18:17:00 Australia/Canberra] 0
-[26-Nov-2017 18:17:00 Australia/Canberra] looping through keys
-[26-Nov-2017 18:17:00 Australia/Canberra] bonus
-[26-Nov-2017 18:17:00 Australia/Canberra] 0
-[26-Nov-2017 18:17:00 Australia/Canberra] transactionPlainText:
-[26-Nov-2017 18:17:00 Australia/Canberra] 04ce828291cad2e744a27daf8548774ea17f8d789e76f854a338cecf50bb404959c327ffd0ac6fa8c26b8546c2d08f34940e70e9e7312742fe22aa1d6cc72f299f04bbcb8aabd16b91b18583ee9ef600a962b00c3ac29b37a5ee44a850ac2c12fc0e40dfe0bfe5dd9476be9aed763e9e2ab88a0a446c332e1908c173ac8252041ac1cats in space1001511680620356
-[26-Nov-2017 18:17:01 Australia/Canberra] file object was not null, pushing
-[26-Nov-2017 18:17:01 Australia/Canberra] 04bbcb8aabd16b91b18583ee9ef600a962b00c3ac29b37a5ee44a850ac2c12fc0e40dfe0bfe5dd9476be9aed763e9e2ab88a0a446c332e1908c173ac8252041ac1
-[26-Nov-2017 18:17:10 Australia/Canberra] looping through keys
-[26-Nov-2017 18:17:10 Australia/Canberra] minerAddressIn
-[26-Nov-2017 18:17:10 Australia/Canberra] 04bbcb8aabd16b91b18583ee9ef600a962b00c3ac29b37a5ee44a850ac2c12fc0e40dfe0bfe5dd9476be9aed763e9e2ab88a0a446c332e1908c173ac8252041ac1
-[26-Nov-2017 18:17:10 Australia/Canberra] looping through keys
-[26-Nov-2017 18:17:10 Australia/Canberra] coinRewardIn
-[26-Nov-2017 18:17:10 Australia/Canberra] 100
-[26-Nov-2017 18:17:10 Australia/Canberra] looping through keys
-[26-Nov-2017 18:17:10 Australia/Canberra] utcTimeStamp
-[26-Nov-2017 18:17:10 Australia/Canberra] 1511680630375
-[26-Nov-2017 18:17:10 Australia/Canberra] transactionPlainText:
-[26-Nov-2017 18:17:10 Australia/Canberra] 041c4bc717563647d7980e5f46b79c3b68eb11667559f8b70ab07b737e985d33f078dd404e1abe0ffc752e9ebb1df1b38853f2d8a79ec54aaea91827779897c5a504bbcb8aabd16b91b18583ee9ef600a962b00c3ac29b37a5ee44a850ac2c12fc0e40dfe0bfe5dd9476be9aed763e9e2ab88a0a446c332e1908c173ac8252041ac1freshly minted kitty goodness1001511680630375
-[26-Nov-2017 18:17:10 Australia/Canberra] file object was not null, pushing
-[26-Nov-2017 18:17:10 Australia/Canberra] 04bbcb8aabd16b91b18583ee9ef600a962b00c3ac29b37a5ee44a850ac2c12fc0e40dfe0bfe5dd9476be9aed763e9e2ab88a0a446c332e1908c173ac8252041ac1
-[26-Nov-2017 18:17:47 Australia/Canberra] file object was null
-[26-Nov-2017 18:17:47 Australia/Canberra] PHP Notice:  Undefined offset: 0 in C:\inetpub\wwwroot\catship_production\php\catShipTransaction.php on line 29
-[26-Nov-2017 18:17:47 Australia/Canberra] 
-[26-Nov-2017 18:21:00 Australia/Canberra] file object was not null, pushing
-[26-Nov-2017 18:21:00 Australia/Canberra] 04bbcb8aabd16b91b18583ee9ef600a962b00c3ac29b37a5ee44a850ac2c12fc0e40dfe0bfe5dd9476be9aed763e9e2ab88a0a446c332e1908c173ac8252041ac1
+[28-Nov-2017 01:04:33 Australia/Canberra] players ip address
+[28-Nov-2017 01:04:33 Australia/Canberra] ::1
+[28-Nov-2017 01:04:33 Australia/Canberra] looping through keys
+[28-Nov-2017 01:04:33 Australia/Canberra] checkpointTotal
+[28-Nov-2017 01:04:33 Australia/Canberra] 0
+[28-Nov-2017 01:04:33 Australia/Canberra] looping through keys
+[28-Nov-2017 01:04:33 Australia/Canberra] checkpointEnemyCount
+[28-Nov-2017 01:04:33 Australia/Canberra] 0
+[28-Nov-2017 01:04:33 Australia/Canberra] looping through keys
+[28-Nov-2017 01:04:33 Australia/Canberra] checkpointSb
+[28-Nov-2017 01:04:33 Australia/Canberra] 0
+[28-Nov-2017 01:04:33 Australia/Canberra] looping through keys
+[28-Nov-2017 01:04:33 Australia/Canberra] checkpointPyramidCount
+[28-Nov-2017 01:04:33 Australia/Canberra] 0
+[28-Nov-2017 01:04:33 Australia/Canberra] looping through keys
+[28-Nov-2017 01:04:33 Australia/Canberra] checkpointPyramidTimer
+[28-Nov-2017 01:04:33 Australia/Canberra] 0
+[28-Nov-2017 01:04:33 Australia/Canberra] looping through keys
+[28-Nov-2017 01:04:33 Australia/Canberra] checkpointPyramidsOffset
+[28-Nov-2017 01:04:33 Australia/Canberra] 0
+[28-Nov-2017 01:04:33 Australia/Canberra] looping through keys
+[28-Nov-2017 01:04:33 Australia/Canberra] checkpointStage1Y
+[28-Nov-2017 01:04:33 Australia/Canberra] 0
+[28-Nov-2017 01:04:33 Australia/Canberra] looping through keys
+[28-Nov-2017 01:04:33 Australia/Canberra] checkpointStage2Y
+[28-Nov-2017 01:04:33 Australia/Canberra] 0
+[28-Nov-2017 01:04:33 Australia/Canberra] looping through keys
+[28-Nov-2017 01:04:33 Australia/Canberra] checkpointPyramidsY
+[28-Nov-2017 01:04:33 Australia/Canberra] 0
+[28-Nov-2017 01:04:33 Australia/Canberra] looping through keys
+[28-Nov-2017 01:04:33 Australia/Canberra] checkpointCheckpoint
+[28-Nov-2017 01:04:33 Australia/Canberra] 0
+[28-Nov-2017 01:04:33 Australia/Canberra] looping through keys
+[28-Nov-2017 01:04:33 Australia/Canberra] checkpointShipFP
+[28-Nov-2017 01:04:33 Australia/Canberra] 0
+[28-Nov-2017 01:04:33 Australia/Canberra] looping through keys
+[28-Nov-2017 01:04:33 Australia/Canberra] checkpointStagespeed
+[28-Nov-2017 01:04:33 Australia/Canberra] 1
+[28-Nov-2017 01:04:33 Australia/Canberra] looping through keys
+[28-Nov-2017 01:04:33 Australia/Canberra] health
+[28-Nov-2017 01:04:33 Australia/Canberra] -1
+[28-Nov-2017 01:04:33 Australia/Canberra] looping through keys
+[28-Nov-2017 01:04:33 Australia/Canberra] alienHealth
+[28-Nov-2017 01:04:33 Australia/Canberra] 12
+[28-Nov-2017 01:04:33 Australia/Canberra] looping through keys
+[28-Nov-2017 01:04:33 Australia/Canberra] total
+[28-Nov-2017 01:04:33 Australia/Canberra] 12
+[28-Nov-2017 01:04:33 Australia/Canberra] looping through keys
+[28-Nov-2017 01:04:33 Australia/Canberra] sb
+[28-Nov-2017 01:04:33 Australia/Canberra] 1
+[28-Nov-2017 01:04:33 Australia/Canberra] looping through keys
+[28-Nov-2017 01:04:33 Australia/Canberra] enemyCount
+[28-Nov-2017 01:04:33 Australia/Canberra] 0
+[28-Nov-2017 01:04:33 Australia/Canberra] looping through keys
+[28-Nov-2017 01:04:33 Australia/Canberra] score
+[28-Nov-2017 01:04:33 Australia/Canberra] -180
+[28-Nov-2017 01:04:33 Australia/Canberra] looping through keys
+[28-Nov-2017 01:04:33 Australia/Canberra] row
+[28-Nov-2017 01:04:33 Australia/Canberra] 0
+[28-Nov-2017 01:04:33 Australia/Canberra] looping through keys
+[28-Nov-2017 01:04:33 Australia/Canberra] pyramidCount
+[28-Nov-2017 01:04:33 Australia/Canberra] 0
+[28-Nov-2017 01:04:33 Australia/Canberra] looping through keys
+[28-Nov-2017 01:04:33 Australia/Canberra] pyramidTimer
+[28-Nov-2017 01:04:33 Australia/Canberra] 0
+[28-Nov-2017 01:04:33 Australia/Canberra] looping through keys
+[28-Nov-2017 01:04:33 Australia/Canberra] pyramidsOffset
+[28-Nov-2017 01:04:33 Australia/Canberra] 216
+[28-Nov-2017 01:04:33 Australia/Canberra] looping through keys
+[28-Nov-2017 01:04:33 Australia/Canberra] checkpoint
+[28-Nov-2017 01:04:33 Australia/Canberra] 0
+[28-Nov-2017 01:04:33 Australia/Canberra] looping through keys
+[28-Nov-2017 01:04:33 Australia/Canberra] shipFP
+[28-Nov-2017 01:04:33 Australia/Canberra] 0
+[28-Nov-2017 01:04:33 Australia/Canberra] looping through keys
+[28-Nov-2017 01:04:33 Australia/Canberra] stagespeed
+[28-Nov-2017 01:04:33 Australia/Canberra] 1
+[28-Nov-2017 01:04:33 Australia/Canberra] looping through keys
+[28-Nov-2017 01:04:33 Australia/Canberra] shipy
+[28-Nov-2017 01:04:33 Australia/Canberra] 439.91666666667
+[28-Nov-2017 01:04:33 Australia/Canberra] looping through keys
+[28-Nov-2017 01:04:33 Australia/Canberra] shipx
+[28-Nov-2017 01:04:33 Australia/Canberra] 213.16666666667
+[28-Nov-2017 01:04:33 Australia/Canberra] looping through keys
+[28-Nov-2017 01:04:34 Australia/Canberra] enemy1Count
+[28-Nov-2017 01:04:34 Australia/Canberra] 0
+[28-Nov-2017 01:04:34 Australia/Canberra] looping through keys
+[28-Nov-2017 01:04:34 Australia/Canberra] enemy2Count
+[28-Nov-2017 01:04:34 Australia/Canberra] 0
+[28-Nov-2017 01:04:34 Australia/Canberra] looping through keys
+[28-Nov-2017 01:04:34 Australia/Canberra] enemy3Count
+[28-Nov-2017 01:04:34 Australia/Canberra] 0
+[28-Nov-2017 01:04:34 Australia/Canberra] looping through keys
+[28-Nov-2017 01:04:34 Australia/Canberra] enemy4Count
+[28-Nov-2017 01:04:34 Australia/Canberra] 0
+[28-Nov-2017 01:04:34 Australia/Canberra] looping through keys
+[28-Nov-2017 01:04:34 Australia/Canberra] pyramidsy
+[28-Nov-2017 01:04:34 Australia/Canberra] 216
+[28-Nov-2017 01:04:34 Australia/Canberra] looping through keys
+[28-Nov-2017 01:04:34 Australia/Canberra] eventTime
+[28-Nov-2017 01:04:34 Australia/Canberra] 0
+[28-Nov-2017 01:04:34 Australia/Canberra] looping through keys
+[28-Nov-2017 01:04:34 Australia/Canberra] minerAddressIn
+[28-Nov-2017 01:04:34 Australia/Canberra] 04bbcb8aabd16b91b18583ee9ef600a962b00c3ac29b37a5ee44a850ac2c12fc0e40dfe0bfe5dd9476be9aed763e9e2ab88a0a446c332e1908c173ac8252041ac1
+[28-Nov-2017 01:04:34 Australia/Canberra] looping through keys
+[28-Nov-2017 01:04:34 Australia/Canberra] utcTimeStamp
+[28-Nov-2017 01:04:34 Australia/Canberra] 1511791472472
+[28-Nov-2017 01:04:34 Australia/Canberra] looping through keys
+[28-Nov-2017 01:04:34 Australia/Canberra] enemyBulletsFired
+[28-Nov-2017 01:04:34 Australia/Canberra] 0
+[28-Nov-2017 01:04:34 Australia/Canberra] looping through keys
+[28-Nov-2017 01:04:34 Australia/Canberra] CPTrophy
+[28-Nov-2017 01:04:34 Australia/Canberra] 0
+[28-Nov-2017 01:04:34 Australia/Canberra] looping through keys
+[28-Nov-2017 01:04:34 Australia/Canberra] bonus
+[28-Nov-2017 01:04:34 Australia/Canberra] 0
+[28-Nov-2017 01:04:34 Australia/Canberra] transactionPlainText:
+[28-Nov-2017 01:04:34 Australia/Canberra] 04ce828291cad2e744a27daf8548774ea17f8d789e76f854a338cecf50bb404959c327ffd0ac6fa8c26b8546c2d08f34940e70e9e7312742fe22aa1d6cc72f299f04bbcb8aabd16b91b18583ee9ef600a962b00c3ac29b37a5ee44a850ac2c12fc0e40dfe0bfe5dd9476be9aed763e9e2ab88a0a446c332e1908c173ac8252041ac1cats in space-1801511791472472
+[28-Nov-2017 22:30:48 Australia/Canberra] players ip address
+[28-Nov-2017 22:30:48 Australia/Canberra] ::1
+[28-Nov-2017 22:30:48 Australia/Canberra] looping through keys
+[28-Nov-2017 22:30:48 Australia/Canberra] checkpointTotal
+[28-Nov-2017 22:30:48 Australia/Canberra] 0
+[28-Nov-2017 22:30:48 Australia/Canberra] looping through keys
+[28-Nov-2017 22:30:48 Australia/Canberra] checkpointEnemyCount
+[28-Nov-2017 22:30:48 Australia/Canberra] 0
+[28-Nov-2017 22:30:48 Australia/Canberra] looping through keys
+[28-Nov-2017 22:30:48 Australia/Canberra] checkpointSb
+[28-Nov-2017 22:30:48 Australia/Canberra] 0
+[28-Nov-2017 22:30:48 Australia/Canberra] looping through keys
+[28-Nov-2017 22:30:48 Australia/Canberra] checkpointPyramidCount
+[28-Nov-2017 22:30:48 Australia/Canberra] 0
+[28-Nov-2017 22:30:48 Australia/Canberra] looping through keys
+[28-Nov-2017 22:30:48 Australia/Canberra] checkpointPyramidTimer
+[28-Nov-2017 22:30:48 Australia/Canberra] 0
+[28-Nov-2017 22:30:48 Australia/Canberra] looping through keys
+[28-Nov-2017 22:30:48 Australia/Canberra] checkpointPyramidsOffset
+[28-Nov-2017 22:30:48 Australia/Canberra] 0
+[28-Nov-2017 22:30:48 Australia/Canberra] looping through keys
+[28-Nov-2017 22:30:48 Australia/Canberra] checkpointStage1Y
+[28-Nov-2017 22:30:48 Australia/Canberra] 0
+[28-Nov-2017 22:30:48 Australia/Canberra] looping through keys
+[28-Nov-2017 22:30:48 Australia/Canberra] checkpointStage2Y
+[28-Nov-2017 22:30:48 Australia/Canberra] 0
+[28-Nov-2017 22:30:48 Australia/Canberra] looping through keys
+[28-Nov-2017 22:30:48 Australia/Canberra] checkpointPyramidsY
+[28-Nov-2017 22:30:48 Australia/Canberra] 0
+[28-Nov-2017 22:30:48 Australia/Canberra] looping through keys
+[28-Nov-2017 22:30:48 Australia/Canberra] checkpointCheckpoint
+[28-Nov-2017 22:30:48 Australia/Canberra] 0
+[28-Nov-2017 22:30:48 Australia/Canberra] looping through keys
+[28-Nov-2017 22:30:48 Australia/Canberra] checkpointShipFP
+[28-Nov-2017 22:30:48 Australia/Canberra] 0
+[28-Nov-2017 22:30:48 Australia/Canberra] looping through keys
+[28-Nov-2017 22:30:48 Australia/Canberra] checkpointStagespeed
+[28-Nov-2017 22:30:48 Australia/Canberra] 1
+[28-Nov-2017 22:30:48 Australia/Canberra] looping through keys
+[28-Nov-2017 22:30:48 Australia/Canberra] health
+[28-Nov-2017 22:30:48 Australia/Canberra] -1
+[28-Nov-2017 22:30:48 Australia/Canberra] looping through keys
+[28-Nov-2017 22:30:48 Australia/Canberra] alienHealth
+[28-Nov-2017 22:30:48 Australia/Canberra] 12
+[28-Nov-2017 22:30:48 Australia/Canberra] looping through keys
+[28-Nov-2017 22:30:48 Australia/Canberra] total
+[28-Nov-2017 22:30:48 Australia/Canberra] 100
+[28-Nov-2017 22:30:48 Australia/Canberra] looping through keys
+[28-Nov-2017 22:30:48 Australia/Canberra] sb
+[28-Nov-2017 22:30:48 Australia/Canberra] 1
+[28-Nov-2017 22:30:48 Australia/Canberra] looping through keys
+[28-Nov-2017 22:30:48 Australia/Canberra] enemyCount
+[28-Nov-2017 22:30:48 Australia/Canberra] 12
+[28-Nov-2017 22:30:48 Australia/Canberra] looping through keys
+[28-Nov-2017 22:30:48 Australia/Canberra] score
+[28-Nov-2017 22:30:48 Australia/Canberra] 200
+[28-Nov-2017 22:30:48 Australia/Canberra] looping through keys
+[28-Nov-2017 22:30:48 Australia/Canberra] row
+[28-Nov-2017 22:30:48 Australia/Canberra] 0
+[28-Nov-2017 22:30:48 Australia/Canberra] looping through keys
+[28-Nov-2017 22:30:48 Australia/Canberra] pyramidCount
+[28-Nov-2017 22:30:48 Australia/Canberra] 0
+[28-Nov-2017 22:30:48 Australia/Canberra] looping through keys
+[28-Nov-2017 22:30:48 Australia/Canberra] pyramidTimer
+[28-Nov-2017 22:30:48 Australia/Canberra] 0
+[28-Nov-2017 22:30:48 Australia/Canberra] looping through keys
+[28-Nov-2017 22:30:48 Australia/Canberra] pyramidsOffset
+[28-Nov-2017 22:30:48 Australia/Canberra] 1800
+[28-Nov-2017 22:30:48 Australia/Canberra] looping through keys
+[28-Nov-2017 22:30:48 Australia/Canberra] checkpoint
+[28-Nov-2017 22:30:48 Australia/Canberra] 0
+[28-Nov-2017 22:30:48 Australia/Canberra] looping through keys
+[28-Nov-2017 22:30:48 Australia/Canberra] shipFP
+[28-Nov-2017 22:30:48 Australia/Canberra] 0
+[28-Nov-2017 22:30:48 Australia/Canberra] looping through keys
+[28-Nov-2017 22:30:48 Australia/Canberra] stagespeed
+[28-Nov-2017 22:30:48 Australia/Canberra] 1
+[28-Nov-2017 22:30:48 Australia/Canberra] looping through keys
+[28-Nov-2017 22:30:48 Australia/Canberra] shipy
+[28-Nov-2017 22:30:48 Australia/Canberra] 445.66666666667
+[28-Nov-2017 22:30:48 Australia/Canberra] looping through keys
+[28-Nov-2017 22:30:49 Australia/Canberra] shipx
+[28-Nov-2017 22:30:49 Australia/Canberra] 130.33333333333
+[28-Nov-2017 22:30:49 Australia/Canberra] looping through keys
+[28-Nov-2017 22:30:49 Australia/Canberra] enemy1Count
+[28-Nov-2017 22:30:49 Australia/Canberra] 4
+[28-Nov-2017 22:30:49 Australia/Canberra] looping through keys
+[28-Nov-2017 22:30:49 Australia/Canberra] enemy2Count
+[28-Nov-2017 22:30:49 Australia/Canberra] 0
+[28-Nov-2017 22:30:49 Australia/Canberra] looping through keys
+[28-Nov-2017 22:30:49 Australia/Canberra] enemy3Count
+[28-Nov-2017 22:30:49 Australia/Canberra] 2
+[28-Nov-2017 22:30:49 Australia/Canberra] looping through keys
+[28-Nov-2017 22:30:49 Australia/Canberra] enemy4Count
+[28-Nov-2017 22:30:49 Australia/Canberra] 0
+[28-Nov-2017 22:30:49 Australia/Canberra] looping through keys
+[28-Nov-2017 22:30:49 Australia/Canberra] pyramidsy
+[28-Nov-2017 22:30:49 Australia/Canberra] 1800
+[28-Nov-2017 22:30:49 Australia/Canberra] looping through keys
+[28-Nov-2017 22:30:49 Australia/Canberra] eventTime
+[28-Nov-2017 22:30:49 Australia/Canberra] 0
+[28-Nov-2017 22:30:49 Australia/Canberra] looping through keys
+[28-Nov-2017 22:30:49 Australia/Canberra] minerAddressIn
+[28-Nov-2017 22:30:49 Australia/Canberra] 04bbcb8aabd16b91b18583ee9ef600a962b00c3ac29b37a5ee44a850ac2c12fc0e40dfe0bfe5dd9476be9aed763e9e2ab88a0a446c332e1908c173ac8252041ac1
+[28-Nov-2017 22:30:49 Australia/Canberra] looping through keys
+[28-Nov-2017 22:30:49 Australia/Canberra] utcTimeStamp
+[28-Nov-2017 22:30:49 Australia/Canberra] 1511868647701
+[28-Nov-2017 22:30:49 Australia/Canberra] looping through keys
+[28-Nov-2017 22:30:49 Australia/Canberra] enemyBulletsFired
+[28-Nov-2017 22:30:49 Australia/Canberra] 91
+[28-Nov-2017 22:30:49 Australia/Canberra] looping through keys
+[28-Nov-2017 22:30:49 Australia/Canberra] CPTrophy
+[28-Nov-2017 22:30:49 Australia/Canberra] 0
+[28-Nov-2017 22:30:49 Australia/Canberra] looping through keys
+[28-Nov-2017 22:30:49 Australia/Canberra] bonus
+[28-Nov-2017 22:30:49 Australia/Canberra] 0
+[28-Nov-2017 22:30:49 Australia/Canberra] transactionPlainText:
+[28-Nov-2017 22:30:49 Australia/Canberra] 04ce828291cad2e744a27daf8548774ea17f8d789e76f854a338cecf50bb404959c327ffd0ac6fa8c26b8546c2d08f34940e70e9e7312742fe22aa1d6cc72f299f04bbcb8aabd16b91b18583ee9ef600a962b00c3ac29b37a5ee44a850ac2c12fc0e40dfe0bfe5dd9476be9aed763e9e2ab88a0a446c332e1908c173ac8252041ac1cats in space2001511868647701
+[28-Nov-2017 22:30:49 Australia/Canberra] file object was null
+[28-Nov-2017 22:30:49 Australia/Canberra] PHP Notice:  Undefined offset: 0 in C:\inetpub\wwwroot\catship_production\php\catShipTransaction.php on line 29
+[28-Nov-2017 22:30:49 Australia/Canberra] 
+[28-Nov-2017 22:31:09 Australia/Canberra] looping through keys
+[28-Nov-2017 22:31:09 Australia/Canberra] minerAddressIn
+[28-Nov-2017 22:31:09 Australia/Canberra] 04bbcb8aabd16b91b18583ee9ef600a962b00c3ac29b37a5ee44a850ac2c12fc0e40dfe0bfe5dd9476be9aed763e9e2ab88a0a446c332e1908c173ac8252041ac1
+[28-Nov-2017 22:31:09 Australia/Canberra] looping through keys
+[28-Nov-2017 22:31:09 Australia/Canberra] coinRewardIn
+[28-Nov-2017 22:31:09 Australia/Canberra] 100
+[28-Nov-2017 22:31:09 Australia/Canberra] looping through keys
+[28-Nov-2017 22:31:09 Australia/Canberra] utcTimeStamp
+[28-Nov-2017 22:31:09 Australia/Canberra] 1511868669679
+[28-Nov-2017 22:31:09 Australia/Canberra] transactionPlainText:
+[28-Nov-2017 22:31:09 Australia/Canberra] 041c4bc717563647d7980e5f46b79c3b68eb11667559f8b70ab07b737e985d33f078dd404e1abe0ffc752e9ebb1df1b38853f2d8a79ec54aaea91827779897c5a504bbcb8aabd16b91b18583ee9ef600a962b00c3ac29b37a5ee44a850ac2c12fc0e40dfe0bfe5dd9476be9aed763e9e2ab88a0a446c332e1908c173ac8252041ac1freshly minted kitty goodness1001511868669679
+[28-Nov-2017 22:31:10 Australia/Canberra] file object was not null, pushing
+[28-Nov-2017 22:31:10 Australia/Canberra] 04ce828291cad2e744a27daf8548774ea17f8d789e76f854a338cecf50bb404959c327ffd0ac6fa8c26b8546c2d08f34940e70e9e7312742fe22aa1d6cc72f299f
+[29-Nov-2017 16:45:59 Australia/Canberra] players ip address
+[29-Nov-2017 16:45:59 Australia/Canberra] ::1
+[29-Nov-2017 16:45:59 Australia/Canberra] looping through keys
+[29-Nov-2017 16:45:59 Australia/Canberra] checkpointTotal
+[29-Nov-2017 16:45:59 Australia/Canberra] 0
+[29-Nov-2017 16:45:59 Australia/Canberra] looping through keys
+[29-Nov-2017 16:45:59 Australia/Canberra] checkpointEnemyCount
+[29-Nov-2017 16:45:59 Australia/Canberra] 0
+[29-Nov-2017 16:45:59 Australia/Canberra] looping through keys
+[29-Nov-2017 16:45:59 Australia/Canberra] checkpointSb
+[29-Nov-2017 16:45:59 Australia/Canberra] 0
+[29-Nov-2017 16:45:59 Australia/Canberra] looping through keys
+[29-Nov-2017 16:45:59 Australia/Canberra] checkpointPyramidCount
+[29-Nov-2017 16:45:59 Australia/Canberra] 0
+[29-Nov-2017 16:45:59 Australia/Canberra] looping through keys
+[29-Nov-2017 16:45:59 Australia/Canberra] checkpointPyramidTimer
+[29-Nov-2017 16:45:59 Australia/Canberra] 0
+[29-Nov-2017 16:45:59 Australia/Canberra] looping through keys
+[29-Nov-2017 16:45:59 Australia/Canberra] checkpointPyramidsOffset
+[29-Nov-2017 16:45:59 Australia/Canberra] 0
+[29-Nov-2017 16:45:59 Australia/Canberra] looping through keys
+[29-Nov-2017 16:45:59 Australia/Canberra] checkpointStage1Y
+[29-Nov-2017 16:45:59 Australia/Canberra] 0
+[29-Nov-2017 16:45:59 Australia/Canberra] looping through keys
+[29-Nov-2017 16:45:59 Australia/Canberra] checkpointStage2Y
+[29-Nov-2017 16:45:59 Australia/Canberra] 0
+[29-Nov-2017 16:45:59 Australia/Canberra] looping through keys
+[29-Nov-2017 16:45:59 Australia/Canberra] checkpointPyramidsY
+[29-Nov-2017 16:45:59 Australia/Canberra] 0
+[29-Nov-2017 16:45:59 Australia/Canberra] looping through keys
+[29-Nov-2017 16:45:59 Australia/Canberra] checkpointCheckpoint
+[29-Nov-2017 16:45:59 Australia/Canberra] 0
+[29-Nov-2017 16:45:59 Australia/Canberra] looping through keys
+[29-Nov-2017 16:45:59 Australia/Canberra] checkpointShipFP
+[29-Nov-2017 16:45:59 Australia/Canberra] 0
+[29-Nov-2017 16:45:59 Australia/Canberra] looping through keys
+[29-Nov-2017 16:45:59 Australia/Canberra] checkpointStagespeed
+[29-Nov-2017 16:45:59 Australia/Canberra] 1
+[29-Nov-2017 16:45:59 Australia/Canberra] looping through keys
+[29-Nov-2017 16:45:59 Australia/Canberra] health
+[29-Nov-2017 16:45:59 Australia/Canberra] -1
+[29-Nov-2017 16:45:59 Australia/Canberra] looping through keys
+[29-Nov-2017 16:45:59 Australia/Canberra] alienHealth
+[29-Nov-2017 16:45:59 Australia/Canberra] 12
+[29-Nov-2017 16:45:59 Australia/Canberra] looping through keys
+[29-Nov-2017 16:45:59 Australia/Canberra] total
+[29-Nov-2017 16:45:59 Australia/Canberra] 78
+[29-Nov-2017 16:45:59 Australia/Canberra] looping through keys
+[29-Nov-2017 16:45:59 Australia/Canberra] sb
+[29-Nov-2017 16:45:59 Australia/Canberra] 1
+[29-Nov-2017 16:45:59 Australia/Canberra] looping through keys
+[29-Nov-2017 16:45:59 Australia/Canberra] enemyCount
+[29-Nov-2017 16:45:59 Australia/Canberra] 10
+[29-Nov-2017 16:45:59 Australia/Canberra] looping through keys
+[29-Nov-2017 16:45:59 Australia/Canberra] score
+[29-Nov-2017 16:45:59 Australia/Canberra] 160
+[29-Nov-2017 16:45:59 Australia/Canberra] looping through keys
+[29-Nov-2017 16:45:59 Australia/Canberra] row
+[29-Nov-2017 16:45:59 Australia/Canberra] 0
+[29-Nov-2017 16:45:59 Australia/Canberra] looping through keys
+[29-Nov-2017 16:45:59 Australia/Canberra] pyramidCount
+[29-Nov-2017 16:45:59 Australia/Canberra] 0
+[29-Nov-2017 16:45:59 Australia/Canberra] looping through keys
+[29-Nov-2017 16:45:59 Australia/Canberra] pyramidTimer
+[29-Nov-2017 16:45:59 Australia/Canberra] 0
+[29-Nov-2017 16:45:59 Australia/Canberra] looping through keys
+[29-Nov-2017 16:45:59 Australia/Canberra] pyramidsOffset
+[29-Nov-2017 16:45:59 Australia/Canberra] 1420
+[29-Nov-2017 16:45:59 Australia/Canberra] looping through keys
+[29-Nov-2017 16:45:59 Australia/Canberra] checkpoint
+[29-Nov-2017 16:45:59 Australia/Canberra] 0
+[29-Nov-2017 16:45:59 Australia/Canberra] looping through keys
+[29-Nov-2017 16:45:59 Australia/Canberra] shipFP
+[29-Nov-2017 16:45:59 Australia/Canberra] 0
+[29-Nov-2017 16:45:59 Australia/Canberra] looping through keys
+[29-Nov-2017 16:45:59 Australia/Canberra] stagespeed
+[29-Nov-2017 16:45:59 Australia/Canberra] 1
+[29-Nov-2017 16:45:59 Australia/Canberra] looping through keys
+[29-Nov-2017 16:45:59 Australia/Canberra] shipy
+[29-Nov-2017 16:45:59 Australia/Canberra] 500
+[29-Nov-2017 16:45:59 Australia/Canberra] looping through keys
+[29-Nov-2017 16:45:59 Australia/Canberra] shipx
+[29-Nov-2017 16:45:59 Australia/Canberra] 772.5
+[29-Nov-2017 16:45:59 Australia/Canberra] looping through keys
+[29-Nov-2017 16:45:59 Australia/Canberra] enemy1Count
+[29-Nov-2017 16:45:59 Australia/Canberra] 4
+[29-Nov-2017 16:45:59 Australia/Canberra] looping through keys
+[29-Nov-2017 16:45:59 Australia/Canberra] enemy2Count
+[29-Nov-2017 16:45:59 Australia/Canberra] 0
+[29-Nov-2017 16:45:59 Australia/Canberra] looping through keys
+[29-Nov-2017 16:45:59 Australia/Canberra] enemy3Count
+[29-Nov-2017 16:45:59 Australia/Canberra] 2
+[29-Nov-2017 16:45:59 Australia/Canberra] looping through keys
+[29-Nov-2017 16:45:59 Australia/Canberra] enemy4Count
+[29-Nov-2017 16:45:59 Australia/Canberra] 0
+[29-Nov-2017 16:45:59 Australia/Canberra] looping through keys
+[29-Nov-2017 16:45:59 Australia/Canberra] pyramidsy
+[29-Nov-2017 16:45:59 Australia/Canberra] 1420
+[29-Nov-2017 16:45:59 Australia/Canberra] looping through keys
+[29-Nov-2017 16:45:59 Australia/Canberra] eventTime
+[29-Nov-2017 16:45:59 Australia/Canberra] 0
+[29-Nov-2017 16:45:59 Australia/Canberra] looping through keys
+[29-Nov-2017 16:45:59 Australia/Canberra] minerAddressIn
+[29-Nov-2017 16:45:59 Australia/Canberra] 049887ae94cc8ac9ce970f321fdb5fd9030e6007623967f2bdafa51bf2f451045395de34281675f42fcc1531edb21e365957967b6eee4f3845b5e3ea3e747dc4d1
+[29-Nov-2017 16:45:59 Australia/Canberra] looping through keys
+[29-Nov-2017 16:45:59 Australia/Canberra] utcTimeStamp
+[29-Nov-2017 16:45:59 Australia/Canberra] 1511934358772
+[29-Nov-2017 16:45:59 Australia/Canberra] looping through keys
+[29-Nov-2017 16:45:59 Australia/Canberra] enemyBulletsFired
+[29-Nov-2017 16:45:59 Australia/Canberra] 111
+[29-Nov-2017 16:45:59 Australia/Canberra] looping through keys
+[29-Nov-2017 16:45:59 Australia/Canberra] CPTrophy
+[29-Nov-2017 16:45:59 Australia/Canberra] 0
+[29-Nov-2017 16:45:59 Australia/Canberra] looping through keys
+[29-Nov-2017 16:45:59 Australia/Canberra] bonus
+[29-Nov-2017 16:45:59 Australia/Canberra] 0
+[29-Nov-2017 16:45:59 Australia/Canberra] transactionPlainText:
+[29-Nov-2017 16:45:59 Australia/Canberra] 04ce828291cad2e744a27daf8548774ea17f8d789e76f854a338cecf50bb404959c327ffd0ac6fa8c26b8546c2d08f34940e70e9e7312742fe22aa1d6cc72f299f049887ae94cc8ac9ce970f321fdb5fd9030e6007623967f2bdafa51bf2f451045395de34281675f42fcc1531edb21e365957967b6eee4f3845b5e3ea3e747dc4d1cats in space1601511934358772
+[29-Nov-2017 16:46:00 Australia/Canberra] file object was null
+[29-Nov-2017 16:46:00 Australia/Canberra] PHP Notice:  Undefined offset: 0 in C:\inetpub\wwwroot\catship_production\php\catShipTransaction.php on line 29
+[29-Nov-2017 16:46:00 Australia/Canberra] 
+[29-Nov-2017 16:46:15 Australia/Canberra] looping through keys
+[29-Nov-2017 16:46:15 Australia/Canberra] minerAddressIn
+[29-Nov-2017 16:46:15 Australia/Canberra] 049887ae94cc8ac9ce970f321fdb5fd9030e6007623967f2bdafa51bf2f451045395de34281675f42fcc1531edb21e365957967b6eee4f3845b5e3ea3e747dc4d1
+[29-Nov-2017 16:46:15 Australia/Canberra] looping through keys
+[29-Nov-2017 16:46:15 Australia/Canberra] coinRewardIn
+[29-Nov-2017 16:46:15 Australia/Canberra] 100
+[29-Nov-2017 16:46:15 Australia/Canberra] looping through keys
+[29-Nov-2017 16:46:15 Australia/Canberra] utcTimeStamp
+[29-Nov-2017 16:46:15 Australia/Canberra] 1511934375048
+[29-Nov-2017 16:46:15 Australia/Canberra] transactionPlainText:
+[29-Nov-2017 16:46:15 Australia/Canberra] 041c4bc717563647d7980e5f46b79c3b68eb11667559f8b70ab07b737e985d33f078dd404e1abe0ffc752e9ebb1df1b38853f2d8a79ec54aaea91827779897c5a5049887ae94cc8ac9ce970f321fdb5fd9030e6007623967f2bdafa51bf2f451045395de34281675f42fcc1531edb21e365957967b6eee4f3845b5e3ea3e747dc4d1freshly minted kitty goodness1001511934375048
+[29-Nov-2017 16:46:16 Australia/Canberra] file object was not null, pushing
+[29-Nov-2017 16:46:16 Australia/Canberra] 04ce828291cad2e744a27daf8548774ea17f8d789e76f854a338cecf50bb404959c327ffd0ac6fa8c26b8546c2d08f34940e70e9e7312742fe22aa1d6cc72f299f

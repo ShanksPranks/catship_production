@@ -56,6 +56,7 @@ getTransactionPool(transactionPoolName);
  ** -------------------------------------------------------------------------- */
 
 var app = angular.module('myApp', []);
+"use strict";
 app.controller('formCtrl', function($scope) {
  $scope.master = {
   PrvKey: userWallet.privateKey,
@@ -166,6 +167,7 @@ function catShipCoinWallet(publicKeyIn, privateKeyIn) {
  this.scoreBalance = getNum(0);
  this.adjustedScore = getNum(0);
  this.scoreRemaining = this.adjustedScore - currentDifficulty;
+ var self = this;   
  // we neeed an overload here where only private key is required and pub key gets generated
  // we also need a check here to ensure keys are valid catship keys
  if ((publicKeyIn == null) && (privateKeyIn == null)) {
@@ -180,7 +182,6 @@ function catShipCoinWallet(publicKeyIn, privateKeyIn) {
   this.privateKey = privateKeyIn;
  };
 
-
  // populates the wallet transaction array and also updates the balances
  // will refresh the wallet UI each time called as the last step
  this.fetchTransactions = function(refreshUIFlag) {
@@ -192,11 +193,15 @@ function catShipCoinWallet(publicKeyIn, privateKeyIn) {
 
    var credits = [];
    var debits = [];
-
+   
    // loop through all the blocks filtering out users address transactions
    for (var x in catShipChain) {
-    credits = catShipChain[x].transactionArray.filter((trans) => trans.receiverAddress == this.publicKey);
-    debits = catShipChain[x].transactionArray.filter((trans) => trans.senderAddress == this.publicKey);
+    /* ES6 the world is not ready for this yet */
+    //credits = catShipChain[x].transactionArray.filter(trans => trans.receiverAddress == this.publicKey);
+    //debits = catShipChain[x].transactionArray.filter(trans => trans.senderAddress == this.publicKey);
+
+    credits = catShipChain[x].transactionArray.filter(function (trans) { return trans.receiverAddress == self.publicKey; });
+    debits = catShipChain[x].transactionArray.filter(function (trans) { return trans.senderAddress == self.publicKey; });
 
     // add credits one by one to get balance (change to map reduce)
     for (var k = 0; k < credits.length; k++) {
@@ -249,7 +254,10 @@ function catShipCoinWallet(publicKeyIn, privateKeyIn) {
    this.scoreRemaining = parseInt(currentDifficulty - this.scoreBalance);
 
    //refresh the ui.
-   var scope = angular.element(document.getElementById('wallet')).scope();
+   var walletElement = document.getElementById('wallet');
+   if (walletElement != null)
+   {
+   var scope = angular.element(walletElement).scope();
    scope.user.Balance = this.balance;
    scope.user.ScoreBalance = this.scoreBalance;
    scope.user.ScoreRemaining = this.scoreRemaining;
@@ -258,7 +266,7 @@ function catShipCoinWallet(publicKeyIn, privateKeyIn) {
    scope.updateWallet();
    //scope.reset();
    scope.$apply();
-
+   }
    }
 
   } // end this.fetchTransactions(){
@@ -348,7 +356,7 @@ function validateTransaction(catShipTransactionIn) {
  console.log('catShipTransactionIn.value: ' + catShipTransactionIn.value);
   console.log('catShipPublicKey ' + catShipPublicKey);
     console.log('catShipTransactionIn.senderAddress: ' + catShipTransactionIn.senderAddress);
- if ((senderBal >= catShipTransactionIn.value) || (catShipTransactionIn.senderAddress == catShipPublicKey)) {
+ if ((senderBal >= catShipTransactionIn.value) || (catShipTransactionIn.senderAddress == catShipPublicKey)|| (catShipTransactionIn.senderAddress == scoreBasePublicKey) ) {
   validationCount += 1;
  };
  // check that the transaction amount is > 0
@@ -517,7 +525,10 @@ function validateCatShipBlock(CatShipBlockIn) {
   validateTransaction(CatShipBlockIn.transactionArray[i]);
  }
  // now remove all invalid transactions
+ /* ES6 
  CatShipBlockIn.transactionArray = CatShipBlockIn.transactionArray.filter((trans) => trans.isValid == true);
+ */
+ CatShipBlockIn.transactionArray = CatShipBlockIn.transactionArray.filter(function(trans) { return trans.isValid == true; });
 
  // step 2 validate the block hash, will fail if anything is differs from original block
  // what happens when your block you tried to mine fails, you have to click the mine button again
