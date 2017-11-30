@@ -2,6 +2,13 @@
 -- use this link to test the ECDSA signing
 -- https://kjur.github.io/jsrsasign/sample/sample-ecdsa.html
 
+ -- bug list
+ -- does not seem to refresh transaction list etc (mobile?)
+ -- does not overwrite wallet to local storage 
+ -- 
+ -- features
+ -- cancel a pending transaction
+ -- 
  -- create seperate clean block and validate block functions
  -- validate catshipchain function discarding invalid blocks and proposing new block height and catshipchain
  -- do refresh tx pool and catshipchain on 5 second intervals
@@ -208,7 +215,7 @@ function catShipCoinWallet(publicKeyIn, privateKeyIn) {
      if (credits[k].senderAddress != scoreBasePublicKey)
      {
      this.transactionArray.push(credits[k]);
-     this.balance += credits[k].value;
+     this.balance += getNum(credits[k].value);
      }
     }
 
@@ -217,7 +224,7 @@ function catShipCoinWallet(publicKeyIn, privateKeyIn) {
      if (debits[k].senderAddress != scoreBasePublicKey)
      {
      this.transactionArray.push(debits[k]);
-     this.balance -= debits[k].value;
+     this.balance -= getNum(debits[k].value);
      }
     }
 
@@ -228,20 +235,20 @@ function catShipCoinWallet(publicKeyIn, privateKeyIn) {
     if (transactionPool.hasOwnProperty(x)) {
      if (transactionPool[x].senderAddress == this.publicKey) {
       this.transactionArray.push(transactionPool[x]);
-      this.balance -= transactionPool[x].value;
-      this.pendingBalance -= transactionPool[x].value;
+      this.balance -= getNum(transactionPool[x].value);
+      this.pendingBalance -= getNum(transactionPool[x].value);
      }
      if (transactionPool[x].receiverAddress == this.publicKey) {
       if (transactionPool[x].senderAddress == scoreBasePublicKey)
       {
-      this.scoreBalance += transactionPool[x].value;
-      this.scoreRemaining -= transactionPool[x].value;
+      this.scoreBalance += getNum(transactionPool[x].value);
+      this.scoreRemaining -= getNum(transactionPool[x].value);
       }
       else
       {
       this.transactionArray.push(transactionPool[x]);
-      this.balance += transactionPool[x].value;
-      this.pendingBalance += transactionPool[x].value;
+      this.balance += getNum(transactionPool[x].value);
+      this.pendingBalance += getNum(transactionPool[x].value);
       }
      }
     }
@@ -258,9 +265,9 @@ function catShipCoinWallet(publicKeyIn, privateKeyIn) {
    if (walletElement != null)
    {
    var scope = angular.element(walletElement).scope();
-   scope.user.Balance = this.balance;
-   scope.user.ScoreBalance = this.scoreBalance;
-   scope.user.ScoreRemaining = this.scoreRemaining;
+   scope.user.Balance = getNum(this.balance);
+   scope.user.ScoreBalance = getNum(this.scoreBalance);
+   scope.user.ScoreRemaining = getNum(this.scoreRemaining);
    scope.user.Difficulty = parseInt(currentDifficulty);
    scope.names = this.transactionArray;
    scope.updateWallet();
@@ -509,6 +516,17 @@ function catShipBlock(minerAddressIn, coinRewardIn, utcTimeStampIn, signatureIn)
 
 }
 
+/* -----------------------------------------------------------------------------
+ ** block util
+ ** -------------------------------------------------------------------------- */
+// will prune the blockchain down to a single genesis with all balances as outputs
+function rebaseBlockChain(blockchainNameIn)
+{
+var userArray = [];
+// populate a coinbase transaction for each users balance.
+//foreach(catShipChain)
+}
+
 function validateCatShipBlock(CatShipBlockIn) {
  var tempHash = CatShipBlockIn.blockID;
 
@@ -561,6 +579,7 @@ function getBlockChain(blockchainNameIn) {
  $.ajax({
   type: 'GET',
   url: urlToFetch,
+  cache: false,
   data: myData,
   success: function(myData) {
 
@@ -600,12 +619,13 @@ function getTransactionPool(transactionPoolNameIn) {
  $.ajax({
   type: 'GET',
   url: urlToFetch,
+  cache: false,
   data: myData,
   success: function(myData) {
    transactionPool = myData;
 
-    //console.log('transaction pool fetched from server/peers...');
-    //console.log(transactionPool);
+    console.log('transaction pool fetched from server/peers...');
+    console.log(transactionPool);
 
    userWallet.fetchTransactions(true);
 
