@@ -74,13 +74,12 @@ preload.prototype = {
         this.game.load.json('catshipLevels', 'json/catshipLevels.json');
 
         var jsonExists = 1;
-        $.get('json/myJson.json')
+        $.get('json/highScores.json')
             .done(function() {}).fail(function() {
                 jsonExists = 0;
-                //console.log('Did not find the json file at json/myJson.json, will create one at the end of this game');
             })
         if (jsonExists == 1) {
-            this.game.load.json('myJson', 'json/myJson.json');
+            this.game.load.json('myJson', 'json/highScores.json');
         }
 
     },

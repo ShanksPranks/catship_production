@@ -43,16 +43,18 @@ $MoreNothingSpecial = '041c4bc717563647d7980e5f46b79c3b68eb11667559f8b70ab07b737
 $catShipGame = $_POST["jsonObject"];
 $catShipGameObject = json_decode($catShipGame, true); // make a json object
 
+/*
 foreach($catShipGameObject as $key => $value)
 {
 error_log('looping through keys');
 error_log($key);
 error_log($value);
 }
+*/
 
 $transactionPlainText = $MoreNothingSpecial.$catShipGameObject["minerAddressIn"].'freshly minted kitty goodness'.$catShipGameObject["coinRewardIn"].$catShipGameObject["utcTimeStamp"];
-error_log('transactionPlainText:');
-error_log($transactionPlainText);
+//error_log('transactionPlainText:');
+//error_log($transactionPlainText);
 
 $sig = new \Phactor\Signature;
 $signature = $sig->generate($transactionPlainText, $NothingSpecial);

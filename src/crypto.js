@@ -24,7 +24,7 @@ var curveType = 'secp256k1'; // currently only secp256k1 supported by php librar
 var curveDigestHash = 'sha256'; // currently only sha256 supported by php library being used
 var messageDigestHash = 'sha384'; //'sha384' or 'sha256';
 var catShipPublicKey = '041c4bc717563647d7980e5f46b79c3b68eb11667559f8b70ab07b737e985d33f078dd404e1abe0ffc752e9ebb1df1b38853f2d8a79ec54aaea91827779897c5a5'; // tricky bit
-var scoreBasePublicKey = '04ce828291cad2e744a27daf8548774ea17f8d789e76f854a338cecf50bb404959c327ffd0ac6fa8c26b8546c2d08f34940e70e9e7312742fe22aa1d6cc72f299f'; 
+var scoreBasePublicKey = '04ce828291cad2e744a27daf8548774ea17f8d789e76f854a338cecf50bb404959c327ffd0ac6fa8c26b8546c2d08f34940e70e9e7312742fe22aa1d6cc72f299f';
 
 // parameterised
 var targetBlockTime = 120; // 120 seconds
@@ -90,47 +90,55 @@ app.controller('formCtrl', function($scope) {
   $scope.user.Message = '';
   $scope.updateWallet();
  };
+ $scope.searchBlock = function() {
+  var tempBlockHeight = $scope.user.BlockHeight;
+  var tempSearchedBlock = {};
+  for (var x in catShipChain) {
+   if (x == tempBlockHeight) {
+    tempSearchedBlock = catShipChain[x];
+   };
+  };
+  $scope.SearchedBlock = tempSearchedBlock;
+ };
+
  $scope.mineCoins = function() {
-  if (userWallet.scoreRemaining > getNum(0))
-  {
-  $scope.user.MiningStatus = 'Insufficient Score To Mine A Block!';
-  }
-  else
-  {
-  //console.log('mining for a new block...');
-  // => launches the video game and returns with reward and signature
-  //window.location.href = 'index.html';
+  if (userWallet.scoreRemaining > getNum(0)) {
+   $scope.user.MiningStatus = 'Insufficient Score To Mine A Block!';
+  } else {
+   //console.log('mining for a new block...');
+   // => launches the video game and returns with reward and signature
+   //window.location.href = 'index.html';
 
-  function coinBaseInput() {
-   this.minerAddressIn = userWallet.publicKey;
-   this.coinRewardIn = 100;
-   this.utcTimeStamp = new Date().getTime();
-   this.signature;
-  }
+   function coinBaseInput() {
+    this.minerAddressIn = userWallet.publicKey;
+    this.coinRewardIn = 100;
+    this.utcTimeStamp = new Date().getTime();
+    this.signature;
+   }
 
-  var myCoinBase = new coinBaseInput();
+   var myCoinBase = new coinBaseInput();
 
-  $.ajax({
-   type: 'POST',
-   url: 'php/catShipCoinBase.php',
-   data: {
-    jsonObject: JSON.stringify(myCoinBase)
-   },
-   success: function(data) {
-    myCoinBase.signature = data;
-    if (debug == 1) {
-     console.log('myCoinBase object');
-     console.log(myCoinBase);
-    }
-    // If successful we can successfully mine a block
-    var newBlock = new catShipBlock(myCoinBase.minerAddressIn, myCoinBase.coinRewardIn, myCoinBase.utcTimeStamp, myCoinBase.signature);
-    // refetch the data fresh from the server each time
-   },
-   error: function(xhr, status, error) {
-    console.log('xhr thingy: ' + xhr + ', status: ' + status + ', error : ' + error);
-   },
-   dataType: 'text'
-  });
+   $.ajax({
+    type: 'POST',
+    url: 'php/catShipCoinBase.php',
+    data: {
+     jsonObject: JSON.stringify(myCoinBase)
+    },
+    success: function(data) {
+     myCoinBase.signature = data;
+     if (debug == 1) {
+      console.log('myCoinBase object');
+      console.log(myCoinBase);
+     }
+     // If successful we can successfully mine a block
+     var newBlock = new catShipBlock(myCoinBase.minerAddressIn, myCoinBase.coinRewardIn, myCoinBase.utcTimeStamp, myCoinBase.signature);
+     // refetch the data fresh from the server each time
+    },
+    error: function(xhr, status, error) {
+     console.log('xhr thingy: ' + xhr + ', status: ' + status + ', error : ' + error);
+    },
+    dataType: 'text'
+   });
   }
 
  };
@@ -174,7 +182,7 @@ function catShipCoinWallet(publicKeyIn, privateKeyIn) {
  this.scoreBalance = getNum(0);
  this.adjustedScore = getNum(0);
  this.scoreRemaining = this.adjustedScore - currentDifficulty;
- var self = this;   
+ var self = this;
  // we neeed an overload here where only private key is required and pub key gets generated
  // we also need a check here to ensure keys are valid catship keys
  if ((publicKeyIn == null) && (privateKeyIn == null)) {
@@ -200,31 +208,33 @@ function catShipCoinWallet(publicKeyIn, privateKeyIn) {
 
    var credits = [];
    var debits = [];
-   
+
    // loop through all the blocks filtering out users address transactions
    for (var x in catShipChain) {
     /* ES6 the world is not ready for this yet */
     //credits = catShipChain[x].transactionArray.filter(trans => trans.receiverAddress == this.publicKey);
     //debits = catShipChain[x].transactionArray.filter(trans => trans.senderAddress == this.publicKey);
 
-    credits = catShipChain[x].transactionArray.filter(function (trans) { return trans.receiverAddress == self.publicKey; });
-    debits = catShipChain[x].transactionArray.filter(function (trans) { return trans.senderAddress == self.publicKey; });
+    credits = catShipChain[x].transactionArray.filter(function(trans) {
+     return trans.receiverAddress == self.publicKey;
+    });
+    debits = catShipChain[x].transactionArray.filter(function(trans) {
+     return trans.senderAddress == self.publicKey;
+    });
 
     // add credits one by one to get balance (change to map reduce)
     for (var k = 0; k < credits.length; k++) {
-     if (credits[k].senderAddress != scoreBasePublicKey)
-     {
-     this.transactionArray.push(credits[k]);
-     this.balance += getNum(credits[k].value);
+     if (credits[k].senderAddress != scoreBasePublicKey) {
+      this.transactionArray.push(credits[k]);
+      this.balance += getNum(credits[k].value);
      }
     }
 
     // add debits one by one to get balance (change to map reduce)
     for (var k = 0; k < debits.length; k++) {
-     if (debits[k].senderAddress != scoreBasePublicKey)
-     {
-     this.transactionArray.push(debits[k]);
-     this.balance -= getNum(debits[k].value);
+     if (debits[k].senderAddress != scoreBasePublicKey) {
+      this.transactionArray.push(debits[k]);
+      this.balance -= getNum(debits[k].value);
      }
     }
 
@@ -239,41 +249,36 @@ function catShipCoinWallet(publicKeyIn, privateKeyIn) {
       this.pendingBalance -= getNum(transactionPool[x].value);
      }
      if (transactionPool[x].receiverAddress == this.publicKey) {
-      if (transactionPool[x].senderAddress == scoreBasePublicKey)
-      {
-      this.scoreBalance += getNum(transactionPool[x].value);
-      this.scoreRemaining -= getNum(transactionPool[x].value);
-      }
-      else
-      {
-      this.transactionArray.push(transactionPool[x]);
-      this.balance += getNum(transactionPool[x].value);
-      this.pendingBalance += getNum(transactionPool[x].value);
+      if (transactionPool[x].senderAddress == scoreBasePublicKey) {
+       this.scoreBalance += getNum(transactionPool[x].value);
+       this.scoreRemaining -= getNum(transactionPool[x].value);
+      } else {
+       this.transactionArray.push(transactionPool[x]);
+       this.balance += getNum(transactionPool[x].value);
+       this.pendingBalance += getNum(transactionPool[x].value);
       }
      }
     }
    }
    // end for (var x in transactionPool) 
-   if (refreshUIFlag == true)
-   {
-   // will get the current difficulty 
-   getCurrentAvgBlockStats ();
-   this.scoreRemaining = parseInt(currentDifficulty - this.scoreBalance);
+   if (refreshUIFlag == true) {
+    // will get the current difficulty 
+    getCurrentAvgBlockStats();
+    this.scoreRemaining = parseInt(currentDifficulty - this.scoreBalance);
 
-   //refresh the ui.
-   var walletElement = document.getElementById('wallet');
-   if (walletElement != null)
-   {
-   var scope = angular.element(walletElement).scope();
-   scope.user.Balance = getNum(this.balance);
-   scope.user.ScoreBalance = getNum(this.scoreBalance);
-   scope.user.ScoreRemaining = getNum(this.scoreRemaining);
-   scope.user.Difficulty = parseInt(currentDifficulty);
-   scope.names = this.transactionArray;
-   scope.updateWallet();
-   //scope.reset();
-   scope.$apply();
-   }
+    //refresh the ui.
+    var walletElement = document.getElementById('wallet');
+    if (walletElement != null) {
+     var scope = angular.element(walletElement).scope();
+     scope.user.Balance = getNum(this.balance);
+     scope.user.ScoreBalance = getNum(this.scoreBalance);
+     scope.user.ScoreRemaining = getNum(this.scoreRemaining);
+     scope.user.Difficulty = parseInt(currentDifficulty);
+     scope.names = this.transactionArray;
+     scope.updateWallet();
+     //scope.reset();
+     scope.$apply();
+    }
    }
 
   } // end this.fetchTransactions(){
@@ -359,11 +364,13 @@ function validateTransaction(catShipTransactionIn) {
  // check balance of sender is sufficient
  var validationCount = 0;
  var senderBal = getUserBalance(catShipTransactionIn.senderAddress);
+ if (debug == true){
  console.log('sender bal: ' + senderBal);
  console.log('catShipTransactionIn.value: ' + catShipTransactionIn.value);
-  console.log('catShipPublicKey ' + catShipPublicKey);
-    console.log('catShipTransactionIn.senderAddress: ' + catShipTransactionIn.senderAddress);
- if ((senderBal >= catShipTransactionIn.value) || (catShipTransactionIn.senderAddress == catShipPublicKey)|| (catShipTransactionIn.senderAddress == scoreBasePublicKey) ) {
+ console.log('catShipPublicKey ' + catShipPublicKey);
+ console.log('catShipTransactionIn.senderAddress: ' + catShipTransactionIn.senderAddress);
+}
+ if ((senderBal >= catShipTransactionIn.value) || (catShipTransactionIn.senderAddress == catShipPublicKey) || (catShipTransactionIn.senderAddress == scoreBasePublicKey)) {
   validationCount += 1;
  };
  // check that the transaction amount is > 0
@@ -430,7 +437,7 @@ function catShipBlock(minerAddressIn, coinRewardIn, utcTimeStampIn, signatureIn)
  } else {
   this.blockHeight = parseInt(currentBlockHeight) + 1;
  }
- 
+
 
  // add coinbase height and committed
  coinbaseTransaction.blockHeight = this.blockHeight;
@@ -442,7 +449,7 @@ function catShipBlock(minerAddressIn, coinRewardIn, utcTimeStampIn, signatureIn)
  if (!(catShipChain[currentBlockHeight] == null)) {
   this.previousBlockID = catShipChain[currentBlockHeight].blockID;
   // get time elapsed since last block
-  this.elapsedTimeSincePreviousBlock = this.utcTimeStamp/1000 - catShipChain[currentBlockHeight].utcTimeStamp/1000; 
+  this.elapsedTimeSincePreviousBlock = this.utcTimeStamp / 1000 - catShipChain[currentBlockHeight].utcTimeStamp / 1000;
  }
 
  // add all the transactions currently in the pool
@@ -452,17 +459,15 @@ function catShipBlock(minerAddressIn, coinRewardIn, utcTimeStampIn, signatureIn)
    transactionPool[x].blockHeight = this.blockHeight;
    transactionPool[x].isPending = false;
 
-   if (transactionPool[x].isValid == true)  {
+   if (transactionPool[x].isValid == true) {
     // don't include other peoples scores in the block, leave them in the mem pool
-    if ((transactionPool[x].senderAddress != scoreBasePublicKey) || (transactionPool[x].receiverAddress == minerAddressIn))
-    {
-    this.transactionArray.push(transactionPool[x]);
-    // the miners scores must all be added to the block
-    if (transactionPool[x].senderAddress == scoreBasePublicKey)
-    {
-    this.scoreToMineBlock += transactionPool[x].value;
-    }
-    delete transactionPool[x];
+    if ((transactionPool[x].senderAddress != scoreBasePublicKey) || (transactionPool[x].receiverAddress == minerAddressIn)) {
+     this.transactionArray.push(transactionPool[x]);
+     // the miners scores must all be added to the block
+     if (transactionPool[x].senderAddress == scoreBasePublicKey) {
+      this.scoreToMineBlock += transactionPool[x].value;
+     }
+     delete transactionPool[x];
     }
    }
   }
@@ -520,11 +525,10 @@ function catShipBlock(minerAddressIn, coinRewardIn, utcTimeStampIn, signatureIn)
  ** block util
  ** -------------------------------------------------------------------------- */
 // will prune the blockchain down to a single genesis with all balances as outputs
-function rebaseBlockChain(blockchainNameIn)
-{
-var userArray = [];
-// populate a coinbase transaction for each users balance.
-//foreach(catShipChain)
+function rebaseBlockChain(blockchainNameIn) {
+ var userArray = [];
+ // populate a coinbase transaction for each users balance.
+ //foreach(catShipChain)
 }
 
 function validateCatShipBlock(CatShipBlockIn) {
@@ -546,7 +550,9 @@ function validateCatShipBlock(CatShipBlockIn) {
  /* ES6 
  CatShipBlockIn.transactionArray = CatShipBlockIn.transactionArray.filter((trans) => trans.isValid == true);
  */
- CatShipBlockIn.transactionArray = CatShipBlockIn.transactionArray.filter(function(trans) { return trans.isValid == true; });
+ CatShipBlockIn.transactionArray = CatShipBlockIn.transactionArray.filter(function(trans) {
+  return trans.isValid == true;
+ });
 
  // step 2 validate the block hash, will fail if anything is differs from original block
  // what happens when your block you tried to mine fails, you have to click the mine button again
@@ -623,12 +629,7 @@ function getTransactionPool(transactionPoolNameIn) {
   data: myData,
   success: function(myData) {
    transactionPool = myData;
-
-    console.log('transaction pool fetched from server/peers...');
-    console.log(transactionPool);
-
    userWallet.fetchTransactions(true);
-
   },
   error: function(xhr, status, error) {
    if (debug == true) {
@@ -722,7 +723,7 @@ function validateSignature(plainTextIn, signatureIn, publicKeyIn) {
 
 // will return a users balance used for other users, not the current user
 // for the current user just call catShipCoinWalet.fetchTransactions()
- function getUserBalance(userAddressIn) {
+function getUserBalance(userAddressIn) {
 
  var tempWallet = new catShipCoinWallet(userAddressIn, 'unknown');
  tempWallet.fetchTransactions();
@@ -742,69 +743,65 @@ function getCurrentBlockHeight() {
    maxValue = catShipChain[i]['blockHeight'];
   }
  }
- 
+
  currentBlockHeight = parseInt(maxValue);
  return parseInt(maxValue);
 }
 
 // get current block height
-function getCurrentAvgBlockStats () {
+function getCurrentAvgBlockStats() {
 
-getCurrentBlockHeight();
+ getCurrentBlockHeight();
 
-var totalTime = getNum(0);
-var totalScore = getNum(0);
-var totalBlocks = getNum(0);
+ var totalTime = getNum(0);
+ var totalScore = getNum(0);
+ var totalBlocks = getNum(0);
 
-var tempSampleBlocks = getNum(currentBlockHeight-sampleBlocks);
-if (tempSampleBlocks < 0){
+ var tempSampleBlocks = getNum(currentBlockHeight - sampleBlocks);
+ if (tempSampleBlocks < 0) {
   tempSampleBlocks = getNum(0);
-}
+ }
 
  for (var i = tempSampleBlocks; i <= currentBlockHeight; i++) {
- totalTime += getNum(catShipChain[i]['elapsedTimeSincePreviousBlock']);
- totalScore += getNum(catShipChain[i]['scoreToMineBlock']);
- totalBlocks += getNum(1);
+  totalTime += getNum(catShipChain[i]['elapsedTimeSincePreviousBlock']);
+  totalScore += getNum(catShipChain[i]['scoreToMineBlock']);
+  totalBlocks += getNum(1);
  }
- 
-  // avg score for the last x blocks
-  currentAvgBlockScore = totalScore / totalBlocks;
+
+ // avg score for the last x blocks
+ currentAvgBlockScore = totalScore / totalBlocks;
 
  // here we add on one more sample which is the last block to the current time
  // helps when system has been idle
- if(catShipChain[currentBlockHeight] != null)
- {
- var tempTime = new Date().getTime();
- var currentElapsedTime = tempTime/1000 - catShipChain[currentBlockHeight].utcTimeStamp/1000; 
- totalTime += currentElapsedTime;
- totalBlocks += 1;
+ if (catShipChain[currentBlockHeight] != null) {
+  var tempTime = new Date().getTime();
+  var currentElapsedTime = tempTime / 1000 - catShipChain[currentBlockHeight].utcTimeStamp / 1000;
+  totalTime += currentElapsedTime;
+  totalBlocks += 1;
  }
 
  currentAvgBlockTime = totalTime / totalBlocks;
 
  currentDifficulty = (currentAvgBlockTime / targetBlockTime) / currentAvgBlockScore;
- if (currentDifficulty < minimumDifficulty)
- {
-currentDifficulty = minimumDifficulty;
+ if (currentDifficulty < minimumDifficulty) {
+  currentDifficulty = minimumDifficulty;
  }
 
- if (debug == true)
-{
-console.log(currentAvgBlockTime);
-console.log(targetBlockTime);
-console.log(currentAvgBlockScore);
-console.log(currentDifficulty);
-}
+ if (debug == true) {
+  console.log(currentAvgBlockTime);
+  console.log(targetBlockTime);
+  console.log(currentAvgBlockScore);
+  console.log(currentDifficulty);
+ }
 }
 
 // every 3 seconds these guys will fire 
-window.setInterval(function(){
-//userWallet.fetchTransactions(true);
-/* block chain fetch async*/
-getBlockChain(blockChainName);
-/* tx pool fetch async*/
-getTransactionPool(transactionPoolName);
+window.setInterval(function() {
+ //userWallet.fetchTransactions(true);
+ /* block chain fetch async*/
+ getBlockChain(blockChainName);
+ /* tx pool fetch async*/
+ getTransactionPool(transactionPoolName);
 
-//console.log('firing refresh');
-}, 3000); 
-
+ //console.log('firing refresh');
+}, 3000);

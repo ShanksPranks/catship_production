@@ -44,24 +44,24 @@ getenv('HTTP_FORWARDED_FOR')?:
 getenv('HTTP_FORWARDED')?:
 getenv('REMOTE_ADDR');
 
-error_log('players ip address');
-error_log($ip);
+//error_log('players ip address');
+//error_log($ip);
 
 $catShipGame = $_POST["jsonObject"];
 $catShipGameObject = json_decode($catShipGame, true); // make a json object
 
-
+/*
 foreach($catShipGameObject as $key => $value)
 	{
 			error_log('looping through keys');
 			error_log($key);
 			error_log($value);
 	};
-
+*/
 
 $transactionPlainText = $MoreNothingSpecial.$catShipGameObject["minerAddressIn"].'cats in space'.$catShipGameObject["score"].$catShipGameObject["utcTimeStamp"];
-error_log('transactionPlainText:');
-error_log($transactionPlainText);
+//error_log('transactionPlainText:');
+//error_log($transactionPlainText);
 
 $sig = new \Phactor\Signature;
 $signature = $sig->generate($transactionPlainText, $NothingSpecial);

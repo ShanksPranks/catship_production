@@ -25,14 +25,14 @@ $catShipTransactionPoolObject = json_decode($catShipTransactionPoolString, true)
 fclose($catShipTransactionPoolFile);
 
 if (empty($catShipTransactionPoolObject)) {
-    error_log("file object was null");
-    error_log($catShipTransactionPoolObject[0]["senderAddress"]);
+    //error_log("file object was null");
+    //error_log($catShipTransactionPoolObject[0]["senderAddress"]);
     $catShipTransactionPoolObject = array(
         $catShipTransactionObject
     );
 } else {
-    error_log("file object was not null, pushing");
-    error_log($catShipTransactionPoolObject[0]["senderAddress"]);
+    //error_log("file object was not null, pushing");
+    //error_log($catShipTransactionPoolObject[0]["senderAddress"]);
     array_push($catShipTransactionPoolObject, $catShipTransactionObject);
 }
 ;

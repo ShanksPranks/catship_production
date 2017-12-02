@@ -1,6 +1,77 @@
-#container{width:50%;}
-#left{float:left;width:auto;}
-#right{float:right;width:auto;}
-#center{margin:0 auto;width:auto;}
-#game{float:none ; width:auto;}
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+#container {
+  width: 50%;
+}
+
+#left {
+  float: left;
+  width: auto;
+}
+
+#right {
+  float: right;
+  width: auto;
+}
+
+#center {
+  margin: 0 auto;
+  width: auto;
+}
+
+#game {
+  float: none;
+  width: auto;
+}
+
+p,
+    h2,
+    form,
+    input {
+  font-size: small;
+  font-family: 'Raleway', sans-serif;
+}
+
+table,
+    th,
+    td {
+  border: 1px solid grey;
+  border-collapse: collapse;
+  padding: 5px;
+  max-width: 900px;
+  table-layout: fixed;
+  word-wrap: break-word;
+  font-family: 'Raleway', sans-serif;
+  font-size: small;
+}
+
+input {
+  width: 500px;
+}
+
+table tr:nth-child(odd) {
+  background-color: #f1f1f1;
+  width: 30px;
+}
+
+table tr:nth-child(even) {
+  background-color: #ffffff;
+  width: 30px;
+}
+
+#wallet,
+    #mine,
+    #send {
+  width: 500px;
+  border: 1px solid grey;
+  padding: 40px;
+}
+
+#trans, 
+    #search {
+  width: 3800px;
+  border: 1px solid grey;
+  padding: 40px;
+}
+
 
