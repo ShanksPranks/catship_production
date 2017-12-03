@@ -3,17 +3,16 @@
 -- https://kjur.github.io/jsrsasign/sample/sample-ecdsa.html
 
  -- bug list
- -- does not seem to refresh transaction list etc (mobile?)
- -- does not overwrite wallet to local storage 
+ -- 
  -- 
  -- features
  -- cancel a pending transaction
  -- 
  -- create seperate clean block and validate block functions
  -- validate catshipchain function discarding invalid blocks and proposing new block height and catshipchain
- -- do refresh tx pool and catshipchain on 5 second intervals
+ -- 
  -- do the vote on block code (defaults to yes can be set to no)
- -- implement ddos protection for transactions (must get token from server ? )
+ -- implement ddos protection for transactions (must get reCAPTCHA token from server ? )
  ** -------------------------------------------------------------------------- */
 /* -----------------------------------------------------------------------------
  ** global variables
@@ -100,7 +99,6 @@ app.controller('formCtrl', function($scope) {
   };
   $scope.SearchedBlock = tempSearchedBlock;
  };
-
  $scope.mineCoins = function() {
   if (userWallet.scoreRemaining > getNum(0)) {
    $scope.user.MiningStatus = 'Insufficient Score To Mine A Block!';
@@ -197,14 +195,38 @@ function catShipCoinWallet(publicKeyIn, privateKeyIn) {
   this.privateKey = privateKeyIn;
  };
 
+this.overwriteWallet = function() {
+    if (confirm("Wallet keys have changed, do you want to overwrite your wallet with the new keys?") == true) {
+        return true;
+    } else {
+        return false;
+    }
+}
  // populates the wallet transaction array and also updates the balances
  // will refresh the wallet UI each time called as the last step
  this.fetchTransactions = function(refreshUIFlag) {
-   this.transactionArray = [];
-   this.balance = getNum(0);
-   this.pendingBalance = getNum(0);
-   this.scoreBalance = getNum(0);
-   this.scoreRemaining = getNum(0);
+
+
+
+   self.transactionArray = [];
+   self.balance = getNum(0);
+   self.pendingBalance = getNum(0);
+   self.scoreBalance = getNum(0);
+   self.scoreRemaining = getNum(0);
+
+   // first step check if the wallet information has changed
+   var localWalletString = localStorage.getItem('catShipUserWallet');
+   var walletObject = JSON.parse(localWalletString);
+   if ((walletObject.publicKey != self.publicKey) || (walletObject.privateKey != self.privateKey))
+{
+var tempOverwrite = self.overwriteWallet();
+if (tempOverwrite == true)
+{
+  var tempWalletString = JSON.stringify(self);
+  localStorage.setItem('catShipUserWallet', tempWalletString);
+}
+};
+
 
    var credits = [];
    var debits = [];
@@ -225,16 +247,16 @@ function catShipCoinWallet(publicKeyIn, privateKeyIn) {
     // add credits one by one to get balance (change to map reduce)
     for (var k = 0; k < credits.length; k++) {
      if (credits[k].senderAddress != scoreBasePublicKey) {
-      this.transactionArray.push(credits[k]);
-      this.balance += getNum(credits[k].value);
+      self.transactionArray.push(credits[k]);
+      self.balance += getNum(credits[k].value);
      }
     }
 
     // add debits one by one to get balance (change to map reduce)
     for (var k = 0; k < debits.length; k++) {
      if (debits[k].senderAddress != scoreBasePublicKey) {
-      this.transactionArray.push(debits[k]);
-      this.balance -= getNum(debits[k].value);
+      self.transactionArray.push(debits[k]);
+      self.balance -= getNum(debits[k].value);
      }
     }
 
@@ -243,19 +265,19 @@ function catShipCoinWallet(publicKeyIn, privateKeyIn) {
    // also add any pending transactions
    for (var x in transactionPool) {
     if (transactionPool.hasOwnProperty(x)) {
-     if (transactionPool[x].senderAddress == this.publicKey) {
-      this.transactionArray.push(transactionPool[x]);
-      this.balance -= getNum(transactionPool[x].value);
-      this.pendingBalance -= getNum(transactionPool[x].value);
+     if (transactionPool[x].senderAddress == self.publicKey) {
+      self.transactionArray.push(transactionPool[x]);
+      self.balance -= getNum(transactionPool[x].value);
+      self.pendingBalance -= getNum(transactionPool[x].value);
      }
-     if (transactionPool[x].receiverAddress == this.publicKey) {
+     if (transactionPool[x].receiverAddress == self.publicKey) {
       if (transactionPool[x].senderAddress == scoreBasePublicKey) {
-       this.scoreBalance += getNum(transactionPool[x].value);
-       this.scoreRemaining -= getNum(transactionPool[x].value);
+       self.scoreBalance += getNum(transactionPool[x].value);
+       self.scoreRemaining -= getNum(transactionPool[x].value);
       } else {
-       this.transactionArray.push(transactionPool[x]);
-       this.balance += getNum(transactionPool[x].value);
-       this.pendingBalance += getNum(transactionPool[x].value);
+       self.transactionArray.push(transactionPool[x]);
+       self.balance += getNum(transactionPool[x].value);
+       self.pendingBalance += getNum(transactionPool[x].value);
       }
      }
     }
@@ -264,17 +286,17 @@ function catShipCoinWallet(publicKeyIn, privateKeyIn) {
    if (refreshUIFlag == true) {
     // will get the current difficulty 
     getCurrentAvgBlockStats();
-    this.scoreRemaining = parseInt(currentDifficulty - this.scoreBalance);
+    self.scoreRemaining = parseInt(currentDifficulty - self.scoreBalance);
 
     //refresh the ui.
     var walletElement = document.getElementById('wallet');
     if (walletElement != null) {
      var scope = angular.element(walletElement).scope();
-     scope.user.Balance = getNum(this.balance);
-     scope.user.ScoreBalance = getNum(this.scoreBalance);
-     scope.user.ScoreRemaining = getNum(this.scoreRemaining);
+     scope.user.Balance = getNum(self.balance);
+     scope.user.ScoreBalance = getNum(self.scoreBalance);
+     scope.user.ScoreRemaining = getNum(self.scoreRemaining);
      scope.user.Difficulty = parseInt(currentDifficulty);
-     scope.names = this.transactionArray;
+     scope.names = self.transactionArray;
      scope.updateWallet();
      //scope.reset();
      scope.$apply();
@@ -342,7 +364,7 @@ function catShipTransaction(senderAddressIn, receiverAddressIn, messageIn, value
    },
    success: function(data) {
     if (debug == true) {
-     console.log('successfull post of tranaction:');
+     console.log('successfull post of transaction:');
      console.log(data);
     }
     getTransactionPool(transactionPoolName);
@@ -505,7 +527,7 @@ function catShipBlock(minerAddressIn, coinRewardIn, utcTimeStampIn, signatureIn)
     getBlockChain(blockChainName);
     getTransactionPool(transactionPoolName);
     var scope = angular.element(document.getElementById('mine')).scope();
-    scope.user.MiningStatus = 'Congrats! You successfully mined block: ' + currentBlockHeight;
+    scope.user.MiningStatus = 'Congrats! You successfully mined block: ' + this.blockHeight;
     if (debug == true) {
      console.log('successfull post of catship block:');
      console.log(data);
