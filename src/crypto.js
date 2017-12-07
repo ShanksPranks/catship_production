@@ -2,15 +2,17 @@
 -- use this link to test the ECDSA signing
 -- https://kjur.github.io/jsrsasign/sample/sample-ecdsa.html
 
- -- bug list
+ -- outstanding bug list
  -- 
  -- 
- -- features
+ -- outstanding features list
+ -- user xperience:
+ -- make wallet standalone and mobile friendly
+ -- make catshipcoin addresses unique (CatShip947roihr084f)
+ -- features:
  -- cancel a pending transaction
- -- 
  -- create seperate clean block and validate block functions
  -- validate catshipchain function discarding invalid blocks and proposing new block height and catshipchain
- -- 
  -- do the vote on block code (defaults to yes can be set to no)
  -- implement ddos protection for transactions (must get reCAPTCHA token from server ? )
  ** -------------------------------------------------------------------------- */
@@ -22,7 +24,7 @@ var debug = false;
 var curveType = 'secp256k1'; // currently only secp256k1 supported by php library being used
 var curveDigestHash = 'sha256'; // currently only sha256 supported by php library being used
 var messageDigestHash = 'sha384'; //'sha384' or 'sha256';
-var catShipPublicKey = '041c4bc717563647d7980e5f46b79c3b68eb11667559f8b70ab07b737e985d33f078dd404e1abe0ffc752e9ebb1df1b38853f2d8a79ec54aaea91827779897c5a5'; // tricky bit
+var catShipPublicKey = '046a8595b2b9bcf39ab9efa0ea249a57750a41e668bc27a3590439cbc760389edb24a5f9406fbcc1741dbfd4314c7565f3f87db90acb308b2992a0e08a8f816c1e'; // tricky bit
 var scoreBasePublicKey = '04ce828291cad2e744a27daf8548774ea17f8d789e76f854a338cecf50bb404959c327ffd0ac6fa8c26b8546c2d08f34940e70e9e7312742fe22aa1d6cc72f299f';
 
 // parameterised
@@ -195,15 +197,15 @@ function catShipCoinWallet(publicKeyIn, privateKeyIn) {
   this.privateKey = privateKeyIn;
  };
 
-this.overwriteWallet = function() {
-    if (confirm("Wallet keys have changed, do you want to overwrite your wallet with the new keys?") == true) {
-        return true;
-    } else {
-        return false;
-    }
-}
- // populates the wallet transaction array and also updates the balances
- // will refresh the wallet UI each time called as the last step
+ this.overwriteWallet = function() {
+   if (confirm("Wallet keys have changed, do you want to overwrite your wallet with the new keys?") == true) {
+    return true;
+   } else {
+    return false;
+   }
+  }
+  // populates the wallet transaction array and also updates the balances
+  // will refresh the wallet UI each time called as the last step
  this.fetchTransactions = function(refreshUIFlag) {
 
 
@@ -217,16 +219,16 @@ this.overwriteWallet = function() {
    // first step check if the wallet information has changed
    var localWalletString = localStorage.getItem('catShipUserWallet');
    var walletObject = JSON.parse(localWalletString);
-   if ((walletObject.publicKey != self.publicKey) || (walletObject.privateKey != self.privateKey))
-{
-var tempOverwrite = self.overwriteWallet();
-if (tempOverwrite == true)
-{
-  var tempWalletString = JSON.stringify(self);
-  localStorage.setItem('catShipUserWallet', tempWalletString);
-}
-};
-
+   if (((walletObject.publicKey != self.publicKey) || (walletObject.privateKey != self.privateKey)) && self.privateKey != 'unknown') {
+    console.log(walletObject);
+    console.log(self);
+    console.log(transactionPool);
+    var tempOverwrite = self.overwriteWallet();
+    if (tempOverwrite == true) {
+     var tempWalletString = JSON.stringify(self);
+     localStorage.setItem('catShipUserWallet', tempWalletString);
+    }
+   };
 
    var credits = [];
    var debits = [];
@@ -386,12 +388,12 @@ function validateTransaction(catShipTransactionIn) {
  // check balance of sender is sufficient
  var validationCount = 0;
  var senderBal = getUserBalance(catShipTransactionIn.senderAddress);
- if (debug == true){
- console.log('sender bal: ' + senderBal);
- console.log('catShipTransactionIn.value: ' + catShipTransactionIn.value);
- console.log('catShipPublicKey ' + catShipPublicKey);
- console.log('catShipTransactionIn.senderAddress: ' + catShipTransactionIn.senderAddress);
-}
+ if (debug == true) {
+  console.log('sender bal: ' + senderBal);
+  console.log('catShipTransactionIn.value: ' + catShipTransactionIn.value);
+  console.log('catShipPublicKey ' + catShipPublicKey);
+  console.log('catShipTransactionIn.senderAddress: ' + catShipTransactionIn.senderAddress);
+ }
  if ((senderBal >= catShipTransactionIn.value) || (catShipTransactionIn.senderAddress == catShipPublicKey) || (catShipTransactionIn.senderAddress == scoreBasePublicKey)) {
   validationCount += 1;
  };
@@ -527,7 +529,8 @@ function catShipBlock(minerAddressIn, coinRewardIn, utcTimeStampIn, signatureIn)
     getBlockChain(blockChainName);
     getTransactionPool(transactionPoolName);
     var scope = angular.element(document.getElementById('mine')).scope();
-    scope.user.MiningStatus = 'Congrats! You successfully mined block: ' + this.blockHeight;
+    var newHeight = parseInt(currentBlockHeight) + parseInt(1);
+    scope.user.MiningStatus = 'Congrats! You successfully mined block: ' + newHeight;
     if (debug == true) {
      console.log('successfull post of catship block:');
      console.log(data);
@@ -746,7 +749,6 @@ function validateSignature(plainTextIn, signatureIn, publicKeyIn) {
 // will return a users balance used for other users, not the current user
 // for the current user just call catShipCoinWalet.fetchTransactions()
 function getUserBalance(userAddressIn) {
-
  var tempWallet = new catShipCoinWallet(userAddressIn, 'unknown');
  tempWallet.fetchTransactions();
 

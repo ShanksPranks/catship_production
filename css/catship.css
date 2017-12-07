@@ -1,77 +1,81 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 
-#container {
-  width: 50%;
-}
-
-#left {
-  float: left;
-  width: auto;
-}
-
-#right {
-  float: right;
-  width: auto;
-}
-
-#center {
-  margin: 0 auto;
-  width: auto;
-}
-
-#game {
-  float: none;
-  width: auto;
-}
-
 p,
     h2,
-    form,
-    input {
-  font-size: small;
+    form
+     {
   font-family: 'Raleway', sans-serif;
+  text-align: center;
+}
+
+ 
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+    color: #fff !important;
+    background-color: #283747 !important;
+}
+.nav-pills>li>a {
+    color: #283747 !important;
 }
 
 table,
-    th,
-    td {
-  border: 1px solid grey;
-  border-collapse: collapse;
-  padding: 5px;
-  max-width: 900px;
-  table-layout: fixed;
-  word-wrap: break-word;
+    th, td{
+  padding: 15px;
+  text-align: center;
+  width: 10em; 
+  overflow: hidden;
+  text-overflow: ellipsis; 
   font-family: 'Raleway', sans-serif;
+  table-layout: fixed;
+  outline: 1px solid #D3D3D3;
   font-size: small;
 }
 
+
 input {
-  width: 500px;
+  width: 100%;
+  font-family: 'Arial', sans-serif;
+  background-color: #f1f1f1;
 }
 
 table tr:nth-child(odd) {
   background-color: #f1f1f1;
-  width: 30px;
 }
 
 table tr:nth-child(even) {
   background-color: #ffffff;
-  width: 30px;
+}
+
+.container
+{
+  background-color: #D3D3D3;
+}
+
+.inside {
+    /*border: 2px solid grey;*/
+    padding: 10px;
+}
+
+.tb {
+  width: 100%;
+  font-family: 'Arial', sans-serif;
+  background-color: #f1f1f1;
 }
 
 #wallet,
     #mine,
     #send {
-  width: 500px;
-  border: 1px solid grey;
-  padding: 40px;
+  /*width: 500px;*/
+  /*border: 10px;*/
+  /*padding: 5px solid orange;*/
+  /*margin: 0px;*/
+  /*outline: 1px solid grey;*/
 }
 
 #trans, 
     #search {
-  width: 3800px;
-  border: 1px solid grey;
-  padding: 40px;
+  /*width: 3800px;*/
+  /*border: 1px solid grey;*/
+  /*padding: 40px;*/
+  /*outline: 1px solid grey;*/
 }
-
 

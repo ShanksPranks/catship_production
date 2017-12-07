@@ -242,7 +242,7 @@
 
  var scoreString = '';
 
- var lives = 3;
+ var lives = 1;
 
  var enemy1Bullet;
  var enemy2Bullet;

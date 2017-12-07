@@ -1,0 +1,6 @@
+Options -Indexes
+AddType application/gmp gmp
+
+RewriteEngine On 
+RewriteCond %{SERVER_PORT} 80 
+RewriteRule ^(.*)$ https://www.catship.co.za/$1 [R,L]

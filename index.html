@@ -4,15 +4,21 @@
 <head>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" href="css/catship.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
     <title>Catship</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="keywords" content="Catship Indie Game" />
     <meta name="description" content="Catship is an indie game about a few regular dudes who happen to be cats who embarked on an action packed quest. Set in ancient egypt, prepare yourself for a fun rollercoaster adventure.">
 
+    <!-- external libraries -->
     <script src="src/phaser.min.js"></script>
     <script src="src/jquery-1.11.1.min.js"></script>
     <script src="src/jsrsasign-latest-all-min.js"></script>
     <script src="src/angular.min.js"></script>
+    <script src="src/bootstrap.min.js"></script>
 
+    <!-- catship libraries -->
     <script src="src/crypto.js"></script>
     <script src="src/variables.js"></script>
     <script src="src/boot.js"></script>
@@ -22,7 +28,6 @@
     <script src="src/gameover.js"></script>
 
     <script>
-
         (function() {
             var game = new Phaser.Game(800, 680, Phaser.CANVAS, "game");
             game.state.add("Boot", boot);
@@ -32,74 +37,130 @@
             game.state.add("GameOver", gameOver);
             game.state.start("Boot");
         })();
-
     </script>
 </head>
 
 <body>
 
-    <div id="game">
-        <!--a href="crypto.html">Wallet</a-->
-        <!--scroll down for wallet-->
-    </div>
+    <body>
+        <div class="container bg-secondary" ng-app="myApp" ng-controller="formCtrl">
+            <form novalidate>
+                <ul class="nav nav-pills">
+                    <li class="active"><a data-toggle="pill" href="#game">GAME</a></li>
+                    <li><a data-toggle="pill" href="#wallet">WALLET</a></li>
+                    <li><a data-toggle="pill" href="#send">SEND</a></li>
+                    <li><a data-toggle="pill" href="#mine">MINE</a></li>
+                    <li><a data-toggle="pill" href="#search">SEARCH</a></li>
+                    <li><a data-toggle="pill" href="#transactions">TRANSACTIONS</a></li>
+                    <br>
+                </ul>
 
-    <div ng-app="myApp" ng-controller="formCtrl">
-        <form novalidate>
-            <div id="wallet">
-                <h2>WALLET</h2> Private Key:
-                <br> (Keep this secret and write it down somewhere for safe keeping)
-                <br>
-                <br>
-                <input type="text" width: 250px; ng-model="user.PrvKey">
-                <br>
-                <br> Public Key:
-                <br> (This is also your wallet address so you can share it with people and let them send you coins to this address)
-                <br>
-                <br>
-                <input type="text" ng-model="user.PubKey">
-                <br>
-                <p> Current Balance: {{master.Balance | number : 9}}</p>
-                <br>
-            </div>
-            <br>
-            <div id="send">
-                <h2>MAKE PAYMENT</h2> Pay to:
-                <br> (insert someones public key / wallet address here)
-                <br>
-                <br>
-                <input type="text" ng-model="user.ReceieverPubKey">
-                <br>
-                <br> Amount:
-                <br> (must be smaller then your balance but greater then 0)
-                <br>
-                <br>
-                <input type="text" ng-model="user.Amount">
-                <br>
-                <br> Message:
-                <br> (you can attach a cool message to your payment to be stored in the catShipBlockChain for eternity!)
-                <br>
-                <br>
-                <input type="text" ng-model="user.Message">
-                <br>
-                <br>
-                <button ng-click="sendPayment()">SEND PAYMENT</button>
-                <br>
-                <p> Status: {{master.TransactionStatus}}
-                    <p>
-            </div>
-            <br>
-            <div id="mine">
-                <h2>MINE COINS</h2>
-                <button ng-click="mineCoins()">MINE CATSHIP COINS!</button>
-                <br>
-                <p> Current Score Total: {{master.ScoreBalance}}</p>
-                <p> Current Difficulty: {{master.Difficulty}}</p>
-                <p> Remaining Score Required To Mine A Block: {{master.ScoreRemaining}}</p>
-                <p> Status: {{master.MiningStatus}}
-                    <p>
-            </div>
-            <br>
-            <div id="trans">
+                <!--div class="container bg-secondary" ng-app="myApp" ng-controller="formCtrl"-->
+                <div class="tab-content">
+                        
+                    <div id="game" class="tab-pane fade in active">
+                    </div>
+                    <div id="wallet" class="tab-pane fade">
+                        <div class="inside">
+                            <h2>WALLET</h2>
+                            <h3>Private Key</h3>
+                            <p>
+                                (Keep this secret and write it down somewhere for safe keeping)
+                                <br>
+                                <br>
+                                <input type="text" ng-model="user.PrvKey">
+                                <br>
+                                <br>
+                                <h3>Public Key</h3>
+                                <p>
+                                    (This is also your wallet address so you can share it with people and let them send you coins to this address)
+                                    <br>
+                                    <br>
+                                    <input type="text" ng-model="user.PubKey">
+                                    <br>
+                                    <br>
+                                    <h3>Current Balance</h3>
+                                    <p>
+                                        <p class="tb">{{master.Balance | number : 9}}
+                                            <p>
+                                                <br>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="send">
+                        <div class="inside">
+                            <h2>MAKE PAYMENT</h2>
+                            <h3>Pay to</h3>
+                            <p>
+                                (insert someones public key / wallet address here)
+                                <br>
+                                <br>
+                                <input type="text" ng-model="user.ReceieverPubKey">
+                                <br>
+                                <br>
+                                <h3>Amount</h3>
+                                <p>
+                                    (must be smaller then your balance but greater then 0)
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <input type="text" ng-model="user.Amount">
+                                    <br>
+                                    <br>
+                                    <h3>Message</h3>
+                                    <p>
+                                        (you can attach a cool message to your payment to be stored in the catShipBlockChain for eternity!)
+                                        <br>
+                                        <br>
+                                        <input type="text" ng-model="user.Message">
+                                        <br>
+                                        <br>
+                                        <button ng-click="sendPayment()">SEND PAYMENT</button>
+                                        <br>
+                                        <h3>Status</h3>
+                                        <p>{{master.TransactionStatus}}
+                                            <br>
+                                            <br>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="mine">
+                        <div class="inside">
+                            <h2>MINE COINS</h2>
+                            <p>
+                                <button ng-click="mineCoins()">MINE CATSHIP COINS!</button>
+                                <br>
+                                <p>Current Score Total
+                                    <p class="tb"> {{master.ScoreBalance}}
+                                        <p>Current Difficulty
+                                            <p class="tb"> {{master.Difficulty}}
+                                                <p>Remaining Score Required To Mine A Block
+                                                    <p class="tb"> {{master.ScoreRemaining}}
+                                                        <h3>Status</h3>
+                                                        <p class="tb">{{master.MiningStatus}}
+                                                            <p>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="search">
+                        <div class="inside">
+                            <h2>SEARCH CATSHIP CHAIN</h2>
+                            <h3>Enter Block Height To View</h3> (insert a number here to view that block of the blockchain)
+                            <br>
+                            <br>
+                            <input type="text" ng-model="user.BlockHeight">
+                            <br>
+                            <br>
+                            <button ng-click="searchBlock()">SEARCH</button>
+                            <br>
+                            <br>
+                            <p> Result:
+                                <br>
+                                <code>
+                <pre>{{SearchedBlock |json}}</pre>
+                </code>
+                                <p>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="transactions">
+                <div class="inside ">
                 <h2>PREVIOUS TRANSACTIONS</h2>
                 <br>
                 <table>
@@ -115,7 +176,7 @@
                             <th>SIGNATURE</th>
                         </tr>
                     </thead>
-                    <tr ng-repeat="x in names track by $index">
+                    <tr ng-repeat="x in names track by $index ">
                         <td>{{ x.blockHeight }}</td>
                         <td>{{ x.utcTimeStamp | date:'yyyy-MM-dd HH:mm:ss Z'}}</td>
                         <td>{{ x.transactionID }}</td>
@@ -129,35 +190,8 @@
                 <br>
                 <br>
             </div>
-            <br>
-            <br>
-            <div id="search">
-                <h2>SEARCH CATSHIP CHAIN</h2> Enter Block Height To View:
-                <br> (insert a number here to view that block of the blockchain)
-                <br>
-                <br>
-                <input type="text" ng-model="user.BlockHeight">
-                <br>
-                <br>
-                <button ng-click="searchBlock()">SEARCH</button>
-                <br>
-                <p> Result:
-                    <br>
-                    <code>
-                <pre>{{SearchedBlock |json}}</pre>
-                </code>
-                    <p>
-            </div>
-            <br>
-            <br>
-            <br>
     </div>
-    <!--<div id = "left">
-    <div id="filelist"><a href="http://localhost/catship/?file=nsf/catship1.nsf&subtune=0"></a><br></div>
-    <div id="metadata">Loaded: catship (<a href="http://localhost/catship/nsf/?file=nsf/catship1.nsf&subtune=2">next</a> / <a href="http://localhost/catship/nsf/?file=nsf/megaman2.nsf&subtune=0">prev</a>)</div>
-    </div>-->
-    <div id="orientation"></div>
-    <div class="fontPreload" style="font-family: 'Avalon';opacity:0;position:fixed">.</div>
+</div>
 </body>
 
 </html>

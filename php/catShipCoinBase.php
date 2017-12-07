@@ -34,8 +34,8 @@ use Phactor\Key;
 
 ** -------------------------------------------------------------------------- */
 
-$NothingSpecial = '723a7e594b3cf567682fba1509cd74ee990484f10b6cde03e80f49be49c68822';
-$MoreNothingSpecial = '041c4bc717563647d7980e5f46b79c3b68eb11667559f8b70ab07b737e985d33f078dd404e1abe0ffc752e9ebb1df1b38853f2d8a79ec54aaea91827779897c5a5';
+$NothingSpecial = '7bb5ed1714ec7dff1175807989a53eb406ac09db2a9d587687774b8ed8b82fbb';
+$MoreNothingSpecial = '046a8595b2b9bcf39ab9efa0ea249a57750a41e668bc27a3590439cbc760389edb24a5f9406fbcc1741dbfd4314c7565f3f87db90acb308b2992a0e08a8f816c1e';
 
 // The catship game server side will call this function with a cryptic object and the object gets
 // signed and sent to the node and is checked for validity
