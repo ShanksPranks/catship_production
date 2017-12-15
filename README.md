@@ -17,3 +17,9 @@ The catship chain is a cryptic and powerful ancient technology that is mystical 
 A block is confirmed as soon as >50% of the netwrok starts mining on top of it and all wallet users have the ability to "blame" a suspect block and IP address / public key.
 
 Your total score is reset when you mine a block but others scores are maintained in the mem pool.
+
+# Installation
+Copy the entire repository onto your web server IIS/APACHE/Whatever
+add gmp math extension to your php.ini as follows:
+extension=php_gmp.dll
+browse to index.html
