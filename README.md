@@ -20,6 +20,11 @@ Your total score is reset when you mine a block but others scores are maintained
 
 # Installation
 Copy the entire repository onto your web server IIS/APACHE/Whatever
-add gmp math extension to your php.ini as follows:
+
+Make sure php is enabled
+
+Add gmp math extension to your php.ini as follows:
+
 extension=php_gmp.dll
-browse to index.html
+
+To launch the app browse to index.html in the folder
